@@ -56,12 +56,14 @@ DISEASE_TYPES = {
     "glaucoma":
         {
             "name": "glaucoma",
-            "resource": "eyedrop-synm"
         },
-    "cataract":
+    "astigmatism":
         {
-            "name": "cataract",
-            "resource": "eyedrop-synm"
+            "name": "astigmatism",
+        },
+    "diabetic retinopathy":
+        {
+            "name": "diabetic retinopathy",
         },
 }
 
@@ -187,13 +189,14 @@ class action_find_information(Action):
 
     def name(self) -> Text:
         """Unique identifier of the action"""
-        return "search_information"
+        return "find_information"
 
     def run(self,
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List:
 
+        inform_matched = False
         for t in DISEASE_TYPES:
             disease_type = DISEASE_TYPES[t]
             # TODO
@@ -202,15 +205,25 @@ class action_find_information(Action):
             if es != None:
                 e = es[0]
                 query_name = e['value']
+                print("entity: {}\nscore: {}" .format(e, e['confidence_entity']))
             # query_name = next(tracker.get_latest_entity_values(entity_name), None)
             if query_name == disease_name:
-                print("xiaofeng found it: {}" .format(query_name))
+                print("found disease_type: {}" .format(query_name))
+                inform_matched = True
+                break
 
         # dispatcher.utter_message(query_name)
-        dispatcher.utter_message(
-            template="utter_glaucoma_define",
-            name="Dr Covid"
-        )
+        if inform_matched:
+            if query_name == 'glaucoma':
+                dispatcher.utter_message(
+                    template="utter_glaucoma_define",
+                    name="Dr Covid"
+                )
+            elif query_name == 'astigmatism':
+                dispatcher.utter_message(
+                    template="utter_astigmatism_define",
+                    name="Dr Covid"
+                )
         return []
 
 

@@ -1,111 +1,151 @@
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - inform
-  - search_provider
-  - thanks
-  - out_of_scope
-  - search_information
-  - change_appointment
-  - risk_inquiry
-  - disease_treatment
-  - signs_treatment
-  - ask_diagnosis
-  - surgery_treat
-  - opt_effect
-  - disease_followup
-  - signs_followup
-  - ask_symptoms
-  - ask_signs_treatment
-
-entities:
-- facility_type
-- facility_id
-- location
-- disease_type
-- symptom_type
-- terms
-
-slots:
-  facility_type:
-    type: unfeaturized
-  facility_address:
-    type: unfeaturized
-  facility_id:
-    type: unfeaturized
-  location:
-    type: unfeaturized
-
 actions:
-- utter_noworries
-- utter_greet
-- utter_goodbye
-- utter_ask_location
-- utter_ask_facility_type
 - find_facility_types
 - find_healthcare_address
-- utter_address
 - find_information
+- utter_address
+- utter_ask_facility_type
+- utter_ask_location
+- utter_astigmatism_symptoms
+- utter_glaucoma_appointment
 - utter_glaucoma_define
-- utter_glaucoma_symptoms
-- utter_glaucoma_riskfactors
-- utter_glaucoma_treated
 - utter_glaucoma_diagnosed
 - utter_glaucoma_eyedrop_effect
 - utter_glaucoma_eyedrop_stoprisk
-- utter_glaucoma_lasertreat_option
 - utter_glaucoma_lasertreat_followup
-- utter_glaucoma_surgery_option
-- utter_glaucoma_appointment
+- utter_glaucoma_lasertreat_option
 - utter_glaucoma_postopt_eyecare
-- utter_glaucoma_whatis_visualfield
+- utter_glaucoma_riskfactors
+- utter_glaucoma_surgery_option
+- utter_glaucoma_symptoms
+- utter_glaucoma_treated
 - utter_glaucoma_visualfield_test
-
-templates:
-  utter_greet:
-  - text: "Hi. What are you looking for?"
-  - text: "Hey there! Please choose one of the healthcare facility options:"
-  - text: "Hello! What can I help you find today?"
-
-  utter_goodbye:
-  - text: "Talk to you later!"
-  - text: "Have a good day."
-  - text: "Until next time!"
-
-  utter_noworries:
-  - text: "My pleasure."
-  - text: "You are welcome!"
-
-  utter_ask_facility_type:
-  - text: "Choose one of the following to search for: hospital, nursing home, or home health agency."
-
-  utter_ask_location:
-  - text: "Please provide your city name."
-  - text: "What is your current city?"
-  - text: "Please provide your city name or zip code."
-  - text: "Please enter your zip code or city name to find local providers."
-
+- utter_glaucoma_whatis_visualfield
+- utter_goodbye
+- utter_greet
+- utter_noworries
+entities:
+- disease_type
+- facility_id
+- facility_type
+- location
+- symptom_type
+- terms
+forms:
+- facility_form
+intents:
+- search_information
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- inform
+- search_provider
+- thanks
+- out_of_scope
+- change_appointment
+- risk_inquiry
+- disease_treatment
+- signs_treatment
+- ask_diagnosis
+- surgery_treat
+- opt_effect
+- disease_followup
+- signs_followup
+- ask_symptoms
+- ask_signs_treatment
+responses:
   utter_address:
-  - text: "The address is {facility_address}."
-
-  utter_glaucoma_whatis_visualfield:
-  - text: "The visual field refers to the total area your eye can see in the side (peripheral vision) when you focus on a central point. A visual field test can determine if you have blind spots in your vision and where they are. The pattern of visual field loss can also help your doctor determine your condition. The common visual field tests performed in the clinic include Humphrey Visual Field, Goldmann Visual Field and Esterman Visual Field."
-
+  - text: The address is {facility_address}.
+  utter_ask_facility_type:
+  - text: 'Choose one of the following to search for: hospital, nursing home, or home
+      health agency.'
+  utter_ask_location:
+  - text: Please provide your city name.
+  - text: What is your current city?
+  - text: Please provide your city name or zip code.
+  - text: Please enter your zip code or city name to find local providers.
+  utter_astigmatism_define:
+  - text: '{name}: Astigmatism is a condition where the cornea has an abnormal curvature,
+      causing a distortion in vision. A normal cornea is round but in astigmatism
+      the cornea is oval-shaped, causing problems in focusing the light entering the
+      eye. Astigmatism is a very common condition and often occurs together with myopia
+      (short-sightedness) or hyperopia (long-sightedness).'
+  utter_astigmatism_symptoms:
+  - text: Symptoms and signs of astigmatism include blurring of vision at all distances,
+      headache, eye strain and squinting. You may also have difficulty driving at
+      night.
+  utter_glaucoma_appointment:
+  - text: You should reschedule your appointment as soon as you can. Please check
+      if you have enough medications, if not, kindly call ____ to obtain more.
   utter_glaucoma_define:
-  - text: "{name}: Glaucoma is a group of diseases with characteristic optic nerve damage,
-      resulting in irreversible loss of vision. Most, but not all of these diseases
-      are characterised by raised pressure in the eye (intraocular pressure). The
-      level of pressure that causes damage can vary in different individuals and the
-      resistance level of the optic nerve. Glaucoma is known as the silent thief of
-      sight as the initial vision loss is mainly peripheral and not readily noticeable.
-      Central vision and reading vision are usually spared until later."
-
+  - text: '{name}: Glaucoma is a group of diseases with characteristic optic nerve
+      damage, resulting in irreversible loss of vision. Most, but not all of these
+      diseases are characterised by raised pressure in the eye (intraocular pressure).
+      The level of pressure that causes damage can vary in different individuals and
+      the resistance level of the optic nerve. Glaucoma is known as the silent thief
+      of sight as the initial vision loss is mainly peripheral and not readily noticeable.
+      Central vision and reading vision are usually spared until later.'
+  utter_glaucoma_diagnosed:
+  - text: Glaucoma is diagnosed by measuring intraocular pressure of the eye and assessing
+      the optic nerve at the back of the eye for any damage. A visual field test is
+      usually performed and other tests can be added to further assess the optic nerve
+      and the state of the drainage system for fluid in the eye. The visual field
+      test assesses the function of the optic nerve by checking if you can see spots
+      of light of different intensities at different locations inside a visual field
+      machine. It helps the ophthalmologist determine if your disease is worsening
+      or stable.
+  utter_glaucoma_eyedrop_effect:
+  - text: Glaucoma eyedrops work by lowering the intraocular pressure to a level that
+      is safe for the eye. Your ophthalmologist will be able to advise on individualised
+      treatment options. Even after successful control of the pressure, regular monitoring
+      is still required. Glaucoma eyedrops should be taken regularly according to
+      your doctorâ€™s prescription. Even after successful control of the pressure
+      with eyedrops, regular monitoring is still required. It is not advisable for
+      you to stop your eyedrops without consulting your doctor.
+  utter_glaucoma_eyedrop_stoprisk:
+  - text: It is not advisable for you to stop your glaucoma eyedrops without consulting
+      your ophthalmologist. Please get your prescription re-printed.
+  utter_glaucoma_lasertreat_followup:
+  - text: It is important for you to follow your doctor's instructions after laser
+      treatment. You should use the eyedrops you are given and turn up for your follow
+      up appointment.
+  utter_glaucoma_lasertreat_option:
+  - text: 'Your doctor might offer laser as a treatment option depending the type
+      of glaucoma that you have. Laser procedures might include: Laser peripheral
+      iridotomy Laser trabeculoplasty Laser/ micropulse laser trans-scleral cyclophotocoagulation
+      (TCP/ MPTCP) Your ophthalmologist will advise you on individualised treatment
+      options, where necessary.'
+  utter_glaucoma_postopt_eyecare:
+  - text: 'Eyedrops have been instilled to dilate (enlarge) or constrict (shrink)
+      your pupils for the laser treatment. Your vision might be blurred for the next
+      1 to 2 days. You may feel more comfortable using sunglasses if you experience
+      any glare. You should avoid driving after your laser treatment and have someone
+      to accompany you home. You can take mild painkiller (e.g. Panadol) should you
+      experience pain or headaches. Should you require an urgent review after your
+      laser procedure, please call the following numbers: - During office hours at
+      6227 7266 - After office hours at 6532 4865 For urgent consultation after office
+      hours, Sundays and Public Holidays, please proceed to Singapore General Hospital
+      Accident and Emergency Department located at Block 1.'
+  utter_glaucoma_riskfactors:
+  - text: 'Risk factors for glaucoma include: Age - your risk increases when you are
+      over 80 years old Chronic diseases - you are at increased risk if you have diabetes
+      or high blood pressure Ethnicity - Asians are more susceptible to angle-closure
+      glaucoma than Caucasians Eye injuries Family history Use of corticosteroid Inherently
+      high pressure inside the eye Refractive error (short-sightedness or myopia is
+      a risk factor for open-angle glaucoma; long-sightedness or hyperopia is a risk
+      factor for closed-angle glaucoma)'
+  utter_glaucoma_surgery_option:
+  - text: 'In some cases, surgery is recommended. This could be due to the type of
+      glaucoma, or when medications and/or laser treatment fail to control the condition.
+      In general, surgery provides an alternative route for the fluids inside the
+      eye to drain out, thereby lowering the intraocular pressure to a safe level.
+      Examples of possible surgeries include: Trabeculectomy Tube shunt surgery Minimally
+      invasive glaucoma surgery Your ophthalmologist will advise you on individualised
+      treatment options, where necessary.'
   utter_glaucoma_symptoms:
-  - text: "There are a few types of glaucoma and each type has slightly different symptoms.
+  - text: There are a few types of glaucoma and each type has slightly different symptoms.
       Open-angle glaucoma Open-angle glaucoma accounts for the majority of glaucoma
       in most countries. It often has no symptoms and progresses slowly. The rise
       in intraocular pressure is slow and painless. Closed-angle glaucoma Angle-closure
@@ -119,74 +159,67 @@ templates:
       that warrant an eye examination. Secondary glaucoma Secondary glaucoma may be
       caused by conditions such as poorly controlled diabetes, inflammation of the
       eye, tumours, previous eye surgery, injuries or cataracts in their advanced
-      stages, or the use of steroid medications on the eye."
-
-  utter_glaucoma_riskfactors:
-  - text: "Risk factors for glaucoma include:
-       Age - your risk increases when you are over 80 years old
-       Chronic diseases - you are at increased risk if you have diabetes or high blood pressure
-       Ethnicity - Asians are more susceptible to angle-closure glaucoma than Caucasians
-       Eye injuries
-       Family history
-       Use of corticosteroid
-       Inherently high pressure inside the eye
-       Refractive error (short-sightedness or myopia is a risk factor for open-angle glaucoma; long-sightedness or hyperopia is a risk factor for closed-angle glaucoma)"
-
+      stages, or the use of steroid medications on the eye.
   utter_glaucoma_treated:
-  - text: "Glaucoma cannot be cured, but in most cases, it can be successfully controlled.
-         Treatment depends on the type of glaucoma you are diagnosed with. Treatment modalities include:
-         Eye drops
-         Oral medications
-         Laser surgery
-         Filtering surgery
-         Drainage implants
-         All these treatments lower the intraocular pressure to a level that is safe for the eye. Your ophthalmologist will be able to advise on individualised treatment options. Even after successful control of the pressure, regular monitoring is still required.
-         Glaucoma is a chronic condition requiring lifelong review. The aim of treatment is to preserve the remaining vision. Damage from glaucoma cannot be reversed, hence the importance of early diagnosis."
-
-  utter_glaucoma_diagnosed:
-  - text: "Glaucoma is diagnosed by measuring intraocular pressure of the eye and assessing the optic nerve at the back of the eye for any damage. A visual field test is usually performed and other tests can be added to further assess the optic nerve and the state of the drainage system for fluid in the eye.
-             The visual field test assesses the function of the optic nerve by checking if you can see spots of light of different intensities at different locations inside a visual field machine. It helps the ophthalmologist determine if your disease is worsening or stable."
-
-  utter_glaucoma_eyedrop_effect:
-  - text: "Glaucoma eyedrops work by lowering the intraocular pressure to a level that is safe for the eye. Your ophthalmologist will be able to advise on individualised treatment options. Even after successful control of the pressure, regular monitoring is still required.
-         Glaucoma eyedrops should be taken regularly according to your doctorâ€™s prescription. Even after successful control of the pressure with eyedrops, regular monitoring is still required. It is not advisable for you to stop your eyedrops without consulting your doctor."
-
-  utter_glaucoma_eyedrop_stoprisk:
-  - text: "It is not advisable for you to stop your glaucoma eyedrops without consulting your ophthalmologist. Please get your prescription re-printed."
-
-  utter_glaucoma_lasertreat_option:
-  - text: "Your doctor might offer laser as a treatment option depending the type of glaucoma that you have. Laser procedures might include:
-         Laser peripheral iridotomy
-         Laser trabeculoplasty
-         Laser/ micropulse laser trans-scleral cyclophotocoagulation (TCP/ MPTCP)
-         Your ophthalmologist will advise you on individualised treatment options, where necessary."
-
-  utter_glaucoma_lasertreat_followup:
-  - text: "It is important for you to follow your doctor's instructions after laser treatment. You should use the eyedrops you are given and turn up for your follow up appointment."
-
-  utter_glaucoma_surgery_option:
-  - text: "In some cases, surgery is recommended. This could be due to the type of glaucoma, or when medications and/or laser treatment fail to control the condition. In general, surgery provides an alternative route for the fluids inside the eye to drain out, thereby lowering the intraocular pressure to a safe level. Examples of possible surgeries include:
-       Trabeculectomy
-       Tube shunt surgery
-       Minimally invasive glaucoma surgery
-       Your ophthalmologist will advise you on individualised treatment options, where necessary."
-
-  utter_glaucoma_appointment:
-  - text: "You should reschedule your appointment as soon as you can. Please check if you have enough medications, if not, kindly call ____ to obtain more."
-
-  utter_glaucoma_postopt_eyecare:
-  - text: "Eyedrops have been instilled to dilate (enlarge) or constrict (shrink) your pupils for the laser treatment. Your vision might be blurred for the next 1 to 2 days. You may feel more comfortable using sunglasses if you experience any glare.
-       You should avoid driving after your laser treatment and have someone to accompany you home. You can take mild painkiller (e.g. Panadol) should you experience pain or headaches. Should you require an urgent review after your laser procedure, please call the following numbers:
-       - During office hours at 6227 7266
-       - After office hours at 6532 4865
-       For urgent consultation after office hours, Sundays and Public Holidays, please proceed to Singapore General Hospital Accident and Emergency Department located at Block 1."
-
+  - text: 'Glaucoma cannot be cured, but in most cases, it can be successfully controlled.
+      Treatment depends on the type of glaucoma you are diagnosed with. Treatment
+      modalities include: Eye drops Oral medications Laser surgery Filtering surgery
+      Drainage implants All these treatments lower the intraocular pressure to a level
+      that is safe for the eye. Your ophthalmologist will be able to advise on individualised
+      treatment options. Even after successful control of the pressure, regular monitoring
+      is still required. Glaucoma is a chronic condition requiring lifelong review.
+      The aim of treatment is to preserve the remaining vision. Damage from glaucoma
+      cannot be reversed, hence the importance of early diagnosis.'
   utter_glaucoma_visualfield_test:
-  - text: "visual field loss can also help your doctor determine your condition. Visual field can be tested by your doctor or using machines (formal perimetry). Formal perimetry can be automated or manual.
-     Confrontation visual field exam. This is a quick and basic check of the visual field. Your doctor will sit directly in front of you. One of your eyes will be covered while your other eye will be focused at the doctor’s eyes at all time. You will be asked if you can see the doctor’s hand (either counting the number of fingers displayed or if the whole hand is moving) which is at your peripheral vision.
-     Automated perimetry. You will be seated in front of a machine with a bowl shaped screen in a dark room. One eye will be tested at each time. You will be asked to focus at a target in the middle of the screen at all times during the test. Small flashes of light of different intensities will come on at different points at your peripheral vision. You will have to press a button when you see the light. You may blink normally during the test.
-     Manual perimetry. You will be seated in front of a flat screen with a target in the centre. One eye will be tested at each time. You will be asked to focus at a target in the middle of the screen. A target mounted on a stick will be brought in slowly from your side vision to your centre vision by the examiner. You will be asked if you can see the target.  You may blink normally during the test.
-     Your doctor will discuss with you the type of visual field testing to be done."
-
-forms:
-- facility_form
+  - text: visual field loss can also help your doctor determine your condition. Visual
+      field can be tested by your doctor or using machines (formal perimetry). Formal
+      perimetry can be automated or manual. Confrontation visual field exam. This
+      is a quick and basic check of the visual field. Your doctor will sit directly
+      in front of you. One of your eyes will be covered while your other eye will
+      be focused at the doctor’s eyes at all time. You will be asked if you can see
+      the doctor’s hand (either counting the number of fingers displayed or if the
+      whole hand is moving) which is at your peripheral vision. Automated perimetry.
+      You will be seated in front of a machine with a bowl shaped screen in a dark
+      room. One eye will be tested at each time. You will be asked to focus at a target
+      in the middle of the screen at all times during the test. Small flashes of light
+      of different intensities will come on at different points at your peripheral
+      vision. You will have to press a button when you see the light. You may blink
+      normally during the test. Manual perimetry. You will be seated in front of a
+      flat screen with a target in the centre. One eye will be tested at each time.
+      You will be asked to focus at a target in the middle of the screen. A target
+      mounted on a stick will be brought in slowly from your side vision to your centre
+      vision by the examiner. You will be asked if you can see the target.  You may
+      blink normally during the test. Your doctor will discuss with you the type of
+      visual field testing to be done.
+  utter_glaucoma_whatis_visualfield:
+  - text: The visual field refers to the total area your eye can see in the side (peripheral
+      vision) when you focus on a central point. A visual field test can determine
+      if you have blind spots in your vision and where they are. The pattern of visual
+      field loss can also help your doctor determine your condition. The common visual
+      field tests performed in the clinic include Humphrey Visual Field, Goldmann
+      Visual Field and Esterman Visual Field.
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Have a good day.
+  - text: Until next time!
+  utter_greet:
+  - text: Hi. What are you looking for?
+  - text: 'Hey there! Please choose one of the healthcare facility options:'
+  - text: Hello! What can I help you find today?
+  utter_noworries:
+  - text: My pleasure.
+  - text: You are welcome!
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
+slots:
+  facility_address:
+    type: unfeaturized
+  facility_id:
+    type: unfeaturized
+  facility_type:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized

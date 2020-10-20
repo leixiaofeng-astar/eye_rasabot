@@ -25,4 +25,6 @@ The commands to train and run the built model:
 rasa train core
 rasa train nlu
 rasa shell nlu
+rasa run actions
+rase shell
 ```

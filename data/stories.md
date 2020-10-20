@@ -49,13 +49,17 @@
     - utter_noworries
     
 ## story_diseases_info
-* search_information
+* search_information{"disease_type": "glaucoma"}
+    - find_information
+* search_information{"disease_type": "astigmatism"}
     - find_information
     
 ## story_ask_symptoms
-* ask_symptoms
+* ask_symptoms{"disease_type": "glaucoma"}
     - utter_glaucoma_symptoms
-
+* ask_symptoms{"disease_type": "astigmatism"}
+    - utter_astigmatism_symptoms
+    
 ## story_change_appointment
 * change_appointment 
     - utter_glaucoma_appointment
