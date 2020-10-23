@@ -65,6 +65,10 @@ DISEASE_TYPES = {
         {
             "name": "diabetic retinopathy",
         },
+    "visualfiled-synm":
+        {
+            "name": "visualfiled-synm",
+        },
 }
 
 
@@ -224,6 +228,12 @@ class action_find_information(Action):
                     template="utter_astigmatism_define",
                     name="Dr Covid"
                 )
+            elif query_name == 'visualfiled-synm':
+                dispatcher.utter_message(
+                    template="utter_glaucoma_whatis_visualfield",
+                    name="Dr Covid"
+                )
+
         return []
 
 

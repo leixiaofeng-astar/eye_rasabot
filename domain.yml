@@ -192,12 +192,12 @@ responses:
       blink normally during the test. Your doctor will discuss with you the type of
       visual field testing to be done.
   utter_glaucoma_whatis_visualfield:
-  - text: The visual field refers to the total area your eye can see in the side (peripheral
+  - text: '{name}: The visual field refers to the total area your eye can see in the side (peripheral
       vision) when you focus on a central point. A visual field test can determine
       if you have blind spots in your vision and where they are. The pattern of visual
       field loss can also help your doctor determine your condition. The common visual
       field tests performed in the clinic include Humphrey Visual Field, Goldmann
-      Visual Field and Esterman Visual Field.
+      Visual Field and Esterman Visual Field.'
   utter_goodbye:
   - text: Talk to you later!
   - text: Have a good day.

@@ -53,6 +53,8 @@
     - find_information
 * search_information{"disease_type": "astigmatism"}
     - find_information
+* search_information{"symptom_type": "visualfiled-synm"}
+    - find_information
     
 ## story_ask_symptoms
 * ask_symptoms{"disease_type": "glaucoma"}
@@ -71,6 +73,22 @@
 ## story_disease_treatment
 * disease_treatment 
     - utter_glaucoma_treated
+
+- utter_astigmatism_symptoms
+- utter_glaucoma_appointment
+- utter_glaucoma_define
+- utter_glaucoma_diagnosed
+- utter_glaucoma_eyedrop_effect
+- utter_glaucoma_eyedrop_stoprisk
+- utter_glaucoma_lasertreat_followup
+- utter_glaucoma_lasertreat_option
+- utter_glaucoma_postopt_eyecare
+- utter_glaucoma_riskfactors
+- utter_glaucoma_surgery_option
+- utter_glaucoma_symptoms
+- utter_glaucoma_treated
+- utter_glaucoma_visualfield_test
+- utter_glaucoma_whatis_visualfield
 
 ## story_signs_treatment
 * signs_treatment 
