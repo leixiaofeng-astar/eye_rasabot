@@ -26,5 +26,21 @@ rasa train core
 rasa train nlu
 rasa shell nlu
 rasa run actions
-rase shell
+rasa shell
+```
+
+The commands to run conversation on telegram bot:  
+download and install ngrok from https://ngrok.com/download
+example in mac PC as below
+```
+brew cask install ngrok
+ngrok http 5005
+```
+copy the link after running ngrok
+(such as "Forwarding https://aaf2706626d2.ngrok.io -> http://localhost:5005" ) 
+to credentials.yml
+webhook_url: "https://aaf2706626d2.ngrok.io/webhooks/telegram/webhook"
+then run the command
+```
+rasa run --debug
 ```

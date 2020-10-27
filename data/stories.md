@@ -1,42 +1,4 @@
 ## happy_path
-* greet
-    - find_facility_types
-* inform{"facility_type": "xubh-q36u"}    
-    - facility_form
-    - form{"name": "facility_form"}
-    - form{"name": null}
-* inform{"facility_id": 4245}
-    - find_healthcare_address
-    - utter_address
-* thanks
-    - utter_noworries
-
-## happy_path_multi_requests
-* greet
-    - find_facility_types
-* inform{"facility_type": "xubh-q36u"}
-    - facility_form
-    - form{"name": "facility_form"}
-    - form{"name": null}
-* inform{"facility_id": "747604"}
-    - find_healthcare_address
-    - utter_address
-* search_provider{"facility_type": "xubh-q36u"}
-    - facility_form
-    - form{"name": "facility_form"}
-    - form{"name": null}
-* inform{"facility_id": 4245}   
-    - find_healthcare_address
-    - utter_address
-
-## happy_path2
-* search_provider{"location": "Austin", "facility_type": "xubh-q36u"}
-    - facility_form
-    - form{"name": "facility_form"}
-    - form{"name": null}
-* inform{"facility_id": "450871"}
-    - find_healthcare_address
-    - utter_address
 * thanks
     - utter_noworries
 
@@ -74,42 +36,26 @@
 * disease_treatment 
     - utter_glaucoma_treated
 
-- utter_astigmatism_symptoms
-- utter_glaucoma_appointment
-- utter_glaucoma_define
-- utter_glaucoma_diagnosed
-- utter_glaucoma_eyedrop_effect
-- utter_glaucoma_eyedrop_stoprisk
-- utter_glaucoma_lasertreat_followup
-- utter_glaucoma_lasertreat_option
-- utter_glaucoma_postopt_eyecare
-- utter_glaucoma_riskfactors
-- utter_glaucoma_surgery_option
-- utter_glaucoma_symptoms
-- utter_glaucoma_treated
-- utter_glaucoma_visualfield_test
-- utter_glaucoma_whatis_visualfield
-
 ## story_signs_treatment
 * signs_treatment 
-    - utter_glaucoma_treated
+    - utter_glaucoma_visualfield_test
     
 ## story_ask_diagnosis
 * ask_diagnosis 
-    - utter_glaucoma_treated
+    - utter_glaucoma_diagnosed
 
 ## story_surgery_treat
 * surgery_treat 
-    - utter_glaucoma_treated
+    - utter_glaucoma_surgery_option
 
 ## story_opt_effect
 * opt_effect 
-    - utter_glaucoma_treated
+    - utter_glaucoma_eyedrop_effect
 
 ## story_disease_followup
 * disease_followup 
-    - utter_glaucoma_treated
+    - utter_glaucoma_lasertreat_followup
 
 ## story_signs_followup
 * signs_followup 
-    - utter_glaucoma_lasertreat_followup
+    - utter_glaucoma_postopt_eyecare
