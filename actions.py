@@ -206,7 +206,7 @@ class action_find_information(Action):
             # TODO
             disease_name = disease_type.get("name")
             es = tracker.latest_message["entities"]
-            if es != None:
+            if (es is not None) and (len(es) != 0):
                 e = es[0]
                 query_name = e['value']
                 # note: the key in dict depends on the pipeline in config.yml

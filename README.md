@@ -37,10 +37,12 @@ brew cask install ngrok
 ngrok http 5005
 ```
 copy the link after running ngrok
-(such as "Forwarding https://aaf2706626d2.ngrok.io -> http://localhost:5005" ) 
-to credentials.yml file:
+(such as "Forwarding https://aaf2706626d2.ngrok.io -> http://localhost:5005") 
+to credentials.yml file:  
 webhook_url: "https://aaf2706626d2.ngrok.io/webhooks/telegram/webhook"
 then run the command
 ```
+rasa run actions
 rasa run --debug
 ```
+then join the telegram bot, and test the conversation ...
