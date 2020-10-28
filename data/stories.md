@@ -17,11 +17,15 @@
     - find_information
 * search_information{"symptom_type": "visualfiled-synm"}
     - find_information
+   
+## story_ask_astigmatism_information
+* ask_astigmatism_information
+    - utter_astigmatism_define
     
-## story_ask_symptoms
-* ask_symptoms{"disease_type": "glaucoma"}
+## story_ask_disease_symptoms
+* ask_disease_symptoms{"disease_type": "glaucoma"}
     - utter_glaucoma_symptoms
-* ask_symptoms{"disease_type": "astigmatism"}
+* ask_disease_symptoms{"disease_type": "astigmatism"}
     - utter_astigmatism_symptoms
     
 ## story_change_appointment
@@ -48,9 +52,9 @@
 * surgery_treat 
     - utter_glaucoma_surgery_option
 
-## story_opt_effect
-* opt_effect 
-    - utter_glaucoma_eyedrop_effect
+## story_glaucoma_eyedrop_treatment
+* glaucoma_eyedrop_treatment 
+    - utter_glaucoma_eyedrop_treatment
 
 ## story_disease_followup
 * disease_followup 

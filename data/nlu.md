@@ -103,13 +103,29 @@
 - What is the meaning of [glaucoma](disease_type)
 - How did I get [glaucoma](disease_type)
 - What is [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
-- What is peripheral vision
+- What is [visual fields]{"entity": "symptom_type", "value": "visualfiled-synm"}
+- What is [peripheral vision]{"entity": "symptom_type", "value": "visualfiled-synm"}
 - What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test for
 - What does [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} mean
 - Why do I need to perform a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
-- What are the types of [visual field](terms) test
+- What are the types of [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What is [astigmatism](disease_type)
+- What is [astigmatism](disease_type)?
+- What does [astigmatism](disease_type) mean?
+- What type of eye problem is [astigmatism](disease_type)?
+- Is [astigmatism](disease_type) an eye problem?
+- I do not understand [astigmatism](disease_type)
+- I am confused about [astigmatism](disease_type)
+- What is the meaning of [astigmatism](disease_type)?
+- I want to know more about [astigmatism](disease_type)
+- I want to find out more about [astigmatism](disease_type)
+- I want to understand what [astigmatism](disease_type) is
+
+## intent:ask_astigmatism_information
+- What does an oval cornea mean?
+- My cornea is abnormally shaped
+- What causes my vision to be distorted?
 
 ## intent:change_appointment
 - What happens when I cannot make it for my [glaucoma](disease_type) appointment
@@ -233,7 +249,7 @@
 - How do lasers help in [glaucoma](disease_type)
 - Can I stop using my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} after I got my laser doneeye
 
-## intent:opt_effect
+## intent:glaucoma_eyedrop_treatment
 - How do [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} work
 - What makes [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} work for [glaucoma](disease_type)
 - Are [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} effective for [glaucoma](disease_type)
@@ -270,7 +286,7 @@
 - Will there be pain after my [glaucoma](disease_type) or retinal laser procedures
 - How soon will my vision recover after [glaucoma](disease_type) or retinal laser
 
-## intent:ask_symptoms
+## intent:ask_disease_symptoms
 - What are the symptoms of [glaucoma](disease_type)
 - What are the different types of [glaucoma](disease_type)
 - How do I know if I have [glaucoma](disease_type)

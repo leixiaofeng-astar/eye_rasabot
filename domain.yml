@@ -9,7 +9,7 @@ actions:
 - utter_glaucoma_appointment
 - utter_glaucoma_define
 - utter_glaucoma_diagnosed
-- utter_glaucoma_eyedrop_effect
+- utter_glaucoma_eyedrop_treatment
 - utter_glaucoma_eyedrop_stoprisk
 - utter_glaucoma_lasertreat_followup
 - utter_glaucoma_lasertreat_option
@@ -50,11 +50,12 @@ intents:
 - signs_treatment
 - ask_diagnosis
 - surgery_treat
-- opt_effect
+- glaucoma_eyedrop_treatment
 - disease_followup
 - signs_followup
-- ask_symptoms
+- ask_disease_symptoms
 - ask_signs_treatment
+- ask_astigmatism_information
 responses:
   utter_address:
   - text: The address is {facility_address}.
@@ -96,7 +97,7 @@ responses:
       of light of different intensities at different locations inside a visual field
       machine. It helps the ophthalmologist determine if your disease is worsening
       or stable.
-  utter_glaucoma_eyedrop_effect:
+  utter_glaucoma_eyedrop_treatment:
   - text: Glaucoma eyedrops work by lowering the intraocular pressure to a level that
       is safe for the eye. Your ophthalmologist will be able to advise on individualised
       treatment options. Even after successful control of the pressure, regular monitoring
