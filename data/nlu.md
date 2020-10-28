@@ -218,7 +218,7 @@
 - Can the doctor check if I have [glaucoma](disease_type)
 - What can be done to confirm that I have [glaucoma](disease_type)
 
-## intent:surgery_treat
+## intent:glaucoma_surgical_treatment 
 - What are the surgical options for treating [glaucoma](disease_type)
 - Will I need surgery for [glaucoma](disease_type)
 - Can surgery cure [glaucoma](disease_type)
@@ -238,6 +238,8 @@
 - Can the eye surgeon take out my [glaucoma](disease_type)
 - Are procedures for [glaucoma](disease_type) available
 - Are operations to cure [glaucoma](disease_type) available
+
+## intent:glaucoma_lasers_treatment 
 - What kind of laser treatment options are there for [glaucoma](disease_type)
 - Can lasers cure [glaucoma](disease_type)
 - Can I stop seeing the doctor after I got my laser done

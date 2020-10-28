@@ -12,10 +12,10 @@ actions:
 - utter_glaucoma_eyedrop_treatment
 - utter_glaucoma_eyedrop_stoprisk
 - utter_glaucoma_lasertreat_followup
-- utter_glaucoma_lasertreat_option
 - utter_glaucoma_postopt_eyecare
 - utter_glaucoma_riskfactors
-- utter_glaucoma_surgery_option
+- utter_glaucoma_lasers_treatment
+- utter_glaucoma_surgical_treatment
 - utter_glaucoma_symptoms
 - utter_glaucoma_treated
 - utter_glaucoma_visualfield_test
@@ -49,8 +49,9 @@ intents:
 - disease_treatment
 - signs_treatment
 - ask_diagnosis
-- surgery_treat
+- glaucoma_lasers_treatment
 - glaucoma_eyedrop_treatment
+- glaucoma_surgical_treatment
 - disease_followup
 - signs_followup
 - ask_disease_symptoms
@@ -112,7 +113,7 @@ responses:
   - text: It is important for you to follow your doctor's instructions after laser
       treatment. You should use the eyedrops you are given and turn up for your follow
       up appointment.
-  utter_glaucoma_lasertreat_option:
+  utter_glaucoma_lasers_treatment:
   - text: 'Your doctor might offer laser as a treatment option depending the type
       of glaucoma that you have. Laser procedures might include: Laser peripheral
       iridotomy Laser trabeculoplasty Laser/ micropulse laser trans-scleral cyclophotocoagulation
@@ -137,7 +138,7 @@ responses:
       high pressure inside the eye Refractive error (short-sightedness or myopia is
       a risk factor for open-angle glaucoma; long-sightedness or hyperopia is a risk
       factor for closed-angle glaucoma)'
-  utter_glaucoma_surgery_option:
+  utter_glaucoma_surgical_treatment:
   - text: 'In some cases, surgery is recommended. This could be due to the type of
       glaucoma, or when medications and/or laser treatment fail to control the condition.
       In general, surgery provides an alternative route for the fluids inside the

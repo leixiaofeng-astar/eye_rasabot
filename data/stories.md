@@ -48,9 +48,13 @@
 * ask_diagnosis 
     - utter_glaucoma_diagnosed
 
-## story_surgery_treat
-* surgery_treat 
-    - utter_glaucoma_surgery_option
+## story_glaucoma_lasers_treatment
+* glaucoma_lasers_treatment 
+    - utter_glaucoma_lasers_treatment
+    
+## story_glaucoma_surgical_treatment 
+* glaucoma_surgical_treatment  
+    - utter_glaucoma_surgical_treatment
 
 ## story_glaucoma_eyedrop_treatment
 * glaucoma_eyedrop_treatment 
