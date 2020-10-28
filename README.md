@@ -38,7 +38,7 @@ ngrok http 5005
 ```
 copy the link after running ngrok
 (such as "Forwarding https://aaf2706626d2.ngrok.io -> http://localhost:5005" ) 
-to credentials.yml
+to credentials.yml file:
 webhook_url: "https://aaf2706626d2.ngrok.io/webhooks/telegram/webhook"
 then run the command
 ```

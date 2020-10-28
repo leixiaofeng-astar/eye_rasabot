@@ -209,7 +209,14 @@ class action_find_information(Action):
             if es != None:
                 e = es[0]
                 query_name = e['value']
-                print("entity: {}\nscore: {}" .format(e, e['confidence_entity']))
+                # note: the key in dict depends on the pipeline in config.yml
+                # "extractor": "DIETClassifier"
+                print("entity: {}\nvalue: {}".format(e, e['value']))
+                # "extractor": "CRFEntityExtractor"
+                # print("entity: {}\nscore: {}" .format(e, e['confidence_entity']))
+            else:
+                print("Warning: entity: is empty")
+
             # query_name = next(tracker.get_latest_entity_values(entity_name), None)
             if query_name == disease_name:
                 print("found disease_type: {}" .format(query_name))
@@ -233,6 +240,8 @@ class action_find_information(Action):
                     template="utter_glaucoma_whatis_visualfield",
                     name="Dr Covid"
                 )
+            else:
+                print("No matched entity found!!!")
 
         return []
 
