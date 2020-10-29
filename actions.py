@@ -242,7 +242,10 @@ class action_find_information(Action):
                 )
             else:
                 print("No matched entity found!!!")
-
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name="Dr Covid"
+                )
         return []
 
 

@@ -10,6 +10,10 @@
 * thanks
     - utter_noworries
     
+## story_out_of_scope
+* out_of_scope
+    - utter_out_of_scope
+    
 ## story_diseases_info
 * search_information{"disease_type": "glaucoma"}
     - find_information

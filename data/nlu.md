@@ -321,6 +321,14 @@
 - find me a nearby [hospital](facility_type) my zip code is [10119](location)
 - i need a [home health agency](facility_type)
 
+## intent: out_of_scope
+- I want to order food
+- What is 2 + 2?
+- Who's the US President?
+- Who's you?
+- are you stupid?
+- will I kill myself?
+
 ## intent:thanks
 - Thanks
 - Thank you

@@ -23,6 +23,7 @@ actions:
 - utter_goodbye
 - utter_greet
 - utter_noworries
+- utter_out_of_scope
 entities:
 - disease_type
 - facility_id
@@ -157,7 +158,7 @@ responses:
       Headaches, nausea and vomiting may follow. This emergency requires prompt treatment.
       The chronic form may show no symptoms, as in open-angle glaucoma Congenital
       glaucoma Congenital glaucoma is rare and occurs at birth. Enlargement of the
-      infantâ€™s eyes, corneal haze, tearing and unusual light sensitivity are symptoms
+      infant's eyes, corneal haze, tearing and unusual light sensitivity are symptoms
       that warrant an eye examination. Secondary glaucoma Secondary glaucoma may be
       caused by conditions such as poorly controlled diabetes, inflammation of the
       eye, tumours, previous eye surgery, injuries or cataracts in their advanced
@@ -206,11 +207,13 @@ responses:
   - text: Until next time!
   utter_greet:
   - text: Hi. What are you looking for?
-  - text: 'Hey there! Please choose one of the healthcare facility options:'
   - text: Hello! What can I help you find today?
   utter_noworries:
   - text: My pleasure.
   - text: You are welcome!
+  utter_out_of_scope:
+  - text: 'This is {name}, please check your question and enter it again.'
+  - text: 'Thank you for contacting us! Your question is beyond the range of {name}, could you enter your question again?'
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
