@@ -8,6 +8,10 @@
     Instructions to use:
         python3.7 table_2_mdyml.py
 
+    Note:
+        the FAQ file is hard-code in './eye_update_1020.csv'
+        you can modify the variable in the file:  eye_faq_csv = 'eye_update_1020.csv'
+
 purpose is to update 3 rasa support documents for training
 task 1:
 add intent by -- Answer	Category	Sub_Category	Disease_Cate
@@ -47,7 +51,7 @@ import os
 import pandas as pd
 import copy
 
-VERSION = "0.1"
+VERSION = "0.2"
 
 
 # with a existing folder as a default
@@ -58,7 +62,7 @@ story_file = 'storys_add.md'
 domain_file = 'domain_add.md'
 
 
-def string_processing(input_str):
+def intent_string_processing(input_str):
     # consider how to hand ' ' & ' and ' & ()
     lower_str = (str(input_str).strip()).lower()
     filter_str = lower_str.replace(' and ', '_')
@@ -69,11 +73,18 @@ def string_processing(input_str):
     filter_str = filter_str.replace('/', '_')
     return filter_str
 
+def answer_string_processing(input_str):
+    # answer cannot have ':'
+    lower_str = input_str
+    filter_str = lower_str.replace(':', '')
+    filter_str = filter_str.replace('*', '')
+    return filter_str
+
 def get_intent_from_3columns(Category, Sub_Category, Disease_Cate):
     column_separator = '-'
-    intent = string_processing(Category) + column_separator + \
-             string_processing(Sub_Category) + column_separator + \
-             string_processing(Disease_Cate)
+    intent = intent_string_processing(Category) + column_separator + \
+             intent_string_processing(Sub_Category) + column_separator + \
+             intent_string_processing(Disease_Cate)
     return intent
 
 def save_to_excel(DATA_CSV_TABLE):
@@ -238,7 +249,7 @@ if __name__ == "__main__":
 
     for idx, record in enumerate(list_question):
         questionID = str(list_checkID[idx])
-        intent_answer = str(list_answer[idx])
+        intent_answer = answer_string_processing(str(list_answer[idx]))
         intent_str = get_intent_from_3columns(list_catagory[idx], list_sub_catagory[idx], list_disease_catagory[idx])
 
         # import pdb
@@ -248,17 +259,23 @@ if __name__ == "__main__":
             # check if QuestionID is same for same intent
             tmp_intent_ques_list = intents_dict[intent_str]['questions']
             orig_questionID = intents_dict[intent_str]['QuestionID']
-            if questionID == questionID:
+            if questionID == orig_questionID:
                 tmp_intent_ques_list.append(list_question[idx])
                 intents_dict[intent_str]['questions'] = tmp_intent_ques_list
             else:
-                # this is a new intent
+                # this is a new intent or another existing intent
                 new_intent_str = intent_str + "_" + str(questionID)
-                intents_dict[new_intent_str]['answer'] = intent_answer
-                intents_dict[new_intent_str]['QuestionID'] = questionID
-                tmp_list = []
-                tmp_list.append(list_question[idx])
-                intents_dict[intent_str]['questions'] = tmp_list
+                if new_intent_str in intents_dict.keys():
+                    tmp_intent_ques_list = intents_dict[new_intent_str]['questions']
+                    tmp_intent_ques_list.append(list_question[idx])
+                    intents_dict[intent_str]['questions'] = tmp_intent_ques_list
+                else:
+                    intents_dict[new_intent_str] = {}
+                    intents_dict[new_intent_str]['answer'] = intent_answer
+                    intents_dict[new_intent_str]['QuestionID'] = questionID
+                    tmp_list = []
+                    tmp_list.append(list_question[idx])
+                    intents_dict[new_intent_str]['questions'] = tmp_list
         else:
             # add the question/answer/QuestionID to dict
             intents_dict[intent_str] = {}
@@ -272,5 +289,7 @@ if __name__ == "__main__":
     nlu_write(intents_dict, nlu_file)
     domain_write(intents_dict, domain_file)
     storys_write(intents_dict, story_file)
+
+    print("there are {} intents in {} file".format(len(intents_dict.keys()), meta_path))
 
     print("\nend of the program!!!")
