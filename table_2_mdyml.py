@@ -78,6 +78,13 @@ def answer_string_processing(input_str):
     lower_str = input_str
     filter_str = lower_str.replace(':', '')
     filter_str = filter_str.replace('*', '')
+    filter_str = filter_str.replace('"', "'")
+    filter_str = filter_str.replace('“', "'")
+    import re
+    filter_str = re.sub(r'[^\x00-\x7F]', '', filter_str)
+    filter_str = filter_str.replace('\r\n', '\n')
+    # filter_str = filter_str.replace('\n', '\n\t\t')
+    filter_str = '"' + filter_str + '"'
     return filter_str
 
 def get_intent_from_3columns(Category, Sub_Category, Disease_Cate):
