@@ -18,6 +18,7 @@ Test the assistant using the command:
 ## What do you need to follow this bot?
 This bot requires you to have Rasa installed on your machine:  
 ```
+pip3 install -U pip
 pip3 install rasa
 pip3 freeze | grep rasa
 rasa==2.1.3
@@ -45,15 +46,21 @@ One example in mac PC as below
 brew cask install ngrok
 ngrok http 5005
 ```
+One example in linux PC as below
+```
+sudo apt update
+sudo apt install snapd
+sudo snap install ngrok
+ngrok http 5005
+```
 copy the link after running ngrok
 (such as "Forwarding https://aaf2706626d2.ngrok.io -> http://localhost:5005") 
 to credentials.yml file:  
 webhook_url: "https://aaf2706626d2.ngrok.io/webhooks/telegram/webhook"
-then run the command
+then run the command on the terminal:
 ```
 rasa train
-rasa run actions
-rasa run --debug
+rasa run actions & rasa run --debug
 ```
 then join the telegram bot which was configured in credentials.yml, and test the conversation ...
 

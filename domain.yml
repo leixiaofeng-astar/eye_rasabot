@@ -1,10 +1,5 @@
 actions:
-- find_facility_types
-- find_healthcare_address
 - find_information
-- utter_address
-- utter_ask_facility_type
-- utter_ask_location
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
 - utter_glaucoma_define

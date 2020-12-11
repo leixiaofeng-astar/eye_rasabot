@@ -246,6 +246,12 @@ class action_find_information(Action):
                     template="utter_out_of_scope",
                     name="Dr Eye"
                 )
+        else:
+            print("No matched entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name="Dr Eye"
+            )
         return []
 
 
