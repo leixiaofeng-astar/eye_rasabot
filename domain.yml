@@ -3044,7 +3044,7 @@ During the video consultation
   - text: You are welcome!
   utter_out_of_scope:
   - text: 'Please check your question and enter it again.'
-  - text: 'Thank you for contacting us! Your question is beyond the range of {name}, could you enter your question again?'
+  - text: 'Thank you for contacting us! Your question is beyond the range of this bot, could you enter your question again?'
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
