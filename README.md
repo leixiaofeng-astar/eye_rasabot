@@ -76,3 +76,7 @@ to kill the process (Note: XXXX is the process ID)
 When the question enter in telegram bot has not response:  
 Please check the log info in the terminals which run "rasa run actions" and "rasa run --debug" for the details.
 Then fix the error and re-run the rasa bot as "The commands to run conversation on telegram bot"
+
+When the error "AttributeError: 'NoneType' object has no attribute 'text'" happened, please refer to
+https://forum.rasa.com/t/telegram-error-exception-occurred-while-handling-uri/26407
+Basically it seems that Rasa Telegram connector is not handling the Updates properly.
