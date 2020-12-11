@@ -129,7 +129,7 @@ def nlu_write(intent_dict, nlu_md):
     # dict_sample = {'intent_1': {'questions': ['a', 'b', 'c'], 'answer': 'answer1', 'QuestionID': '1'}}
     train_file = nlu_md
     if os.path.isfile(train_file):
-        C = open(train_file, 'a+')
+        C = open(train_file, 'w')   # 'a+'
     else:
         C = open(train_file, 'w')
 
@@ -166,7 +166,7 @@ def domain_write(intent_dict, domain_yml):
     # dict_sample = {'intent_1': {'questions': ['a', 'b', 'c'], 'answer': 'answer1', 'QuestionID': '1'}}
     train_file = domain_yml
     if os.path.isfile(train_file):
-        C = open(train_file, 'a+')
+        C = open(train_file, 'w')   # 'a+'
     else:
         C = open(train_file, 'w')
 
@@ -208,7 +208,7 @@ def storys_write(intent_dict, storys_md):
     intent_list = intent_dict.keys()
     train_file = storys_md
     if os.path.isfile(train_file):
-        C = open(train_file, 'a+')
+        C = open(train_file, 'w')   # 'a+'
     else:
         C = open(train_file, 'w')
 
@@ -259,8 +259,9 @@ if __name__ == "__main__":
         intent_answer = answer_string_processing(str(list_answer[idx]))
         intent_str = get_intent_from_3columns(list_catagory[idx], list_sub_catagory[idx], list_disease_catagory[idx])
 
-        # import pdb
-        # pdb.set_trace()
+        # if intent_str == 'glsc-condition-miscellaneous':
+        #     import pdb
+        #     pdb.set_trace()
         if intent_str in intents_dict.keys():
             # Note: the intent could be same for 2 different answer
             # check if QuestionID is same for same intent
@@ -275,7 +276,7 @@ if __name__ == "__main__":
                 if new_intent_str in intents_dict.keys():
                     tmp_intent_ques_list = intents_dict[new_intent_str]['questions']
                     tmp_intent_ques_list.append(list_question[idx])
-                    intents_dict[intent_str]['questions'] = tmp_intent_ques_list
+                    intents_dict[new_intent_str]['questions'] = tmp_intent_ques_list
                 else:
                     intents_dict[new_intent_str] = {}
                     intents_dict[new_intent_str]['answer'] = intent_answer

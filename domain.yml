@@ -3043,7 +3043,7 @@ During the video consultation
   - text: My pleasure.
   - text: You are welcome!
   utter_out_of_scope:
-  - text: 'This is {name}, please check your question and enter it again.'
+  - text: 'Please check your question and enter it again.'
   - text: 'Thank you for contacting us! Your question is beyond the range of {name}, could you enter your question again?'
 session_config:
   carry_over_slots_to_new_session: true

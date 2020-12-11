@@ -72,7 +72,6 @@
 * signs_followup 
     - utter_glaucoma_postopt_eyecare
 
-
 ## story_astigmatism-condition-cornearefractive
 * astigmatism-condition-cornearefractive
     - utter_astigmatism-condition-cornearefractive

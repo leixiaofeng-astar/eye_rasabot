@@ -25,7 +25,8 @@ pipeline:
   #InvalidPolicyConfig: Module for policy 'EmbeddingPolicy' could not be loaded. Please make sure the name is a valid policy.
 policies:
   - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
   - name: MappingPolicy
-  - name: RulePolicy
   - name: FormPolicy
-  - name: TwoStageFallbackPolicy
