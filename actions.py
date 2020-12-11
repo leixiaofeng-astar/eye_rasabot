@@ -228,23 +228,23 @@ class action_find_information(Action):
             if query_name == 'glaucoma':
                 dispatcher.utter_message(
                     template="utter_glaucoma_define",
-                    name="Dr Covid"
+                    name="Dr Eye"
                 )
             elif query_name == 'astigmatism':
                 dispatcher.utter_message(
                     template="utter_astigmatism_define",
-                    name="Dr Covid"
+                    name="Dr Eye"
                 )
             elif query_name == 'visualfiled-synm':
                 dispatcher.utter_message(
                     template="utter_glaucoma_whatis_visualfield",
-                    name="Dr Covid"
+                    name="Dr Eye"
                 )
             else:
                 print("No matched entity found!!!")
                 dispatcher.utter_message(
                     template="utter_out_of_scope",
-                    name="Dr Covid"
+                    name="Dr Eye"
                 )
         return []
 
