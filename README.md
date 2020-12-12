@@ -80,3 +80,7 @@ Then fix the error and re-run the rasa bot as "The commands to run conversation 
 When the error "AttributeError: 'NoneType' object has no attribute 'text'" happened, please refer to
 https://forum.rasa.com/t/telegram-error-exception-occurred-while-handling-uri/26407
 Basically it seems that Rasa Telegram connector is not handling the Updates properly.
+
+After run "ngrok http 5005", it has 8 hours limitation. Once 8 hours passed, it will show
+"Session Expired Restart ngrok or upgrade: ngrok.com/upgrade" in red font.
+Reason of Session Expires – ngrok limits your sessions to eight hours on the free version. You can pay to get longer sessions.

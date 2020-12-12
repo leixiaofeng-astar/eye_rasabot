@@ -397,6 +397,7 @@
 
 ## intent: astigmatism-condition-cornearefractive
 - What is astigmatism?
+- What is astig
 - What does astigmatism mean?
 - What type of eye problem is astigmatism?
 - Is astigmatism an eye problem?
@@ -414,6 +415,10 @@
 
 ## intent: astigmatism-cause-cornearefractive
 - What is the cause of astigmatism?
+- can astigmatism be passed down?
+- can astigmatism get worse?
+- i have astigmatism, will my child get?
+- is my child's astigmatism inherited from me?
 - Why do I have astigmatism?
 - What is the reason I have astigmatism?
 - Why does astigmatism occur?
@@ -439,6 +444,8 @@
 
 ## intent: astigmatism-symptoms_signs-cornearefractive
 - What are the symptoms and signs of astigmatism?
+- can astig affect my vision
+- what are symptoms of astigmatism
 - What does astigmatism look like?
 - How is astigmatism supposed to look like?
 - How does astigmatism normally look like?
@@ -453,6 +460,7 @@
 
 ## intent: astigmatism-symptoms_signs-cornearefractive_4
 - What are the complications of astigmatism?
+- can astigmatism cause lazy eyes
 - What are the side effects of astigmatism?
 - What issues can astigmatism cause?
 - What problems can astigmatism cause?
@@ -477,6 +485,7 @@
 
 ## intent: astigmatism-investigations-cornearefractive
 - What are the investigations for astigmatism?
+- how can i get my astig checked
 - What will the eye doctor do after examining for my astigmatism?
 - Are additional tests required for astigmatism?
 - Are additional tests needed for astigmatism?
@@ -491,6 +500,11 @@
 
 ## intent: astigmatism-treatment_general-cornearefractive
 - What is the treatment for astigmatism?
+- Need surgery for astigmatism?
+- how can i get rid of astigmatism
+- how do i reduce astig
+- can lasik treat astigmatism?
+- my optician says i have astigmatism, what should i do
 - How to treat astigmatism?
 - How to heal astigmatism?
 - How to cure astigmatism?
@@ -543,6 +557,9 @@
 
 ## intent: astigmatism-treatment_surgical-cornearefractive
 - What is the surgical treatment of astigmatism?
+- can lasik correct astigmatism
+- what surgeries can correct astig
+- Can lasik treat astig
 - Do I need laser for astigmatism?
 - Do I need LASEK for astigmatism?
 - Do I need SMILE for astigmatism?
@@ -603,6 +620,7 @@
 
 ## intent: astigmatism-preoperative-cornearefractive
 - What are the preoperative preparations for astigmatism surgery?
+- What to bring for surgery
 - How should I prepare before astigmatism surgery?
 - Do I need to prepare anything before astigmatism surgery?
 - What should I take note of before astigmatism surgery?
@@ -810,8 +828,11 @@
 
 ## intent: conjunctivitis-condition-cornearefractive
 - What is conjunctivitis?
+- My eye pink
 - Why is my eye pink?
 - Why is my eye red?
+- why my eye pain and red
+- My eyes are always red on waking up with eye dirt
 - Why is my eye inflamed?
 - Why is my conjunctiva inflamed?
 - Is conjunctivitis an eye inflammation?
@@ -832,6 +853,10 @@
 
 ## intent: conjunctivitis-causes-cornearefractive
 - What is the cause of conjunctivitis?
+- What causes conjunctivitis
+- How is conjunctivitis spreaded?
+- If I look at people with conjunctivitis can I get infected?
+- Is conjunctivitis caused by virus or bacteria
 - Why do I have conjunctivitis?
 - Why does conjunctivitis occur?
 - How come I have conjunctivitis?
@@ -849,6 +874,13 @@
 
 ## intent: conjunctivitis-symptoms_signs-cornearefractive
 - What are the symptoms and signs of conjunctivitis?
+- What will I feel if I have conjunctivitis
+- Is conjunctivitis contagious?
+- how long does conjunctivitis last
+- Does conjunctivitis cause pain
+- Does conjunctivitis cause dry eyes
+- My conjunctivitis is not better after 2 weeks, what should I do
+- How long will I take to recover from conjunctivitis
 - What happens when I have conjunctivitis?
 - How does conjunctivitis present?
 - How do I know if I have conjunctivitis?
@@ -868,6 +900,18 @@
 
 ## intent: conjunctivitis-symptoms_signs-cornearefractive_28
 - What are the complications of conjunctivitis?
+- Can conjunctivitis affect vision?
+- When should I go to Ane if I have conjunctivitis
+- Should I see a doctor if I have conjunctivitis
+- I have conjunctivitis and I can't see well
+- can conjunctivitis cause blindness
+- Will my conjunctivitis get worse?
+- Cna conjunctivitis cause permanent damage
+- Can conjunctivitis cause permanent damage
+- is conjunctivitis dangerous 
+-  conjunctiva inflammation bad
+- is conjunctivitis bad
+- will conjunctivitis disappear
 - Can conjunctivitis cause problems?
 - Is conjunctivitis serious?
 - Will I become blind?
@@ -902,6 +946,15 @@
 
 ## intent: conjunctivitis-treatment_general-cornearefractive
 - What is the treatment for conjunctivitis?
+- What must I do if I have conjunctivitis
+- is antibiotics the treatment for conjunctivitis
+- Can I wear contact lens when I have sore eyes?
+- I have conjunctivitis, can I wear contact lenses?
+- Can I use the computer when I have conjunctivitis
+- My right eye has conjunctivitis, will it go to my left eye
+- I have conjunctivitis, should I use artificial tears?
+- are eye drops enough for conjunctivitis
+- can conjunctivitis infect others
 - How to treat conjunctivitis?
 - How to heal conjunctivitis?
 - How to cure conjunctivitis?
@@ -922,6 +975,8 @@
 
 ## intent: conjunctivitis-treatment_conservative-cornearefractive
 - What is the conservative treatment of conjunctivitis?
+- How can I prevent my conjunctivitis from spreading to my family
+- I have conjunctivitis, when can I go back to work
 - Can I get rid of conjunctivitis without medicine or surgery?
 - How can I stop spreading conjunctivitis to people?
 - How can I avoid spreading conjunctivitis to others?
@@ -962,6 +1017,8 @@
 
 ## intent: conjunctivitis-treatment_surgical-cornearefractive
 - What is the surgical treatment of conjunctivitis?
+- is there a surgery to treat conjunctivitis
+- do i need to take out my conjunctivitis
 - Does conjunctivitis surgery exist?
 - Is surgical removal of conjunctivitis possible?
 - Can you take out my conjunctivitis?
@@ -976,6 +1033,10 @@
 
 ## intent: cornealedema-condition-cornearefractive
 - What is corneal edema?
+- My eyes look hazy
+- Why does my cornea look cloudy
+- is corneal edema same as corneal ulcer
+- is corneal swelling normal
 - Why is my eye cloudy?
 - What does corneal edema mean?
 - What is corneal swelling?
@@ -991,6 +1052,11 @@
 
 ## intent: cornealedema-causes-cornearefractive
 - What is the cause of corneal edema?
+- Why is my cornea swollen
+- What causes cornea to be swollen
+- What is fuch cornea disease
+- Is cornea edema due to old age
+- does fuchs cause blindnes
 - Why do I have corneal edema?
 - What is the reason I have corneal edema?
 - Why does corneal edema occur?
@@ -1020,6 +1086,7 @@
 
 ## intent: cornealedema-symptoms_signs-cornearefractive
 - What are the symptoms and signs of corneal edema?
+- what does corneal swelling do
 - What does corneal edema look like?
 - How is corneal edema supposed to look like?
 - How does corneal edema normally look like?
@@ -1035,6 +1102,9 @@
 
 ## intent: cornealedema-symptoms_signs-cornearefractive_37
 - What are the complications of corneal edema?
+- Can cornea edema cause blindness
+- Can I go blind from corneal swelling
+- what is the prognosis of corneal edema
 - Can corneal edema cause difficulties seeing?
 - Can corneal edema lead to visual problems?
 - Can corneal edema cause problems?
@@ -1059,6 +1129,7 @@
 
 ## intent: cornealedema-investigations-cornearefractive
 - What are the investigations for corneal edema?
+- How do I check if my cornea is healthy
 - What will the eye doctor do after examining for my corneal edema?
 - Are additional tests required for corneal edema?
 - Are additional tests needed for corneal edema?
@@ -1073,6 +1144,9 @@
 
 ## intent: cornealedema-treatment_general-cornearefractive
 - What is the treatment for corneal edema?
+- Can my cornea swelling recover?
+- Can cornea edema be treated?
+- Is there anything i can do to stop my cornea from deteriorating
 - How to treat corneal edema?
 - How to heal corneal edema?
 - How to cure corneal edema?
@@ -1090,6 +1164,7 @@
 
 ## intent: cornealedema-treatment_conservative-cornearefractive
 - What is the conservative treatment of corneal edema?
+- I have cornea swelling, can I recover on my own
 - Can I get rid of corneal edema without medicine or surgery?
 - Will corneal edema be cured without medicine or surgery?
 - Will corneal edema go away without medicine or surgery?
@@ -1106,6 +1181,7 @@
 
 ## intent: cornealedema-treatment_medical-cornearefractive
 - What is the medical treatment of corneal edema?
+- can cure corneal edema with eye drops
 - What is the pharmacological treatment of corneal edema?
 - Can I take medicine to treat corneal edema?
 - Are there pills to treat corneal edema?
@@ -1122,6 +1198,7 @@
 
 ## intent: cornealedema-treatment_surgical-cornearefractive
 - What is the surgical treatment of corneal edema?
+- Do I need transplant for cornea edema
 -  Does corneal edema surgery exist?
 - Is surgical removal of corneal edema possible?
 - Can you take out my corneal edema?
@@ -1139,6 +1216,9 @@
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_43
 - What are the indications of corneal edema surgery?
+- When do I need surgery for cornea swelling
+- is operation needed for corneal edema
+- is op needed for corneal edema
 - Why do I need to do surgery for corneal edema?
 - Why do I need corneal edema surgery?
 - Why do you need to operate on my corneal edema?
@@ -1160,6 +1240,10 @@
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_44
 - Is corneal transplant surgery Medisave-claimable?
+- Is cornea transplant covered by medisave
+- How much does corneal transplant cost
+- can sponsor corneal transplant 
+- who pays for my new cornea
 - How can I pay for corneal edema surgery?
 - Is corneal edema surgery subsidized?
 - Who can claim Medisave for corneal edema surgery?
@@ -1179,6 +1263,7 @@
 
 ## intent: cornealedema-preoperative-cornearefractive
 - What are the preoperative preparations for corneal transplant?
+- I am going for corneal transplant, what should I do?
 - How should I prepare before corneal transplant surgery?
 - Do I need to prepare anything before corneal transplant surgery?
 - What should I take note of before corneal transplant surgery?
@@ -1206,6 +1291,10 @@
 
 ## intent: cornealedema-intraoperative-cornearefractive
 - What will happen during corneal transplant surgery?
+- How is corneal transplant done
+- What is corneal transplant
+- How is corneal transplant done
+- How does corneal transplant work?
 - Will my eye be open during corneal transplant surgery?
 - How will my eye be held open during corneal transplant surgery?
 - What are the steps in corneal transplant surgery?
@@ -1221,6 +1310,11 @@
 
 ## intent: cornealedema-intraoperative-cornearefractive_47
 - Where does my new cornea for corneal transplant surgery come from?
+- where do you get my new cornea
+- who can donate cornea to me
+- is my new cornea from someon
+- Where does my new cornea come from
+- Where does the cornea graft come from
 - Which person does my new cornea come from?
 - Who is my cornea donor for corneal transplant?
 - How do you obtain my new cornea for corneal transplant?
@@ -1236,6 +1330,7 @@
 
 ## intent: cornealedema-intraoperative-cornearefractive_48
 - How long will corneal transplant surgery take?
+- Is cornea transplant a major surgery
 - What is the duration of corneal transplant surgery?
 - How long is the procedure for corneal transplant?
 - How long does corneal transplant surgery last?
@@ -1295,9 +1390,12 @@
 
 ## intent: cornealedema-postoperative-cornearefractive
 - What are the complications of corneal transplant surgery?
+- What is the success rate of corneal transplant
+- is corneal transplant surgery risky
 - What are the side effects of corneal transplant surgery?
 - What problems can corneal transplant surgery cause?
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - Will the corneal infection come back?
 - What is the risk of infection recurrence after corneal transplant surgery?
 - Will the corneal infection recur?
@@ -1324,11 +1422,13 @@
 
 ## intent: cornealedema-postoperative-cornearefractive_53
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - What should I be careful of after corneal transplant surgery?
 - What should I watch out for after corneal transplant surgery?
 - What should I be careful of after corneal transplant surgery
 - When should I be worried after corneal transplant surgery?
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - What are the red flags after corneal transplant surgery?
 - What if my eyes are painful after corneal transplant surgery?
 - What if my eyes look strange after corneal transplant surgery?
@@ -1339,6 +1439,8 @@
 
 ## intent: cornealedema-postoperative-cornearefractive_54
 - What happens after corneal transplant surgery?
+- Do I need to stay in hospital after cornea transplant
+- Will I be admitted after transplant
 - What are the plans after corneal transplant surgery?
 - What should I expect following corneal transplant surgery?
 - What normally occurs after corneal transplant surgery?
@@ -1353,6 +1455,8 @@
 
 ## intent: cornealedema-postoperative-cornearefractive_55
 - How soon can I go back to work after corneal transplant surgery?
+- How long will I need to recover from cornea transplant
+- I am going for cornea transplant, when can I go back to work
 - When can I return to normal activities after corneal transplant surgery?
 - When can I return to work after corneal transplant surgery?
 - When can I resume school after corneal transplant surgery?
@@ -1375,6 +1479,7 @@
 
 ## intent: cornealedema-postoperative-cornearefractive_56
 - Can I see clearly after corneal transplant surgery?
+- Why is it blur after my cornea transplant
 - How will my eyesight be after corneal transplant surgery?
 - Will my vision recover after corneal transplant surgery?
 - Will I have perfect eyesight after corneal transplant surgery?
@@ -1417,6 +1522,7 @@
 
 ## intent: cornealinfection-condition-cornearefractive
 - What is corneal infection?
+- why my eye have virus
 - What does corneal infection mean?
 - I do not understand corneal infection
 - I am confused about corneal infection
@@ -1429,6 +1535,10 @@
 
 ## intent: cornealinfection-causes-cornearefractive
 - What is the cause of corneal infection?
+- who gets eye infection
+- Can contact lens cause infection
+- who is prone to cornea infection
+- can fungus cause corneal infection
 - Why do I have corneal infection?
 - What is the reason I have corneal infection?
 - Why does corneal infection occur?
@@ -1458,6 +1568,9 @@
 
 ## intent: cornealinfection-symptoms_signs-cornearefractive
 - What are the symptoms and signs of corneal infection?
+- How does corneal ulcer feel like?
+- I feel sensitive to light, can it be a cornea infection?
+- Why do I have a white spot on my eye and it is painful
 - What does corneal infection look like?
 - How is corneal infection supposed to look like?
 - How does corneal infection normally look like?
@@ -1473,6 +1586,13 @@
 
 ## intent: cornealinfection-symptoms_signs-cornearefractive_62
 - What are the complications of corneal infection?
+- Can I go blind if I have cornea infection
+- Can I see again if I have corneal infection
+- is corneal ulcer a hole in the eye
+- does corneal ulcer mean my eye has a tear
+- how bad can cornea infection get
+- is cornea infection bad
+- how bad can cornea ulcers get
 - What are the issues associated with corneal infection?
 - What problems can corneal infection lead to?
 - What are the implications of corneal infection?
@@ -1512,6 +1632,12 @@
 
 ## intent: cornealinfection-treatment_general-cornearefractive
 - What is the treatment for corneal infection?
+- Eye drops to stop infection?
+- Can I be admitted for cornea ulcer?
+- I have cornea infection, do I need to stay in hospital
+- what are the dangers of contact lens
+- do i have to stay in hospital for cornea infection
+- i wear contact lenses, how to prevent infection
 - How to treat corneal infection?
 - How to heal corneal infection?
 - How to cure corneal infection?
@@ -1545,6 +1671,12 @@
 
 ## intent: cornealinfection-treatment_medical-cornearefractive
 - What is the medical treatment of corneal infection?
+- Can I still wear contact lenses if I have cornea infection
+- Should I see the eye doctor if I have cornea infection
+- How long will I need to recover from cornea infection
+- how can i avoid getting contact lens ulcer again?
+- should i avoid contact lens because i had an infection
+- can the doctor cure cornea infection with eyedrops
 - What is the pharmacological treatment of corneal infection?
 - Can I take medicine to treat corneal infection?
 - Are there pills to treat corneal infection?
@@ -1583,6 +1715,7 @@
 
 ## intent: cornealinfection-treatment_surgical-cornearefractive_68
 - What are the indications of corneal infection surgery?
+- do i need a new eye if i have corneal ulcer
 - Why do I need to do surgery for corneal infection?
 - Why do I need corneal infection surgery?
 - Why do you need to operate on my corneal infection?
@@ -1605,6 +1738,10 @@
 
 ## intent: cornealinfection-treatment_surgical-cornearefractive_69
 - Is corneal transplant surgery Medisave-claimable?
+- Is cornea transplant covered by medisave
+- How much does corneal transplant cost
+- can sponsor corneal transplant 
+- who pays for my new cornea
 - How can I pay for corneal infection surgery?
 - Is corneal infection surgery subsidized?
 - Who can claim Medisave for corneal infection surgery?
@@ -1624,6 +1761,7 @@
 
 ## intent: cornealinfection-preoperative-cornearefractive
 - What are the preoperative preparations for corneal transplant?
+- I am going for corneal transplant, what should I do?
 - How should I prepare before corneal transplant surgery?
 - Do I need to prepare anything before corneal transplant surgery?
 - What should I take note of before corneal transplant surgery?
@@ -1650,6 +1788,10 @@
 
 ## intent: cornealinfection-intraoperative-cornearefractive
 - What will happen during corneal transplant surgery?
+- How is corneal transplant done
+- What is corneal transplant
+- How is corneal transplant done
+- How does corneal transplant work?
 - Will my eye be open during corneal transplant surgery?
 - How will my eye be held open during corneal transplant surgery?
 - What are the steps in corneal transplant surgery?
@@ -1663,6 +1805,11 @@
 
 ## intent: cornealinfection-intraoperative-cornearefractive_72
 - Where does my new cornea for corneal transplant surgery come from?
+- where do you get my new cornea
+- who can donate cornea to me
+- is my new cornea from someon
+- Where does my new cornea come from
+- Where does the cornea graft come from
 - Which person does my new cornea come from?
 - Who is my cornea donor for corneal transplant?
 - How do you obtain my new cornea for corneal transplant?
@@ -1678,6 +1825,7 @@
 
 ## intent: cornealinfection-intraoperative-cornearefractive_73
 - How long will corneal transplant surgery take?
+- Is cornea transplant a major surgery
 - What is the duration of corneal transplant surgery?
 - How long is the procedure for corneal transplant?
 - How long does corneal transplant surgery last?
@@ -1735,9 +1883,12 @@
 
 ## intent: cornealinfection-postoperative-cornearefractive
 - What are the complications of corneal transplant surgery?
+- What is the success rate of corneal transplant
+- is corneal transplant surgery risky
 - What are the side effects of corneal transplant surgery?
 - What problems can corneal transplant surgery cause?
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - Will the corneal infection come back?
 - What is the risk of infection recurrence after corneal transplant surgery?
 - Will the corneal infection recur?
@@ -1755,11 +1906,13 @@
 
 ## intent: cornealinfection-postoperative-cornearefractive_78
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - What should I be careful of after corneal transplant surgery?
 - What should I watch out for after corneal transplant surgery?
 - What should I be careful of after corneal transplant surgery
 - When should I be worried after corneal transplant surgery?
 - What should I take note of after corneal transplant surgery?
+- what should i do if my eye is painful after corneal transplant
 - What are the red flags after corneal transplant surgery?
 - What if my eyes are painful after corneal transplant surgery?
 - What if my eyes look strange after corneal transplant surgery?
@@ -1769,6 +1922,8 @@
 
 ## intent: cornealinfection-postoperative-cornearefractive_79
 - What happens after corneal transplant surgery?
+- Do I need to stay in hospital after cornea transplant
+- Will I be admitted after transplant
 - What are the plans after corneal transplant surgery?
 - What should I expect following corneal transplant surgery?
 - What normally occurs after corneal transplant surgery?
@@ -1783,6 +1938,8 @@
 
 ## intent: cornealinfection-postoperative-cornearefractive_80
 - How soon can I go back to work after corneal transplant surgery?
+- How long will I need to recover from cornea transplant
+- I am going for cornea transplant, when can I go back to work
 - When can I return to normal activities after corneal transplant surgery?
 - When can I return to work after corneal transplant surgery?
 - When can I resume school after corneal transplant surgery?
@@ -1801,6 +1958,7 @@
 
 ## intent: cornealinfection-postoperative-cornearefractive_81
 - Can I see clearly after corneal transplant surgery?
+- Why is it blur after my cornea transplant
 - How will my eyesight be after corneal transplant surgery?
 - Will my vision recover after corneal transplant surgery?
 - Will I have perfect eyesight after corneal transplant surgery?
@@ -1840,6 +1998,9 @@
 
 ## intent: pterygium-condition-cornearefractive
 - What is pterygium?
+- what is that patch of skin growing on my eye
+- there is some weird white skin growing on my eye
+- why is there a white skin on my eye
 - I want to understand more about pterygium
 - I want to find out more about pterygium
 - I am confused about pterygium
@@ -1860,6 +2021,11 @@
 
 ## intent: pterygium-causes-cornearefractive
 - What is the cause of pterygium?
+- Why my eye got white colour thing
+- why do i have some skin growing on my eye
+- what is the skin growing on my eye due to?
+- is pterygium due to sunlight
+- is the white skin on my eye due to infection
 - Why do I have pterygium?
 - What is the reason I have pterygium?
 - Why does pterygium occur?
@@ -1888,6 +2054,9 @@
 
 ## intent: pterygium-symptoms_signs-cornearefractive
 - What are the symptoms and signs of pterygium?
+- is pterygium painful?
+- does the white flesh cause pain
+- how can i confirm if i have pterygium
 - What does pterygium look like?
 - How is pterygium supposed to look like?
 - How does pterygium normally look like?
@@ -1902,6 +2071,9 @@
 
 ## intent: pterygium-symptoms_signs-cornearefractive_87
 - What are the complications of pterygium?
+- can the pterygium grow bigger?
+- can the white flesh grow to cover my eye?
+- what problems can pterygium cause?
 - What happens if pterygium becomes big?
 - How big can pterygium grow?
 - Can pterygium cause difficulties seeing?
@@ -1938,6 +2110,12 @@
 
 ## intent: pterygium-treatment_general-cornearefractive
 - What is the treatment for pterygium?
+- what should i do about the white skin on my eye
+- what if i have pterygium
+- can i remove the white skin growing on my eye?
+- the white flesh on my eye is getting redder, what can i do
+- the white piece of skin on my is red, what should i do
+- can i stop the skin from growing to fast on my eye?
 - How to treat pterygium?
 - How to heal pterygium?
 - How to cure pterygium?
@@ -1954,6 +2132,8 @@
 
 ## intent: pterygium-treatment_conservative-cornearefractive
 - What is the conservative treatment of pterygium?
+- is there eyedrops to dissolve the white skin on my eye?
+- will wearing sunglasses help if i have pterygium?
 - Can I get rid of pterygium without medicine or surgery?
 - Will pterygium be cured without medicine or surgery?
 - Will pterygium go away without medicine or surgery?
@@ -1987,6 +2167,7 @@
 
 ## intent: pterygium-treatment_surgical-cornearefractive
 - What is the surgical treatment of pterygium?
+- I heard pterygium surgery can use glue
 - Can I go under the knife for pterygium?
 - Is there a surgical option for pterygium?
 - Does pterygium surgery exist?
@@ -2004,6 +2185,7 @@
 
 ## intent: pterygium-treatment_surgical-cornearefractive_93
 - What are the indications of pterygium surgery?
+- when do i need to go for surgery the skin on my eye
 - Why do I need to do surgery for pterygium?
 - Why do I need pterygium surgery?
 - Why do you need to operate on my pterygium?
@@ -2070,6 +2252,11 @@
 
 ## intent: pterygium-intraoperative-cornearefractive
 - What will happen during pterygium surgery?
+- how is the skin on the eye removed?
+- how is pterygium surgery done?
+- What will happen in a pterygium surgery?
+- I heard I need a transplant if I remove the skin on my eye
+- Can my pterygium be removed by laser?
 - Will my eye be open during pterygium surgery?
 - How will my eye be held open during pterygium surgery?
 - What are the steps in pterygium surgery?
@@ -2087,6 +2274,7 @@
 
 ## intent: pterygium-intraoperative-cornearefractive_97
 - How long will pterygium surgery take?
+- How long does pterygium surgery take
 - How long is the procedure to remove my pterygium?
 - How long does pterygium surgery last?
 - What is the duration of pterygium surgery?
@@ -2098,6 +2286,7 @@
 
 ## intent: pterygium-intraoperative-cornearefractive_98
 - Do you have to put me to sleep for pterygium surgery?
+- will i receive anaesthesia for pterygium surgery?
 - Do I have to undergo general anaesthesia for pterygium surgery?
 - Is general anaesthesia required for pterygium surgery?
 - Is general anaesthesia compulsory for pterygium surgery?
@@ -2116,6 +2305,7 @@
 
 ## intent: pterygium-intraoperative-cornearefractive_99
 - Is the pterygium surgery painful?
+- I want to remove the flesh on my eye, is surgery painful?
 - Is pterygium surgery uncomfortable?
 - Will pterygium surgery cause discomfort?
 - Will pterygium surgery hurt?
@@ -2145,6 +2335,9 @@
 
 ## intent: pterygium-postoperative-cornearefractive
 - What are the complications of pterygium surgery?
+- Is pterygium surgery risky?
+- After I go for operation to remove the skin on my eye, can it come back?
+- What are the dangers of pterygium surgery
 - What are the side effects of pterygium surgery?
 - What problems can pterygium surgery cause?
 - What should I take note of after pterygium surgery?
@@ -2178,6 +2371,9 @@
 
 ## intent: pterygium-postoperative-cornearefractive_103
 - How soon can I go back to work after pterygium surgery?
+- How should I take care after my pterygium surgery
+- Can I shower after pterygium surgery?
+- I am going for pterygium surgery, when can I go back to work
 - When can I return to normal activities after pterygium surgery?
 - When can I return to work after pterygium surgery?
 - When can I resume school after pterygium surgery?
@@ -2232,6 +2428,9 @@
 
 ## intent: cataract-pathophysiology-cornearefractive
 - What is Cataract?
+- What is a cataract
+- What is a cataract
+- What does cataract mean
 - Why are my eyes blur if I have cataract?
 - What does it mean to be diagnosed with Cataract?
 - What kind of health problem is a Cataract?
@@ -2246,6 +2445,14 @@
 
 ## intent: cataract-causes_riskfactors-cornearefractive
 - What are the causes and risk factors of Cataracts?
+- Who gets cataracts
+- Why do I get cataracts
+- Am I at risk of developing cataracts
+- What are the causes for cataracts
+- How come I got cataract
+- Cataract is it because old
+- Can children get cataract
+- how come i get cataract
 - Why did I develop a Cataract?
 - Why do I have Cataracts?
 - What caused me to develop a Cataract?
@@ -2271,6 +2478,10 @@
 
 ## intent: cataract-symptoms_signs-cornearefractive
 - What are the symptoms of Cataracts?
+- Will I go blind from cataract
+- Cataract will become blind?
+- Can I become blind from cataract
+- How to know if I have cataract
 - How do patients with Cataracts present?
 - How will I know if I have a Cataract?
 - Which symptoms are linked to Cataracts?
@@ -2303,6 +2514,11 @@
 
 ## intent: cataract-treatment_general-cornearefractive
 - What is the treatment for Cataracts?
+- How is cataract monitored
+- What should I do if I have cataract
+- Any eyedrops to dissolve cataracts
+- Do I need cataract op
+- how to treat cloudy lens
 - How can I treat Cataracts?
 - Is there any way to get rid of Cataracts?
 - How will the doctor solve my Cataracts?
@@ -2319,6 +2535,7 @@
 
 ## intent: cataract-treatment_conservative-cornearefractive
 - What are the lifestyle measures for treating Cataract?
+- Can I stop cataract from getting worse
 - What are the non-medical and non-surgical treatments for Cataracts?
 - How can I improve my Cataracts without seeing a doctor?
 - Is it possible to treat Cataract without seeing a doctor?
@@ -2332,6 +2549,7 @@
 
 ## intent: cataract-treatment_conservative-cornearefractive_113
 - What are the medical treatments for Cataracts?
+- Can glasses help if I have cataract
 - What are the non-surgical treatments for Cataracts?
 - Are there medications that are useful for Cataracts?
 - What medications can improve Cataracts?
@@ -2345,6 +2563,18 @@
 
 ## intent: cataract-treatment_surgical-cornearefractive
 - What are the surgical treatments for Cataract?
+- Can you take out cataract
+- How does the doctor take out my cataract
+- Can I be asleep during cataract operation
+- Will I be awake during my cataract surgery
+- Do I need to change my lens in future after my cataract surgery
+- Is the lens put in during cataract surgery permanent
+- Does the lens put in during cataract surgery have expiry date
+- How big is the wound in cataract surgery
+- do all cataract need surgery
+- can cut out cataract
+- how to take out cloudy lens
+- Do I need to change my lens in future after cataract surgery
 - What are the non-medical treatments for Cataract?
 - Do doctors perform surgeries for Cataracts?
 - What kind of surgery helps with Cataracts?
@@ -2361,6 +2591,8 @@
 
 ## intent: dryeyes-condition-cornearefractive
 - What is Dry eye syndrome?
+- Why are my eyes dry
+- why my eyes dry
 - Why are my eyes always dry?
 - What happens when my eyes are dry?
 - Is dry eyes a medical problem?
@@ -2374,6 +2606,13 @@
 
 ## intent: dryeyes-causes_riskfactors-cornearefractive
 - What are the causes and risk factors of Dry eye syndrome?
+- What causes dry eyes
+- does wind cause dry eyes
+- Why is my eyes so dry
+- What causes dry eyes
+- Does too much screen time cause dry eyes?
+- Why is my eyes getting drier
+- Is dry eyes common
 - Why do I have dry eyes?
 - What makes my eye dry?
 - How do my eyes become dry?
@@ -2387,6 +2626,10 @@
 
 ## intent: dryeyes-symptoms_signs-cornearefractive
 - What are the symptoms of dry eyes?
+- How do I know if I have dry eyes
+- Can dry eyes harm my eyes
+- My eyesight keeps going blur on and off, why
+- I always feel poking pain in my eye
 - Why do I get tearing with dry eyes?
 - Which symptoms are linked to eye dryness?
 - What symptoms do patients with dry eyes have?
@@ -2397,9 +2640,14 @@
 - Which symptoms are suggestive of dry eyes?
 - What eye problems are due to dry eyes?
 - What are the symptoms of dry eyes?
+- How do I know if I have dry eyes
+- Can dry eyes harm my eyes
+- My eyesight keeps going blur on and off, why
+- I always feel poking pain in my eye
 
 ## intent: dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive
 - How is Dry Eye Syndrome diagnosed?
+- how to confirm i have dry eyes
 - How does  the doctor diagnose dry eyes?
 - How does the doctor know whether I have dry eyes?
 - What will the Ophthalmologist do to confirm I have dry eyes?
@@ -2413,6 +2661,7 @@
 
 ## intent: dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive_119
 - What is the treatment for Dry eye syndrome?
+- I have very bad dry eyes, what can I do
 - How can I treat dry eyes?
 - Is there any way to stop eye dryness?
 - My eyes are always dry, what can I do about it?
@@ -2426,6 +2675,13 @@
 
 ## intent: dryeyes-treatment_conservative-cornearefractive
 - What are the lifestyle measures for treating dry eye syndrome?
+- can use phone if dry eyes
+- does blinking more help dry eyes
+- do i need to reduce computer use if i have dry eye
+- does bright light cause my eyes to be dry
+- Can any food reduce dry eyes
+- How to take care if my eyes are dry
+- What should I do if I have dry eyes
 - What are the non-medical and non-surgical treatments for dry eye syndrome?
 - How can I improve my dry eyes without seeing a doctor?
 - Is it possible to treat eye dryness without seeing a doctor?
@@ -2439,6 +2695,10 @@
 
 ## intent: dryeyes-treatment_medical-cornearefractive
 - What are the medical treatments for dry eye syndrome?
+- can eye drops cure dry eyes
+- What eye drops are good for dry eyes
+- How often should I put tear drops
+- What is the difference between bottle and disposable eyedrops
 - What are the non-surgical treatments for dry eye syndrome?
 - Are there medications that are useful for dry eyes?
 - What medications can improve eye dryness?
@@ -2467,6 +2727,7 @@
 
 ## intent: dryeyes-dryeyessupport_contactlens-cornearefractive
 - Can dry eye syndrome affect my ability to wear contact lenses?
+- can i use contacts if i have dry eyes
 - What are the restrictions for contact lens use if I have dry eye syndrome?
 - Do doctors allow patients to wear contact lenses if they have dry eyes?
 - What kind of contact lenses go well with eye dryness?
@@ -2492,6 +2753,7 @@
 
 ## intent: blepharitis-causes_riskfactors-cornearefractive
 - What is the cause of blepharitis?
+- why are my eyelids oily
 - What causes blepharitis?
 - What is blepharitis due to?
 - Why do I have blepharitis?
@@ -2505,6 +2767,7 @@
 
 ## intent: blepharitis-symptoms_signs-cornearefractive
 - What are the symptoms of blepharitis?
+- Does oily eyelids cause discharge
 - What will I feel if I have blepharitis?
 - Can blepharitis cause red eyes?
 - Can the oily secretions irritate my eyes?
@@ -2531,6 +2794,9 @@
 
 ## intent: blepharitis-treatment_general-cornearefractive_128
 - What is the treatment for blepharitis?
+- How to treat blepharitis
+- How to do warm compress
+- How often do I need to do eyelid massage
 - How is blepharitis treated?
 - I have very oily eyelids, what can I do?
 - Is blepharitis treatable?
@@ -2568,6 +2834,8 @@
 
 ## intent: cataract-condition-cornearefractive
 - What is cataract?
+- why i my lens white
+- is cataract normal
 - Why are my eyes blur if I have cataract?
 - What does it mean to be diagnosed with Cataract?
 - What kind of health problem is a Cataract?
@@ -2581,6 +2849,14 @@
 
 ## intent: cataract-causes_riskfactors-cornearefractive_132
 - What are the causes and risk factors of Cataracts?
+- Who gets cataracts
+- Why do I get cataracts
+- Am I at risk of developing cataracts
+- What are the causes for cataracts
+- How come I got cataract
+- Cataract is it because old
+- Can children get cataract
+- how come i get cataract
 - Why did I develop a Cataract?
 - Why do I have Cataracts?
 - What caused me to develop a Cataract?
@@ -2594,6 +2870,10 @@
 
 ## intent: cataract-symptoms_signs-cornearefractive_133
 - What are the symptoms of Cataracts?
+- Will I go blind from cataract
+- Cataract will become blind?
+- Can I become blind from cataract
+- How to know if I have cataract
 - How do patients with Cataracts present?
 - How will I know if I have a Cataract?
 - Which symptoms are due to Cataracts?
@@ -2620,6 +2900,11 @@
 
 ## intent: cataract-treatment_general-cornearefractive_135
 - What is the treatment for Cataracts?
+- How is cataract monitored
+- What should I do if I have cataract
+- Any eyedrops to dissolve cataracts
+- Do I need cataract op
+- how to treat cloudy lens
 - How can I treat Cataracts?
 - Is there any way to get rid of Cataracts?
 - How will the doctor solve my Cataracts?
@@ -2633,6 +2918,7 @@
 
 ## intent: cataract-treatment_conservative-cornearefractive_136
 - What are the lifestyle measures for treating Cataract?
+- Can I stop cataract from getting worse
 - What are the non-medical and non-surgical treatments for Cataracts?
 - How can I improve my Cataracts without seeing a doctor?
 - Is it possible to treat Cataract without seeing a doctor?
@@ -2646,6 +2932,7 @@
 
 ## intent: cataract-treatment_medical-cornearefractive
 - What are the medical treatments for Cataracts?
+- Can glasses help if I have cataract
 - What are the non-surgical treatments for Cataracts?
 - Are there medications that are useful for Cataracts?
 - What medications can improve Cataracts?
@@ -2659,6 +2946,18 @@
 
 ## intent: cataract-treatment_surgical-cornearefractive_138
 - What are the surgical treatments for Cataract?
+- Can you take out cataract
+- How does the doctor take out my cataract
+- Can I be asleep during cataract operation
+- Will I be awake during my cataract surgery
+- Do I need to change my lens in future after my cataract surgery
+- Is the lens put in during cataract surgery permanent
+- Does the lens put in during cataract surgery have expiry date
+- How big is the wound in cataract surgery
+- do all cataract need surgery
+- can cut out cataract
+- how to take out cloudy lens
+- Do I need to change my lens in future after cataract surgery
 - What are the non-medical treatments for Cataract?
 - Do doctors perform surgeries for Cataracts?
 - What kind of surgery helps with Cataracts?
@@ -2673,6 +2972,13 @@
 
 ## intent: cataract-postoperative-cornearefractive
 - Why is my vision poor after cataract operation?
+- Eye blur after caratarct surgery
+- My eyes are painful after cataract surgery
+- Eye painful after cataract surgery
+- I have done cataract surgery, why I still see so blur
+- My vision is getting blurrer after cataract operation, issit because cataract is growing back?
+- Wad is PCO
+- Why my vision still so bad after cataract op
 - Why am I seeing blurry after my cataract operation?
 - My cataracts have been operated but my eyesight is still poor, why?
 - My eyesight initially after my surgery was good but it has deteriorated, why?
@@ -2686,6 +2992,10 @@
 
 ## intent: cataract-postoperative-cornearefractive_140
 - What is a Yag capsulotomy and why do I need it?
+- what is yag
+- How to polish my lens
+- Is lens polishing risku
+- Is lens polishing risky
 - My lens after cataract surgery is dirty, what can I do?
 - What is YAG capsulotomy?
 - How is YAG capsulotomy performed?
@@ -2699,6 +3009,10 @@
 
 ## intent: cataract-intraoperative-cornearefractive
 - Isn’t Cataract surgery done by laser?
+- Can cut my cataract
+- I heard there is laser to cure cataract
+- Is the cataract surgery done by laser?
+- Is cataract surgery bladeless
 - What is the method of surgery for Cataract?
 - Do doctors perform surgeries for Cataracts using laser?
 - What are the steps of surgery for Cataracts?
@@ -2712,6 +3026,10 @@
 
 ## intent: cataract-preoperative-cornearefractive
 - What is the cost of a Cataract operation?
+- Cataract surgery expensive
+- Government pay for cataract surgery can
+- How much is cataract surgery
+- Why is multifocal lens so expensive
 - How much does surgery cost for Cataract?
 - Is Cataract surgery expensive?
 - What is the cost of surgery to remove my Cataracts?
@@ -2738,6 +3056,8 @@
 
 ## intent: cataract-preoperative-cornearefractive_144
 - What are the risks of cataract surgery?
+- Is cataract operation dangerous
+- What are the dangers of cataract operation
 - What possible risks does surgery for Cataract carry?
 - Do patients need to be aware of any risks of Cataract surgery?
 - What kind of complications could happen after surgery for Cataracts?
@@ -2751,6 +3071,12 @@
 
 ## intent: cataract-intraoperative-cornearefractive_145
 - What are the types of lens implants?
+- Do I need glasses after cataract surgery
+- What is multifocal lens
+- Tell me about multifocal lens
+- What is multifocal
+- does it mean after cataract surgery i don't need to wear glasses anymore?
+- what is IOL
 - What implants can I choose from for surgery for Cataract?
 - Do patients get to choose their implants for Cataract surgery?
 - What kind of implants can I use when I get surgery for Cataracts?
@@ -2764,6 +3090,8 @@
 
 ## intent: cataract-intraoperative-cornearefractive_146
 - What are the differences between monofocal and multifocal lenses?
+- What is the difference between multi and monofocal
+- Multifocal versus monofocal
 - What implants is better for surgery for Cataract?
 - How should patients choose their monofocal or multifocal implants for Cataract surgery?
 - What kind of implants should I select when I get surgery for Cataracts?
@@ -2777,6 +3105,10 @@
 
 ## intent: cataract-intraoperative-cornearefractive_147
 - Which type of lens is right for me?
+- Are there any issues with multifocal lenses
+- Monofocal or multifocal, which is better
+- I had lasik before, can I choose multifocal lens
+- Is multifocal the best lens available
 - What implant is most suited for me if I go for surgery for Cataract?
 - How should I choose between monofocal or multifocal implants for my Cataract surgery?
 - What are the issues of multifocal lenses?
@@ -2790,6 +3122,8 @@
 
 ## intent: cataract-intraoperative-cornearefractive_148
 - What is toric lens?
+- Can cataract surgery correct my astig
+- Is there any lens that can correct astig during cataract surgery
 - What does toric lens mean?
 - Can I choose lenses that correct astigmatism as well for my cataract surgery?
 - Which lenses can correct astigmatism as well for cataract operation?
@@ -2816,6 +3150,8 @@
 
 ## intent: cataract-postoperative-cornearefractive_150
 - What happens after my cataract surgery?
+- After cataract surgery, can I see without specs
+- Can I don't wear spectacles after cataract surgery
 - What do I need to do after surgery for Cataract?
 - Do patients need to do anything after Cataract surgery?
 - What kind of follow-up is needed after surgery for Cataracts?
@@ -2842,6 +3178,7 @@
 
 ## intent: cataract-postoperative-cornearefractive_152
 - Can a Cataract come back after surgery?
+- will i get cataract again after surgery
 - What happens if I get blurring of vision months after surgery for Cataract?
 - Do patients develop recurrence of Cataract after Cataract surgery?
 - What kind of symptoms can one have after surgery for Cataracts?
@@ -2855,6 +3192,7 @@
 
 ## intent: myopia-condition-cornearefractive
 - What is myopia?
+- What is the difference between astig and myopia
 - Why can I see near but not far?
 - What is short-sightedness?
 - What is near-sightedness?
@@ -2867,6 +3205,7 @@
 
 ## intent: myopia-causes_riskfactors-cornearefractive
 - What are the risk factors for myopia?
+- Does watching TV close up increase myopia
 - Can myopia be inherited?
 - I have myopia, can my children develop myopia?
 - Will excessive reading contribute to myopia?
@@ -2880,6 +3219,9 @@
 
 ## intent: myopia-symptoms_signs-cornearefractive
 - What are the possible complications of myopia?
+- What are long term effects of myopia
+- Should I be worried if my child is short sighted
+- Is myopia a problem?
 - What are the dangers of myopia?
 - Is myopia dangerous?
 - Can myopia cause blindness?
@@ -2893,6 +3235,12 @@
 
 ## intent: myopia-treatment_general-cornearefractive
 - What are the treatment options for myopia?
+- Treatment for myopia?
+- Who need op for myopia?
+- I am short sighted, how can I improve my eyesight
+- Can short sightedness be reversed?
+- Can myopia reduce back on its own
+- I am short sighted but I don't want to wear specs
 - Is there a cure for myopia?
 - Can myopia be treated?
 - Can myopia be reversed?
@@ -2906,6 +3254,9 @@
 
 ## intent: myopia-treatment_general-cornearefractive_157
 - How can I help treat or prevent childhood myopia?
+- Can eye exercises prevent myopia
+- Can eye exercises prevent short sightedness
+- Which is better, atropine or orthok
 - Is there any prevention for myopia?
 - How can I avoid myopia developing in my child?
 - Can myopia be prevented?
@@ -2957,6 +3308,7 @@
 
 ## intent: myopia-condition-cornearefractive_161
 - What is the difference between presbyopia and myopia?
+- Why i get lao hua
 - What is the difference between presbyopia/lao hua and myopia?
 - Does myopia and presbyopia/lao hua cancel each other out?
 - Can I have presbyopia/lao hua and myopia together?
@@ -2983,6 +3335,8 @@
 
 ## intent: myopia-treatment_general-cornearefractive_163
 - What is atropine eyedrop?
+- How long has atropine eyedrops been around
+- Is atropine still under research
 - How does atropine eyedrop work?
 - What is the mechanism of atropine?
 - What are the uses of atropine in the eye?
@@ -2997,6 +3351,7 @@
 
 ## intent: myopia-treatment_general-cornearefractive_164
 - What is the criteria to start atropine eyedrops?
+- When is it right to start my son on atropine
 - When is the right time to start atropine eyedrops?
 - What is the recommendation to start atropine treatment?
 - Is there any guideline for initiating atropine treatment?
@@ -3017,6 +3372,9 @@
 
 ## intent: myopia-treatment_general-cornearefractive_165
 - What are the side effects of atropine eyedrops?
+- What are long term side effects of atropine
+- Are there any issues with atropine
+- Is atropine safe
 - When are the side effects of atropine?
 - Can atropine harm the eye?
 - Does atropine have any side effects?
@@ -3031,6 +3389,11 @@
 
 ## intent: myopia-treatment_general-cornearefractive_166
 - What is the treatment regime of atropine eyedrops?
+- How good is atropine eyedrops
+- How effective is atropine eyedrops
+- How often do I need to put atropine to control myopia
+- How effective is atropine eyedrops
+- What is the success rate of atropine
 - What is the treatment of atropine like?
 - How often does my child need atropine eyedrops?
 - Can I put two drops of atropine into each eye for my child?
@@ -3045,6 +3408,8 @@
 
 ## intent: myopia-treatment_general-cornearefractive_167
 - When does atropine treatment for myopia end?
+- How long does my child need to be on atropine
+- How long does my child need to put atropine
 - My child is currently on atropine, when can it be stopped?
 - When is the right time to stop atropine treatment for myopia?
 - How long will treatment of myopia with atropine last
@@ -3058,6 +3423,8 @@
 
 ## intent: myopia-treatment_general-cornearefractive_168
 - What is Orthokeratology lens?
+- Is orthok lens good at controlling myopia
+- When can a child use orthok lens to control short sightedness
 - What is OrthoK lenses?
 - How does OrthoK lenses work?
 - What is the mechanism of OrthoK lenses?
@@ -3088,6 +3455,7 @@
 
 ## intent: myopia-treatment_general-cornearefractive_170
 - What are the side effects of Orthokeratology lenses?
+- Is orthok safe
 - When are the side effects of Orthokeratology?
 - Can Orthokeratology harm the eye?
 - Does Orthokeratology have any side effects?
@@ -3102,6 +3470,9 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive
 - What are the laser correction services available?
+- What is the difference between lasik and lasek
+- what lasers can i do for myopia
+- what laser surgery can i do for myopia
 - What are the laser correction services myopia/astigmatism?
 - What are the different types of lasers for myopia/astigmatism?
 - What if I don’t want to wear glasses for myopia/astigmatism anymore?
@@ -3128,7 +3499,15 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
 - Who is suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for lasik
+- when should i do lasik
+- which people can do lasik
+- which people are suitable for lasik
 - Who is suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for lasik
+- when should i do lasik
+- which people can do lasik
+- which people are suitable for lasik
 - Who can go for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
 - Can I go for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
 - Am I suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
@@ -3141,6 +3520,9 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
 - What is LASIK?
+- Is lasik a day surgery
+- How long does lasik take?
+- what procedure is lasik
 - What does LASIK stand for?
 - What does LASIK refer to?
 - What is the process of LASIK like?
@@ -3153,6 +3535,10 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 - What are the advantages of LASIK?
+- What is the success rate of lasik
+- how do i choose between lasik and prk
+- how is lasik better
+- Why do most ppl go for lasik
 - What makes LASIK better?
 - What is good about LASIK?
 - What are the benefits of LASIK?
@@ -3165,6 +3551,7 @@
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive
 - What should I expect post LASIK surgery?
+- How many days of MC will I get for lasik surgery
 - What is the postoperative care required for LASIK?
 - What happens after LASIK surgery?
 - What do I need to do after my LASIK surgery?
@@ -3179,6 +3566,9 @@
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive_177
 - What may be the side effects that I might face with LASIK?
+- Is lasik safe?
+- Does lasik have any danger
+- My eye feels dry after lasik, is it normal
 - What are the risks of LASIK?
 - What is the disadvantage to LASIK?
 - What after effects are there for LASIK?
@@ -3189,6 +3579,8 @@
 - Can LASIK be harmful?
 - Can LASIK harm my eyes?
 - How long will the LASIK corrections last? 
+- Can my myopia come back after lasik
+- do i still need surgery after lasik
 - How long will the effects for LASIK last?
 - Can LASIK last forever?
 - Do I need a repeat laser after LASIK?
@@ -3225,6 +3617,9 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_180
 - What is LASEK?
+- What is advance surface ablatiob
+- What is advance surface ablation
+- What is PRK
 - What does LASEK stand for?
 - What does LASEK refer to?
 - What happens in LASEK?
@@ -3276,6 +3671,12 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_184
 - What is ReLEx® Smile?
+- What is smile
+- How can smile help me
+- Wad is smile
+- What is relex
+- What is smile
+- is smile new
 - What does ReLEx® Smile stand for?
 - What does ReLEx® Smile refer to?
 - What happens in ReLEx® Smile?
@@ -3288,6 +3689,9 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_185
 - What are the benefits of ReLEx® Smile treatment over other laser vision correction procedures? 
+- how come smile is better
+- What so good about relex
+- Is relex better than lasik
 - What are the advantages of ReLEx® Smile?
 - What makes ReLEx® Smile better?
 - What is good about ReLEx® Smile?
@@ -3301,6 +3705,7 @@
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_186
 - What if I am not suitable for LASIK?
+- why are my eyes not suitable for lasik
 - My doctor says I am not suitable for LASIK?
 - What other options do I have apart from LASIK?
 - If my eyes are not suitable for LASIK, what can I do?
@@ -3313,6 +3718,8 @@
 
 ## intent: keratoconus-condition-cornearefractive
 - What is keratoconus?
+- Why do I have keratoconus
+- What does cornea thinning mean
 - Why does keratoconus have high astigmatism?
 - My doctor told me my cornea is cone shaped, what does it mean?
 - What does keratoconus mean?
@@ -3325,6 +3732,10 @@
 
 ## intent: keratoconus-cause-cornearefractive
 - What is the cause of keratoconus?
+- How did I get keratoconus
+- Can keratoconus be passed to my children
+- Does keratoconus run in the family
+- Will keratoconus keep deteriorating
 - What causes keratoconus?
 - What is keratoconus due to?
 - Is keratoconus a genetic disease?
@@ -3338,6 +3749,8 @@
 
 ## intent: keratoconus-symptoms_signs-cornearefractive
 - What are the symptoms and signs of keratoconus?
+- Can I go blind because of keratoconus
+- Will my cornea burst if I have keratoconus
 - What will I see if I have keratoconus?
 - How can my doctor diagnose keratoconus?
 - What will I feel if I have keratoconus?
@@ -3351,6 +3764,8 @@
 
 ## intent: keratoconus-treatment_general-cornearefractive
 - What is the treatment for keratoconus?
+- When will I need transplant for keratoconus
+- Will all keratoconus patient eventually need transplant
 - How is keratoconus treated?
 - What type of contact lens do I need for keratoconus?
 - I have keratoconus, do I need surgery?
@@ -3364,6 +3779,16 @@
 
 ## intent: contactlensoverwear-condition-cornearefractive
 - What is contact lens overwear?
+- I wore contact lens last night and now my eye is very painful and sensitive
+- how come i cannot wear contact lens for a long time
+- are contact lens dangerous
+- does contacts overuse cause eye problems
+- can i use my contact lens overnight
+- what does contacts overwear mean
+- how long should i use my contacts
+- what is the duration i should wear my contacts
+- is contact lens overuse curable
+- how do i know if i used my contacts for too long
 - I am feeling pain when I am putting on my contact lens, what is it?
 - It is painful putting on my contact lens, what should I do?
 - Why is it painful when I wear my contact lens for some time?
@@ -3377,6 +3802,10 @@
 
 ## intent: episcleritis_scleritis-condition-cornearefractive
 - What is scleritis/episcleritis?
+- Is episcleritis dangerous
+- Will episcleritis go off on it's own
+- is scleritis and episcleritis the same
+- how is scleritis and episcleritis different
 - What is episcleritis?
 - What is scleritis?
 - What is the difference between episcleritis and scleritis?
@@ -3390,6 +3819,7 @@
 
 ## intent: episcleritis_scleritis-cause-cornearefractive
 - What is the cause of scleritis/episcleritis?
+- how come i have scleritis
 - What is the cause of episcleritis?
 - What is the cause of scleritis?
 - Why do I have episcleritis?
@@ -3403,6 +3833,8 @@
 
 ## intent: episcleritis_scleritis-symptoms_signs-cornearefractive
 - What are the signs of episcleritis/scleritis?
+- how does scleritis present
+- what does episcleritis or scleritis look like
 - What are the symptoms of episcleritis/scleritis?
 - What will I feel if I have scleritis?
 - Will scleritis cause pain?
@@ -3416,6 +3848,9 @@
 
 ## intent: episcleritis_scleritis-treatment_general-cornearefractive
 - What is the treatment of episcleritis/scleritis?
+- how to cure episcleritis
+- how to stop episcleritis or scleritis
+- can prevent inflammation of sclera
 - How is episcleritis treated?
 - How is scleritis treated?
 - Can scleritis/episcleritis go away on its own?
@@ -3429,6 +3864,8 @@
 
 ## intent: diabeticretinopathy-pathophysiology_causes_riskfactors-retina
 - What is diabetic retinopathy?
+- What is diabetic eye disease
+- Can diabetes affect the eye
 - How does diabetic retinopathy happen?
 - What causes diabetic retinopathy?
 - Why do I have diabetic retinopathy?
@@ -3442,6 +3879,12 @@
 
 ## intent: diabeticretinopathy-symptoms_signs-retina
 - What are the symptoms of diabetic retinopathy?
+- why is eye screening for diabetes important
+- Can I go blind from diabetes
+- Does diabetes cause permanent eye damage
+- How does diabetes in my eye look like
+- How will I know if I have diabetic eye disease
+- What are the symptoms of diabetic eye problem
 - How do I know if I have diabetic retinopathy?
 - What will I experience if I have diabetic retinopathy?
 - What should I look out for if I think I have diabetic retinopathy?
@@ -3456,6 +3899,11 @@
 
 ## intent: diabeticretinopathy-pathophysiology_causes_riskfactors-retina_3
 - What are the types of diabetic retinopathy?
+- which type of diabetic retinopathy is the worst
+- what is proliferative diabetic retinopathy
+- how does high blood glucose damage my eyes
+- How does diabetes affect the eye
+- Are there different stages of diabetic retinopathy
 - Are there different types of diabetic retinopathy?
 - What should I look out for if I think I have diabetic retinopathy?
 - Can diabetic retinopathy cause problems?
@@ -3469,6 +3917,9 @@
 
 ## intent: diabeticretinopathy-pathophysiology_causes_riskfactors-retina_4
 - What are the risk factors for developing diabetic retinopathy?
+- does poor diabetes control cause eye disease
+- how does control of diabetes affect my eyes
+- I control my diabetes, how come I still have eye problem
 - If my mother/father/sister/brother has diabetic retinopathy, do I have it too?
 - How do I avoid developing diabetic retinopathy?
 - Who is at risk of developing diabetic retinopathy?
@@ -3482,6 +3933,10 @@
 
 ## intent: diabeticretinopathy-symptoms_signs-retina_5
 - Can diabetic retinopathy cause vision loss? 
+- why do people with diabetes get eye problems
+- does diabetes cause blindness
+- why does high blood sugar cause eye problems
+- Can diabetes cause blindness
 - Is diabetic retinopathy serious?
 - Will I become blind if I have diabetic retinopathy?
 - How does diabetic retinopathy cause blindness?
@@ -3495,6 +3950,10 @@
 
 ## intent: diabeticretinopathy-treatment_general-retina
 - Can diabetic retinopathy be prevented?
+- how do i stop diabetes from damaging my eyes
+- are there foods i should eat to prevent diabetic eye disease
+- what should i do if i have eye problems from diabetes
+- How come I need to check my eyes for diabetes
 - How can I avoid diabetic retinopathy?
 - What must I do to decrease my chance of developing diabetic retinopathy?
 - What else must I do to prevent diabetic retinopathy?
@@ -3508,6 +3967,9 @@
 
 ## intent: diabeticretinopathy-diagnosis_investigations-retina
 - How is diabetic retinopathy diagnosed?
+- how is a diagnosis of diabetic eye disease made
+- how to confirm i have diabetic eye disease
+- how does the eye doctor know i have diabetes eye
 - What investigations are there for diabetic retinopathy?
 - Can we screen for diabetic retinopathy?
 - I am newly diagnosed with diabetes, do I have diabetic retinopathy?
@@ -3521,6 +3983,9 @@
 
 ## intent: diabeticretinopathy-treatment_general-retina_8
 - How is diabetic retinopathy treated?
+- When does one need treatme t for diabetic eye disease
+- What does panretinal laser mean
+- What are the types of retinal laser
 - How can diabetic retinopathy be treated?
 - What are the treatment options for diabetic retinopathy?
 - Is there a cure for diabetic retinopathy?
@@ -3534,7 +3999,9 @@
 
 ## intent: diabeticretinopathy-anatomy-retina
 - What is the macula?
+- What is diabetic Macular edema
 - What is the macula?
+- What is diabetic Macular edema
 - Where is the centre part of the eye?
 - Why is the macula important?
 - Is the macula in charge of the most important part of our vision?
@@ -3547,6 +4014,7 @@
 
 ## intent: diabeticretinopathy-treatment_laser-retina
 - How is panretinal photocoagulation performed?
+- Is laser for diabetes painful?
 - How is diabetic laser performed?
 - How is PRP performed?
 - What is panretinal photocoagulation?
@@ -3560,6 +4028,7 @@
 
 ## intent: diabeticretinopathy-treatment_laser-retina_11
 - What are the risks of panretinal photocoagulation?
+- What are the side effects of laser for diabetes
 - What are the side effects of panretinal photocoagulation?
 - What are the complications of panretinal photocoagulation?
 - Is panretinal photocoagulation dangerous?
@@ -3580,6 +4049,8 @@
 
 ## intent: diabeticretinopathy-treatment_general-retina_13
 - Can the development of diabetic retinopathy be prevented?
+- How to control diabetes in my eye?
+- How often should I check for diabetic eye disease
 - How can I avoid getting diabetic eye disease?
 - What can I do to prevent my eyes from getting diabetic eye disease?
 - Can diabetic eye disease be prevented?
@@ -3596,10 +4067,24 @@
 
 ## intent: retinaldetachment-pathophysiology_causes_riskfactors-retina
 - What is retinal detachment?
+- How does retinal detachment y occur
+- Why did my retina fall off
+- there is a curtain over my eyes
+- what does retinal detachment mean
+- why did i get a retinal detachment
+- how come my retina can come out
+- is retinal detachment dangerous
 - How does retinal detachment happen?
 - What causes retinal detachment?
 - Why do I have retinal detachment?
 - What is retinal detachment?
+- How does retinal detachment y occur
+- Why did my retina fall off
+- there is a curtain over my eyes
+- what does retinal detachment mean
+- why did i get a retinal detachment
+- how come my retina can come out
+- is retinal detachment dangerous
 - Why did I develop retinal detachment?
 - What happens in retinal detachment?
 - How did I get retinal detachment?
@@ -3609,6 +4094,12 @@
 
 ## intent: retinaldetachment-symptoms_signs-retina
 - What are the symptoms of retinal detachment?
+- I see a curtain
+- What should I look out if I have retina tear
+- What should I take note of for retinal tear
+- Can retina detachment cause blindness?
+- What would I see if I have retinal detachment
+- What are the symptoms of retinal detachment
 - How do I know if I have retinal detachment?
 - What will I experience if I have retinal detachment?
 - What should I look out for if I think I have retinal detachment?
@@ -3622,6 +4113,8 @@
 
 ## intent: retinaldetachment-pathophysiology_causes_riskfactors-retina_17
 - What are the risk factors for developing retinal detachment?
+- What increases my chance to get retina detachment
+- why is my retina detached
 - If my mother/father/sister/brother has retinal detachment, do I have it too?
 - Who is at risk of developing retinal detachment?
 - How did I develop retinal detachment?
@@ -3635,6 +4128,20 @@
 
 ## intent: retinaldetachment-treatment_general-retina
 - How is retinal detachment treated?
+- What should I do if I have retina detachment
+- how to cure retinal detachment
+- what is the bubble in retinal detachment for
+- how to stop retinal detachment
+- can i do surgery for retinal detachment
+- are there eye drops for retinal detachment
+- do i have to treat retinal detachment
+- how important is treating retinal detachment
+- can i leave a retinal detachment there
+- How to repair retina if I have retinal detachment
+- Is retina detachment operation risky
+- What is the chance of success for retinal detachment operation
+- Can I travel if after retina surgery
+- How long must I put my head down after retina surgery
 - How can retinal detachment be treated?
 - What are the treatment options for retinal detachment?
 - How do I treat retinal detachment?
@@ -3650,6 +4157,7 @@
 
 ## intent: retinaltear-pathophysiology_causes_riskfactors-retina
 - How does a retinal tear develop?
+- When does a retinal tear occur?
 - How can retinal tear develop?
 - Why do I get a retinal tear?
 - How does retinal tear occur?
@@ -3676,6 +4184,8 @@
 
 ## intent: retinaltear-condition-retina
 - What is a lattice degeneration?
+- What is a lattice
+- My doctor said I have weak areas in my retina, what does it mean
 - What is lattice degeneration?
 - I have an area of weakness in my retina, what does it mean?
 - Where do lattice degeneration occur?
@@ -3689,12 +4199,14 @@
 
 ## intent: retinaltear-treatment_general-retina
 - How is retinal tear treated?
+- How to repair retinal tear
 - I have a retinal tear, what should I do?
 - Do retinal tears need laser?
 - What is the treatment for retinal tears?
 - What should I do if I have a retinal tear?
 - Can retinal tear heal on its own?
 - How is retinal tear treated?
+- How to repair retinal tear
 - Do I need surgery for retinal tear?
 - Can a retinal tear stick back on its own?
 - Can I delay treatment for retinal tear?
@@ -3715,6 +4227,10 @@
 
 ## intent: macularhole-condition-retina
 - What is a macular hole and what are the symptoms?
+- What is Macular hole
+- Why is there a hole in the centre of my eye
+- Can Macular Hole affect my vision
+- What will I see if I have Macular hole
 - What is a macular hole?
 - Why did I get a hole in my macula?
 - What will I see if I have a macular hole?
@@ -3728,6 +4244,7 @@
 
 ## intent: macularhole-treatment_general-retina
 - What is the treatment of full thickness macular hole?
+- What is the treatment for Macular holw
 - How is macular hole treated?
 - What is the treatment of macular hole?
 - When should macular hole be treated?
@@ -3741,6 +4258,7 @@
 
 ## intent: uveitis-condition-retina
 - What is uveitis?
+- What is inflammation of the middle of the eye
 - What does inflammation of the eye mean?
 - What do you mean by inflammation of the uvea?
 - What is the uvea?
@@ -3753,7 +4271,17 @@
 
 ## intent: uveitis-cause-retina
 - What causes uveitis?
+- What causes inflammation in the eye
+- Why did I get uveitis
+- Can uveitis spread to my other eye
+- what is the cause of uveitis
+- what predisposes to uveitis
 - What causes uveitis?
+- What causes inflammation in the eye
+- Why did I get uveitis
+- Can uveitis spread to my other eye
+- what is the cause of uveitis
+- what predisposes to uveitis
 - What causes inflammation in the eye?
 - What contributes to inflammation of the uvea?
 - Who are at risk of uveitis?
@@ -3766,6 +4294,7 @@
 
 ## intent: uveitis-symptoms_signs-retina
 - What are the symptoms of uveitis?
+- What is my eye sensitive to light
 - What will I feel if I have uveitis?
 - What does inflammation in the eye feel like?
 - Does inflammation in the eye cause redness?
@@ -3778,6 +4307,8 @@
 
 ## intent: uveitis-diagnosis_investigations-retina
 - How is uveitis diagnosed?
+- how does the doctor know i have uveitis
+- how to test for uveitis
 - How can I confirm if I have uveitis?
 - How will my doctor diagnose uveitis?
 - What tests do I need to take to diagnose uveitis?
@@ -3790,6 +4321,13 @@
 
 ## intent: uveitis-treatment_general-retina
 - How is uveitis treated?
+- is uveitis curable
+- must i do surgery for uveitis
+- is an operation needed for uveitis
+- can medicine cure uveitis
+- what is the cure for uveitis
+- how to prevent uveitis
+- how to stop uveitis
 - What is the treatment for uveitis?
 - Can uveitis go away without treatment?
 - Do I need eyedrops for uveitis?
@@ -3802,6 +4340,21 @@
 
 ## intent: amd-condition-retina
 - What is age-related macular degeneration?
+- What is AMD
+- why is my macula dying
+- how come my macula has degenerated
+- why does my macula spoil when i get old
+- do old people get macular degeneration
+- does AMD cause straight lines to be wavy
+- is AMD sight threatening
+- does AMD cause squiggly vision
+- why do i see squiggly lines with amd
+- do diabetics get amd
+- Can AMD cause blindness
+- Is AMD common
+- How common is amd
+- What causes amd
+- Does smoking cause AMD
 - What does AMD mean?
 - What happens in AMD?
 - What does wet/dry AMD mean?
@@ -3814,6 +4367,8 @@
 
 ## intent: amd-symptoms_signs-retina
 - What the symptoms of AMD?
+- Can I go blind from AMD
+- is AMD dangerous
 - What will happen to my eyesight if I have AMD?
 - Will I go blind from AMD?
 - Will AMD always lead to blindness?
@@ -3826,6 +4381,9 @@
 
 ## intent: amd-diagnosis_investigations-retina
 - How is age-related macular degeneration detected and monitored?
+- how to diagnose amd
+- why does amd need amsler grid
+- how does the doctor test for amd
 - What tests do I need to undergo for AMD?
 - Are there tests to do for AMD?
 - How does my doctor tell if there is blood/fluid in my eye from AMD?
@@ -3839,6 +4397,11 @@
 
 ## intent: amd-treatment_general-retina
 - What is the treatment for AMD?
+- What vitamins should I take for AMD
+- Will lutein help AMD
+- What can I do if I have AMD
+- How often should I follow up to check for AMD
+- Does eyedrops work to treat AMD
 - How is AMD treated?
 - What is the treatment of age-related macular degeneration?
 - How soon will my vision recover after treatment?
@@ -3853,6 +4416,7 @@
 
 ## intent: amd-treatment_general-retina_35
 - How do I use an amsler grid?
+- How do to home amsler
 - How long do I need to look at the amsler grid?
 - How many times a day do I need to look at the amsler grid?
 - What should I look out for on the amsler grid?
@@ -3865,6 +4429,7 @@
 
 ## intent: amd-treatment_general-retina_36
 - What is the indication for intravitreal anti-VEGF?
+- What are the uses of anti vegf
 - When are anti-VEGF injections useful?
 - What conditions do anti-VEGF injections treat?
 - Apart from AMD, do anti-VEGF injections treat any other disease?
@@ -4029,11 +4594,15 @@
 
 ## intent: nyctalopia-condition_symptoms_signs-retina
 - What is night blindness?
+- I cannot drive at night
+- Cant see at night
 - Why do I have difficulty seeing at night?
 - I do not dare to go to dark places like movie theatres because I cannot see well, do I have night blindness?
 - I cannot recognise faces in the dark, do I have night blindness?
 - Can I drive if I have night blindness?
 - What is night blindness?
+- I cannot drive at night
+- Cant see at night
 - Will I be totally blind in the dark if I have night blindness?
 - Will night blindness affect my normal vision?
 - Is poor vision in dark places a sign of night blindness?
@@ -4082,6 +4651,8 @@
 
 ## intent: amblyopia-cause-paediatricophthalmology
 - What is the cause of amblyopia?
+- why my kid have lazy eye
+- is lazy eyes my child's fault
 - What is the cause of lazy eyes?
 - Why does my child have lazy eyes?
 - Does squint cause lazy eyes?
@@ -4121,6 +4692,9 @@
 
 ## intent: amblyopia-treatment_general-paediatricophthalmology
 - What is the treatment for amblyopia?
+- can lazy eye go away on its own
+- how to manage lazy eyes
+- lazy eyes can go away by itself?
 - Can lazy eyes be treated?
 - Can my child’s lazy eyes be improved?
 - What is the treatment for lazy eyes?
@@ -4134,6 +4708,9 @@
 
 ## intent: straibismus-condition-paediatricophthalmology
 - What is a squint?
+- Is squint dangerous
+- why my eyes turn in
+- Why my eyes not straight
 - My child’s eye seems to be slanted, what is it?
 - My child seems to be looking elsewhere when I talk to him, what is happening?
 - Why does my child’s eyes move out sometimes?
@@ -4222,6 +4799,7 @@
 
 ## intent: blinking-treatment_general-paediatricophthalmology
 - How is frequent blinking treated?
+- How to stop blinking
 - How can I stop my child from blinking?
 - Is there any treatment for blinking?
 - How can I treat my child’s blinking?
@@ -4285,6 +4863,9 @@
 
 ## intent: allergicconjunctivitis-treatment_general-paediatricophthalmology
 - How is allergic conjunctivitis treated?
+- How to treat allergy
+- How to treat allergic conjunctivitis
+- How to stop itchy eye
 - Does allergic conjunctivitis need medications?
 - What type of eyedrops will help my allergic conjunctivitis?
 - Can allergic conjunctivitis be cured?
@@ -4373,6 +4954,8 @@
 
 ## intent: chalazion_stye-cause_condition-paediatricophthalmology
 - What is a chalazion/stye?
+- Wad is stye due to
+- What is stye due to
 - What is a chalazion?
 - What is a stye?
 - Is chalazion/stye like a pimple?
@@ -4538,6 +5121,8 @@
 
 ## intent: colourblindness-condition-paediatricophthalmology
 - What is colour blindness?
+- Colour blind how
+- I cant see red
 - What is colour deficiency?
 - What are the symptoms of colour blindness?
 - What are the types of colour blindness?
@@ -4591,6 +5176,7 @@
 
 ## intent: ptosis-symptoms_signs-oculoplastic
 - What are the symptoms of ptosis?
+- My eyelids are droopy
 - What would I feel if I have ptosis?
 - Can droopy eyelids cover my eye totally?
 - Can ptosis cover the entire eye?
@@ -4629,6 +5215,7 @@
 
 ## intent: ptosis-treatment_surgical-oculoplastic_6
 - Is ptosis surgery medisave claimable?
+- Can sponsor double eyelid surgery
 - Can I claim medisave for ptosis surgery?
 - Is ptosis surgery subsidised by the government?
 - I am a subsidised patient, can I go for ptosis surgery?
@@ -4717,6 +5304,7 @@
 
 ## intent: eyebags-condition-oculoplastic
 - How does ageing affect the eyelids?
+- Why got eyebag
 - How does ageing affect the face?
 - How does age affect my eyelids?
 - What will happen to my eyelids as I grow older?
@@ -4730,8 +5318,10 @@
 
 ## intent: eyebags-treatment_surgical-oculoplastic
 - What is blepharoplasty?
+- Can cut out eye bag
 - What is eyebag surgery?
 - What is blepharoplasty?
+- Can cut out eye bag
 - How does eyebag surgery help me?
 - Is blepharoplasty referring to upper or lower eyelid?
 - Is blepharoplasty only for eyebags?
@@ -4795,6 +5385,7 @@
 
 ## intent: nasolacrimalductblockage-condition-oculoplastic_19
 - Why do we tear?
+- I keep crying
 - What causes tearing?
 - Why do I keep tearing?
 - Is it normal to keep tearing?
@@ -4874,12 +5465,20 @@
 
 ## intent: thyroideyedisease-cause-oculoplastic
 - What causes thyroid eye disease?
+- Why thyroid affect eye
+- Why my eye pop out
+- Why my eye look scary
+- why my eye look scary
 - Why do I have thyroid eye disease?
 - What is the cause of thyroid eye disease?
 - I have thyroid problems, why does it affect my eye?
 - Why are my eyes affected if I have thyroid problems?
 - I have thyroid problems, how does it affect my eyes
 - What causes thyroid eye disease?
+- Why thyroid affect eye
+- Why my eye pop out
+- Why my eye look scary
+- why my eye look scary
 - Is smoking bad for thyroid eye disease?
 - Who will get thyroid eye disease?
 - Are men or women more affected by thyroid eye disease?
@@ -5003,6 +5602,9 @@
 
 ## intent: diplopia-cause-neuroophthalmology
 - What is the cause of diplopia?
+- Why do I see double
+- I see double
+- can astigmatism cause double vision
 - Why do I have double vision?
 - I have double vision even with one eye closed, what is the reason?
 - Why do I only have double vision when both my eyes are open?
@@ -5347,6 +5949,7 @@
 
 ## intent: surgery-treatment_general-miscellaneous
 - What is the waiting time for _____ surgery?
+- How long is the waiting time for cataract surgery
 - How long do I need to wait to go for ___ surgery?
 - What is the waiting time for LASIK surgery?
 - What is the waiting time for cataract surgery?
@@ -5360,7 +5963,9 @@
 
 ## intent: appointment-treatment_general-miscellaneous
 - How can I change my appointment?
+- How to make appointment
 - How can I change my appointment?
+- How to make appointment
 - How do I make an appointment with SNEC?
 - Where can I change my appointment?
 - Who can I speak to to change my appointment?
@@ -5476,6 +6081,7 @@
 
 ## intent: preoperative-preoperative-miscellaneous
 - What are the pre-operative instructions?
+- Can I eat before surgery
 - My surgery is in the morning, what should I prepare?
 - My operation is in the afternoon, when do I have to stop water and food?
 - Can I drink before my operation?
@@ -5502,6 +6108,7 @@
 
 ## intent: postoperative-postoperative-miscellaneous
 - What should I know after my operation?
+- I just went for cataract surgery and my eye is very painful
 - What are the instructions after my operation?
 - How do I take care of my eyes after operation?
 - When should I start my eyedrops after operation?
@@ -5547,6 +6154,8 @@
 
 ## intent: blurringofvision-symptoms_signs-miscellaneous
 - Why is my vision blurry?
+- I can't see
+- Why is my eye blur
 - Why is my vision poor?
 - What is the most common cause of blurry vision?
 - I cannot see well.
@@ -5560,6 +6169,7 @@
 
 ## intent: burningsensation-symptoms_signs-miscellaneous
 - Why do I get a burning sensation in my eye?
+- is dry eyes caused by computer
 - Why do my eyes feel a burning pain?
 - I have a burning sensation in my eyes.
 - My eye feel uncomfortable, why?
@@ -5612,6 +6222,7 @@
 
 ## intent: eyedischarge-symptoms_signs-miscellaneous
 - Why do I have discharge?
+- Why when I wake up I have alot of eye dirt
 - What is the most common cause of eye discharge?
 - My eye keeps having sticky discharge.
 - Why do I have eye discharge?
@@ -5643,6 +6254,8 @@
 
 ## intent: redeye-symptoms_signs-miscellaneous
 - Why is my eye red?
+- why my eye pain and red
+- My eyes are always red on waking up with eye dirt
 - What is the most common cause of red eyes?
 - My eyes are red.
 - Why do I have red eyes?
@@ -5668,6 +6281,9 @@
 
 ## intent: floaters_flashes-symptoms_signs-miscellaneous
 - What are floaters and flashes?
+- Why do I have floaters
+- I have floaters why
+- Is floater dangerous
 - What are floaters?
 - Why do I get floaters?
 - I have floaters and cobwebs.
@@ -5681,6 +6297,10 @@
 
 ## intent: floaters_flashes-treatment_general-miscellaneous
 - How can I prevent or treat flashes and floaters?
+- What should I do if I have floaters
+- Will my floaters get worse?
+- What is the treatment for floaters
+- Can floater be cured?
 - How can flashes/floaters be treated/prevented?
 - How can I get rid of the flashes/floaters?
 - What can I do to remove the flashes/floaters?
@@ -5694,6 +6314,8 @@
 
 ## intent: foreignbodysensation-symptoms_signs-miscellaneous
 - Why do I have a foreign body sensation in the eye?
+- Something hit my eye
+- My eye is sandy
 - I feel that there is something in my eye.
 - Why do I feel something in my eye?
 - I am having a sandy sensation in my eye.
@@ -5719,6 +6341,7 @@
 
 ## intent: halos-symptoms_signs-miscellaneous
 - Why do I see halos?
+- Why do I see halos after lasik
 - What is the common cause of halos?
 - Is halos something like hallucination?
 - When do people see halos?
@@ -5744,9 +6367,15 @@
 
 ## intent: tiredeyes-symptoms_signs-miscellaneous
 - Why do my eyes feel tired?
+- My eyes are tired
+- My eyes feel heavy
+- Why my eye feel very tired after using computer
 - I often feel my eyes are tired.
 - My eyes are very tired after using the computer.
 - Why do my eyes feel tired?
+- My eyes are tired
+- My eyes feel heavy
+- Why my eye feel very tired after using computer
 - What is causing my eyes to feel tired?
 - I am feeling a lot of eye strain, what can I do?
 - What is the cause of eye strain?
@@ -5782,6 +6411,7 @@
 
 ## intent: subconjunctivalhemorrhage-treatment_general-miscellaneous
 - What is the treatment for subconjunctival haemorrhage?
+- Treat bloody eyes
 - I have a burst blood vessel on my eye, how do I treat?
 - My eye is bloodshot, what is the treatment?
 - Will my bloodshot eye improve without treatment?
