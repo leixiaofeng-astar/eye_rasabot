@@ -20,6 +20,7 @@ This bot requires you to have Rasa installed on your machine:
 ```
 pip3 install -U pip
 pip3 install rasa
+pip3 install rasa[transformers]
 pip3 freeze | grep rasa
 rasa==2.1.3
 rasa-core==0.14.5

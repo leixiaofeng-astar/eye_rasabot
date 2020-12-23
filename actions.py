@@ -187,18 +187,17 @@ class FindHealthCareAddress(Action):
 
 # xiaofeng add for demo
 class ActionDefaultFallback(Action):
-   def name(self) -> Text:
-      return "action_default_fallback"
+    def name(self) -> Text:
+        return "action_default_fallback"
 
-   def run(self,
+    def run(self,
            dispatcher: CollectingDispatcher,
            tracker: Tracker,
            domain: Dict[Text, Any]) -> List:
-      dispatcher.utter_message(
-          template="utter_out_of_scope",
-          name="Dr Eye"
-      )
-      return []
+
+        print("action_default_fallback")
+        dispatcher.utter_message(template="utter_out_of_scope", name="Dr Eye")
+        return []
 
 
 class action_find_information(Action):
