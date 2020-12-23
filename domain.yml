@@ -1,5 +1,6 @@
 actions:
 - find_information
+- action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
 - utter_glaucoma_define

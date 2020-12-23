@@ -186,7 +186,21 @@ class FindHealthCareAddress(Action):
 
 
 # xiaofeng add for demo
-# TODO
+class ActionDefaultFallback(Action):
+   def name(self) -> Text:
+      return "action_default_fallback"
+
+   def run(self,
+           dispatcher: CollectingDispatcher,
+           tracker: Tracker,
+           domain: Dict[Text, Any]) -> List:
+      dispatcher.utter_message(
+          template="utter_out_of_scope",
+          name="Dr Eye"
+      )
+      return []
+
+
 class action_find_information(Action):
     """This action class allows to display buttons for each disease type
     for the user to chose from to fill the disease_type entity slot."""
