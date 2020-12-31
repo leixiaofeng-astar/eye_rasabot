@@ -13,8 +13,16 @@
 ## story_out_of_scope
 * out_of_scope
     - utter_out_of_scope
+  
+## story_manual_interrupt  
+* out_of_scope
+   - utter_out_of_scope
+* out_of_scope
+   - utter_out_of_scope
+* out_of_scope
+   - utter_help_message
     
-## story_diseases_info
+## story_search_information
 * search_information{"disease_type": "glaucoma"}
     - find_information
 * search_information{"disease_type": "astigmatism"}
@@ -25,12 +33,10 @@
 ## story_ask_astigmatism_information
 * ask_astigmatism_information
     - utter_astigmatism_define
-    
-## story_ask_disease_symptoms
-* ask_disease_symptoms{"disease_type": "glaucoma"}
-    - utter_glaucoma_symptoms
-* ask_disease_symptoms{"disease_type": "astigmatism"}
-    - utter_astigmatism_symptoms
+   
+## story_search_disease_symptoms
+* ask_disease_symptoms
+    - find_symptoms_information
     
 ## story_change_appointment
 * change_appointment 
@@ -71,10 +77,6 @@
 ## story_signs_followup
 * signs_followup 
     - utter_glaucoma_postopt_eyecare
-
-## story_astigmatism-condition-cornearefractive
-* astigmatism-condition-cornearefractive
-    - utter_astigmatism-condition-cornearefractive
 
 ## story_astigmatism-cause-cornearefractive
 * astigmatism-cause-cornearefractive
@@ -175,10 +177,6 @@
 ## story_conjunctivitis-causes-cornearefractive
 * conjunctivitis-causes-cornearefractive
     - utter_conjunctivitis-causes-cornearefractive
-
-## story_conjunctivitis-symptoms_signs-cornearefractive
-* conjunctivitis-symptoms_signs-cornearefractive
-    - utter_conjunctivitis-symptoms_signs-cornearefractive
 
 ## story_conjunctivitis-symptoms_signs-cornearefractive_28
 * conjunctivitis-symptoms_signs-cornearefractive_28
@@ -883,10 +881,6 @@
 ## story_diabeticretinopathy-treatment_general-retina_8
 * diabeticretinopathy-treatment_general-retina_8
     - utter_diabeticretinopathy-treatment_general-retina_8
-
-## story_diabeticretinopathy-anatomy-retina
-* diabeticretinopathy-anatomy-retina
-    - utter_diabeticretinopathy-anatomy-retina
 
 ## story_diabeticretinopathy-treatment_laser-retina
 * diabeticretinopathy-treatment_laser-retina

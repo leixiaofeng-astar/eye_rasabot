@@ -111,7 +111,6 @@
 - What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What are the types of [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What is [astigmatism](disease_type)
-- What is [astigmatism](disease_type)?
 - What does [astigmatism](disease_type) mean?
 - What type of eye problem is [astigmatism](disease_type)?
 - Is [astigmatism](disease_type) an eye problem?
@@ -121,11 +120,74 @@
 - I want to know more about [astigmatism](disease_type)
 - I want to find out more about [astigmatism](disease_type)
 - I want to understand what [astigmatism](disease_type) is
+- What does an [oval cornea](symptom_type) mean?
+- Tell me more about [astigmatism](disease_type)
+- What does [astigmatism](disease_type) refer to?
+- What is the [macula](disease_type)?
+- What is diabetic [macula](disease_type) edema
+- What is the [macula](disease_type)?
+- What is diabetic [macula](disease_type) edema
+- Where is the [centre part](symptom_type) of the eye?
+- Why is the [macula](disease_type) important?
+- Is the [macula](disease_type) in charge of the most important part of our vision?
+- What happens when the [macula](disease_type) is damaged?
+- What diseases can occur in the [macula](disease_type)?
+- Where is the [macula](disease_type)?
+- Is [macula](disease_type) the most important part of our retina?
+- What is the [macula](disease_type) responsible for?
+- Why do we need the [macula](disease_type)?
 
 ## intent:ask_astigmatism_information
-- What does an oval cornea mean?
 - My cornea is abnormally shaped
 - What causes my vision to be distorted?
+
+## intent:ask_disease_symptoms
+- What are the symptoms of [glaucoma](disease_type)
+- What are the different types of [glaucoma](disease_type)
+- How do I know if I have [glaucoma](disease_type)
+- What should I look out for if I think I have [glaucoma](disease_type)
+- Which type of [glaucoma](disease_type) do I have
+- How do patients with [glaucoma](disease_type) present
+- Will I have pain in [glaucoma](disease_type)
+- How would I know if I have [glaucoma](disease_type)
+- What symptoms are suggestive of [glaucoma](disease_type)
+- What eye problems point towards [glaucoma](disease_type)
+- Do I have [glaucoma](disease_type)
+- What are the symptoms and signs of [astigmatism](disease_type)?
+- What does [astigmatism](disease_type) look like?
+- How is [astigmatism](disease_type) supposed to look like?
+- How does [astigmatism](disease_type) normally look like?
+- How does [astigmatism](disease_type) present?
+- What will I experience if I have [astigmatism](disease_type)?
+- What do people with [astigmatism](disease_type) experience?
+- How does the doctor know I have [astigmatism](disease_type)?
+- How is a diagnosis of [astigmatism](disease_type) made?
+- How many eyes does [astigmatism](disease_type) affect?
+- Can [astigmatism](disease_type) affect both eyes?
+- What are the symptoms and signs of [conjunctivitis](disease_type)?
+- What will I feel if I have [conjunctivitis](disease_type)
+- Is [conjunctivitis](disease_type) contagious?
+- how long does [conjunctivitis](disease_type) last
+- Does [conjunctivitis](disease_type) cause pain
+- Does [conjunctivitis](disease_type) cause dry eyes
+- My [conjunctivitis](disease_type) is not better after 2 weeks, what should I do
+- How long will I take to recover from [conjunctivitis](disease_type)
+- What happens when I have [conjunctivitis](disease_type)?
+- How does [conjunctivitis](disease_type) present?
+- How do I know if I have [conjunctivitis](disease_type)?
+- What will I experience if I have [conjunctivitis](disease_type)?
+- What do people with [conjunctivitis](disease_type) experience?
+- How does the doctor know I have [conjunctivitis](disease_type)?
+- How does the doctor diagnose me with [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) infectious?
+- Is [conjunctivitis](disease_type) contagious?
+- Can I get [conjunctivitis](disease_type) from other people?
+- Can [conjunctivitis](disease_type) spread from other people?
+- Is [conjunctivitis](disease_type) inherited?
+- Is [conjunctivitis](disease_type) congenital?
+- Can [conjunctivitis](disease_type) be passed down to children?
+- Can [conjunctivitis](disease_type) be passed down from parents?
+- Does [conjunctivitis](disease_type) cause flu?
 
 ## intent:change_appointment
 - What happens when I cannot make it for my [glaucoma](disease_type) appointment
@@ -189,21 +251,21 @@
 - What are the ways to test [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
 - What will the doctor do to test my [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
 - What should I expect if I see a doctor for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} problems
-- What are the types of tests for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}s
+- What are the types of tests for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
 - What happens in clinic when I want my [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} evaluated
 - What can be done to check for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
-- What happens when I run out of [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- Must I continue taking [glaucoma](disease_type) [eye drops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- Why can’t I stop taking [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- What should I do when I do not have anymore [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- Can I stop my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- I am out of [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}, what can I do
-- My appointment is postponed, I am out of [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}, what can I do
-- My [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} have finished, what can I do
-- I do not have enough [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} until my next appointment, what can I do
-- Where can I get more [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
-- Where can I buy my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} from
-- Where can I get my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
+- What happens when I run out of [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- Must I continue taking [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- Why can’t I stop taking [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- What should I do when I do not have anymore [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- Can I stop my [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- I am out of [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, what can I do
+- My appointment is postponed, I am out of [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, what can I do
+- My [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} have finished, what can I do
+- I do not have enough [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} until my next appointment, what can I do
+- Where can I get more [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- Where can I buy my [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} from
+- Where can I get my [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 
 ## intent:ask_diagnosis
 - What investigations are there for [glaucoma](disease_type)
@@ -223,12 +285,12 @@
 - Will I need surgery for [glaucoma](disease_type)
 - Can surgery cure [glaucoma](disease_type)
 - What surgery for [glaucoma](disease_type)
-- What if I do not want to use [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} anymore
+- What if I do not want to use [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} anymore
 - What kind of surgery is for [glaucoma](disease_type)
 - Do surgeries work for [glaucoma](disease_type)
 - How can I cure [glaucoma](disease_type)
 - What can doctors do for my [glaucoma](disease_type)
-- My [glaucoma](disease_type) [eye drops]{"entity": "symptom_type", "value": "eyedrop-synm"} are not working, is there still hope
+- My [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} are not working, is there still hope
 - What happens in surgery for [glaucoma](disease_type)
 - Can I go under the knife for [glaucoma](disease_type)
 - When is surgery recommended for [glaucoma](disease_type)
@@ -249,19 +311,19 @@
 - What lasers will help in [glaucoma](disease_type)
 - What are the laser options in [glaucoma](disease_type)
 - How do lasers help in [glaucoma](disease_type)
-- Can I stop using my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} after I got my laser doneeye
+- Can I stop using my [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after I got my laser doneeye
 
 ## intent:glaucoma_eyedrop_treatment
-- How do [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} work
-- What makes [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} work for [glaucoma](disease_type)
-- Are [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} effective for [glaucoma](disease_type)
-- Why must I use my [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} for [glaucoma](disease_type)
-- What are they type of [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} for [glaucoma](disease_type)
-- How are [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} useful in [glaucoma](disease_type)
+- How do [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work
+- What makes [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work for [glaucoma](disease_type)
+- Are [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} effective for [glaucoma](disease_type)
+- Why must I use my [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for [glaucoma](disease_type)
+- What are they type of [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for [glaucoma](disease_type)
+- How are [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} useful in [glaucoma](disease_type)
 - Are there special medications for [glaucoma](disease_type)
 - What medications can I use in [glaucoma](disease_type)
-- How do [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} work in [glaucoma](disease_type)
-- Why do I need to be on my [glaucoma](disease_type) [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"}
+- How do [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work in [glaucoma](disease_type)
+- Why do I need to be on my [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 
 ## intent:disease_followup
 - What is the follow up like after a laser procedure for [glaucoma](disease_type)
@@ -270,9 +332,9 @@
 - Can I stop seeing the doctor after I got my laser done for [glaucoma](disease_type)
 - What do I need to do after my laser for [glaucoma](disease_type)
 - Will I need laser for [glaucoma](disease_type) more than once
-- Do I need special [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} after laser procedure for [glaucoma](disease_type)
+- Do I need special [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after laser procedure for [glaucoma](disease_type)
 - Must I go back to see a doctor after my laser for [glaucoma](disease_type)
-- Can I stop my [eyedrops]{"entity": "symptom_type", "value": "eyedrop-synm"} after my laser for [glaucoma](disease_type)
+- Can I stop my [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my laser for [glaucoma](disease_type)
 - Do I need an appointment after laser for [glaucoma](disease_type)
 - What must I do after I got my laser done for [glaucoma](disease_type)
 
@@ -288,30 +350,38 @@
 - Will there be pain after my [glaucoma](disease_type) or retinal laser procedures
 - How soon will my vision recover after [glaucoma](disease_type) or retinal laser
 
-## intent:ask_disease_symptoms
-- What are the symptoms of [glaucoma](disease_type)
-- What are the different types of [glaucoma](disease_type)
-- How do I know if I have [glaucoma](disease_type)
-- What should I look out for if I think I have [glaucoma](disease_type)
-- Which type of [glaucoma](disease_type) do I have
-- How do patients with [glaucoma](disease_type) present
-- Will I have pain in [glaucoma](disease_type)
-- How would I know if I have [glaucoma](disease_type)
-- What symptoms are suggestive of [glaucoma](disease_type)
-- What eye problems point towards [glaucoma](disease_type)
-- Do I have [glaucoma](disease_type)
-- What are the symptoms and signs of [astigmatism](disease_type)?
-- What does [astigmatism](disease_type) look like?
-- How is [astigmatism](disease_type) supposed to look like?
-- How does [astigmatism](disease_type) normally look like?
-- How does [astigmatism](disease_type) present?
-- How do I know if I have [astigmatism](disease_type)?
-- What will I experience if I have [astigmatism](disease_type)?
-- What do people with [astigmatism](disease_type) experience?
-- How does the doctor know I have [astigmatism](disease_type)?
-- How is a diagnosis of [astigmatism](disease_type) made?
-- How many eyes does [astigmatism](disease_type) affect?
-- Can [astigmatism](disease_type) affect both eyes?
+## intent: conjunctivitis-symptoms_signs-cornearefractive_28
+- What are the complications of [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) affect vision?
+- When should I go to Ane if I have [conjunctivitis](disease_type)
+- Should I see a doctor if I have [conjunctivitis](disease_type)
+- I have [conjunctivitis](disease_type) and I can't see well
+- can [conjunctivitis](disease_type) cause blindness
+- Will my [conjunctivitis](disease_type) get worse?
+- Cna [conjunctivitis](disease_type) cause permanent damage
+- Can [conjunctivitis](disease_type) cause permanent damage
+- is [conjunctivitis](disease_type) dangerous 
+-  conjunctiva inflammation bad
+- is [conjunctivitis](disease_type) bad
+- will [conjunctivitis](disease_type) disappear
+- Can [conjunctivitis](disease_type) cause problems?
+- Is [conjunctivitis](disease_type) serious?
+- Will I become blind?
+- Will I be able to see?
+- Can [conjunctivitis](disease_type) cause difficulties seeing?
+- Can [conjunctivitis](disease_type) lead to visual problems?
+- Is [conjunctivitis](disease_type) sight threatening?
+- Will [conjunctivitis](disease_type) cause blindness?
+- Will I become blind because of [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) cause vlurred vision?
+- What issues can [conjunctivitis](disease_type) cause?
+- Can I still see if I have [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) spoil my vision?
+- Can [conjunctivitis](disease_type) ruin my vision?
+- Can [conjunctivitis](disease_type) cause astigmatism?
+- Can [conjunctivitis](disease_type) cause myopia?
+- Is [conjunctivitis](disease_type) severe?
+- Is [conjunctivitis](disease_type) dangerous?
 
 ## intent:search_provider
 - i need a [hospital](facility_type)
@@ -377,7 +447,7 @@
 - nursing homes
 
 ## synonym:eyedrop-synm
-- eyedrops
+- [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - eye drops
 - eyedrop
 - eye drop
@@ -394,24 +464,6 @@
 
 ## regex:location
 - [0-9]{5}
-
-## intent: astigmatism-condition-cornearefractive
-- What is astigmatism?
-- What is astig
-- What does astigmatism mean?
-- What type of eye problem is astigmatism?
-- Is astigmatism an eye problem?
-- I do not understand astigmatism
-- I am confused about astigmatism
-- What does an oval cornea mean?
-- My cornea is abnormally shaped
-- What causes my vision to be distorted?
-- What is the meaning of astigmatism?
-- I want to know more about astigmatism
-- I want to find out more about astigmatism
-- I want to understand what astigmatism is
-- Tell me more about astigmatism
-- What does astigmatism refer to?
 
 ## intent: astigmatism-cause-cornearefractive
 - What is the cause of astigmatism?
@@ -441,22 +493,6 @@
 - Do corneal problems cause astigmatism?
 - Can astigmatism be passed down to children?
 - Can astigmatism be passed down from parents?
-
-## intent: astigmatism-symptoms_signs-cornearefractive
-- What are the symptoms and signs of astigmatism?
-- can astig affect my vision
-- what are symptoms of astigmatism
-- What does astigmatism look like?
-- How is astigmatism supposed to look like?
-- How does astigmatism normally look like?
-- How does astigmatism present?
-- How do I know if I have astigmatism?
-- What will I experience if I have astigmatism?
-- What do people with astigmatism experience?
-- How does the doctor know I have astigmatism?
-- How is a diagnosis of astigmatism made?
-- How many eyes does astigmatism affect?
-- Can astigmatism affect both eyes?
 
 ## intent: astigmatism-symptoms_signs-cornearefractive_4
 - What are the complications of astigmatism?
@@ -827,7 +863,7 @@
 - What happens in the clinic after astigmatism surgery?
 
 ## intent: conjunctivitis-condition-cornearefractive
-- What is conjunctivitis?
+- What is [conjunctivitis](disease_type)?
 - My eye pink
 - Why is my eye pink?
 - Why is my eye red?
@@ -835,201 +871,142 @@
 - My eyes are always red on waking up with eye dirt
 - Why is my eye inflamed?
 - Why is my conjunctiva inflamed?
-- Is conjunctivitis an eye inflammation?
-- What is the meaning of conjunctivitis?
-- Is conjunctivitis an eye infection?
-- Does conjunctivitis indicate an eye infection?
-- I want to know more about conjunctivitis
-- I want to find out more about conjunctivitis
-- I want to understand what conjunctivitis is
-- Tell me more about conjunctivitis
-- What type of eye problem is conjunctivitis?
-- Is conjunctivitis an eye problem?
-- What does conjunctivitis refer to?
-- What does conjunctivitis mean?
-- What does conjunctivitis entail?
-- What type of eye problem is conjunctivitis?
-- Is conjunctivitis an eye problem?
+- Is [conjunctivitis](disease_type) an eye inflammation?
+- What is the meaning of [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye infection?
+- Does [conjunctivitis](disease_type) indicate an eye infection?
+- I want to know more about [conjunctivitis](disease_type)
+- I want to find out more about [conjunctivitis](disease_type)
+- I want to understand what [conjunctivitis](disease_type) is
+- Tell me more about [conjunctivitis](disease_type)
+- What type of eye problem is [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye problem?
+- What does [conjunctivitis](disease_type) refer to?
+- What does [conjunctivitis](disease_type) mean?
+- What does [conjunctivitis](disease_type) entail?
+- What type of eye problem is [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye problem?
 
 ## intent: conjunctivitis-causes-cornearefractive
-- What is the cause of conjunctivitis?
-- What causes conjunctivitis
-- How is conjunctivitis spreaded?
-- If I look at people with conjunctivitis can I get infected?
-- Is conjunctivitis caused by virus or bacteria
-- Why do I have conjunctivitis?
-- Why does conjunctivitis occur?
-- How come I have conjunctivitis?
-- What is the etiology of conjunctivitis?
-- What is conjunctivitis due to?
-- Is conjunctivitis caused by blepharitis?
-- Is conjunctivitis caused by infection?
-- Which patients get conjunctivitis?
-- What is the reason I have conjunctivitis?
-- Who gets conjunctivitis?
-- Who is more susceptible to conjunctivitis?
-- Who is at risk of getting conjunctivitis?
-- What are the risk factors of conjunctivitis?
-- Is conjunctivitis caused by allergy?
-
-## intent: conjunctivitis-symptoms_signs-cornearefractive
-- What are the symptoms and signs of conjunctivitis?
-- What will I feel if I have conjunctivitis
-- Is conjunctivitis contagious?
-- how long does conjunctivitis last
-- Does conjunctivitis cause pain
-- Does conjunctivitis cause dry eyes
-- My conjunctivitis is not better after 2 weeks, what should I do
-- How long will I take to recover from conjunctivitis
-- What happens when I have conjunctivitis?
-- How does conjunctivitis present?
-- How do I know if I have conjunctivitis?
-- What will I experience if I have conjunctivitis?
-- What do people with conjunctivitis experience?
-- How does the doctor know I have conjunctivitis?
-- How does the doctor diagnose me with conjunctivitis?
-- Is conjunctivitis infectious?
-- Is conjunctivitis contagious?
-- Can I get conjunctivitis from other people?
-- Can conjunctivitis spread from other people?
-- Is conjunctivitis inherited?
-- Is conjunctivitis congenital?
-- Can conjunctivitis be passed down to children?
-- Can conjunctivitis be passed down from parents?
-- Does conjunctivitis cause flu?
-
-## intent: conjunctivitis-symptoms_signs-cornearefractive_28
-- What are the complications of conjunctivitis?
-- Can conjunctivitis affect vision?
-- When should I go to Ane if I have conjunctivitis
-- Should I see a doctor if I have conjunctivitis
-- I have conjunctivitis and I can't see well
-- can conjunctivitis cause blindness
-- Will my conjunctivitis get worse?
-- Cna conjunctivitis cause permanent damage
-- Can conjunctivitis cause permanent damage
-- is conjunctivitis dangerous 
--  conjunctiva inflammation bad
-- is conjunctivitis bad
-- will conjunctivitis disappear
-- Can conjunctivitis cause problems?
-- Is conjunctivitis serious?
-- Will I become blind?
-- Will I be able to see?
-- Can conjunctivitis cause difficulties seeing?
-- Can conjunctivitis lead to visual problems?
-- Is conjunctivitis sight threatening?
-- Will conjunctivitis cause blindness?
-- Will I become blind because of conjunctivitis?
-- Can conjunctivitis cause vlurred vision?
-- What issues can conjunctivitis cause?
-- Can I still see if I have conjunctivitis?
-- Can conjunctivitis spoil my vision?
-- Can conjunctivitis ruin my vision?
-- Can conjunctivitis cause astigmatism?
-- Can conjunctivitis cause myopia?
-- Is conjunctivitis severe?
-- Is conjunctivitis dangerous?
+- What is the cause of [conjunctivitis](disease_type)?
+- What causes [conjunctivitis](disease_type)
+- How is [conjunctivitis](disease_type) spreaded?
+- If I look at people with [conjunctivitis](disease_type) can I get infected?
+- Is [conjunctivitis](disease_type) caused by virus or bacteria
+- Why do I have [conjunctivitis](disease_type)?
+- Why does [conjunctivitis](disease_type) occur?
+- How come I have [conjunctivitis](disease_type)?
+- What is the etiology of [conjunctivitis](disease_type)?
+- What is [conjunctivitis](disease_type) due to?
+- Is [conjunctivitis](disease_type) caused by blepharitis?
+- Is [conjunctivitis](disease_type) caused by infection?
+- Which patients get [conjunctivitis](disease_type)?
+- What is the reason I have [conjunctivitis](disease_type)?
+- Who gets [conjunctivitis](disease_type)?
+- Who is more susceptible to [conjunctivitis](disease_type)?
+- Who is at risk of getting [conjunctivitis](disease_type)?
+- What are the risk factors of [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) caused by allergy?
 
 ## intent: conjunctivitis-investigations-cornearefractive
-- What investigations will be done for conjunctivitis?
-- What will the eye doctor do after examining my conjunctivitis?
-- Are additional tests required for conjunctivitis?
-- Are additional tests needed for conjunctivitis?
-- What tests will I have to go through for conjunctivitis?
-- Will the eye doctor do more tests for conjunctivitis?
-- Will the eye doctor take pictures of my eyes for conjunctivitis?
-- Do I need blood tests for conjunctivitis?
-- Does the eye doctor need to take blood test for conjunctivitis?
-- Are invasive tests needed for conjunctivitis?
-- Is eye imaging required for conjunctivitis?
+- What investigations will be done for [conjunctivitis](disease_type)?
+- What will the eye doctor do after examining my [conjunctivitis](disease_type)?
+- Are additional tests required for [conjunctivitis](disease_type)?
+- Are additional tests needed for [conjunctivitis](disease_type)?
+- What tests will I have to go through for [conjunctivitis](disease_type)?
+- Will the eye doctor do more tests for [conjunctivitis](disease_type)?
+- Will the eye doctor take pictures of my eyes for [conjunctivitis](disease_type)?
+- Do I need blood tests for [conjunctivitis](disease_type)?
+- Does the eye doctor need to take blood test for [conjunctivitis](disease_type)?
+- Are invasive tests needed for [conjunctivitis](disease_type)?
+- Is eye imaging required for [conjunctivitis](disease_type)?
 
 ## intent: conjunctivitis-treatment_general-cornearefractive
-- What is the treatment for conjunctivitis?
-- What must I do if I have conjunctivitis
-- is antibiotics the treatment for conjunctivitis
+- What is the treatment for [conjunctivitis](disease_type)?
+- What must I do if I have [conjunctivitis](disease_type)
+- is antibiotics the treatment for [conjunctivitis](disease_type)
 - Can I wear contact lens when I have sore eyes?
-- I have conjunctivitis, can I wear contact lenses?
-- Can I use the computer when I have conjunctivitis
-- My right eye has conjunctivitis, will it go to my left eye
-- I have conjunctivitis, should I use artificial tears?
-- are eye drops enough for conjunctivitis
-- can conjunctivitis infect others
-- How to treat conjunctivitis?
-- How to heal conjunctivitis?
-- How to cure conjunctivitis?
-- How to repair conjunctivitis?
-- How to make conjunctivitis go away?
-- How to make conjunctivitis disappear?
-- How to get rid of conjunctivitis?
-- How to prevent conjunctivitis?
-- How to help my conjunctivitis?
-- How is conjunctivitis treated?
-- How to stop conjunctivitis from coming back?
-- What to do to stop conjunctivitis?
-- What are the options for treating conjunctivitis?
-- How to reduce itch from conjunctivitis?
-- How to reduce discomfort from conjunctivitis?
-- How to reduce discharge from conjunctivitis?
-- How to stop spreading conjunctivitis?
+- I have [conjunctivitis](disease_type), can I wear contact lenses?
+- Can I use the computer when I have [conjunctivitis](disease_type)
+- My right eye has [conjunctivitis](disease_type), will it go to my left eye
+- I have [conjunctivitis](disease_type), should I use artificial tears?
+- are eye drops enough for [conjunctivitis](disease_type)
+- can [conjunctivitis](disease_type) infect others
+- How to treat [conjunctivitis](disease_type)?
+- How to heal [conjunctivitis](disease_type)?
+- How to cure [conjunctivitis](disease_type)?
+- How to repair [conjunctivitis](disease_type)?
+- How to make [conjunctivitis](disease_type) go away?
+- How to make [conjunctivitis](disease_type) disappear?
+- How to get rid of [conjunctivitis](disease_type)?
+- How to prevent [conjunctivitis](disease_type)?
+- How to help my [conjunctivitis](disease_type)?
+- How is [conjunctivitis](disease_type) treated?
+- How to stop [conjunctivitis](disease_type) from coming back?
+- What to do to stop [conjunctivitis](disease_type)?
+- What are the options for treating [conjunctivitis](disease_type)?
+- How to reduce itch from [conjunctivitis](disease_type)?
+- How to reduce discomfort from [conjunctivitis](disease_type)?
+- How to reduce discharge from [conjunctivitis](disease_type)?
+- How to stop spreading [conjunctivitis](disease_type)?
 
 ## intent: conjunctivitis-treatment_conservative-cornearefractive
-- What is the conservative treatment of conjunctivitis?
-- How can I prevent my conjunctivitis from spreading to my family
-- I have conjunctivitis, when can I go back to work
-- Can I get rid of conjunctivitis without medicine or surgery?
-- How can I stop spreading conjunctivitis to people?
-- How can I avoid spreading conjunctivitis to others?
-- I am worried of giving conjunctivitis to others
-- Is conjunctivitis contagious?
-- Will conjunctivitis be cured without medicine or surgery?
-- Will conjunctivitis go away without medicine or surgery?
-- How can I protect my eyes from conjunctivitis?
-- When can conjunctivitis be left alone?
-- When can conjunctivitis be treated conservatively?
-- When can conjunctivitis be treated without medicine or surgery?
-- Can conjunctivitis be left alone?
-- Will conjunctivitis go away on its own?
-- Will conjunctivitis disappear on its own?
-- Will conjunctivitis get cured on its own?
-- Will conjunctivitis heal by itself?
+- What is the conservative treatment of [conjunctivitis](disease_type)?
+- How can I prevent my [conjunctivitis](disease_type) from spreading to my family
+- I have [conjunctivitis](disease_type), when can I go back to work
+- Can I get rid of [conjunctivitis](disease_type) without medicine or surgery?
+- How can I stop spreading [conjunctivitis](disease_type) to people?
+- How can I avoid spreading [conjunctivitis](disease_type) to others?
+- I am worried of giving [conjunctivitis](disease_type) to others
+- Is [conjunctivitis](disease_type) contagious?
+- Will [conjunctivitis](disease_type) be cured without medicine or surgery?
+- Will [conjunctivitis](disease_type) go away without medicine or surgery?
+- How can I protect my eyes from [conjunctivitis](disease_type)?
+- When can [conjunctivitis](disease_type) be left alone?
+- When can [conjunctivitis](disease_type) be treated conservatively?
+- When can [conjunctivitis](disease_type) be treated without medicine or surgery?
+- Can [conjunctivitis](disease_type) be left alone?
+- Will [conjunctivitis](disease_type) go away on its own?
+- Will [conjunctivitis](disease_type) disappear on its own?
+- Will [conjunctivitis](disease_type) get cured on its own?
+- Will [conjunctivitis](disease_type) heal by itself?
 
 ## intent: conjunctivitis-treatment_medical-cornearefractive
-- What is the medical treatment of conjunctivitis?
-- What is the pharmacological treatment of conjunctivitis?
-- Can I take medicine to treat conjunctivitis?
-- Are there pills to treat conjunctivitis?
-- Are there eye drops to get rid of conjunctivitis?
-- Will eye drops help cure conjunctivitis?
-- How do eye drops work in conjunctivitis?
-- How do eye drops help with conjunctivitis?
-- What do eye drops do for conjunctivitis?
-- Can eye drops reduce conjunctivitis?
-- Can eye drops stop conjunctivitis?
-- Can eye drops heal conjunctivitis?
-- Can eye drops prevent conjunctivitis?
-- Is medicine needed for conjunctivitis?
-- Can I take medicine to treat conjunctivitis?
-- How do eye drops treat conjunctivitis?
-- How is conjunctivitis treated with medicine?
-- Are antibiotics needed for conjunctivitis?
-- Will eye drops kill germs that cause conjunctivitis?
+- What is the medical treatment of [conjunctivitis](disease_type)?
+- What is the pharmacological treatment of [conjunctivitis](disease_type)?
+- Can I take medicine to treat [conjunctivitis](disease_type)?
+- Are there pills to treat [conjunctivitis](disease_type)?
+- Are there eye drops to get rid of [conjunctivitis](disease_type)?
+- Will eye drops help cure [conjunctivitis](disease_type)?
+- How do eye drops work in [conjunctivitis](disease_type)?
+- How do eye drops help with [conjunctivitis](disease_type)?
+- What do eye drops do for [conjunctivitis](disease_type)?
+- Can eye drops reduce [conjunctivitis](disease_type)?
+- Can eye drops stop [conjunctivitis](disease_type)?
+- Can eye drops heal [conjunctivitis](disease_type)?
+- Can eye drops prevent [conjunctivitis](disease_type)?
+- Is medicine needed for [conjunctivitis](disease_type)?
+- Can I take medicine to treat [conjunctivitis](disease_type)?
+- How do eye drops treat [conjunctivitis](disease_type)?
+- How is [conjunctivitis](disease_type) treated with medicine?
+- Are antibiotics needed for [conjunctivitis](disease_type)?
+- Will eye drops kill germs that cause [conjunctivitis](disease_type)?
 
 ## intent: conjunctivitis-treatment_surgical-cornearefractive
-- What is the surgical treatment of conjunctivitis?
-- is there a surgery to treat conjunctivitis
-- do i need to take out my conjunctivitis
-- Does conjunctivitis surgery exist?
-- Is surgical removal of conjunctivitis possible?
-- Can you take out my conjunctivitis?
-- Can I do surgery to treat conjunctivitis?
-- Can you help me remove conjunctivitis?
-- Do I have to go under the knife for conjunctivitis?
-- Is there conjunctivitis surgery?
-- Is there a surgery to remove conjunctivitis?
-- Is there a procedure to remove conjunctivitis?
-- Can an eye surgeon operate on my conjunctivitis?
-- Can an eye doctor do surgery for my conjunctivitis?
+- What is the surgical treatment of [conjunctivitis](disease_type)?
+- is there a surgery to treat [conjunctivitis](disease_type)
+- do i need to take out my [conjunctivitis](disease_type)
+- Does [conjunctivitis](disease_type) surgery exist?
+- Is surgical removal of [conjunctivitis](disease_type) possible?
+- Can you take out my [conjunctivitis](disease_type)?
+- Can I do surgery to treat [conjunctivitis](disease_type)?
+- Can you help me remove [conjunctivitis](disease_type)?
+- Do I have to go under the knife for [conjunctivitis](disease_type)?
+- Is there [conjunctivitis](disease_type) surgery?
+- Is there a surgery to remove [conjunctivitis](disease_type)?
+- Is there a procedure to remove [conjunctivitis](disease_type)?
+- Can an eye surgeon operate on my [conjunctivitis](disease_type)?
+- Can an eye doctor do surgery for my [conjunctivitis](disease_type)?
 
 ## intent: cornealedema-condition-cornearefractive
 - What is corneal edema?
@@ -1676,7 +1653,7 @@
 - How long will I need to recover from cornea infection
 - how can i avoid getting contact lens ulcer again?
 - should i avoid contact lens because i had an infection
-- can the doctor cure cornea infection with eyedrops
+- can the doctor cure cornea infection with [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - What is the pharmacological treatment of corneal infection?
 - Can I take medicine to treat corneal infection?
 - Are there pills to treat corneal infection?
@@ -2132,7 +2109,7 @@
 
 ## intent: pterygium-treatment_conservative-cornearefractive
 - What is the conservative treatment of pterygium?
-- is there eyedrops to dissolve the white skin on my eye?
+- is there [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve the white skin on my eye?
 - will wearing sunglasses help if i have pterygium?
 - Can I get rid of pterygium without medicine or surgery?
 - Will pterygium be cured without medicine or surgery?
@@ -2516,7 +2493,7 @@
 - What is the treatment for Cataracts?
 - How is cataract monitored
 - What should I do if I have cataract
-- Any eyedrops to dissolve cataracts
+- Any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve cataracts
 - Do I need cataract op
 - how to treat cloudy lens
 - How can I treat Cataracts?
@@ -2698,7 +2675,7 @@
 - can eye drops cure dry eyes
 - What eye drops are good for dry eyes
 - How often should I put tear drops
-- What is the difference between bottle and disposable eyedrops
+- What is the difference between bottle and disposable [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - What are the non-surgical treatments for dry eye syndrome?
 - Are there medications that are useful for dry eyes?
 - What medications can improve eye dryness?
@@ -2804,7 +2781,7 @@
 - Is warm compress important in treating oily eyelids?
 - Can blepharitis be cured?
 - Do I need treatment for my blepharitis forever?
-- Do I need to apply eyedrops for blepharitis?
+- Do I need to apply [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for blepharitis?
 - Can I wear contact lenses if I have blepharitis?
 - How can I control blepharitis?
 
@@ -2825,7 +2802,7 @@
 - Do I need to take antibiotics for marginal keratitis?
 - Do I need surgery for marginal keratitis?
 - Can marginal keratitis recover on its own?
-- Do I need eyedrops for marginal keratitis?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for marginal keratitis?
 - Can I wear contact lens if I have marginal keratitis?
 - What will the doctor do if I have marginal keratitis?
 - When do I need treatment for marginal keratitis?
@@ -2902,7 +2879,7 @@
 - What is the treatment for Cataracts?
 - How is cataract monitored
 - What should I do if I have cataract
-- Any eyedrops to dissolve cataracts
+- Any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve cataracts
 - Do I need cataract op
 - how to treat cloudy lens
 - How can I treat Cataracts?
@@ -2988,7 +2965,7 @@
 - Why is my eye painful and blurry after cataract operation?
 - My eyesight is still not good after cataract surgery, do I need another operation?
 - Why is my eyesight hazy after cataract surgery?
-- My eye is painful and blurry after putting eyedrops, why is that so?
+- My eye is painful and blurry after putting [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, why is that so?
 
 ## intent: cataract-postoperative-cornearefractive_140
 - What is a Yag capsulotomy and why do I need it?
@@ -3265,7 +3242,7 @@
 - Is lying down to read bad for myopia?
 - Are OrthoK lenses useful in treating myopia?
 - Are eye exercises useful in preventing or slowing myopia progression?
-- Are there any eyedrops that prevent myopia?
+- Are there any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} that prevent myopia?
 - Are myopia prevention lenses effective?
 
 ## intent: myopia-symptoms_signs-cornearefractive_158
@@ -3323,7 +3300,7 @@
 ## intent: myopia-treatment_general-cornearefractive_162
 - Does my child need to wear any special glasses if my child is on atropine?
 - If my child uses atropine, is special glasses required?
-- Is transition lenses needed for my child if we start on atropine eyedrops?
+- Is transition lenses needed for my child if we start on atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - When would my child require special lenses due to atropine treatment?
 - Do all children on atropine treatment need special lenses?
 - What lenses should my child use if we start on atropine treatment?
@@ -3335,7 +3312,7 @@
 
 ## intent: myopia-treatment_general-cornearefractive_163
 - What is atropine eyedrop?
-- How long has atropine eyedrops been around
+- How long has atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} been around
 - Is atropine still under research
 - How does atropine eyedrop work?
 - What is the mechanism of atropine?
@@ -3350,9 +3327,9 @@
 - What are other uses of atropine apart from myopia prevention?
 
 ## intent: myopia-treatment_general-cornearefractive_164
-- What is the criteria to start atropine eyedrops?
+- What is the criteria to start atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - When is it right to start my son on atropine
-- When is the right time to start atropine eyedrops?
+- When is the right time to start atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - What is the recommendation to start atropine treatment?
 - Is there any guideline for initiating atropine treatment?
 - At what age should my child start atropine to stop myopia?
@@ -3371,7 +3348,7 @@
 - Can my child be started on atropine even if his/her myopia is low?
 
 ## intent: myopia-treatment_general-cornearefractive_165
-- What are the side effects of atropine eyedrops?
+- What are the side effects of atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - What are long term side effects of atropine
 - Are there any issues with atropine
 - Is atropine safe
@@ -3382,20 +3359,20 @@
 - Will prolonged use of atropine harm my child’s eyes?
 - Is atropine dangerous?
 - What are the harmful effects of atropine?
-- What are common side effects of atropine eyedrops?
+- What are common side effects of atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - How common are side effects of atropine?
 - Can prolonged use of atropine cause cataracts?
 - What should I watch out for if my child is on atropine?
 
 ## intent: myopia-treatment_general-cornearefractive_166
-- What is the treatment regime of atropine eyedrops?
-- How good is atropine eyedrops
-- How effective is atropine eyedrops
+- What is the treatment regime of atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
+- How good is atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
+- How effective is atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - How often do I need to put atropine to control myopia
-- How effective is atropine eyedrops
+- How effective is atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - What is the success rate of atropine
 - What is the treatment of atropine like?
-- How often does my child need atropine eyedrops?
+- How often does my child need atropine [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - Can I put two drops of atropine into each eye for my child?
 - What are the different concentrations of atropine available?
 - What is the lowest dose for atropine treatment?
@@ -3463,7 +3440,7 @@
 - Will prolonged use of Orthokeratology harm my child’s eyes?
 - Is Orthokeratology dangerous?
 - What are the harmful effects of Orthokeratology?
-- What are common side effects of Orthokeratology eyedrops?
+- What are common side effects of Orthokeratology [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - How common are side effects of Orthokeratology?
 - Can prolonged use of Orthokeratology cause cataracts?
 - What should I watch out for if my child is on Orthokeratology?
@@ -3562,7 +3539,7 @@
 - How long do I need to rest after LASIK?
 - How long will I take to recover after LASIK?
 - How should I care for my eyes after LASIK?
-- Do I need eyedrops after my LASIK surgery?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASIK surgery?
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive_177
 - What may be the side effects that I might face with LASIK?
@@ -3667,7 +3644,7 @@
 - How long do I need to rest after LASEK?
 - How long will I take to recover after LA LASEK SIK?
 - How should I care for my eyes after LASEK?
-- Do I need eyedrops after my LASEK surgery?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASEK surgery?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_184
 - What is ReLEx® Smile?
@@ -3997,21 +3974,6 @@
 - What are my options if I have diabetic retinopathy?
 - Must I undergo surgery for diabetic retinopathy?
 
-## intent: diabeticretinopathy-anatomy-retina
-- What is the macula?
-- What is diabetic Macular edema
-- What is the macula?
-- What is diabetic Macular edema
-- Where is the centre part of the eye?
-- Why is the macula important?
-- Is the macula in charge of the most important part of our vision?
-- What happens when the macula is damaged?
-- What diseases can occur in the macula?
-- Where is the macula?
-- Is macula the most important part of our retina?
-- What is the macula responsible for?
-- Why do we need the macula?
-
 ## intent: diabeticretinopathy-treatment_laser-retina
 - How is panretinal photocoagulation performed?
 - Is laser for diabetes painful?
@@ -4253,7 +4215,7 @@
 - Can I travel after my macular hole surgery?
 - Can I see after macular hole operation?
 - Is there medicine for macular hole?
-- Does eyedrops help for macular hole?
+- Does [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} help for macular hole?
 - Do all macular holes need to undergo surgery?
 
 ## intent: uveitis-condition-retina
@@ -4330,7 +4292,7 @@
 - how to stop uveitis
 - What is the treatment for uveitis?
 - Can uveitis go away without treatment?
-- Do I need eyedrops for uveitis?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for uveitis?
 - Does antibiotic help for uveitis?
 - Is steroid the treatment of uveitis? 
 - What medications can treat uveitis?
@@ -4401,7 +4363,7 @@
 - Will lutein help AMD
 - What can I do if I have AMD
 - How often should I follow up to check for AMD
-- Does eyedrops work to treat AMD
+- Does [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work to treat AMD
 - How is AMD treated?
 - What is the treatment of age-related macular degeneration?
 - How soon will my vision recover after treatment?
@@ -4536,7 +4498,7 @@
 - Can I leave my ERM alone?
 - Is surgery required for ERM?
 - Can ERM go away on its own?
-- Do eyedrops/vitamins help for ERM?
+- Do [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}/vitamins help for ERM?
 - How is surgery performed for ERM?
 - Can ERM be treated?
 - Will my vision improve after ERM surgery?
@@ -4588,7 +4550,7 @@
 - Do all retinal vein occlusions need to be treated?
 - What tests/investigations do I need to undergo for retinal vein occlusion?
 - Do I need laser for retinal vein occlusion?
-- Can eyedrops treat retinal vein occlusion?
+- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} treat retinal vein occlusion?
 - Why do I need injections for retinal vein occlusion?
 - Why do I need to undergo FFA for retinal vein occlusion?
 
@@ -4628,7 +4590,7 @@
 - Can night blindness be treated?
 - Will taking vitamins work for night blindness?
 - Is there gene treatment/therapy for night blindness?
-- Can eyedrops or surgery treat night blindness?
+- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} or surgery treat night blindness?
 - What should I avoid if I have night blindness?
 - How can I confirm if I have night blindness?
 - Is there any treatment for night blindness?
@@ -4805,7 +4767,7 @@
 - How can I treat my child’s blinking?
 - Is there any medication to stop my child from blinking?
 - Can allergy medications help my child’s blinking?
-- Do eyedrops help in children blinking?
+- Do [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} help in children blinking?
 - What can improve my child’s blinking?
 - How can I control my child from blinking?
 - Do I need to see an eye doctor for my child’s blinking?
@@ -4830,7 +4792,7 @@
 - How can I treat my child’s frequent rubbing?
 - Is there any medication to stop my child from rubbing his eyes?
 - Can allergy medications help my child’s frequent rubbing?
-- Do eyedrops help in children frequent rubbing?
+- Do [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} help in children frequent rubbing?
 - What can improve my child’s frequent rubbing?
 - How can I control my child from rubbing his eyes?
 - Do I need to see an eye doctor for my child’s frequent rubbing?
@@ -4850,30 +4812,30 @@
 - Can persistent rubbing damage the eye permanently?
 
 ## intent: allergicconjunctivitis-cause_condition-paediatricophthalmology
-- What is allergic conjunctivitis?
-- What causes allergic conjunctivitis?
-- How does allergic conjunctivitis look like?
-- What are the symptoms of allergic conjunctivitis?
-- What triggers allergic conjunctivitis?
-- Who gets allergic conjunctivitis?
-- What does allergic conjunctivitis mean?
-- How do I get allergic conjunctivitis?
-- How does allergic conjunctivitis occur?
-- What will I feel if I have allergic conjunctivitis?
+- What is allergic [conjunctivitis](disease_type)?
+- What causes allergic [conjunctivitis](disease_type)?
+- How does allergic [conjunctivitis](disease_type) look like?
+- What are the symptoms of allergic [conjunctivitis](disease_type)?
+- What triggers allergic [conjunctivitis](disease_type)?
+- Who gets allergic [conjunctivitis](disease_type)?
+- What does allergic [conjunctivitis](disease_type) mean?
+- How do I get allergic [conjunctivitis](disease_type)?
+- How does allergic [conjunctivitis](disease_type) occur?
+- What will I feel if I have allergic [conjunctivitis](disease_type)?
 
 ## intent: allergicconjunctivitis-treatment_general-paediatricophthalmology
-- How is allergic conjunctivitis treated?
+- How is allergic [conjunctivitis](disease_type) treated?
 - How to treat allergy
-- How to treat allergic conjunctivitis
+- How to treat allergic [conjunctivitis](disease_type)
 - How to stop itchy eye
-- Does allergic conjunctivitis need medications?
-- What type of eyedrops will help my allergic conjunctivitis?
-- Can allergic conjunctivitis be cured?
-- How can I prevent allergic conjunctivitis?
-- How can I cure my allergic conjunctivitis
-- What precautions can I take for allergic conjunctivitis?
-- How is childhood allergic conjunctivitis treated?
-- Can allergic conjunctivitis in children be treated?
+- Does allergic [conjunctivitis](disease_type) need medications?
+- What type of [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} will help my allergic [conjunctivitis](disease_type)?
+- Can allergic [conjunctivitis](disease_type) be cured?
+- How can I prevent allergic [conjunctivitis](disease_type)?
+- How can I cure my allergic [conjunctivitis](disease_type)
+- What precautions can I take for allergic [conjunctivitis](disease_type)?
+- How is childhood allergic [conjunctivitis](disease_type) treated?
+- Can allergic [conjunctivitis](disease_type) in children be treated?
 - My child has allergic eye disease, what can I do?
 
 ## intent: abnormalheadposture-condition-paediatricophthalmology
@@ -4911,7 +4873,7 @@
 - What are the issues with congenital nasolacrimal duct obstruction?
 - Can tearing cause blindness in a baby?
 - Is glaucoma in a children dangerous?
-- Is conjunctivitis in a baby dangerous?
+- Is [conjunctivitis](disease_type) in a baby dangerous?
 - What are the issues with tear flow obstruction? 
 
 ## intent: tearing-treatment_general-paediatricophthalmology
@@ -4949,8 +4911,8 @@
 - What would the Ophthalmologist do for epiblepharon?
 - Is epiblepharon treatable?
 - My child has epiblepharon, what can I do?
-- Can eyedrops treat epiblepharon?
-- Is eyedrops sufficient for epiblepharon?
+- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} treat epiblepharon?
+- Is [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} sufficient for epiblepharon?
 
 ## intent: chalazion_stye-cause_condition-paediatricophthalmology
 - What is a chalazion/stye?
@@ -4983,8 +4945,8 @@
 ## intent: chalazion_stye-treatment_general-paediatricophthalmology
 - How is chalazion treated?
 - How is chalaizon/stye treated?
-- Can chalazion/stye be treated with eyedrops?
-- Will eyedrops work for chalazion/stye?
+- Can chalazion/stye be treated with [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
+- Will [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work for chalazion/stye?
 - Do I need to take oral antibiotics for chalazion/stye?
 - Do I need surgery for chalazion/stye?
 - How is surgery for chalazion/stye done?
@@ -5281,7 +5243,7 @@
 ## intent: entropion-treatment_general-oculoplastic
 - How is entropion treated?
 - What can I do if I have in-turned eyelids?
-- Is eyedrops sufficient to treat in-turned eyelids?
+- Is [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} sufficient to treat in-turned eyelids?
 - How is in-turned eyelids corrected?
 - What can be done for in-turned eyelids?
 - Is surgery required for in-turned eyelids?
@@ -5592,7 +5554,7 @@
 - What is the treatment for insufficient closure of the eyes?
 - If I can’t close my eyes fully, what can I do?
 - Do I need surgery if I cannot close my eyes fully?
--  Should I put eyedrops if I cannot close my eyes fully?
+-  Should I put [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} if I cannot close my eyes fully?
 - Should I see a doctor if I cannot shut my eyes?
 - What should I do if I cannot close my eyes?
 - Can lagophthalmos be treated?
@@ -5699,7 +5661,7 @@
 ## intent: blepharospasm_hemifacialspasm-treatment_general-neuroophthalmology
 - What is the treatment for blepharospasm/hemifacial spasm?
 - Do I need surgery for blepharospasm/hemifacial spasm?
-- Is there eyedrops/creams to reduce the spasm?
+- Is there [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}/creams to reduce the spasm?
 - Is botox injection effective for blepharospasm/hemifacial spasm?
 - What is the recommended treatment for blepharospasm/hemifacial spasm?
 - How is blepharospasm/hemifacial spasm treated?
@@ -5752,7 +5714,7 @@
 - Can my eyesight recover back to normal?
 - What is the implication of optic neuritis?
 - What is the main treatment of optic neuritis?
-- Can eyedrops treat optic neuritis?
+- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} treat optic neuritis?
 - What is the cure for optic neuritis?
 - What do I need to take to prevent optic neuritis from coming back?
 - Is there any treatment for optic neuritis?
@@ -5941,7 +5903,7 @@
 - What are the risks of using steroids?
 - Will long term use of steroids cause problems?
 - Does high dose steroids have any risks?
-- I am putting steroid eyedrops, what are the risks?
+- I am putting steroid [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, what are the risks?
 - Can steroids/immunosuppressants damage my liver/kidney?
 - Am I at higher risk of infection with steroids/immunosuppressants?
 - Who will monitor for me if I am on long term steroids/immunosuppressants?
@@ -6111,7 +6073,7 @@
 - I just went for cataract surgery and my eye is very painful
 - What are the instructions after my operation?
 - How do I take care of my eyes after operation?
-- When should I start my eyedrops after operation?
+- When should I start my [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after operation?
 - I feel pain after my operation, what should I do?
 - How should I clean my eye after my operation?
 - Can I shower after operation?
@@ -6227,7 +6189,7 @@
 - My eye keeps having sticky discharge.
 - Why do I have eye discharge?
 - My vision is blurry due to discharge.
-- I have eye discharge, will eyedrops help?
+- I have eye discharge, will [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} help?
 - My eye discharge is worsening, what should I do?
 - Why do I have eye discharge when I wake up in the morning?
 - Is my eye discharge due to an infection?
@@ -6259,7 +6221,7 @@
 - What is the most common cause of red eyes?
 - My eyes are red.
 - Why do I have red eyes?
-- I wake up with red eyes, is it conjunctivitis?
+- I wake up with red eyes, is it [conjunctivitis](disease_type)?
 - What are the causes of red eyes?
 - My eyes are always red, what should I do?
 - Why is my eyes getting redder?
@@ -6305,8 +6267,8 @@
 - How can I get rid of the flashes/floaters?
 - What can I do to remove the flashes/floaters?
 - Can laser remove the flashes/floaters?
-- Are there any eyedrops that can treat flashes/floaters?
-- Are eyedrops helpful for flashes/floaters?
+- Are there any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} that can treat flashes/floaters?
+- Are [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} helpful for flashes/floaters?
 - Can the floaters be removed?
 - Can surgery remove the floaters?
 - Can the doctor clean up the floaters?
@@ -6381,7 +6343,7 @@
 - What is the cause of eye strain?
 - My eye feels tired at the end of the day, why is that so?
 - I need to close my eyes at the end of the day, why so?
-- My eye feels a lot of strain, should I put some eyedrops?
+- My eye feels a lot of strain, should I put some [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - My eyes get tired easily, should I see a doctor?
 
 ## intent: tunnelvision-symptoms_signs-miscellaneous

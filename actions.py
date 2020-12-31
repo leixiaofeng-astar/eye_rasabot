@@ -14,7 +14,7 @@ from rasa_sdk.forms import FormAction
 # xubh-q36u is for hospitals
 # b27b-2uc7 is for nursing homes
 # 9wzi-peqs is for home health agencies
-
+PROJ_NAME = "Dr Eye"
 ENDPOINTS = {
     "base": "https://data.medicare.gov/resource/{}.json",
     "xubh-q36u": {
@@ -52,24 +52,42 @@ FACILITY_TYPES = {
         }
 }
 
-DISEASE_TYPES = {
-    "glaucoma":
-        {
-            "name": "glaucoma",
-        },
-    "astigmatism":
-        {
-            "name": "astigmatism",
-        },
-    "diabetic retinopathy":
-        {
-            "name": "diabetic retinopathy",
-        },
-    "visualfiled-synm":
-        {
-            "name": "visualfiled-synm",
-        },
-}
+# TODO -- prepare for mutli-intents combination
+disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy"]
+symptom_entity_list = ["visualfiled-synm", "oval cornea", "centre part"]
+medicine_name_entity_list = ["eyedrop-synm"]
+entity_dict = {"disease_type": disease_entity_list,
+                 "symptom_type": symptom_entity_list,
+                 "medicine_name": medicine_name_entity_list,
+                }
+
+# Define Levenshtein distance function (from the mentioned link)
+def levenshtein(s1, s2):
+    if len(s1) < len(s2):
+        return levenshtein(s2, s1)
+
+    if len(s2) == 0:
+        return len(s1)
+
+    previous_row = range(len(s2) + 1)
+    for i, c1 in enumerate(s1):
+        current_row = [i + 1]
+        for j, c2 in enumerate(s2):
+            insertions = previous_row[j + 1] + 1
+            deletions = current_row[j] + 1
+            substitutions = previous_row[j] + (c1 != c2)
+            current_row.append(min(insertions, deletions, substitutions))
+        previous_row = current_row
+
+    return previous_row[-1]
+
+# Define a function that returns the best match
+def get_closest_match(name, real_names):
+    name = str(name).lower()
+    levdist = [levenshtein(name, real_name) for real_name in real_names]
+    for i in range(len(levdist)):
+        if levdist[i] == min(levdist):
+            return real_names[i]
 
 
 def _create_path(base: Text, resource: Text,
@@ -196,7 +214,7 @@ class ActionDefaultFallback(Action):
            domain: Dict[Text, Any]) -> List:
 
         print("action_default_fallback")
-        dispatcher.utter_message(template="utter_out_of_scope", name="Dr Eye")
+        dispatcher.utter_message(template="utter_out_of_scope", name=PROJ_NAME)
         return []
 
 
@@ -214,56 +232,118 @@ class action_find_information(Action):
             domain: Dict[Text, Any]) -> List:
 
         inform_matched = False
-        for t in DISEASE_TYPES:
-            disease_type = DISEASE_TYPES[t]
-            # TODO
-            disease_name = disease_type.get("name")
-            es = tracker.latest_message["entities"]
-            if (es is not None) and (len(es) != 0):
-                e = es[0]
-                query_name = e['value']
-                # note: the key in dict depends on the pipeline in config.yml
-                # "extractor": "DIETClassifier"
-                print("entity: {}\nvalue: {}".format(e, e['value']))
-                # "extractor": "CRFEntityExtractor"
-                # print("entity: {}\nscore: {}" .format(e, e['confidence_entity']))
-            else:
-                print("Warning: entity: is empty")
-
-            # query_name = next(tracker.get_latest_entity_values(entity_name), None)
-            if query_name == disease_name:
-                print("found disease_type: {}" .format(query_name))
-                inform_matched = True
-                break
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
 
         # dispatcher.utter_message(query_name)
         if inform_matched:
-            if query_name == 'glaucoma':
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            if find_entity_value == 'glaucoma':
                 dispatcher.utter_message(
                     template="utter_glaucoma_define",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
-            elif query_name == 'astigmatism':
+            elif find_entity_value == 'astigmatism' or find_entity_value == "oval cornea":
                 dispatcher.utter_message(
                     template="utter_astigmatism_define",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
-            elif query_name == 'visualfiled-synm':
+            elif find_entity_value == 'visualfiled-synm':
                 dispatcher.utter_message(
                     template="utter_glaucoma_whatis_visualfield",
-                    name="Dr Eye"
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'macula' or find_entity_value == "centre part":
+                dispatcher.utter_message(
+                    template="utter_diabeticretinopathy-anatomy-retina",
+                    name=PROJ_NAME
                 )
             else:
-                print("No matched entity found!!!")
+                print("find_information: No matched entity found!!!")
                 dispatcher.utter_message(
                     template="utter_out_of_scope",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
         else:
-            print("No matched entity found!!!")
+            print("find_information: No expected entity found!!!")
             dispatcher.utter_message(
                 template="utter_out_of_scope",
-                name="Dr Eye"
+                name=PROJ_NAME
+            )
+        return []
+
+
+class action_find_symptoms_information(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "find_symptoms_information"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            if find_entity_value == 'glaucoma' :
+                dispatcher.utter_message(
+                    template="utter_glaucoma_symptoms",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'astigmatism' or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism_symptoms",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'conjunctivitis':
+                dispatcher.utter_message(
+                    template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            else:
+                print("find_symptoms_information: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_symptoms_information: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
             )
         return []
 

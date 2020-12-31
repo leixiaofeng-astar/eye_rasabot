@@ -1,5 +1,6 @@
 actions:
 - find_information
+- find_symptoms_information
 - action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
@@ -20,6 +21,7 @@ actions:
 - utter_greet
 - utter_noworries
 - utter_out_of_scope
+- utter_help_message
 - utter_astigmatism-condition-cornearefractive
 - utter_astigmatism-cause-cornearefractive
 - utter_astigmatism-symptoms_signs-cornearefractive
@@ -483,7 +485,6 @@ intents:
 - astigmatism-postoperative-cornearefractive_24
 - conjunctivitis-condition-cornearefractive
 - conjunctivitis-causes-cornearefractive
-- conjunctivitis-symptoms_signs-cornearefractive
 - conjunctivitis-symptoms_signs-cornearefractive_28
 - conjunctivitis-investigations-cornearefractive
 - conjunctivitis-treatment_general-cornearefractive
@@ -661,7 +662,6 @@ intents:
 - diabeticretinopathy-treatment_general-retina
 - diabeticretinopathy-diagnosis_investigations-retina
 - diabeticretinopathy-treatment_general-retina_8
-- diabeticretinopathy-anatomy-retina
 - diabeticretinopathy-treatment_laser-retina
 - diabeticretinopathy-treatment_laser-retina_11
 - diabeticretinopathy-condition_treatment-retina
@@ -3041,6 +3041,13 @@ During the video consultation
   utter_out_of_scope:
   - text: 'Please check your question and enter it again.'
   - text: 'Thank you for contacting us! Your question is beyond the range of this bot, could you enter your question again?'
+  utter_help_message:
+  - text: 'General Line: 6325 9220
+           Ministry of Health
+           16 College Road
+           College of Medicine Building
+           Singapore 169854
+           Website: www.moh.gov.sg'
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
