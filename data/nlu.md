@@ -53,6 +53,8 @@
 - talk to me
 - who is your favourite robot
 - can you help me to build a bot
+- are you stupid
+- are you silly
 
 ## intent:goodbye
 - Bye
@@ -94,7 +96,7 @@
 - [Sitka](location)
 - [home health agency](facility_type)
 
-## intent:search_information
+## intent:find_medical_condition
 - What is [glaucoma](disease_type)
 - How does [glaucoma](disease_type) happen
 - What does [glaucoma](disease_type) refer to
@@ -136,12 +138,123 @@
 - Is [macula](disease_type) the most important part of our retina?
 - What is the [macula](disease_type) responsible for?
 - Why do we need the [macula](disease_type)?
+- What is [corneal edema](disease_type)?
+- is [corneal edema](disease_type) same as corneal ulcer
+- What does [corneal edema](disease_type) mean?
+- What is the meaning of [corneal edema](disease_type)?
+- Tell me more about [corneal edema](disease_type)
+- I do not understand about [corneal edema](disease_type)
+- I want to find out more about [corneal edema](disease_type)
+- What does [corneal edema](disease_type) entail?
+- I am confused about [corneal edema](disease_type)
+- What type of eye problem is [corneal edema](disease_type)?
+- Is [corneal edema](disease_type) an eye problem?
+- What is [cataract](disease_type)?
+- What is a [cataract](disease_type)
+- What does [cataract](disease_type) mean
+- Why are my eyes blur if I have [cataract](disease_type)?
+- What does it mean to be diagnosed with [cataract](disease_type)?
+- What kind of health problem is a [cataract](disease_type)?
+- Is a [cataract](disease_type) a eye problem?
+- is [cataract](disease_type) normal
+- What type of eye problem is a [cataract](disease_type)?
+- What is the meaning of [cataract](disease_type)?
+- I do not understand [cataract](disease_type)
+- What is the meaning of [cataract](disease_type)?
+- I want to know more about [cataract](disease_type)
+- I want to understand more about [cataract](disease_type)
+- Why are my eyes blur if I have [cataract](disease_type)?
+- What does it mean to be diagnosed with [cataract](disease_type)?
+- What kind of health problem is a [cataract](disease_type)?
+- Is [cataract](disease_type) an eye problem?
+- Who develops [cataract](disease_type)s?
+- How does someone develop [cataract](disease_type)?
+- What type of eye problem is a [cataract](disease_type)?
+- What does [cataract](disease_type) mean?
+- What is [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye inflammation?
+- What is the meaning of [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye infection?
+- Does [conjunctivitis](disease_type) indicate an eye infection?
+- I want to know more about [conjunctivitis](disease_type)
+- I want to find out more about [conjunctivitis](disease_type)
+- I want to understand what [conjunctivitis](disease_type) is
+- Tell me more about [conjunctivitis](disease_type)
+- What type of eye problem is [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye problem?
+- What does [conjunctivitis](disease_type) refer to?
+- What does [conjunctivitis](disease_type) mean?
+- What does [conjunctivitis](disease_type) entail?
+- What type of eye problem is [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) an eye problem?
+- Why is my [conjunctivitis](disease_type) inflamed?
+- What is [corneal infection](disease_type)?
+- What does [corneal infection](disease_type) mean?
+- I do not understand [corneal infection](disease_type)
+- I am confused about [corneal infection](disease_type)
+- What is the meaning of [corneal infection](disease_type)?
+- I want to find out more about [corneal infection](disease_type)
+- What type of eye problem is [corneal infection](disease_type)?
+- Is [corneal infection](disease_type) an eye problem?
+- I want to understand more about [corneal infection](disease_type)
+- What is age-related [macular degeneration](disease_type)?
+- What is [AMD](disease_type)
+- does [AMD](disease_type) cause straight lines to be wavy
+- is [AMD](disease_type) sight threatening
+- does [AMD](disease_type) cause squiggly vision
+- why do i see squiggly lines with [amd](disease_type)
+- do diabetics get [amd](disease_type)
+- Can [AMD](disease_type) cause blindness
+- Is [AMD](disease_type) common
+- How common is [amd](disease_type)
+- What causes [amd](disease_type)
+- Does smoking cause [AMD](disease_type)
+- What does [AMD](disease_type) mean?
+- What happens in [AMD](disease_type)?
+- What does wet/dry [AMD](disease_type) mean?
+- Is [AMD](disease_type) common in Singapore?
+- What are the types of [AMD](disease_type)?
+- At what age does [AMD](disease_type) develop?
+- Is [AMD](disease_type) permanent?
+- Is my risk of [AMD](disease_type) higher if I smoke?
+- Is wet or dry [AMD](disease_type) worse?
+- do old people get [macular degeneration](disease_type)
+- do old people get [amd](disease_type)
+
+## intent: cornealedema-condition-cornearefractive
+- My eyes look hazy
+- Why does my cornea look cloudy
+- is corneal swelling normal
+- Why is my eye cloudy?
+- What is corneal swelling?
+- Why does my eye look hazy?
+
+## intent: cataract-condition-cornearefractive
+- What is cloudiness in the lens?
+- why is my lens white
+
+## intent: cornealinfection-condition-cornearefractive
+- Is my eye infected?
+- why my eye have virus
+
+## intent: conjunctivitis-condition-cornearefractive
+- My eye pink
+- Why is my eye pink?
+- Why is my eye red?
+- why my eye pain and red
+- My eyes are always red on waking up with eye dirt
+- Why is my eye inflamed?
+
+## intent: amd-condition-retina
+- why is my macula dying
+- how come my macula has degenerated
+- why does my macula spoil when i get old
 
 ## intent:ask_astigmatism_information
 - My cornea is abnormally shaped
 - What causes my vision to be distorted?
 
-## intent:ask_disease_symptoms
+## intent:find_medical_symptoms
 - What are the symptoms of [glaucoma](disease_type)
 - What are the different types of [glaucoma](disease_type)
 - How do I know if I have [glaucoma](disease_type)
@@ -862,31 +975,6 @@
 - What does the eye doctor monitor after astigmatism surgery?
 - What happens in the clinic after astigmatism surgery?
 
-## intent: conjunctivitis-condition-cornearefractive
-- What is [conjunctivitis](disease_type)?
-- My eye pink
-- Why is my eye pink?
-- Why is my eye red?
-- why my eye pain and red
-- My eyes are always red on waking up with eye dirt
-- Why is my eye inflamed?
-- Why is my conjunctiva inflamed?
-- Is [conjunctivitis](disease_type) an eye inflammation?
-- What is the meaning of [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye infection?
-- Does [conjunctivitis](disease_type) indicate an eye infection?
-- I want to know more about [conjunctivitis](disease_type)
-- I want to find out more about [conjunctivitis](disease_type)
-- I want to understand what [conjunctivitis](disease_type) is
-- Tell me more about [conjunctivitis](disease_type)
-- What type of eye problem is [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye problem?
-- What does [conjunctivitis](disease_type) refer to?
-- What does [conjunctivitis](disease_type) mean?
-- What does [conjunctivitis](disease_type) entail?
-- What type of eye problem is [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye problem?
-
 ## intent: conjunctivitis-causes-cornearefractive
 - What is the cause of [conjunctivitis](disease_type)?
 - What causes [conjunctivitis](disease_type)
@@ -1007,25 +1095,6 @@
 - Is there a procedure to remove [conjunctivitis](disease_type)?
 - Can an eye surgeon operate on my [conjunctivitis](disease_type)?
 - Can an eye doctor do surgery for my [conjunctivitis](disease_type)?
-
-## intent: cornealedema-condition-cornearefractive
-- What is corneal edema?
-- My eyes look hazy
-- Why does my cornea look cloudy
-- is corneal edema same as corneal ulcer
-- is corneal swelling normal
-- Why is my eye cloudy?
-- What does corneal edema mean?
-- What is corneal swelling?
-- Why does my eye look hazy?
-- What is the meaning of corneal edema?
-- Tell me more about corneal edema
-- I do not understand about corneal edema
-- I want to find out more about corneal edema
-- What does corneal edema entail?
-- I am confused about corneal edema
-- What type of eye problem is corneal edema?
-- Is corneal edema an eye problem?
 
 ## intent: cornealedema-causes-cornearefractive
 - What is the cause of corneal edema?
@@ -1496,19 +1565,6 @@
 - Will my sutures be removed after corneal transplant surgery?
 - Will my sutures  be left inside after corneal transplant surgery?
 - Will the eye doctor take out my sutures after corneal transplant surgery?
-
-## intent: cornealinfection-condition-cornearefractive
-- What is corneal infection?
-- why my eye have virus
-- What does corneal infection mean?
-- I do not understand corneal infection
-- I am confused about corneal infection
-- Is my eye infected?
-- What is the meaning of corneal infection?
-- I want to find out more about corneal infection
-- What type of eye problem is corneal infection?
-- Is corneal infection an eye problem?
-- I want to understand more about corneal infection
 
 ## intent: cornealinfection-causes-cornearefractive
 - What is the cause of corneal infection?
@@ -2403,46 +2459,29 @@
 - What happens in the clinic after pterygium surgery?
 - How does the eye doctor check my healing after pterygium surgery?
 
-## intent: cataract-pathophysiology-cornearefractive
-- What is Cataract?
-- What is a cataract
-- What is a cataract
-- What does cataract mean
-- Why are my eyes blur if I have cataract?
-- What does it mean to be diagnosed with Cataract?
-- What kind of health problem is a Cataract?
-- Is a Cataract a eye problem?
-- What is cloudiness in the lens?
-- What type of eye problem is a cataract?
-- What is the meaning of cataract?
-- I do not understand cataract
-- What is the meaning of cataract?
-- I want to know more about cataract
-- I want to understand more about cataract
-
 ## intent: cataract-causes_riskfactors-cornearefractive
-- What are the causes and risk factors of Cataracts?
+- What are the causes and risk factors of cataracts?
 - Who gets cataracts
 - Why do I get cataracts
 - Am I at risk of developing cataracts
 - What are the causes for cataracts
 - How come I got cataract
-- Cataract is it because old
+- cataract is it because old
 - Can children get cataract
 - how come i get cataract
-- Why did I develop a Cataract?
-- Why do I have Cataracts?
-- What caused me to develop a Cataract?
-- How do my eyes develop Cataracts?
-- What makes me at risk of Cataracts?
-- How does Cataract start?
-- How do I know if I may develop Cataracts?
-- Is there causes for Cataract?
+- Why did I develop a cataract?
+- Why do I have cataracts?
+- What caused me to develop a cataract?
+- How do my eyes develop cataracts?
+- What makes me at risk of cataracts?
+- How does cataract start?
+- How do I know if I may develop cataracts?
+- Is there causes for cataract?
 - Does smoking cause cataract?
 - Does sunlight cause cataract?
 - Does UV light cause cataract?
-- Am I at risk of Cataract?
-- How will I know if I may develop Cataract?	
+- Am I at risk of cataract?
+- How will I know if I may develop cataract?	
 - What predisposes me to cataract?
 - Does diabetes cause cataract?
 - Is cataract infective?
@@ -2454,92 +2493,92 @@
 - Is cataract present from birth?
 
 ## intent: cataract-symptoms_signs-cornearefractive
-- What are the symptoms of Cataracts?
+- What are the symptoms of cataracts?
 - Will I go blind from cataract
-- Cataract will become blind?
+- cataract will become blind?
 - Can I become blind from cataract
 - How to know if I have cataract
-- How do patients with Cataracts present?
-- How will I know if I have a Cataract?
-- Which symptoms are linked to Cataracts?
-- What symptoms do patients with Cataracts have?
-- Why should I care if I have a Cataract?
-- How would I know if I have Cataracts?
-- How will Cataracts affect me?
-- What does a Cataract lead to?
-- What problems does a Cataract cause?
+- How do patients with cataracts present?
+- How will I know if I have a cataract?
+- Which symptoms are linked to cataracts?
+- What symptoms do patients with cataracts have?
+- Why should I care if I have a cataract?
+- How would I know if I have cataracts?
+- How will cataracts affect me?
+- What does a cataract lead to?
+- What problems does a cataract cause?
 - Do cataracts cause blurred vision?
 - Do cataracts cause halos?
 - Do cataracts cause glares?
-- What will happen if I have a Cataract?
+- What will happen if I have a cataract?
 
 ## intent: cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
-- How is Cataract diagnosed?
-- How would the doctor confirm a Cataract?
-- How would I know if I have a Cataract?
-- What will the doctor do to confirm I have Cataract?
-- What test will the Ophthalmologist use to check if I have a Cataract?
-- Is there any test for Cataracts?
-- How do I test for Cataracts?
-- How does the Ophthalmologist know if I have Cataract?
-- How can I find out if I have Cataract?
-- Is there a way to check if I have Cataract?
-- What can I do to check whether I have Cataract?
+- How is cataract diagnosed?
+- How would the doctor confirm a cataract?
+- How would I know if I have a cataract?
+- What will the doctor do to confirm I have cataract?
+- What test will the Ophthalmologist use to check if I have a cataract?
+- Is there any test for cataracts?
+- How do I test for cataracts?
+- How does the Ophthalmologist know if I have cataract?
+- How can I find out if I have cataract?
+- Is there a way to check if I have cataract?
+- What can I do to check whether I have cataract?
 - Is eye imaging needed for cataract?
 - Are blood tests needed for cataract?
 - Are invasive tests needed for cataract?
 
 ## intent: cataract-treatment_general-cornearefractive
-- What is the treatment for Cataracts?
+- What is the treatment for cataracts?
 - How is cataract monitored
 - What should I do if I have cataract
 - Any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve cataracts
 - Do I need cataract op
 - how to treat cloudy lens
-- How can I treat Cataracts?
-- Is there any way to get rid of Cataracts?
-- How will the doctor solve my Cataracts?
-- My eyes have Cataracts, what can I do about this?
-- What should I do to reduce my Cataracts?
-- What can I do to resolve Cataracts?
-- How do I cure Cataract?
-- How are Cataracts treated?
+- How can I treat cataracts?
+- Is there any way to get rid of cataracts?
+- How will the doctor solve my cataracts?
+- My eyes have cataracts, what can I do about this?
+- What should I do to reduce my cataracts?
+- What can I do to resolve cataracts?
+- How do I cure cataract?
+- How are cataracts treated?
 - Can a cataract be removed?
 - How is cataract treated?
 - How to heal cataract?
 - How to prevent cataract?
-- Will the doctor operate on my Cataract?
+- Will the doctor operate on my cataract?
 
 ## intent: cataract-treatment_conservative-cornearefractive
-- What are the lifestyle measures for treating Cataract?
+- What are the lifestyle measures for treating cataract?
 - Can I stop cataract from getting worse
-- What are the non-medical and non-surgical treatments for Cataracts?
-- How can I improve my Cataracts without seeing a doctor?
-- Is it possible to treat Cataract without seeing a doctor?
-- Any way I can reduce Cataracts without medications or surgery?
-- Can Cataracts be treated without using medications and surgery?
-- Can I fix Cataract without going for surgery?
-- I do not want to take medications or have surgery, what can I do about my Cataract?
-- How can I resolve Cataracts without medication or surgery?
-- Is there any changes I can make to my life to improve Cataracts?
-- What steps can I take to improve Cataracts?
+- What are the non-medical and non-surgical treatments for cataracts?
+- How can I improve my cataracts without seeing a doctor?
+- Is it possible to treat cataract without seeing a doctor?
+- Any way I can reduce cataracts without medications or surgery?
+- Can cataracts be treated without using medications and surgery?
+- Can I fix cataract without going for surgery?
+- I do not want to take medications or have surgery, what can I do about my cataract?
+- How can I resolve cataracts without medication or surgery?
+- Is there any changes I can make to my life to improve cataracts?
+- What steps can I take to improve cataracts?
 
 ## intent: cataract-treatment_conservative-cornearefractive_113
-- What are the medical treatments for Cataracts?
+- What are the medical treatments for cataracts?
 - Can glasses help if I have cataract
-- What are the non-surgical treatments for Cataracts?
-- Are there medications that are useful for Cataracts?
-- What medications can improve Cataracts?
-- Are there eye drops for Cataracts?
-- Can eye drops be used to treat Cataract? 
-- How can I improve my Cataract without surgery?
+- What are the non-surgical treatments for cataracts?
+- Are there medications that are useful for cataracts?
+- What medications can improve cataracts?
+- Are there eye drops for cataracts?
+- Can eye drops be used to treat cataract? 
+- How can I improve my cataract without surgery?
 - Are there eye drops to heal cataract?
-- Is it possible to treat Cataracts with eye drops?
-- Is there any medication that can get rid of Cataracts?
-- Can I take medications for Cataracts?
+- Is it possible to treat cataracts with eye drops?
+- Is there any medication that can get rid of cataracts?
+- Can I take medications for cataracts?
 
 ## intent: cataract-treatment_surgical-cornearefractive
-- What are the surgical treatments for Cataract?
+- What are the surgical treatments for cataract?
 - Can you take out cataract
 - How does the doctor take out my cataract
 - Can I be asleep during cataract operation
@@ -2552,17 +2591,17 @@
 - can cut out cataract
 - how to take out cloudy lens
 - Do I need to change my lens in future after cataract surgery
-- What are the non-medical treatments for Cataract?
-- Do doctors perform surgeries for Cataracts?
-- What kind of surgery helps with Cataracts?
-- How can I stop my Cataract permanently?
-- I don't want to have surgery, how can I stop Cataracts?
-- I have very bad Cataracts, what can the doctor do to improve it?
-- How can I improve my Cataracts if my eye drops donâ€™t work?
+- What are the non-medical treatments for cataract?
+- Do doctors perform surgeries for cataracts?
+- What kind of surgery helps with cataracts?
+- How can I stop my cataract permanently?
+- I don't want to have surgery, how can I stop cataracts?
+- I have very bad cataracts, what can the doctor do to improve it?
+- How can I improve my cataracts if my eye drops donâ€™t work?
 - Is there any procedure the doctor can do to improve my dry eyes?
-- What does Cataract Surgery entail?
-- Can I go for surgery for Cataracts?
-- Is there a way to surgically treat Cataracts?
+- What does cataract Surgery entail?
+- Can I go for surgery for cataracts?
+- Is there a way to surgically treat cataracts?
 - What happens during cataract surgery?
 - What does the eye surgeon do during cataract surgery?
 
@@ -2809,120 +2848,105 @@
 - Is marginal keratitis difficult to treat?
 - Is marginal keratitis an urgent condition?
 
-## intent: cataract-condition-cornearefractive
-- What is cataract?
-- why i my lens white
-- is cataract normal
-- Why are my eyes blur if I have cataract?
-- What does it mean to be diagnosed with Cataract?
-- What kind of health problem is a Cataract?
-- What is a Cataract?
-- Is Cataract an eye problem?
-- Who develops Cataracts?
-- How does someone develop Cataract?
-- What is cloudiness in the lens?
-- What type of eye problem is a cataract?
-- What does Cataract mean?
-
 ## intent: cataract-causes_riskfactors-cornearefractive_132
-- What are the causes and risk factors of Cataracts?
+- What are the causes and risk factors of cataracts?
 - Who gets cataracts
 - Why do I get cataracts
 - Am I at risk of developing cataracts
 - What are the causes for cataracts
 - How come I got cataract
-- Cataract is it because old
+- cataract is it because old
 - Can children get cataract
 - how come i get cataract
-- Why did I develop a Cataract?
-- Why do I have Cataracts?
-- What caused me to develop a Cataract?
-- How do my eyes develop Cataracts?
-- What makes me at risk of Cataracts?
-- How does Cataract start?
-- How do I know if I may develop Cataracts?
-- What are the causes for Cataracts?
-- Am I at risk of developing Cataracts?
-- How will I know if I may develop Cataracts?
+- Why did I develop a cataract?
+- Why do I have cataracts?
+- What caused me to develop a cataract?
+- How do my eyes develop cataracts?
+- What makes me at risk of cataracts?
+- How does cataract start?
+- How do I know if I may develop cataracts?
+- What are the causes for cataracts?
+- Am I at risk of developing cataracts?
+- How will I know if I may develop cataracts?
 
 ## intent: cataract-symptoms_signs-cornearefractive_133
-- What are the symptoms of Cataracts?
+- What are the symptoms of cataracts?
 - Will I go blind from cataract
-- Cataract will become blind?
+- cataract will become blind?
 - Can I become blind from cataract
 - How to know if I have cataract
-- How do patients with Cataracts present?
-- How will I know if I have a Cataract?
-- Which symptoms are due to Cataracts?
-- What symptoms do patients with Cataracts have?
-- Why should I care if I have a Cataract?
-- How would I know if I have Cataracts?
-- How will Cataracts affect me?
-- What will a Cataract lead to?
-- What problems does a Cataract cause?
-- What will happen if I have a Cataract?
+- How do patients with cataracts present?
+- How will I know if I have a cataract?
+- Which symptoms are due to cataracts?
+- What symptoms do patients with cataracts have?
+- Why should I care if I have a cataract?
+- How would I know if I have cataracts?
+- How will cataracts affect me?
+- What will a cataract lead to?
+- What problems does a cataract cause?
+- What will happen if I have a cataract?
 
 ## intent: cataract-signs_doctorsexaminationfindings_investigations-cornearefractive_134
-- How is Cataract diagnosed?
-- How would the doctor confirm a Cataract?
-- How would I know if I have a Cataract?
-- What will the doctor do to confirm I have Cataract?
-- What test will the Ophthalmologist use to check if I have a Cataract?
-- Is there any test for Cataracts?
-- How do I test for Cataracts?
-- How does the Ophthalmologist know if I have Cataract?
-- How can I find out if I have Cataract?
-- Can Cataracts be diagnosed on the spot by an Ophthalmologist?
-- What can I do to check whether I have Cataract?
+- How is cataract diagnosed?
+- How would the doctor confirm a cataract?
+- How would I know if I have a cataract?
+- What will the doctor do to confirm I have cataract?
+- What test will the Ophthalmologist use to check if I have a cataract?
+- Is there any test for cataracts?
+- How do I test for cataracts?
+- How does the Ophthalmologist know if I have cataract?
+- How can I find out if I have cataract?
+- Can cataracts be diagnosed on the spot by an Ophthalmologist?
+- What can I do to check whether I have cataract?
 
 ## intent: cataract-treatment_general-cornearefractive_135
-- What is the treatment for Cataracts?
+- What is the treatment for cataracts?
 - How is cataract monitored
 - What should I do if I have cataract
 - Any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve cataracts
 - Do I need cataract op
 - how to treat cloudy lens
-- How can I treat Cataracts?
-- Is there any way to get rid of Cataracts?
-- How will the doctor solve my Cataracts?
-- My eyes have Cataracts, what can I do about this?
-- What should I do to reduce my Cataracts?
-- What can I do to resolve Cataracts?
-- How do I cure Cataract?
-- How are Cataracts treated?
+- How can I treat cataracts?
+- Is there any way to get rid of cataracts?
+- How will the doctor solve my cataracts?
+- My eyes have cataracts, what can I do about this?
+- What should I do to reduce my cataracts?
+- What can I do to resolve cataracts?
+- How do I cure cataract?
+- How are cataracts treated?
 - Can a cataract be removed?
-- Will the doctor operate on my Cataract?
+- Will the doctor operate on my cataract?
 
 ## intent: cataract-treatment_conservative-cornearefractive_136
-- What are the lifestyle measures for treating Cataract?
+- What are the lifestyle measures for treating cataract?
 - Can I stop cataract from getting worse
-- What are the non-medical and non-surgical treatments for Cataracts?
-- How can I improve my Cataracts without seeing a doctor?
-- Is it possible to treat Cataract without seeing a doctor?
-- Any way I can reduce Cataracts without medications or surgery?
-- Can Cataracts be treated without using medications and surgery?
-- Can I fix Cataract without going for surgery?
-- I dont want to take medications or have surgery, what can I do about my Cataract?
-- How can I resolve Cataracts without medication or surgery?
-- Is there any changes I can make to my life to improve Cataracts?
-- What steps can I take to improve Cataracts?
+- What are the non-medical and non-surgical treatments for cataracts?
+- How can I improve my cataracts without seeing a doctor?
+- Is it possible to treat cataract without seeing a doctor?
+- Any way I can reduce cataracts without medications or surgery?
+- Can cataracts be treated without using medications and surgery?
+- Can I fix cataract without going for surgery?
+- I dont want to take medications or have surgery, what can I do about my cataract?
+- How can I resolve cataracts without medication or surgery?
+- Is there any changes I can make to my life to improve cataracts?
+- What steps can I take to improve cataracts?
 
 ## intent: cataract-treatment_medical-cornearefractive
-- What are the medical treatments for Cataracts?
+- What are the medical treatments for cataracts?
 - Can glasses help if I have cataract
-- What are the non-surgical treatments for Cataracts?
-- Are there medications that are useful for Cataracts?
-- What medications can improve Cataracts?
-- Are there eye drops for Cataracts?
-- Can eye drops be used to treat Cataract? 
-- How can I improve my Cataract without surgery?
-- If I do not want to have surgery, can I still reduce my Cataract?
-- Is it possible to treat Cataracts without surgery?
-- Is there any medication that can get rid of Cataracts?
-- Can I take medications for Cataracts?
+- What are the non-surgical treatments for cataracts?
+- Are there medications that are useful for cataracts?
+- What medications can improve cataracts?
+- Are there eye drops for cataracts?
+- Can eye drops be used to treat cataract? 
+- How can I improve my cataract without surgery?
+- If I do not want to have surgery, can I still reduce my cataract?
+- Is it possible to treat cataracts without surgery?
+- Is there any medication that can get rid of cataracts?
+- Can I take medications for cataracts?
 
 ## intent: cataract-treatment_surgical-cornearefractive_138
-- What are the surgical treatments for Cataract?
+- What are the surgical treatments for cataract?
 - Can you take out cataract
 - How does the doctor take out my cataract
 - Can I be asleep during cataract operation
@@ -2935,17 +2959,17 @@
 - can cut out cataract
 - how to take out cloudy lens
 - Do I need to change my lens in future after cataract surgery
-- What are the non-medical treatments for Cataract?
-- Do doctors perform surgeries for Cataracts?
-- What kind of surgery helps with Cataracts?
-- How can I stop my Cataract permanently?
-- My Cataracts are bothering me, how can I be treated?
-- I have very bad Cataracts, what can the doctor do to improve it?
-- How can I improve my Cataracts if my eye drops dont work?
+- What are the non-medical treatments for cataract?
+- Do doctors perform surgeries for cataracts?
+- What kind of surgery helps with cataracts?
+- How can I stop my cataract permanently?
+- My cataracts are bothering me, how can I be treated?
+- I have very bad cataracts, what can the doctor do to improve it?
+- How can I improve my cataracts if my eye drops dont work?
 - Is there any procedure the doctor can do to improve my dry eyes?
-- What does Cataract Surgery entail?
-- Can I go for surgery for Cataracts?
-- Is there a way to surgically treat Cataracts?
+- What does cataract Surgery entail?
+- Can I go for surgery for cataracts?
+- Is there a way to surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive
 - Why is my vision poor after cataract operation?
@@ -2985,65 +3009,65 @@
 - Is capsular opacification common after cataract operation?
 
 ## intent: cataract-intraoperative-cornearefractive
-- Isn’t Cataract surgery done by laser?
+- Isn’t cataract surgery done by laser?
 - Can cut my cataract
 - I heard there is laser to cure cataract
 - Is the cataract surgery done by laser?
 - Is cataract surgery bladeless
-- What is the method of surgery for Cataract?
-- Do doctors perform surgeries for Cataracts using laser?
-- What are the steps of surgery for Cataracts?
-- How can doctors remove my Cataract?
+- What is the method of surgery for cataract?
+- Do doctors perform surgeries for cataracts using laser?
+- What are the steps of surgery for cataracts?
+- How can doctors remove my cataract?
 - I heard cataract is removed by laser, is it true?
-- I have very bad Cataracts, what will the doctor be doing to improve it?
+- I have very bad cataracts, what will the doctor be doing to improve it?
 - Is the newest cataract surgery using laser?
-- How is Cataract Surgery performed?
-- Can doctors use laser to remove Cataracts?
-- Is there a way to use lasers to remove Cataracts?
+- How is cataract Surgery performed?
+- Can doctors use laser to remove cataracts?
+- Is there a way to use lasers to remove cataracts?
 
 ## intent: cataract-preoperative-cornearefractive
-- What is the cost of a Cataract operation?
-- Cataract surgery expensive
+- What is the cost of a cataract operation?
+- cataract surgery expensive
 - Government pay for cataract surgery can
 - How much is cataract surgery
 - Why is multifocal lens so expensive
-- How much does surgery cost for Cataract?
-- Is Cataract surgery expensive?
-- What is the cost of surgery to remove my Cataracts?
-- How much do I need to pay to remove my Cataracts?
-- How expensive is treatment for Cataract?
-- Is Cataract operation expensive?
-- How much does it cost to cure Cataracts if my eye drops don’t work?
-- What procedure can the doctor do for my Cataract and how much is it?
-- What do I need to pay for Cataract Surgery?
-- Roughly what is the cost to surgically treat Cataracts?
+- How much does surgery cost for cataract?
+- Is cataract surgery expensive?
+- What is the cost of surgery to remove my cataracts?
+- How much do I need to pay to remove my cataracts?
+- How expensive is treatment for cataract?
+- Is cataract operation expensive?
+- How much does it cost to cure cataracts if my eye drops don’t work?
+- What procedure can the doctor do for my cataract and how much is it?
+- What do I need to pay for cataract Surgery?
+- Roughly what is the cost to surgically treat cataracts?
 
 ## intent: cataract-preoperative-cornearefractive_143
 - What are the pre-operative instructions for cataract surgery?
-- What do I need to do before surgery for Cataract?
-- Do patients need to prepare for Cataract surgery?
-- What kind of preparation is needed before surgery for Cataracts?
-- How can I prepare for my Cataract surgery?
-- I am going for surgery to remove my Cataracts, what do I need to do?
-- I have booked surgery for my Cataracts, what should I do before that?
-- How can I get ready to have surgery for my Cataract?
-- Is there any preparation required before the procedure to improve my Cataracts?
-- Can I go for surgery for Cataracts directly?
-- Is there anything that has to be done before I surgically treat Cataracts?
+- What do I need to do before surgery for cataract?
+- Do patients need to prepare for cataract surgery?
+- What kind of preparation is needed before surgery for cataracts?
+- How can I prepare for my cataract surgery?
+- I am going for surgery to remove my cataracts, what do I need to do?
+- I have booked surgery for my cataracts, what should I do before that?
+- How can I get ready to have surgery for my cataract?
+- Is there any preparation required before the procedure to improve my cataracts?
+- Can I go for surgery for cataracts directly?
+- Is there anything that has to be done before I surgically treat cataracts?
 
 ## intent: cataract-preoperative-cornearefractive_144
 - What are the risks of cataract surgery?
 - Is cataract operation dangerous
 - What are the dangers of cataract operation
-- What possible risks does surgery for Cataract carry?
-- Do patients need to be aware of any risks of Cataract surgery?
-- What kind of complications could happen after surgery for Cataracts?
-- How can Cataract surgery go wrong?
-- I am going for surgery to remove my Cataracts, what do I need to know about complications?
-- I have booked surgery for my Cataracts, what are the risks of that?
-- How can I find out more about the risks of having surgery for my Cataract?
-- Is there any risks I should know about before the procedure to improve my Cataracts?
-- Can I go for surgery for Cataracts directly?
+- What possible risks does surgery for cataract carry?
+- Do patients need to be aware of any risks of cataract surgery?
+- What kind of complications could happen after surgery for cataracts?
+- How can cataract surgery go wrong?
+- I am going for surgery to remove my cataracts, what do I need to know about complications?
+- I have booked surgery for my cataracts, what are the risks of that?
+- How can I find out more about the risks of having surgery for my cataract?
+- Is there any risks I should know about before the procedure to improve my cataracts?
+- Can I go for surgery for cataracts directly?
 - Is there anything that has to be done before I surgically 
 
 ## intent: cataract-intraoperative-cornearefractive_145
@@ -3054,31 +3078,31 @@
 - What is multifocal
 - does it mean after cataract surgery i don't need to wear glasses anymore?
 - what is IOL
-- What implants can I choose from for surgery for Cataract?
-- Do patients get to choose their implants for Cataract surgery?
-- What kind of implants can I use when I get surgery for Cataracts?
-- How can I select the lens implants for Cataract surgery?
-- I am going for surgery to remove my Cataracts, what implants can I choose?
-- I have booked surgery for my Cataracts, what lens implants can I select from?
-- How should I choose a lens for my Cataract surgery?
-- Is there any way to decide what lens implant to use when I remove my Cataracts?
-- Can I know what choices are available for types of lens implants when I remove my Cataracts?
-- Are there any choices for types of lens implants before I surgically treat Cataracts?
+- What implants can I choose from for surgery for cataract?
+- Do patients get to choose their implants for cataract surgery?
+- What kind of implants can I use when I get surgery for cataracts?
+- How can I select the lens implants for cataract surgery?
+- I am going for surgery to remove my cataracts, what implants can I choose?
+- I have booked surgery for my cataracts, what lens implants can I select from?
+- How should I choose a lens for my cataract surgery?
+- Is there any way to decide what lens implant to use when I remove my cataracts?
+- Can I know what choices are available for types of lens implants when I remove my cataracts?
+- Are there any choices for types of lens implants before I surgically treat cataracts?
 
 ## intent: cataract-intraoperative-cornearefractive_146
 - What are the differences between monofocal and multifocal lenses?
 - What is the difference between multi and monofocal
 - Multifocal versus monofocal
-- What implants is better for surgery for Cataract?
-- How should patients choose their monofocal or multifocal implants for Cataract surgery?
-- What kind of implants should I select when I get surgery for Cataracts?
-- How can I know if multifocal lens implants are better for Cataract surgery?
-- I am going for surgery to remove my Cataracts, are monofocal lenses better?
-- I have booked surgery for my Cataracts, would multifocal or monofocal lenses be better?
-- How should I choose between monofocal or multifocal lenses when I have surgery for my Cataract?
-- Is there any way to know whether a multifocal lens is better when I remove my Cataracts?
-- Can I know what you recommend for the monofocal or multifocal lens options when I remove my Cataracts?
-- Is there any way to decide between monofocal or multifocal lens implants when I surgically treat Cataracts?
+- What implants is better for surgery for cataract?
+- How should patients choose their monofocal or multifocal implants for cataract surgery?
+- What kind of implants should I select when I get surgery for cataracts?
+- How can I know if multifocal lens implants are better for cataract surgery?
+- I am going for surgery to remove my cataracts, are monofocal lenses better?
+- I have booked surgery for my cataracts, would multifocal or monofocal lenses be better?
+- How should I choose between monofocal or multifocal lenses when I have surgery for my cataract?
+- Is there any way to know whether a multifocal lens is better when I remove my cataracts?
+- Can I know what you recommend for the monofocal or multifocal lens options when I remove my cataracts?
+- Is there any way to decide between monofocal or multifocal lens implants when I surgically treat cataracts?
 
 ## intent: cataract-intraoperative-cornearefractive_147
 - Which type of lens is right for me?
@@ -3086,14 +3110,14 @@
 - Monofocal or multifocal, which is better
 - I had lasik before, can I choose multifocal lens
 - Is multifocal the best lens available
-- What implant is most suited for me if I go for surgery for Cataract?
-- How should I choose between monofocal or multifocal implants for my Cataract surgery?
+- What implant is most suited for me if I go for surgery for cataract?
+- How should I choose between monofocal or multifocal implants for my cataract surgery?
 - What are the issues of multifocal lenses?
 - If I read a lot, should I choose multifocal or monofocal lenses?
-- I am going for surgery to remove my Cataracts, are monofocal lenses better if I don’t mind wearing spectacles?
-- I have booked surgery for my Cataracts, which lens will allow me to not wear spectacles anymore?
+- I am going for surgery to remove my cataracts, are monofocal lenses better if I don’t mind wearing spectacles?
+- I have booked surgery for my cataracts, which lens will allow me to not wear spectacles anymore?
 - How should I choose between monofocal or multifocal lenses?
-- How do I know whether a multifocal lens would be better for me based on my lifestyle if I am removing my Cataracts?
+- How do I know whether a multifocal lens would be better for me based on my lifestyle if I am removing my cataracts?
 - What are the downsides/side-effects of multifocal lenses?
 - Is there any way to know whether monofocal or multifocal lens implants will be better for me?
 
@@ -3114,58 +3138,58 @@
 
 ## intent: cataract-preoperative-cornearefractive_149
 - If I am feeling unwell just before the date of operation, what should I do?
-- What do I need to do if I am sick before surgery for Cataract?
-- Do patients need to be completely well before Cataract surgery?
-- What kind of preparation is needed if I am sick the day before surgery for Cataracts?
-- How can I have my Cataract surgery if I fall sick before that?
-- I am going for surgery to remove my Cataracts but I am not feeling well, what do I need to do?
-- I have booked surgery for my Cataracts and have fallen ill, what should I do before that?
-- How can I have surgery for my Cataract if I have cough or running nose?
-- Is there any preparation if I am not feeling well before the procedure to improve my Cataracts?
-- Can I go for surgery for Cataracts if I have a flu?
-- Is there anything that has to be done if I fall sick before I surgically treat Cataracts?
+- What do I need to do if I am sick before surgery for cataract?
+- Do patients need to be completely well before cataract surgery?
+- What kind of preparation is needed if I am sick the day before surgery for cataracts?
+- How can I have my cataract surgery if I fall sick before that?
+- I am going for surgery to remove my cataracts but I am not feeling well, what do I need to do?
+- I have booked surgery for my cataracts and have fallen ill, what should I do before that?
+- How can I have surgery for my cataract if I have cough or running nose?
+- Is there any preparation if I am not feeling well before the procedure to improve my cataracts?
+- Can I go for surgery for cataracts if I have a flu?
+- Is there anything that has to be done if I fall sick before I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_150
 - What happens after my cataract surgery?
 - After cataract surgery, can I see without specs
 - Can I don't wear spectacles after cataract surgery
-- What do I need to do after surgery for Cataract?
-- Do patients need to do anything after Cataract surgery?
-- What kind of follow-up is needed after surgery for Cataracts?
-- How can I improve my condition after my Cataract surgery?
-- I am going for surgery to remove my Cataracts, what do I need to do after the surgery?
-- I have booked surgery for my Cataracts, what can I expect after that?
-- How can I get ready for the post-operative period after I have surgery for my Cataract?
-- Is there any treatment required after the procedure to improve my Cataracts?
-- Can I be discharged after I go for surgery for Cataracts?
-- Is there anything that has to be done after I surgically treat Cataracts?
+- What do I need to do after surgery for cataract?
+- Do patients need to do anything after cataract surgery?
+- What kind of follow-up is needed after surgery for cataracts?
+- How can I improve my condition after my cataract surgery?
+- I am going for surgery to remove my cataracts, what do I need to do after the surgery?
+- I have booked surgery for my cataracts, what can I expect after that?
+- How can I get ready for the post-operative period after I have surgery for my cataract?
+- Is there any treatment required after the procedure to improve my cataracts?
+- Can I be discharged after I go for surgery for cataracts?
+- Is there anything that has to be done after I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_151
 - What eye drops do I need after cataract surgery?
-- What eye drops will I need after surgery for Cataract?
-- Do patients need to use eye drops after Cataract surgery?
-- What kind of medications are needed after surgery for Cataracts?
-- What medications do I need after my Cataract surgery?
-- I am going for surgery to remove my Cataracts, do I need eye drops after the surgery?
-- I have booked surgery for my Cataracts, what medications will I need after that?
-- What eye drops will I be using after I have surgery for my Cataract?
-- Is there any eye drops required after the procedure to improve my Cataracts?
-- Can I stop taking medications or eye drops after I go for surgery for Cataracts?
-- Is there any eye drops needed after I surgically treat Cataracts?
+- What eye drops will I need after surgery for cataract?
+- Do patients need to use eye drops after cataract surgery?
+- What kind of medications are needed after surgery for cataracts?
+- What medications do I need after my cataract surgery?
+- I am going for surgery to remove my cataracts, do I need eye drops after the surgery?
+- I have booked surgery for my cataracts, what medications will I need after that?
+- What eye drops will I be using after I have surgery for my cataract?
+- Is there any eye drops required after the procedure to improve my cataracts?
+- Can I stop taking medications or eye drops after I go for surgery for cataracts?
+- Is there any eye drops needed after I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_152
-- Can a Cataract come back after surgery?
+- Can a cataract come back after surgery?
 - will i get cataract again after surgery
-- What happens if I get blurring of vision months after surgery for Cataract?
-- Do patients develop recurrence of Cataract after Cataract surgery?
-- What kind of symptoms can one have after surgery for Cataracts?
-- Under what circumstances do I need to go for treatment again after my Cataract surgery?
-- I am going for surgery to remove my Cataracts, can it ever come back after the surgery?
-- I have booked surgery for my Cataracts, what are the chances that it recurs after that?
-- What are the chances I need revision surgery after I have surgery for my Cataract?
-- Is there any chance repeat surgery may be required after the procedure to improve my Cataracts?
-- Can I develop Cataract again after I go for surgery for Cataracts?
-- Is there any chance a Cataract recurs after I surgically treat Cataracts?
+- What happens if I get blurring of vision months after surgery for cataract?
+- Do patients develop recurrence of cataract after cataract surgery?
+- What kind of symptoms can one have after surgery for cataracts?
+- Under what circumstances do I need to go for treatment again after my cataract surgery?
+- I am going for surgery to remove my cataracts, can it ever come back after the surgery?
+- I have booked surgery for my cataracts, what are the chances that it recurs after that?
+- What are the chances I need revision surgery after I have surgery for my cataract?
+- Is there any chance repeat surgery may be required after the procedure to improve my cataracts?
+- Can I develop cataract again after I go for surgery for cataracts?
+- Is there any chance a cataract recurs after I surgically treat cataracts?
 
 ## intent: myopia-condition-cornearefractive
 - What is myopia?
@@ -4299,33 +4323,6 @@
 - What are the side effects of uveitis?
 - If I do not see a doctor, what can result from uveitis?
 - Do I need to receive injections for uveitis?
-
-## intent: amd-condition-retina
-- What is age-related macular degeneration?
-- What is AMD
-- why is my macula dying
-- how come my macula has degenerated
-- why does my macula spoil when i get old
-- do old people get macular degeneration
-- does AMD cause straight lines to be wavy
-- is AMD sight threatening
-- does AMD cause squiggly vision
-- why do i see squiggly lines with amd
-- do diabetics get amd
-- Can AMD cause blindness
-- Is AMD common
-- How common is amd
-- What causes amd
-- Does smoking cause AMD
-- What does AMD mean?
-- What happens in AMD?
-- What does wet/dry AMD mean?
-- Is AMD common in Singapore?
-- What are the types of AMD?
-- At what age does AMD develop?
-- Is AMD permanent?
-- Is my risk of AMD higher if I smoke?
-- Is wet or dry AMD worse?
 
 ## intent: amd-symptoms_signs-retina
 - What the symptoms of AMD?

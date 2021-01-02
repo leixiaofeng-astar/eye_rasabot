@@ -1,6 +1,6 @@
 actions:
-- find_information
-- find_symptoms_information
+- actions_find_medical_condition
+- actions_find_medical_symptoms
 - action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
@@ -128,7 +128,6 @@ actions:
 - utter_pterygium-postoperative-cornearefractive_104
 - utter_pterygium-postoperative-cornearefractive_105
 - utter_pterygium-postoperative-cornearefractive_106
-- utter_cataract-pathophysiology-cornearefractive
 - utter_cataract-causes_riskfactors-cornearefractive
 - utter_cataract-symptoms_signs-cornearefractive
 - utter_cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
@@ -435,7 +434,8 @@ entities:
 forms:
 - facility_form
 intents:
-- search_information
+- find_medical_condition
+- find_medical_symptoms
 - greet
 - goodbye
 - affirm
@@ -456,7 +456,6 @@ intents:
 - glaucoma_surgical_treatment
 - disease_followup
 - signs_followup
-- ask_disease_symptoms
 - ask_signs_treatment
 - ask_astigmatism_information
 - astigmatism-condition-cornearefractive
@@ -564,7 +563,6 @@ intents:
 - pterygium-postoperative-cornearefractive_104
 - pterygium-postoperative-cornearefractive_105
 - pterygium-postoperative-cornearefractive_106
-- cataract-pathophysiology-cornearefractive
 - cataract-causes_riskfactors-cornearefractive
 - cataract-symptoms_signs-cornearefractive
 - cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
@@ -1331,9 +1329,6 @@ You will not be able to fly if you have undergone certain surgeries such as corn
 
   utter_pterygium-postoperative-cornearefractive_106:
   - text: "You will need to see the eye doctor to monitor the healing of your eyes. "
-
-  utter_cataract-pathophysiology-cornearefractive:
-  - text: "Cataract is a condition when the natural lens in your eye becomes progressively cloudy."
 
   utter_cataract-causes_riskfactors-cornearefractive:
   - text: "The most common cause of cataract is ageing.

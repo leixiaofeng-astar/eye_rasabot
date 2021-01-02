@@ -53,7 +53,8 @@ FACILITY_TYPES = {
 }
 
 # TODO -- prepare for mutli-intents combination
-disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy"]
+disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy", "corneal edema", "cataract",\
+                       "conjunctivitis", "corneal infection", "macular degeneration", "amd"]
 symptom_entity_list = ["visualfiled-synm", "oval cornea", "centre part"]
 medicine_name_entity_list = ["eyedrop-synm"]
 entity_dict = {"disease_type": disease_entity_list,
@@ -86,8 +87,13 @@ def get_closest_match(name, real_names):
     name = str(name).lower()
     levdist = [levenshtein(name, real_name) for real_name in real_names]
     for i in range(len(levdist)):
-        if levdist[i] == min(levdist):
-            return real_names[i]
+        best_element = min(levdist)
+        if levdist[i] == best_element:
+            # TODO: need to set a threshold here -- it needs to be at least 3 letter same
+            if best_element < (len(real_names[i])-3):
+                return real_names[i]
+            else:
+                return "none"
 
 
 def _create_path(base: Text, resource: Text,
@@ -224,7 +230,7 @@ class action_find_information(Action):
 
     def name(self) -> Text:
         """Unique identifier of the action"""
-        return "find_information"
+        return "actions_find_medical_condition"
 
     def run(self,
             dispatcher: CollectingDispatcher,
@@ -272,14 +278,40 @@ class action_find_information(Action):
                     template="utter_diabeticretinopathy-anatomy-retina",
                     name=PROJ_NAME
                 )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_ornealedema-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "cataract":
+                dispatcher.utter_message(
+                    template="utter_cataract-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "conjunctivitis":
+                dispatcher.utter_message(
+                    template="utter_conjunctivitis-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal infection":
+                dispatcher.utter_message(
+                    template="utter_cornealinfection-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'macular degeneration' or find_entity_value == "amd":
+                dispatcher.utter_message(
+                    template="utter_amd-condition-retina",
+                    name=PROJ_NAME
+                )
+            # "conjunctivitis", "corneal infection", "age-related macular degeneration", "amd"
             else:
-                print("find_information: No matched entity found!!!")
+                print("actions_find_medical_condition: No matched entity found!!!")
                 dispatcher.utter_message(
                     template="utter_out_of_scope",
                     name=PROJ_NAME
                 )
         else:
-            print("find_information: No expected entity found!!!")
+            print("actions_find_medical_condition: No expected entity found!!!")
             dispatcher.utter_message(
                 template="utter_out_of_scope",
                 name=PROJ_NAME
@@ -290,7 +322,7 @@ class action_find_information(Action):
 class action_find_symptoms_information(Action):
     def name(self) -> Text:
         """Unique identifier of the action"""
-        return "find_symptoms_information"
+        return "actions_find_medical_symptoms"
 
     def run(self,
             dispatcher: CollectingDispatcher,
@@ -334,13 +366,13 @@ class action_find_symptoms_information(Action):
                     name=PROJ_NAME
                 )
             else:
-                print("find_symptoms_information: No matched entity found!!!")
+                print("actions_find_medical_symptoms: No matched entity found!!!")
                 dispatcher.utter_message(
                     template="utter_out_of_scope",
                     name=PROJ_NAME
                 )
         else:
-            print("find_symptoms_information: No expected entity found!!!")
+            print("actions_find_medical_symptoms: No expected entity found!!!")
             dispatcher.utter_message(
                 template="utter_out_of_scope",
                 name=PROJ_NAME

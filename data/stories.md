@@ -22,21 +22,17 @@
 * out_of_scope
    - utter_help_message
     
-## story_search_information
-* search_information{"disease_type": "glaucoma"}
-    - find_information
-* search_information{"disease_type": "astigmatism"}
-    - find_information
-* search_information{"symptom_type": "visualfiled-synm"}
-    - find_information
+## story_find_medical_condition
+* find_medical_condition
+    - actions_find_medical_condition
    
 ## story_ask_astigmatism_information
 * ask_astigmatism_information
     - utter_astigmatism_define
    
-## story_search_disease_symptoms
-* ask_disease_symptoms
-    - find_symptoms_information
+## story_find_medical_symptoms
+* find_medical_symptoms
+    - actions_find_medical_symptoms
     
 ## story_change_appointment
 * change_appointment 
@@ -493,10 +489,6 @@
 ## story_pterygium-postoperative-cornearefractive_106
 * pterygium-postoperative-cornearefractive_106
     - utter_pterygium-postoperative-cornearefractive_106
-
-## story_cataract-pathophysiology-cornearefractive
-* cataract-pathophysiology-cornearefractive
-    - utter_cataract-pathophysiology-cornearefractive
 
 ## story_cataract-causes_riskfactors-cornearefractive
 * cataract-causes_riskfactors-cornearefractive
