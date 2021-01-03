@@ -205,6 +205,7 @@ class action_find_information(Action):
             disease_type = DISEASE_TYPES[t]
             # TODO
             disease_name = disease_type.get("name")
+            query_name = 'None'
             es = tracker.latest_message["entities"]
             if (es is not None) and (len(es) != 0):
                 e = es[0]
