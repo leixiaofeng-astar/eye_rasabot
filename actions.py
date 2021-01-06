@@ -54,8 +54,8 @@ FACILITY_TYPES = {
 
 # TODO -- prepare for mutli-intents combination
 disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy", "corneal edema", "cataract",\
-                       "conjunctivitis", "corneal infection", "macular degeneration", "amd"]
-symptom_entity_list = ["visualfiled-synm", "oval cornea", "centre part"]
+                       "conjunctivitis", "corneal infection", "amd", "dme"]
+symptom_entity_list = ["visualfiled-synm", "oval cornea", "vidcon"]
 medicine_name_entity_list = ["eyedrop-synm"]
 entity_dict = {"disease_type": disease_entity_list,
                  "symptom_type": symptom_entity_list,
@@ -83,15 +83,16 @@ def levenshtein(s1, s2):
     return previous_row[-1]
 
 # Define a function that returns the best match
-def get_closest_match(name, real_names):
+def get_closest_match(name, names_list):
     name = str(name).lower()
-    levdist = [levenshtein(name, real_name) for real_name in real_names]
+    levdist = [levenshtein(name, real_name) for real_name in names_list]
     for i in range(len(levdist)):
         best_element = min(levdist)
         if levdist[i] == best_element:
             # TODO: need to set a threshold here -- it needs to be at least 3 letter same
-            if best_element < (len(real_names[i])-3):
-                return real_names[i]
+            # min entity length is 2
+            if best_element==0 or best_element <= (len(names_list[i])-2):
+                return names_list[i]
             else:
                 return "none"
 
@@ -298,12 +299,21 @@ class action_find_information(Action):
                     template="utter_cornealinfection-condition-cornearefractive",
                     name=PROJ_NAME
                 )
-            elif find_entity_value == 'macular degeneration' or find_entity_value == "amd":
+            elif find_entity_value == "AMD" or find_entity_value == "amd":
                 dispatcher.utter_message(
                     template="utter_amd-condition-retina",
                     name=PROJ_NAME
                 )
-            # "conjunctivitis", "corneal infection", "age-related macular degeneration", "amd"
+            elif find_entity_value == "DME" or find_entity_value == "dme":
+                dispatcher.utter_message(
+                    template="utter_diabeticretinopathy-condition_treatment-retina",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "vidcon":
+                dispatcher.utter_message(
+                    template="utter_vidcon-condition-miscellaneous",
+                    name=PROJ_NAME
+                )
             else:
                 print("actions_find_medical_condition: No matched entity found!!!")
                 dispatcher.utter_message(

@@ -17,6 +17,7 @@ Test the assistant using the command:
 
 ## What do you need to follow this bot?
 This bot requires you to have Rasa installed on your machine:  
+Note: recommend rasa 2.x version for new training data format
 ```
 pip3 install -U pip
 pip3 install rasa

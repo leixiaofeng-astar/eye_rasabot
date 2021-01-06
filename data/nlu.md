@@ -1,14 +1,388 @@
-## intent:affirm
-- yes
-- yes sure
-- absolutely
-- for sure
-- yes yes yes
-- definitely
-- yeah
-- si
-- ok
-- okay
+nlu:
+- lookup: country
+  examples: |
+    - Afghanistan
+    - Albania
+    - Singalore
+    - China
+    
+- synonym: vidcon
+  examples: |
+    - video consultation
+    - videocon
+    - Vidcon
+
+- synonym: 9wzi-peqs
+  examples: |
+    - home health agency
+    - home health agencies
+
+- synonym: b27b-2uc7
+  examples: |
+    - nursing home
+    - nursing homes
+
+- synonym: eyedrop-synm
+  examples: |
+    - eyedrops
+    - eye drops
+    - eyedrop
+    - eye drop
+
+- synonym: astigmatism
+  examples: |
+    - astigmatism
+    - astig
+    
+- synonym: visualfiled-synm
+  examples: |
+    - visual field
+    - visual fields
+    - visualfield
+    - peripheral vision
+    - Visual field		
+    - VF
+    - counting stars test
+    
+- synonym: macula
+  examples: |
+    - Macula
+    - macula
+    - centre part
+
+- synonym: xubh-q36u
+  examples: |
+    - hospital
+    - hospitals
+
+- synonym: presbyopia
+  examples: |
+    - Presbyopia
+    - presbyopic		
+    - Lao Hua
+    - cannot focus for near
+
+- synonym: myopia
+  examples: |
+  - Myopia
+  - myopic		
+  - Short sighted
+  - short-sighted
+  - short-sightedness
+  - short sightedness
+  - near sighted
+  - near-sighted
+  - jin shi yan
+  
+- synonym: hyperopia
+  examples: |
+    - Hyperopia
+    - hyperopic		
+    - Long sighted
+    - long sight
+    - lng-sighted
+    - long-sight
+
+- synonym: astigmatism
+  examples: |
+    - Astigmatism		
+    - Astig
+    - astig
+    - san guang
+    - shan guang
+    
+- synonym: AMD
+  examples: |
+    - amd
+    - macular degeneration
+    - age related macular degeneration
+    - age-related macular degeneration
+    
+- synonym: wet-amd
+  examples: |
+    - Exudative age related macular degeneration		
+    - Wet AMD
+
+- synonym: dry-amd
+  examples: |
+    - Non exudative age related macular degeneration		
+    - Dry AMD
+
+- synonym: poag
+  examples: |
+    - Primary open angle glaucoma		
+    - POAG
+
+- synonym: pacg
+  examples: |
+    - Primary closed angle glaucoma		
+    - PACG
+
+- synonym: oht
+  examples: |
+    - Ocular hypertension		
+    - OHT
+
+- synonym: mg
+  examples: |
+    - Myasthenia gravis		
+    - MG
+
+- synonym: omg
+  examples: |
+    - Ocular myasthenia gravis		
+    - OMG
+
+- synonym: flacs
+  examples: |
+    - Femtosecond laser cataract surgery		
+    - FLACS
+    - bladeless cataract surgery
+
+- synonym: exotropia
+  examples: |
+    - Exotropia		
+    - XT
+    - out turning
+    - out-turning
+    - out-drift
+    - out drift
+
+- synonym: esotropia
+  examples: |
+    - Esotropia		
+    - ET
+    - in turning
+    - in-turning
+    - inwards-drift
+    - inwards drift
+
+- synonym: amblyopia
+  examples: |
+    - Amblyopia		
+    - Lazy eyes
+    - lan duo yan
+
+- synonym: csme
+  examples: |
+    - Clinically significant macular edema		
+    - CSME
+
+- synonym: DME
+  examples: |
+    - Diabetic macular edema		
+    - dme
+    - diabetic macular oedema
+    - diabetic macular edema
+    - macular swollen
+    - macular to be swollen
+
+- synonym: CNV
+  examples: |
+    - Choroidal neovascularisation		
+    - CNV
+
+- synonym: PCV
+  examples: |
+    - Polypoidal choroidal vasculopathy		
+    - pcv
+
+- synonym: ERM
+  examples: |
+    - Epiretinal membrane	
+    - erm	
+
+- synonym: KCN
+  examples: |
+    - Keratoconus		
+    - kcn
+
+- synonym: DCR
+  examples: |
+    - Dacryocystorhinostomy
+    - dcr
+
+- synonym: CEC
+  examples: |
+    - Community Eyecare Clinics
+    - cec   
+
+- synonym: PEC
+  examples: |
+    - Primary Eyecare Clinic		
+    - pec
+
+- synonym: ANE
+  examples: |
+    - Accident and emergency		
+    - AnE
+    - Ane
+    - A&E
+    - ED
+
+- synonym: conjunctivitis
+  examples: |
+    - Conjunctivitis		
+    - Conjunc
+    - sore eye
+    - sore eyes
+    - pink eye
+    - pink eyes
+    - eye pink
+
+- synonym: ffa
+  examples: |
+    - Fundus fluorescein angiogram		
+    - FFA
+
+- synonym: ICG
+  examples: |
+    - Indocyanine Green angiogram		
+    - icg
+
+- synonym: HVF
+  examples: |
+    - Humphrey visual field		
+    - hvf
+
+- synonym: OCT
+  examples: |
+    - Optical coherence tomography		
+    - oct
+
+- synonym: PRP
+  examples: |
+    - Panretinal photocoagulation
+    - prp
+
+- synonym: spectacles
+  examples: |
+    - Spectacles		
+    - Specs
+    - glasses
+
+- synonym: FECD
+  examples: |
+    - Fuch's endothelial corneal dystrophy		
+    - fecd
+    - fuchs
+
+- synonym: edema
+  examples: |
+    - Edema		
+    - Oedema
+    - swelling
+
+- synonym: fungus
+  examples: |
+    - Fungus		
+    - Fungal
+
+- synonym: pterygium 
+  examples: |
+    - Pterygium		
+    - Flesh on the cornea
+    - flesh on the eye
+    - skin on the cornea
+    - skin on the eye
+
+- synonym: bilateral
+  examples: |
+    - Bilateral		
+    - Both
+    - both sides
+
+- synonym: graft
+  examples: |
+    - Graft		
+    - Transplant
+
+- synonym: LPI
+  examples: |
+    - Laser peripheral iridotomy		
+    - lpi
+
+- synonym: PCO
+  examples: |
+    - Posterior capsular opacification		
+    - PCO
+
+- synonym: IOL
+  examples: |
+    - Intraocular lens		
+    - iol
+
+- synonym: blepharitis
+  examples: |
+    - Blepharitis		
+    - oily eyelids
+    - oily lids
+
+- synonym: operation
+  examples: |
+    - Operation		
+    - Surgery
+    - surgery
+    - op
+
+- synonym: ok_lens
+  examples: |
+    - Orthokeratology		
+    - OK lens
+    - ortho k
+    - ortho k lens
+    - orthok
+
+- synonym: PRK
+  examples: |
+    - Photorefractive keratectomy
+    - prk		
+
+- synonym: ASA
+  examples: |
+    - Advanced surface ablation
+    - asa	
+
+- synonym: CXL
+  examples: |
+    - Collagen cross linking		
+    - CXL
+
+- synonym: smile
+  examples: |
+    - ReLEx® Smile		
+    - Relex
+    - Smile
+
+- synonym: dr
+  examples: |
+    - Diabetic retinopathy		
+    - DR
+
+- synonym: chalazion
+  examples: |
+    - Chalazion		
+    - Bak zham
+    - eyelid pimple
+
+- synonym: rop
+  examples: |
+    - Retinopathy of prematurity		
+    - ROP
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - yes sure
+    - absolutely
+    - for sure
+    - yes yes yes
+    - definitely
+    - yeah
+    - si
+    - ok
+    - okay
 
 ## intent:deny
 - no
@@ -113,6 +487,8 @@
 - What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What are the types of [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
 - What is [astigmatism](disease_type)
+- What is [shan guan]{"entity": "disease_type", "value": "astigmatism"}
+- What is [astig]{"entity": "disease_type", "value": "astigmatism"}
 - What does [astigmatism](disease_type) mean?
 - What type of eye problem is [astigmatism](disease_type)?
 - Is [astigmatism](disease_type) an eye problem?
@@ -125,19 +501,6 @@
 - What does an [oval cornea](symptom_type) mean?
 - Tell me more about [astigmatism](disease_type)
 - What does [astigmatism](disease_type) refer to?
-- What is the [macula](disease_type)?
-- What is diabetic [macula](disease_type) edema
-- What is the [macula](disease_type)?
-- What is diabetic [macula](disease_type) edema
-- Where is the [centre part](symptom_type) of the eye?
-- Why is the [macula](disease_type) important?
-- Is the [macula](disease_type) in charge of the most important part of our vision?
-- What happens when the [macula](disease_type) is damaged?
-- What diseases can occur in the [macula](disease_type)?
-- Where is the [macula](disease_type)?
-- Is [macula](disease_type) the most important part of our retina?
-- What is the [macula](disease_type) responsible for?
-- Why do we need the [macula](disease_type)?
 - What is [corneal edema](disease_type)?
 - is [corneal edema](disease_type) same as corneal ulcer
 - What does [corneal edema](disease_type) mean?
@@ -197,7 +560,17 @@
 - What type of eye problem is [corneal infection](disease_type)?
 - Is [corneal infection](disease_type) an eye problem?
 - I want to understand more about [corneal infection](disease_type)
-- What is age-related [macular degeneration](disease_type)?
+- What is [vidcon](symptom_type) 
+- What is [Vidcon]{"entity":"symptom_type","value":"vidcon"} ?
+- What is [video consultation]{"entity":"symptom_type","value":"vidcon"} ?
+- Why am I given a [video consultation]{"entity":"symptom_type","value":"vidcon"} appointment?
+- What does a [Vidcon]{"entity":"symptom_type","value":"vidcon"}  provide?
+- Can I get MC for attending [video consultation]{"entity":"symptom_type","value":"vidcon"}?
+- How do I get a MC for attending video consultation?
+- What does [Vidcon]{"entity":"symptom_type","value":"vidcon"}  mean?
+- How do I pay for [video consultation]{"entity":"symptom_type","value":"vidcon"}?
+- Do I need to pay for [video consultation]{"entity":"symptom_type","value":"vidcon"}? 
+- What is [age-related macular degeneration]{"entity":"disease_type","value":"AMD"}?
 - What is [AMD](disease_type)
 - does [AMD](disease_type) cause straight lines to be wavy
 - is [AMD](disease_type) sight threatening
@@ -218,8 +591,43 @@
 - Is [AMD](disease_type) permanent?
 - Is my risk of [AMD](disease_type) higher if I smoke?
 - Is wet or dry [AMD](disease_type) worse?
-- do old people get [macular degeneration](disease_type)
+- do old people get [macular degeneration]{"entity":"disease_type","value":"AMD"}
 - do old people get [amd](disease_type)
+- What is the [macula](disease_type)?
+- What is the [Macula](disease_type)?
+- Where is the [centre part]{"entity":"disease_type","value":"macula"} of the eye?
+- Why is the [macula](disease_type) important?
+- Is the [macula](disease_type) in charge of the most important part of our vision?
+- What happens when the [macula](disease_type) is damaged?
+- What diseases can occur in the [macula](disease_type)?
+- Where is the [macula](disease_type)?
+- Is [macula](disease_type) the most important part of our retina?
+- What is the [macula](disease_type) responsible for?
+- Why do we need the [macula](disease_type)?
+- What is [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
+- What is [DME](disease_type)?
+- What is [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
+- Why is my [macular swollen]{"entity":"disease_type","value":"DME"} if I have diabetes?
+- What is causing my [macular to be swollen] {"entity":"disease_type","value":"DME"}?
+- How is [DME](disease_type) treated?
+- What are my options for [diabetic macular edema]{"entity":"disease_type","value":"DME"}?
+- Do all [diabetic macular oedema]{"entity":"disease_type","value":"DME"} need to be treated?
+- Where does [diabetic macular oedema]{"entity":"disease_type","value":"DME"} affect?
+- What happens in [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
+- What investigations do I need to do for [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
+
+## intent: diabeticretinopathy-anatomy-retina
+What is the [macula](disease_type)?
+What is the [Macula]{"entity":"disease_type","value":"macula"}?
+Where is the [centre part]{"entity":"disease_type","value":"macula"} of the eye?
+Why is the [macula](disease_type) important?
+Is the [macula](disease_type) in charge of the most important part of our vision?
+What happens when the [macula](disease_type) is damaged?
+What diseases can occur in the [macula](disease_type)?
+Where is the [macula](disease_type)?
+Is [macula](disease_type) the most important part of our retina?
+What is the [macula](disease_type) responsible for?
+Why do we need the [macula](disease_type)?
 
 ## intent: cornealedema-condition-cornearefractive
 - My eyes look hazy
@@ -238,7 +646,7 @@
 - why my eye have virus
 
 ## intent: conjunctivitis-condition-cornearefractive
-- My eye pink
+- My [eye pink]{"entity":"disease_type","value":"conjunctivitis"}
 - Why is my eye pink?
 - Why is my eye red?
 - why my eye pain and red
@@ -550,30 +958,6 @@
 - not very good
 - extremely sad
 - so sad
-
-## synonym:9wzi-peqs
-- home health agency
-- home health agencies
-
-## synonym:b27b-2uc7
-- nursing home
-- nursing homes
-
-## synonym:eyedrop-synm
-- [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
-- eye drops
-- eyedrop
-- eye drop
-
-## synonym:visualfiled-synm
-- visual field
-- visual fields
-- visualfield
-- peripheral vision
-
-## synonym:xubh-q36u
-- hospital
-- hospitals
 
 ## regex:location
 - [0-9]{5}
@@ -4020,19 +4404,6 @@
 - Is panretinal photocoagulation dangerous?
 - Is panretinal photocoagulation safe?
 
-## intent: diabeticretinopathy-condition_treatment-retina
-- What is diabetic macular oedema?
-- What is DME?
-- What is diabetic macular oedema?
-- Why is my macular swollen if I have diabetes?
-- What is causing my macular to be swollen?
-- How is DME treated?
-- What are my options for diabetic macular edema?
-- Do all diabetic macular oedema need to be treated?
-- Where does diabetic macular oedema affect?
-- What happens in diabetic macular oedema?
-- What investigations do I need to do for diabetic macular oedema?
-
 ## intent: diabeticretinopathy-treatment_general-retina_13
 - Can the development of diabetic retinopathy be prevented?
 - How to control diabetes in my eye?
@@ -6584,17 +6955,6 @@
 - How do I find out my results from the GLSC clinic?
 - Will the nurses or doctors call me regarding my GLSC status?
 - Will my GLSC visit results be mailed to me?
-
-## intent: vidcon-condition-miscellaneous
-- What is Vidcon?
-- What is video consultation?
-- Why am I given a video consultation appointment?
-- What does a Vidcon provide?
-- Can I get MC for attending video consultation?
-- How do I get a MC for attending video consultation?
-- What does Vidcon mean?
-- How do I pay for video consultation?
-- Do I need to pay for video consultation? 
 
 ## intent: vidcon-condition-miscellaneous_55
 - What is the benefit of Vidcon?

@@ -662,7 +662,6 @@ intents:
 - diabeticretinopathy-treatment_general-retina_8
 - diabeticretinopathy-treatment_laser-retina
 - diabeticretinopathy-treatment_laser-retina_11
-- diabeticretinopathy-condition_treatment-retina
 - diabeticretinopathy-treatment_general-retina_13
 - diabeticretinopathy-followup-retina
 - retinaldetachment-pathophysiology_causes_riskfactors-retina
@@ -856,7 +855,6 @@ intents:
 - glsc-condition-miscellaneous
 - glsc-condition-miscellaneous_52
 - glsc-condition-miscellaneous_53
-- vidcon-condition-miscellaneous
 - vidcon-condition-miscellaneous_55
 - vidcon-condition-miscellaneous_56
 responses:

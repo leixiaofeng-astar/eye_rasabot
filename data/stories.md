@@ -198,10 +198,6 @@
 * conjunctivitis-treatment_surgical-cornearefractive
     - utter_conjunctivitis-treatment_surgical-cornearefractive
 
-## story_cornealedema-condition-cornearefractive
-* cornealedema-condition-cornearefractive
-    - utter_cornealedema-condition-cornearefractive
-
 ## story_cornealedema-causes-cornearefractive
 * cornealedema-causes-cornearefractive
     - utter_cornealedema-causes-cornearefractive
@@ -881,10 +877,6 @@
 ## story_diabeticretinopathy-treatment_laser-retina_11
 * diabeticretinopathy-treatment_laser-retina_11
     - utter_diabeticretinopathy-treatment_laser-retina_11
-
-## story_diabeticretinopathy-condition_treatment-retina
-* diabeticretinopathy-condition_treatment-retina
-    - utter_diabeticretinopathy-condition_treatment-retina
 
 ## story_diabeticretinopathy-treatment_general-retina_13
 * diabeticretinopathy-treatment_general-retina_13
@@ -1657,10 +1649,6 @@
 ## story_glsc-condition-miscellaneous_53
 * glsc-condition-miscellaneous_53
     - utter_glsc-condition-miscellaneous_53
-
-## story_vidcon-condition-miscellaneous
-* vidcon-condition-miscellaneous
-    - utter_vidcon-condition-miscellaneous
 
 ## story_vidcon-condition-miscellaneous_55
 * vidcon-condition-miscellaneous_55
