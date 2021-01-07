@@ -22,9 +22,9 @@
 * out_of_scope
    - utter_help_message
     
-## story_find_medical_condition
-* find_medical_condition
-    - actions_find_medical_condition
+## story_find_condition_definitions
+* find_condition_definitions
+    - actions_find_condition_definitions
    
 ## story_ask_astigmatism_information
 * ask_astigmatism_information
@@ -49,6 +49,10 @@
 ## story_signs_treatment
 * signs_treatment 
     - utter_glaucoma_visualfield_test
+
+## story_glaucoma_eyedrop_stoprisk
+* glaucoma_eyedrop_stoprisk
+    utter_glaucoma_eyedrop_stoprisk
     
 ## story_ask_diagnosis
 * ask_diagnosis 
@@ -1097,10 +1101,6 @@
 ## story_eyerubbing-condition-paediatricophthalmology
 * eyerubbing-condition-paediatricophthalmology
     - utter_eyerubbing-condition-paediatricophthalmology
-
-## story_allergicconjunctivitis-cause_condition-paediatricophthalmology
-* allergicconjunctivitis-cause_condition-paediatricophthalmology
-    - utter_allergicconjunctivitis-cause_condition-paediatricophthalmology
 
 ## story_allergicconjunctivitis-treatment_general-paediatricophthalmology
 * allergicconjunctivitis-treatment_general-paediatricophthalmology

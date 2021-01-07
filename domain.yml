@@ -1,5 +1,5 @@
 actions:
-- actions_find_medical_condition
+- actions_find_condition_definitions
 - actions_find_medical_symptoms
 - action_default_fallback
 - utter_astigmatism_symptoms
@@ -430,11 +430,13 @@ entities:
 - facility_type
 - location
 - symptom_type
+- medicine_name
+- technical_term
 - terms
 forms:
 - facility_form
 intents:
-- find_medical_condition
+- find_condition_definitions
 - find_medical_symptoms
 - greet
 - goodbye
@@ -717,7 +719,6 @@ intents:
 - eyerubbing-cause-paediatricophthalmology
 - eyerubbing-treatment_general-paediatricophthalmology
 - eyerubbing-condition-paediatricophthalmology
-- allergicconjunctivitis-cause_condition-paediatricophthalmology
 - allergicconjunctivitis-treatment_general-paediatricophthalmology
 - abnormalheadposture-condition-paediatricophthalmology
 - tearing-cause_condition-paediatricophthalmology
@@ -3045,15 +3046,7 @@ session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
 slots:
-  facility_address:
-    type: unfeaturized
-  facility_id:
-    type: unfeaturized
-  facility_type:
-    type: unfeaturized
   location:
-    type: unfeaturized
-  requested_slot:
     type: unfeaturized
 
 

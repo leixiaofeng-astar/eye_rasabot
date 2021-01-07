@@ -1,0 +1,172 @@
+## intent:find_medical_symptoms
+- What are the symptoms of [allergic conjunctivitis](disease_type)?
+- What are the symptoms of [glaucoma](disease_type)
+- What are the different types of [glaucoma](disease_type)
+- How do I know if I have [glaucoma](disease_type)
+- What should I look out for if I think I have [glaucoma](disease_type)
+- Which type of [glaucoma](disease_type) do I have
+- How do patients with [glaucoma](disease_type) present
+- Will I have pain in [glaucoma](disease_type)
+- How would I know if I have [glaucoma](disease_type)
+- What symptoms are suggestive of [glaucoma](disease_type)
+- What eye problems point towards [glaucoma](disease_type)
+- Do I have [glaucoma](disease_type)
+- What are the symptoms and signs of [astigmatism](disease_type)?
+- What does [astigmatism](disease_type) look like?
+- How is [astigmatism](disease_type) supposed to look like?
+- How does [astigmatism](disease_type) normally look like?
+- How does [astigmatism](disease_type) present?
+- What will I experience if I have [astigmatism](disease_type)?
+- What do people with [astigmatism](disease_type) experience?
+- How does the doctor know I have [astigmatism](disease_type)?
+- How is a diagnosis of [astigmatism](disease_type) made?
+- How many eyes does [astigmatism](disease_type) affect?
+- Can [astigmatism](disease_type) affect both eyes?
+- What are the symptoms and signs of [conjunctivitis](disease_type)?
+- What will I feel if I have [conjunctivitis](disease_type)
+- Is [conjunctivitis](disease_type) contagious?
+- how long does [conjunctivitis](disease_type) last
+- Does [conjunctivitis](disease_type) cause pain
+- Does [conjunctivitis](disease_type) cause dry eyes
+- My [conjunctivitis](disease_type) is not better after 2 weeks, what should I do
+- How long will I take to recover from [conjunctivitis](disease_type)
+- What happens when I have [conjunctivitis](disease_type)?
+- How does [conjunctivitis](disease_type) present?
+- How do I know if I have [conjunctivitis](disease_type)?
+- What will I experience if I have [conjunctivitis](disease_type)?
+- What do people with [conjunctivitis](disease_type) experience?
+- How does the doctor know I have [conjunctivitis](disease_type)?
+- How does the doctor diagnose me with [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) infectious?
+- Is [conjunctivitis](disease_type) contagious?
+- Can I get [conjunctivitis](disease_type) from other people?
+- Can [conjunctivitis](disease_type) spread from other people?
+- Is [conjunctivitis](disease_type) inherited?
+- Is [conjunctivitis](disease_type) congenital?
+- Can [conjunctivitis](disease_type) be passed down to children?
+- Can [conjunctivitis](disease_type) be passed down from parents?
+- Does [conjunctivitis](disease_type) cause flu?
+
+## intent: cornealedema-symptoms_signs-cornearefractive
+- What are the symptoms and signs of corneal edema?
+- what does corneal swelling do
+- What does corneal edema look like?
+- How is corneal edema supposed to look like?
+- How does corneal edema normally look like?
+- How does corneal edema present?
+- How do I know if I have corneal edema?
+- What will I experience if I have corneal edema?
+- What do people with corneal edema experience?
+- How does the doctor know I have corneal edema?
+- How is a diagnosis of corneal edema made?
+- How many eyes does corneal edema affect?
+- Can corneal edema affect both eyes?
+- Is corneal edema bilateral?
+
+## intent: cornealinfection-symptoms_signs-cornearefractive
+- What are the symptoms and signs of corneal infection?
+- How does corneal ulcer feel like?
+- I feel sensitive to light, can it be a cornea infection?
+- Why do I have a white spot on my eye and it is painful
+- What does corneal infection look like?
+- How is corneal infection supposed to look like?
+- How does corneal infection normally look like?
+- How does corneal infection present?
+- How do I know if I have corneal infection?
+- What will I experience if I have corneal infection?
+- What do people with corneal infection experience?
+- How does the doctor know I have corneal infection?
+- How is a diagnosis of corneal infection made?
+- How many eyes does corneal infection affect?
+- Can corneal infection affect both eyes?
+- Is corneal infection bilateral?
+
+## intent: pterygium-symptoms_signs-cornearefractive
+- What are the symptoms and signs of pterygium?
+- is pterygium painful?
+- does the white flesh cause pain
+- how can i confirm if i have pterygium
+- What does pterygium look like?
+- How is pterygium supposed to look like?
+- How does pterygium normally look like?
+- How does pterygium present?
+- How do I know if I have pterygium?
+- What will I experience if I have pterygium?
+- What do people with pterygium experience?
+- How does the doctor know I have pterygium?
+- How is a diagnosis of pterygium made?
+- How many eyes does pterygium affect?
+- Can pterygium affect both eyes?
+
+## intent: cataract-symptoms_signs-cornearefractive
+- What are the symptoms of cataracts?
+- Will I go blind from cataract
+- cataract will become blind?
+- Can I become blind from cataract
+- How to know if I have cataract
+- How do patients with cataracts present?
+- How will I know if I have a cataract?
+- Which symptoms are linked to cataracts?
+- What symptoms do patients with cataracts have?
+- Why should I care if I have a cataract?
+- How would I know if I have cataracts?
+- How will cataracts affect me?
+- What does a cataract lead to?
+- What problems does a cataract cause?
+- Do cataracts cause blurred vision?
+- Do cataracts cause halos?
+- Do cataracts cause glares?
+- What will happen if I have a cataract?
+
+## intent: dryeyes-symptoms_signs-cornearefractive
+- What are the symptoms of dry eyes?
+- How do I know if I have dry eyes
+- Can dry eyes harm my eyes
+- My eyesight keeps going blur on and off, why
+- I always feel poking pain in my eye
+- Why do I get tearing with dry eyes?
+- Which symptoms are linked to eye dryness?
+- What symptoms do patients with dry eyes have?
+- How would I know if I have dry eye syndrome?
+- How do I know if I have dry eyes?
+- What do patients with dry eyes develop?
+- Which symptoms do patients with dry eyes have?
+- Which symptoms are suggestive of dry eyes?
+- What eye problems are due to dry eyes?
+- What are the symptoms of dry eyes?
+- How do I know if I have dry eyes
+- Can dry eyes harm my eyes
+- My eyesight keeps going blur on and off, why
+- I always feel poking pain in my eye
+
+## intent: blepharitis-symptoms_signs-cornearefractive
+- What are the symptoms of blepharitis?
+- Does oily eyelids cause discharge
+- What will I feel if I have blepharitis?
+- Can blepharitis cause red eyes?
+- Can the oily secretions irritate my eyes?
+- Is eye dirt a sign of blepharitis?
+- Does blepharitis cause pain?
+- What do I feel if I have very oily eyelids?
+- Can blepharitis cause my vision to be blur?
+- I have dry eyes, is it a sign of blepharitis?
+- Apart from discharges, what else will I feel if I have blepharitis?
+- How does blepharitis look?
+
+## intent: cataract-symptoms_signs-cornearefractive_133
+- What are the symptoms of cataracts?
+- Will I go blind from cataract
+- cataract will become blind?
+- Can I become blind from cataract
+- How to know if I have cataract
+- How do patients with cataracts present?
+- How will I know if I have a cataract?
+- Which symptoms are due to cataracts?
+- What symptoms do patients with cataracts have?
+- Why should I care if I have a cataract?
+- How would I know if I have cataracts?
+- How will cataracts affect me?
+- What will a cataract lead to?
+- What problems does a cataract cause?
+- What will happen if I have a cataract?
+

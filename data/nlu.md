@@ -12,6 +12,20 @@ nlu:
     - videocon
     - Vidcon
 
+- synonym: dry eyes
+  examples: |
+    - Dry eyes
+    - eyes dry
+    - dry eye
+    - eyes are dry
+    - eyes become dry
+    
+- synonym: premature
+  examples: |
+    - prematurity
+    - born very early
+    - born early
+
 - synonym: 9wzi-peqs
   examples: |
     - home health agency
@@ -74,6 +88,12 @@ nlu:
   - near-sighted
   - jin shi yan
   
+- synonym: high myopia
+  examples: |
+    - severe myopia
+    - serious myopia
+    - high myopia
+ 
 - synonym: hyperopia
   examples: |
     - Hyperopia
@@ -90,6 +110,7 @@ nlu:
     - astig
     - san guang
     - shan guang
+    - shan guan
     
 - synonym: AMD
   examples: |
@@ -285,6 +306,8 @@ nlu:
     - flesh on the eye
     - skin on the cornea
     - skin on the eye
+    - thing on the eye
+    - growth on the eye
 
 - synonym: bilateral
   examples: |
@@ -470,245 +493,6 @@ nlu:
 - [Sitka](location)
 - [home health agency](facility_type)
 
-## intent:find_medical_condition
-- What is [glaucoma](disease_type)
-- How does [glaucoma](disease_type) happen
-- What does [glaucoma](disease_type) refer to
-- Is [glaucoma](disease_type) an eye disease
-- What type of eye condition is [glaucoma](disease_type)
-- What is the meaning of [glaucoma](disease_type)
-- How did I get [glaucoma](disease_type)
-- What is [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
-- What is [visual fields]{"entity": "symptom_type", "value": "visualfiled-synm"}
-- What is [peripheral vision]{"entity": "symptom_type", "value": "visualfiled-synm"}
-- What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test for
-- What does [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} mean
-- Why do I need to perform a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
-- What is a [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
-- What are the types of [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} test
-- What is [astigmatism](disease_type)
-- What is [shan guan]{"entity": "disease_type", "value": "astigmatism"}
-- What is [astig]{"entity": "disease_type", "value": "astigmatism"}
-- What does [astigmatism](disease_type) mean?
-- What type of eye problem is [astigmatism](disease_type)?
-- Is [astigmatism](disease_type) an eye problem?
-- I do not understand [astigmatism](disease_type)
-- I am confused about [astigmatism](disease_type)
-- What is the meaning of [astigmatism](disease_type)?
-- I want to know more about [astigmatism](disease_type)
-- I want to find out more about [astigmatism](disease_type)
-- I want to understand what [astigmatism](disease_type) is
-- What does an [oval cornea](symptom_type) mean?
-- Tell me more about [astigmatism](disease_type)
-- What does [astigmatism](disease_type) refer to?
-- What is [corneal edema](disease_type)?
-- is [corneal edema](disease_type) same as corneal ulcer
-- What does [corneal edema](disease_type) mean?
-- What is the meaning of [corneal edema](disease_type)?
-- Tell me more about [corneal edema](disease_type)
-- I do not understand about [corneal edema](disease_type)
-- I want to find out more about [corneal edema](disease_type)
-- What does [corneal edema](disease_type) entail?
-- I am confused about [corneal edema](disease_type)
-- What type of eye problem is [corneal edema](disease_type)?
-- Is [corneal edema](disease_type) an eye problem?
-- What is [cataract](disease_type)?
-- What is a [cataract](disease_type)
-- What does [cataract](disease_type) mean
-- Why are my eyes blur if I have [cataract](disease_type)?
-- What does it mean to be diagnosed with [cataract](disease_type)?
-- What kind of health problem is a [cataract](disease_type)?
-- Is a [cataract](disease_type) a eye problem?
-- is [cataract](disease_type) normal
-- What type of eye problem is a [cataract](disease_type)?
-- What is the meaning of [cataract](disease_type)?
-- I do not understand [cataract](disease_type)
-- What is the meaning of [cataract](disease_type)?
-- I want to know more about [cataract](disease_type)
-- I want to understand more about [cataract](disease_type)
-- Why are my eyes blur if I have [cataract](disease_type)?
-- What does it mean to be diagnosed with [cataract](disease_type)?
-- What kind of health problem is a [cataract](disease_type)?
-- Is [cataract](disease_type) an eye problem?
-- Who develops [cataract](disease_type)s?
-- How does someone develop [cataract](disease_type)?
-- What type of eye problem is a [cataract](disease_type)?
-- What does [cataract](disease_type) mean?
-- What is [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye inflammation?
-- What is the meaning of [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye infection?
-- Does [conjunctivitis](disease_type) indicate an eye infection?
-- I want to know more about [conjunctivitis](disease_type)
-- I want to find out more about [conjunctivitis](disease_type)
-- I want to understand what [conjunctivitis](disease_type) is
-- Tell me more about [conjunctivitis](disease_type)
-- What type of eye problem is [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye problem?
-- What does [conjunctivitis](disease_type) refer to?
-- What does [conjunctivitis](disease_type) mean?
-- What does [conjunctivitis](disease_type) entail?
-- What type of eye problem is [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) an eye problem?
-- Why is my [conjunctivitis](disease_type) inflamed?
-- What is [corneal infection](disease_type)?
-- What does [corneal infection](disease_type) mean?
-- I do not understand [corneal infection](disease_type)
-- I am confused about [corneal infection](disease_type)
-- What is the meaning of [corneal infection](disease_type)?
-- I want to find out more about [corneal infection](disease_type)
-- What type of eye problem is [corneal infection](disease_type)?
-- Is [corneal infection](disease_type) an eye problem?
-- I want to understand more about [corneal infection](disease_type)
-- What is [vidcon](symptom_type) 
-- What is [Vidcon]{"entity":"symptom_type","value":"vidcon"} ?
-- What is [video consultation]{"entity":"symptom_type","value":"vidcon"} ?
-- Why am I given a [video consultation]{"entity":"symptom_type","value":"vidcon"} appointment?
-- What does a [Vidcon]{"entity":"symptom_type","value":"vidcon"}  provide?
-- Can I get MC for attending [video consultation]{"entity":"symptom_type","value":"vidcon"}?
-- How do I get a MC for attending video consultation?
-- What does [Vidcon]{"entity":"symptom_type","value":"vidcon"}  mean?
-- How do I pay for [video consultation]{"entity":"symptom_type","value":"vidcon"}?
-- Do I need to pay for [video consultation]{"entity":"symptom_type","value":"vidcon"}? 
-- What is [age-related macular degeneration]{"entity":"disease_type","value":"AMD"}?
-- What is [AMD](disease_type)
-- does [AMD](disease_type) cause straight lines to be wavy
-- is [AMD](disease_type) sight threatening
-- does [AMD](disease_type) cause squiggly vision
-- why do i see squiggly lines with [amd](disease_type)
-- do diabetics get [amd](disease_type)
-- Can [AMD](disease_type) cause blindness
-- Is [AMD](disease_type) common
-- How common is [amd](disease_type)
-- What causes [amd](disease_type)
-- Does smoking cause [AMD](disease_type)
-- What does [AMD](disease_type) mean?
-- What happens in [AMD](disease_type)?
-- What does wet/dry [AMD](disease_type) mean?
-- Is [AMD](disease_type) common in Singapore?
-- What are the types of [AMD](disease_type)?
-- At what age does [AMD](disease_type) develop?
-- Is [AMD](disease_type) permanent?
-- Is my risk of [AMD](disease_type) higher if I smoke?
-- Is wet or dry [AMD](disease_type) worse?
-- do old people get [macular degeneration]{"entity":"disease_type","value":"AMD"}
-- do old people get [amd](disease_type)
-- What is the [macula](disease_type)?
-- What is the [Macula](disease_type)?
-- Where is the [centre part]{"entity":"disease_type","value":"macula"} of the eye?
-- Why is the [macula](disease_type) important?
-- Is the [macula](disease_type) in charge of the most important part of our vision?
-- What happens when the [macula](disease_type) is damaged?
-- What diseases can occur in the [macula](disease_type)?
-- Where is the [macula](disease_type)?
-- Is [macula](disease_type) the most important part of our retina?
-- What is the [macula](disease_type) responsible for?
-- Why do we need the [macula](disease_type)?
-- What is [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
-- What is [DME](disease_type)?
-- What is [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
-- Why is my [macular swollen]{"entity":"disease_type","value":"DME"} if I have diabetes?
-- What is causing my [macular to be swollen] {"entity":"disease_type","value":"DME"}?
-- How is [DME](disease_type) treated?
-- What are my options for [diabetic macular edema]{"entity":"disease_type","value":"DME"}?
-- Do all [diabetic macular oedema]{"entity":"disease_type","value":"DME"} need to be treated?
-- Where does [diabetic macular oedema]{"entity":"disease_type","value":"DME"} affect?
-- What happens in [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
-- What investigations do I need to do for [diabetic macular oedema]{"entity":"disease_type","value":"DME"}?
-
-## intent: diabeticretinopathy-anatomy-retina
-What is the [macula](disease_type)?
-What is the [Macula]{"entity":"disease_type","value":"macula"}?
-Where is the [centre part]{"entity":"disease_type","value":"macula"} of the eye?
-Why is the [macula](disease_type) important?
-Is the [macula](disease_type) in charge of the most important part of our vision?
-What happens when the [macula](disease_type) is damaged?
-What diseases can occur in the [macula](disease_type)?
-Where is the [macula](disease_type)?
-Is [macula](disease_type) the most important part of our retina?
-What is the [macula](disease_type) responsible for?
-Why do we need the [macula](disease_type)?
-
-## intent: cornealedema-condition-cornearefractive
-- My eyes look hazy
-- Why does my cornea look cloudy
-- is corneal swelling normal
-- Why is my eye cloudy?
-- What is corneal swelling?
-- Why does my eye look hazy?
-
-## intent: cataract-condition-cornearefractive
-- What is cloudiness in the lens?
-- why is my lens white
-
-## intent: cornealinfection-condition-cornearefractive
-- Is my eye infected?
-- why my eye have virus
-
-## intent: conjunctivitis-condition-cornearefractive
-- My [eye pink]{"entity":"disease_type","value":"conjunctivitis"}
-- Why is my eye pink?
-- Why is my eye red?
-- why my eye pain and red
-- My eyes are always red on waking up with eye dirt
-- Why is my eye inflamed?
-
-## intent: amd-condition-retina
-- why is my macula dying
-- how come my macula has degenerated
-- why does my macula spoil when i get old
-
-## intent:ask_astigmatism_information
-- My cornea is abnormally shaped
-- What causes my vision to be distorted?
-
-## intent:find_medical_symptoms
-- What are the symptoms of [glaucoma](disease_type)
-- What are the different types of [glaucoma](disease_type)
-- How do I know if I have [glaucoma](disease_type)
-- What should I look out for if I think I have [glaucoma](disease_type)
-- Which type of [glaucoma](disease_type) do I have
-- How do patients with [glaucoma](disease_type) present
-- Will I have pain in [glaucoma](disease_type)
-- How would I know if I have [glaucoma](disease_type)
-- What symptoms are suggestive of [glaucoma](disease_type)
-- What eye problems point towards [glaucoma](disease_type)
-- Do I have [glaucoma](disease_type)
-- What are the symptoms and signs of [astigmatism](disease_type)?
-- What does [astigmatism](disease_type) look like?
-- How is [astigmatism](disease_type) supposed to look like?
-- How does [astigmatism](disease_type) normally look like?
-- How does [astigmatism](disease_type) present?
-- What will I experience if I have [astigmatism](disease_type)?
-- What do people with [astigmatism](disease_type) experience?
-- How does the doctor know I have [astigmatism](disease_type)?
-- How is a diagnosis of [astigmatism](disease_type) made?
-- How many eyes does [astigmatism](disease_type) affect?
-- Can [astigmatism](disease_type) affect both eyes?
-- What are the symptoms and signs of [conjunctivitis](disease_type)?
-- What will I feel if I have [conjunctivitis](disease_type)
-- Is [conjunctivitis](disease_type) contagious?
-- how long does [conjunctivitis](disease_type) last
-- Does [conjunctivitis](disease_type) cause pain
-- Does [conjunctivitis](disease_type) cause dry eyes
-- My [conjunctivitis](disease_type) is not better after 2 weeks, what should I do
-- How long will I take to recover from [conjunctivitis](disease_type)
-- What happens when I have [conjunctivitis](disease_type)?
-- How does [conjunctivitis](disease_type) present?
-- How do I know if I have [conjunctivitis](disease_type)?
-- What will I experience if I have [conjunctivitis](disease_type)?
-- What do people with [conjunctivitis](disease_type) experience?
-- How does the doctor know I have [conjunctivitis](disease_type)?
-- How does the doctor diagnose me with [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) infectious?
-- Is [conjunctivitis](disease_type) contagious?
-- Can I get [conjunctivitis](disease_type) from other people?
-- Can [conjunctivitis](disease_type) spread from other people?
-- Is [conjunctivitis](disease_type) inherited?
-- Is [conjunctivitis](disease_type) congenital?
-- Can [conjunctivitis](disease_type) be passed down to children?
-- Can [conjunctivitis](disease_type) be passed down from parents?
-- Does [conjunctivitis](disease_type) cause flu?
 
 ## intent:change_appointment
 - What happens when I cannot make it for my [glaucoma](disease_type) appointment
@@ -721,35 +505,6 @@ Why do we need the [macula](disease_type)?
 - I forgot my [glaucoma](disease_type) appointment, what can I do
 - I did not turn up for my [glaucoma](disease_type) appointment, what can I do
 - How do I change my [glaucoma](disease_type) appointment
-
-## intent:risk_inquiry
-- What are the risk factors for developing [glaucoma](disease_type)
-- If my mother/father/sister/brother has [glaucoma](disease_type), do I have [glaucoma](disease_type)
-- How do I avoid developing [glaucoma](disease_type)
-- How come I developed [glaucoma](disease_type)
-- How will I know if I may develop [glaucoma](disease_type)
-- What can cause [glaucoma](disease_type)
-- Why did I develop [glaucoma](disease_type)
-- How do my eyes develop [glaucoma](disease_type)
-- What happens in [glaucoma](disease_type)
-- What are the risk factors of [glaucoma](disease_type)
-- Is [glaucoma](disease_type) congenital
-- Is [glaucoma](disease_type) present from birth
-- Can [glaucoma](disease_type) be inherited
-- Can [glaucoma](disease_type) be passed down from parents to children
-- Does hyperopia or farsightedness cause [glaucoma](disease_type)
-- Does aging cause [glaucoma](disease_type)
-- Does myopia or nearsightedness cause [glaucoma](disease_type)
-- Do eye injuries cause [glaucoma](disease_type)
-- Do steroids cause [glaucoma](disease_type)
-- Who gets [glaucoma](disease_type)
-- Who is susceptible to [glaucoma](disease_type)
-- What puts me at risk of developing [glaucoma](disease_type)
-- How do I make sure I do not get [glaucoma](disease_type)
-- Will I develop [glaucoma](disease_type) if I am old
-- Will I develop [glaucoma](disease_type) if my family has [glaucoma](disease_type)
-- What makes me more predispose to developing [glaucoma](disease_type)
-- Is there anything I can do to stop myself from developing [glaucoma](disease_type)
 
 ## intent:disease_treatment
 - How is [glaucoma](disease_type) treated
@@ -775,6 +530,8 @@ Why do we need the [macula](disease_type)?
 - What are the types of tests for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
 - What happens in clinic when I want my [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} evaluated
 - What can be done to check for [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"}
+
+## intent:glaucoma_eyedrop_stoprisk
 - What happens when I run out of [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - Must I continue taking [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - Why can’t I stop taking [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
@@ -803,21 +560,21 @@ Why do we need the [macula](disease_type)?
 
 ## intent:glaucoma_surgical_treatment 
 - What are the surgical options for treating [glaucoma](disease_type)
-- Will I need surgery for [glaucoma](disease_type)
-- Can surgery cure [glaucoma](disease_type)
-- What surgery for [glaucoma](disease_type)
+- Will I need [surgery](technical_term) for [glaucoma](disease_type)
+- Can [surgery](technical_term) cure [glaucoma](disease_type)
+- What [surgery](technical_term) for [glaucoma](disease_type)
 - What if I do not want to use [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} anymore
-- What kind of surgery is for [glaucoma](disease_type)
+- What kind of [surgery](technical_term) is for [glaucoma](disease_type)
 - Do surgeries work for [glaucoma](disease_type)
 - How can I cure [glaucoma](disease_type)
 - What can doctors do for my [glaucoma](disease_type)
 - My [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} are not working, is there still hope
-- What happens in surgery for [glaucoma](disease_type)
+- What happens in [surgery](technical_term) for [glaucoma](disease_type)
 - Can I go under the knife for [glaucoma](disease_type)
-- When is surgery recommended for [glaucoma](disease_type)
+- When is [surgery](technical_term) recommended for [glaucoma](disease_type)
 - What kind of surgeries can I undergo for [glaucoma](disease_type)
-- When is surgery indicated for [glaucoma](disease_type)
-- What are the indications of [glaucoma](disease_type) surgery
+- When is [surgery](technical_term) indicated for [glaucoma](disease_type)
+- What are the indications of [glaucoma](disease_type) [surgery](technical_term)
 - Can the eye surgeon take out my [glaucoma](disease_type)
 - Are procedures for [glaucoma](disease_type) available
 - Are operations to cure [glaucoma](disease_type) available
@@ -870,39 +627,6 @@ Why do we need the [macula](disease_type)?
 - What happens after my [glaucoma](disease_type) or retinal laser procedures
 - Will there be pain after my [glaucoma](disease_type) or retinal laser procedures
 - How soon will my vision recover after [glaucoma](disease_type) or retinal laser
-
-## intent: conjunctivitis-symptoms_signs-cornearefractive_28
-- What are the complications of [conjunctivitis](disease_type)?
-- Can [conjunctivitis](disease_type) affect vision?
-- When should I go to Ane if I have [conjunctivitis](disease_type)
-- Should I see a doctor if I have [conjunctivitis](disease_type)
-- I have [conjunctivitis](disease_type) and I can't see well
-- can [conjunctivitis](disease_type) cause blindness
-- Will my [conjunctivitis](disease_type) get worse?
-- Cna [conjunctivitis](disease_type) cause permanent damage
-- Can [conjunctivitis](disease_type) cause permanent damage
-- is [conjunctivitis](disease_type) dangerous 
--  conjunctiva inflammation bad
-- is [conjunctivitis](disease_type) bad
-- will [conjunctivitis](disease_type) disappear
-- Can [conjunctivitis](disease_type) cause problems?
-- Is [conjunctivitis](disease_type) serious?
-- Will I become blind?
-- Will I be able to see?
-- Can [conjunctivitis](disease_type) cause difficulties seeing?
-- Can [conjunctivitis](disease_type) lead to visual problems?
-- Is [conjunctivitis](disease_type) sight threatening?
-- Will [conjunctivitis](disease_type) cause blindness?
-- Will I become blind because of [conjunctivitis](disease_type)?
-- Can [conjunctivitis](disease_type) cause vlurred vision?
-- What issues can [conjunctivitis](disease_type) cause?
-- Can I still see if I have [conjunctivitis](disease_type)?
-- Can [conjunctivitis](disease_type) spoil my vision?
-- Can [conjunctivitis](disease_type) ruin my vision?
-- Can [conjunctivitis](disease_type) cause astigmatism?
-- Can [conjunctivitis](disease_type) cause myopia?
-- Is [conjunctivitis](disease_type) severe?
-- Is [conjunctivitis](disease_type) dangerous?
 
 ## intent:search_provider
 - i need a [hospital](facility_type)
@@ -991,31 +715,6 @@ Why do we need the [macula](disease_type)?
 - Can astigmatism be passed down to children?
 - Can astigmatism be passed down from parents?
 
-## intent: astigmatism-symptoms_signs-cornearefractive_4
-- What are the complications of astigmatism?
-- can astigmatism cause lazy eyes
-- What are the side effects of astigmatism?
-- What issues can astigmatism cause?
-- What problems can astigmatism cause?
-- Can astigmatism cause eye strain?
-- Can astigmatism cause headache?
-- Can astigmatism cause blurred vision?
-- Can astigmatism cause squinting?
-- Can astigmatism cause difficulties seeing?
-- Can astigmatism lead to visual problems?
-- Can astigmatism cause problems?
-- Is astigmatism serious?
-- Is astigmatism dangerous?
-- Is astigmatism sight threatening?
-- Will astigmatism cause blindness?
-- Will I become blind because of astigmatism?
-- Can I still see if I have astigmatism?
-- Can astigmatism spoil my vision?
-- Can astigmatism ruin my vision?
-- Can astigmatism cause myopia?
-- Will astigmatism cause lazy eye?
-- Will astigmatism cause amblyopia?
-
 ## intent: astigmatism-investigations-cornearefractive
 - What are the investigations for astigmatism?
 - how can i get my astig checked
@@ -1033,7 +732,7 @@ Why do we need the [macula](disease_type)?
 
 ## intent: astigmatism-treatment_general-cornearefractive
 - What is the treatment for astigmatism?
-- Need surgery for astigmatism?
+- Need [surgery](technical_term) for astigmatism?
 - how can i get rid of astigmatism
 - how do i reduce astig
 - can lasik treat astigmatism?
@@ -1055,13 +754,13 @@ Why do we need the [macula](disease_type)?
 
 ## intent: astigmatism-treatment_conservative-cornearefractive
 - What is the conservative treatment for astigmatism?
-- Can I get rid of astigmatism without medicine or surgery?
-- Will astigmatism be cured without medicine or surgery?
-- Will astigmatism go away without medicine or surgery?
+- Can I get rid of astigmatism without medicine or [surgery](technical_term)?
+- Will astigmatism be cured without medicine or [surgery](technical_term)?
+- Will astigmatism go away without medicine or [surgery](technical_term)?
 - How can I protect my eyes from astigmatism?
 - When can astigmatism be left alone?
 - When can astigmatism be treated conservatively?
-- When can astigmatism be treated without medicine or surgery?
+- When can astigmatism be treated without medicine or [surgery](technical_term)?
 - Can astigmatism be left alone?
 - Will astigmatism go away on its own?
 - Will astigmatism disappear on its own?
@@ -1098,266 +797,244 @@ Why do we need the [macula](disease_type)?
 - Do I need SMILE for astigmatism?
 - Do I need LASIK for astigmatism?
 - Do I need PRK for astigmatism?
-- Does astigmatism surgery exist?
+- Does astigmatism [surgery](technical_term) exist?
 - Is surgical removal of astigmatism possible?
 - Can you take out my astigmatism?
-- Can I do surgery to treat astigmatism?
+- Can I do [surgery](technical_term) to treat astigmatism?
 - Can you help me remove astigmatism?
 - Do I have to go under the knife for astigmatism?
-- Is there astigmatism surgery?
-- Is there a surgery to remove astigmatism?
+- Is there astigmatism [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove astigmatism?
 - Is there a procedure to remove astigmatism?
 - Can an eye surgeon operate on my astigmatism?
-- Can an eye doctor do surgery for my astigmatism?
+- Can an eye doctor do [surgery](technical_term) for my astigmatism?
 
 ## intent: astigmatism-treatment_surgical-cornearefractive_10
-- What are the indications of surgery for astigmatism?
-- When should I undergo surgery for astigmatism?
-- Is surgery recommended for astigmatism?
-- Why is surgery required for astigmatism?
-- Who needs surgery for astigmatism?
-- Is surgery recommended if I have severe astigmatism?
-- When is surgery indicated for astigmatism?
-- Why do I need to do surgery for astigmatism?
-- Why do I need astigmatism surgery?
+- What are the indications of [surgery](technical_term) for astigmatism?
+- When should I undergo [surgery](technical_term) for astigmatism?
+- Is [surgery](technical_term) recommended for astigmatism?
+- Why is [surgery](technical_term) required for astigmatism?
+- Who needs [surgery](technical_term) for astigmatism?
+- Is [surgery](technical_term) recommended if I have severe astigmatism?
+- When is [surgery](technical_term) indicated for astigmatism?
+- Why do I need to do [surgery](technical_term) for astigmatism?
+- Why do I need astigmatism [surgery](technical_term)?
 - Why do you need to operate on my astigmatism?
-- Must I do astigmatism surgery?
-- Is astigmatism surgery a must?
-- Is astigmatism surgery required?
-- Is surgery compulsory for astigmatism?
-- Is surgery mandatory for astigmatism?
-- When is surgery required for astigmatism?
-- When is surgery recommended for astigmatism?
-- What are the instances I need astigmatism surgery?
-- What are the reasons for astigmatism surgery?
-- Can I do surgery if I have blurred vision from astigmatism?
+- Must I do astigmatism [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) a must?
+- Is astigmatism [surgery](technical_term) required?
+- Is [surgery](technical_term) compulsory for astigmatism?
+- Is [surgery](technical_term) mandatory for astigmatism?
+- When is [surgery](technical_term) required for astigmatism?
+- When is [surgery](technical_term) recommended for astigmatism?
+- What are the instances I need astigmatism [surgery](technical_term)?
+- What are the reasons for astigmatism [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have blurred vision from astigmatism?
 
 ## intent: astigmatism-treatment_surgical-cornearefractive_11
-- Is astigmatism surgery Medisave-claimable?
-- How can I pay for astigmatism surgery?
-- Is astigmatism surgery subsidized?
-- Who can claim Medisave for astigmatism surgery?
-- Is astigmatism surgery covered under Medisave?
-- Can I pay for astigmatism surgery using Medisave?
-- Can I claim Medisave for astigmatism surgery?
-- Can I take out my Medisave for astigmatism surgery?
-- Can I use Medisave claims for astigmatism surgery?
-- Can I use medical insurance for astigmatism surgery?
-- Who can get subsidies for astigmatism surgery?
-- Can the government sponsor astigmatism surgery?
-- Can the government subsidize astigmatism surgery?
-- Is astigmatism surgery discounted?
-- Is astigmatism surgery covered under insurance?
-- What are the requirements for using Medisave for astigmatism surgery?
-- What is the criteria for using Medisave for astigmatism surgery?
+- Is astigmatism [surgery](technical_term) Medisave-claimable?
+- How can I pay for astigmatism [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) subsidized?
+- Who can claim Medisave for astigmatism [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) covered under Medisave?
+- Can I pay for astigmatism [surgery](technical_term) using Medisave?
+- Can I claim Medisave for astigmatism [surgery](technical_term)?
+- Can I take out my Medisave for astigmatism [surgery](technical_term)?
+- Can I use Medisave claims for astigmatism [surgery](technical_term)?
+- Can I use medical insurance for astigmatism [surgery](technical_term)?
+- Who can get subsidies for astigmatism [surgery](technical_term)?
+- Can the government sponsor astigmatism [surgery](technical_term)?
+- Can the government subsidize astigmatism [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) discounted?
+- Is astigmatism [surgery](technical_term) covered under insurance?
+- What are the requirements for using Medisave for astigmatism [surgery](technical_term)?
+- What is the criteria for using Medisave for astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-preoperative-cornearefractive
-- What are the preoperative preparations for astigmatism surgery?
-- What to bring for surgery
-- How should I prepare before astigmatism surgery?
-- Do I need to prepare anything before astigmatism surgery?
-- What should I take note of before astigmatism surgery?
-- Will I sign a consent form before astigmatism surgery?
-- Is consent taken before astigmatism surgery?
-- Is informed consent taken before astigmatism surgery?
-- How is consent taken for astigmatism surgery?
-- Can I wear contact lenses to astigmatism surgery?
-- Can I wear makeup before astigmatism surgery?
-- Can I put on mascara before astigmatism surgery?
-- Can I put on eyeliner before astigmatism surgery?
-- Can I put on eyeshadow before astigmatism surgery?
-- Can I put on lipstick before astigmatism surgery?
-- Can I use face cream before astigmatism surgery?
-- Can I use perfume before astigmatism surgery?
-- Should I fast before astigmatism surgery?
-- Can I eat before astigmatism surgery?
-- Can I drink before astigmatism surgery?
-- Can I have a meal before astigmatism surgery?
-- Can I have breakfast before astigmatism surgery?
-- What if I am thirsty before astigmatism surgery?
-- Can I take water before astigmatism surgery?
-- How much fluids can I take before astigmatism surgery?
-- Will my eye doctor talk to me before astigmatism surgery?
+- What are the preoperative preparations for astigmatism [surgery](technical_term)?
+- What to bring for [surgery](technical_term)
+- How should I prepare before astigmatism [surgery](technical_term)?
+- Do I need to prepare anything before astigmatism [surgery](technical_term)?
+- What should I take note of before astigmatism [surgery](technical_term)?
+- Will I sign a consent form before astigmatism [surgery](technical_term)?
+- Is consent taken before astigmatism [surgery](technical_term)?
+- Is informed consent taken before astigmatism [surgery](technical_term)?
+- How is consent taken for astigmatism [surgery](technical_term)?
+- Can I wear contact lenses to astigmatism [surgery](technical_term)?
+- Can I wear makeup before astigmatism [surgery](technical_term)?
+- Can I put on mascara before astigmatism [surgery](technical_term)?
+- Can I put on eyeliner before astigmatism [surgery](technical_term)?
+- Can I put on eyeshadow before astigmatism [surgery](technical_term)?
+- Can I put on lipstick before astigmatism [surgery](technical_term)?
+- Can I use face cream before astigmatism [surgery](technical_term)?
+- Can I use perfume before astigmatism [surgery](technical_term)?
+- Should I fast before astigmatism [surgery](technical_term)?
+- Can I eat before astigmatism [surgery](technical_term)?
+- Can I drink before astigmatism [surgery](technical_term)?
+- Can I have a meal before astigmatism [surgery](technical_term)?
+- Can I have breakfast before astigmatism [surgery](technical_term)?
+- What if I am thirsty before astigmatism [surgery](technical_term)?
+- Can I take water before astigmatism [surgery](technical_term)?
+- How much fluids can I take before astigmatism [surgery](technical_term)?
+- Will my eye doctor talk to me before astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-intraoperative-cornearefractive
-- What will happen during astigmatism surgery?
-- Will my eye be open during astigmatism surgery?
-- How will my eye be held open during astigmatism surgery?
-- How will I be positioned during astigmatism surgery?
-- Will I lie down during astigmatism surgery?
-- What if I am nervous during astigmatism surgery?
-- What are the steps in astigmatism surgery?
-- What occurs during astigmatism surgery?
-- What will you do during astigmatism surgery?
+- What will happen during astigmatism [surgery](technical_term)?
+- Will my eye be open during astigmatism [surgery](technical_term)?
+- How will my eye be held open during astigmatism [surgery](technical_term)?
+- How will I be positioned during astigmatism [surgery](technical_term)?
+- Will I lie down during astigmatism [surgery](technical_term)?
+- What if I am nervous during astigmatism [surgery](technical_term)?
+- What are the steps in astigmatism [surgery](technical_term)?
+- What occurs during astigmatism [surgery](technical_term)?
+- What will you do during astigmatism [surgery](technical_term)?
 - What is the procedure for astigmatism excision like?
 - How will the eye doctor perform astigmatism?
-- How will the eye doctor do the astigmatism surgery?
-- Are sutures used in astigmatism surgery?
-- Are stitches used in astigmatism surgery?
+- How will the eye doctor do the astigmatism [surgery](technical_term)?
+- Are sutures used in astigmatism [surgery](technical_term)?
+- Are stitches used in astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-intraoperative-cornearefractive_14
-- How long will astigmatism surgery take?
-- What is the duration of astigmatism surgery?
+- How long will astigmatism [surgery](technical_term) take?
+- What is the duration of astigmatism [surgery](technical_term)?
 - How long is the procedure for astigmatism?
-- How long does astigmatism surgery last?
-- What is the duration of astigmatism surgery?
-- Is astigmatism a day surgery?
-- Is astigmatism surgery long?
-- Is astigmatism surgery short?
+- How long does astigmatism [surgery](technical_term) last?
+- What is the duration of astigmatism [surgery](technical_term)?
+- Is astigmatism a day [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) long?
+- Is astigmatism [surgery](technical_term) short?
 - Is the procedure for astigmatism a quick one?
-- How many minutes does astigmatism surgery take?
+- How many minutes does astigmatism [surgery](technical_term) take?
 
 ## intent: astigmatism-intraoperative-cornearefractive_15
-- Do you have to put me to sleep during astigmatism surgery?
-- Do I have to undergo general anaesthesia for astigmatism surgery?
-- Is general anaesthesia required for astigmatism surgery?
-- Is general anaesthesia compulsory for astigmatism surgery?
-- Is general anaesthesia recommended for astigmatism surgery?
-- Can I not do general anesthesia during astigmatism surgery?
-- I do not want general anaesthesia during astigmatism surgery
-- Can I choose to be awake during astigmatism surgery?
-- Can I opt for local anesthesia during astigmatism surgery?
-- Is there an option for local anaesthesia in astigmatism surgery?
-- Is local anaesthesia an option during astigmatism surgery?
-- Will I be sedated during astigmatism surgery?
-- Is sedation done during astigmatism surgery?
-- Is astigmatism surgery an awake surgery?
-- Will I be awake during astigmatism surgery?
-- Will I be asleep during astigmatism surgery?
+- Do you have to put me to sleep during astigmatism [surgery](technical_term)?
+- Do I have to undergo general anaesthesia for astigmatism [surgery](technical_term)?
+- Is general anaesthesia required for astigmatism [surgery](technical_term)?
+- Is general anaesthesia compulsory for astigmatism [surgery](technical_term)?
+- Is general anaesthesia recommended for astigmatism [surgery](technical_term)?
+- Can I not do general anesthesia during astigmatism [surgery](technical_term)?
+- I do not want general anaesthesia during astigmatism [surgery](technical_term)
+- Can I choose to be awake during astigmatism [surgery](technical_term)?
+- Can I opt for local anesthesia during astigmatism [surgery](technical_term)?
+- Is there an option for local anaesthesia in astigmatism [surgery](technical_term)?
+- Is local anaesthesia an option during astigmatism [surgery](technical_term)?
+- Will I be sedated during astigmatism [surgery](technical_term)?
+- Is sedation done during astigmatism [surgery](technical_term)?
+- Is astigmatism [surgery](technical_term) an awake [surgery](technical_term)?
+- Will I be awake during astigmatism [surgery](technical_term)?
+- Will I be asleep during astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-intraoperative-cornearefractive_16
-- Is the astigmatism surgery painful?
-- Is astigmatism surgery uncomfortable?
-- Will astigmatism surgery cause discomfort?
-- Will astigmatism surgery hurt?
-- Will astigmatism surgery cause pain?
-- Will astigmatism surgery make my eyes sore?
-- Will I get pain medicine during astigmatism surgery?
-- Can I get analgesia during astigmatism surgery?
-- Can I get pain relief during astigmatism surgery?
-- Can I get sedation during astigmatism surgery?
-- Can I get anxiety medicine during astigmatism surgery?
+- Is the astigmatism [surgery](technical_term) painful?
+- Is astigmatism [surgery](technical_term) uncomfortable?
+- Will astigmatism [surgery](technical_term) cause discomfort?
+- Will astigmatism [surgery](technical_term) hurt?
+- Will astigmatism [surgery](technical_term) cause pain?
+- Will astigmatism [surgery](technical_term) make my eyes sore?
+- Will I get pain medicine during astigmatism [surgery](technical_term)?
+- Can I get analgesia during astigmatism [surgery](technical_term)?
+- Can I get pain relief during astigmatism [surgery](technical_term)?
+- Can I get sedation during astigmatism [surgery](technical_term)?
+- Can I get anxiety medicine during astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-intraoperative-cornearefractive_17
-- I am afraid of the astigmatism surgery
-- I feel worried about astigmatism surgery
-- I feel anxious about astigmatism surgery
-- I feel frightened about astigmatism surgery
-- I am fearful about astigmatism surgery
-- I am apprehensive about astigmatism surgery
-- The astigmatism surgery makes me feel scared
-- The astigmatism surgery makes me feel nervous
-- The astigmatism surgery makes me feel uneasy
-- This is my first astigmatism surgery
-- Is astigmatism surgery scary?
-- I have concerns about astigmatism surgery
-- I have questions about astigmatism surgery
-
-## intent: astigmatism-postoperative-cornearefractive
-- What are the complications of astigmatism surgery?
-- What are the side effects of astigmatism surgery?
-- What problems can astigmatism surgery cause?
-- What should I take note of after astigmatism surgery?
-- Will the corneal infection come back?
-- What is the risk of infection recurrence after astigmatism surgery?
-- Will the astigmatism recur?
-- Will I get an infection from astigmatism surgery?
-- Will my vision be affected by astigmatism surgery?
-- Will I go blind from astigmatism surgery?
-- What is the risk of going blind from astigmatism surgery?
-- Will I get halos from astigmatism surgery?
-- Will I get visual phenomena from astigmatism surgery?
-- Will astigmatism surgery spoil my eyes?
-- Will astigmatism surgery injure my eyes?
-- Will astigmatism surgery harm my eyes?
-- Does astigmatism surgery cause scarring?
-- Will I get light sensitivity from astigmatism surgery?
-- Will I get poor night vision from astigmatism surgery?
-- Will I get starbursts from astigmatism surgery?
+- I am afraid of the astigmatism [surgery](technical_term)
+- I feel worried about astigmatism [surgery](technical_term)
+- I feel anxious about astigmatism [surgery](technical_term)
+- I feel frightened about astigmatism [surgery](technical_term)
+- I am fearful about astigmatism [surgery](technical_term)
+- I am apprehensive about astigmatism [surgery](technical_term)
+- The astigmatism [surgery](technical_term) makes me feel scared
+- The astigmatism [surgery](technical_term) makes me feel nervous
+- The astigmatism [surgery](technical_term) makes me feel uneasy
+- This is my first astigmatism [surgery](technical_term)
+- Is astigmatism [surgery](technical_term) scary?
+- I have concerns about astigmatism [surgery](technical_term)
+- I have questions about astigmatism [surgery](technical_term)
 
 ## intent: astigmatism-postoperative-cornearefractive_19
-- What should I take note of after astigmatism surgery?
-- What should I be careful of after astigmatism surgery?
-- What should I watch out for after astigmatism surgery?
-- What should I be careful of after astigmatism surgery
-- When should I be worried after astigmatism surgery?
-- What should I take note of after astigmatism surgery?
-- What are the red flags after astigmatism surgery?
-- What if my eyes are painful after astigmatism surgery?
-- What if my eyes look strange after astigmatism surgery?
-- What if m eyes feel strange after astigmatism surgery?
-- What if I face problems after astigmatism surgery?
-- Should I see my eye doctor if I have problems after astigmatism surgery?
-- When should I go to the Emergency after astigmatism surgery?
+- What should I take note of after astigmatism [surgery](technical_term)?
+- What should I be careful of after astigmatism [surgery](technical_term)?
+- What should I watch out for after astigmatism [surgery](technical_term)?
+- What should I be careful of after astigmatism [surgery](technical_term)
+- When should I be worried after astigmatism [surgery](technical_term)?
+- What should I take note of after astigmatism [surgery](technical_term)?
+- What are the red flags after astigmatism [surgery](technical_term)?
+- What if my eyes are painful after astigmatism [surgery](technical_term)?
+- What if my eyes look strange after astigmatism [surgery](technical_term)?
+- What if m eyes feel strange after astigmatism [surgery](technical_term)?
+- What if I face problems after astigmatism [surgery](technical_term)?
+- Should I see my eye doctor if I have problems after astigmatism [surgery](technical_term)?
+- When should I go to the Emergency after astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-postoperative-cornearefractive_20
-- What happens after astigmatism surgery?
-- What are the plans after astigmatism surgery?
-- What should I expect following astigmatism surgery?
-- What normally occurs after astigmatism surgery?
-- Can I go home immediately after astigmatism surgery?
-- Must I rest at home after astigmatism surgery?
-- When can I go home after astigmatism surgery?
-- Must someone accompany me home after astigmatism surgery?
-- Do I need someone to bring me home after astigmatism surgery?
-- Do I need someone to take care of me after astigmatism surgery?
-- Do I need to stay in hospital after astigmatism surgery?
-- Do I have to be hospitalized after astigmatism surgery?
-- When can I get new spectacles after astigmatism surgery?
+- What happens after astigmatism [surgery](technical_term)?
+- What are the plans after astigmatism [surgery](technical_term)?
+- What should I expect following astigmatism [surgery](technical_term)?
+- What normally occurs after astigmatism [surgery](technical_term)?
+- Can I go home immediately after astigmatism [surgery](technical_term)?
+- Must I rest at home after astigmatism [surgery](technical_term)?
+- When can I go home after astigmatism [surgery](technical_term)?
+- Must someone accompany me home after astigmatism [surgery](technical_term)?
+- Do I need someone to bring me home after astigmatism [surgery](technical_term)?
+- Do I need someone to take care of me after astigmatism [surgery](technical_term)?
+- Do I need to stay in hospital after astigmatism [surgery](technical_term)?
+- Do I have to be hospitalized after astigmatism [surgery](technical_term)?
+- When can I get new spectacles after astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-postoperative-cornearefractive_21
-- How soon can I go back to work after astigmatism surgery?
-- When can I return to normal activities after astigmatism surgery?
-- When can I return to work after astigmatism surgery?
-- When can I resume school after astigmatism surgery?
-- Will I wear an eye patch after astigmatism surgery?
-- What protective measures are done after astigmatism surgery?
-- How can I protect my eye after astigmatism surgery?
-- What precautions should I take after astigmatism surgery?
-- Will I get eye shields after astigmatism surgery?
-- Can I rub my eyes after astigmatism surgery?
-- How will my eyes be protected after astigmatism surgery?
-- Can I exercise after astigmatism surgery?
-- Can I swim after astigmatism surgery?
-- Can I do sports after astigmatism surgery?
-- Is my eye vulnerable after astigmatism surgery?
+- How soon can I go back to work after astigmatism [surgery](technical_term)?
+- When can I return to normal activities after astigmatism [surgery](technical_term)?
+- When can I return to work after astigmatism [surgery](technical_term)?
+- When can I resume school after astigmatism [surgery](technical_term)?
+- Will I wear an eye patch after astigmatism [surgery](technical_term)?
+- What protective measures are done after astigmatism [surgery](technical_term)?
+- How can I protect my eye after astigmatism [surgery](technical_term)?
+- What precautions should I take after astigmatism [surgery](technical_term)?
+- Will I get eye shields after astigmatism [surgery](technical_term)?
+- Can I rub my eyes after astigmatism [surgery](technical_term)?
+- How will my eyes be protected after astigmatism [surgery](technical_term)?
+- Can I exercise after astigmatism [surgery](technical_term)?
+- Can I swim after astigmatism [surgery](technical_term)?
+- Can I do sports after astigmatism [surgery](technical_term)?
+- Is my eye vulnerable after astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-postoperative-cornearefractive_22
-- Can I see clearly after astigmatism surgery?
-- How will my eyesight be after astigmatism surgery?
-- Will my vision recover after astigmatism surgery?
-- Will I have perfect eyesight after astigmatism surgery?
-- Do I still need spectacles after astigmatism surgery?
-- Do I still need contact lens after astigmatism surgery?
-- Can I see perfectly after astigmatism surgery?
-- Do I need second surgery after astigmatism surgery?
-- Do I need another surgery after astigmatism surgery?
-- Do I need supplementary procedures after astigmatism surgery?
-- When willvison stabilise after astigmatism surgery?
+- Can I see clearly after astigmatism [surgery](technical_term)?
+- How will my eyesight be after astigmatism [surgery](technical_term)?
+- Will my vision recover after astigmatism [surgery](technical_term)?
+- Will I have perfect eyesight after astigmatism [surgery](technical_term)?
+- Do I still need spectacles after astigmatism [surgery](technical_term)?
+- Do I still need contact lens after astigmatism [surgery](technical_term)?
+- Can I see perfectly after astigmatism [surgery](technical_term)?
+- Do I need second [surgery](technical_term) after astigmatism [surgery](technical_term)?
+- Do I need another [surgery](technical_term) after astigmatism [surgery](technical_term)?
+- Do I need supplementary procedures after astigmatism [surgery](technical_term)?
+- When willvison stabilise after astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-postoperative-cornearefractive_23
-- Do I have to take medicine after astigmatism surgery?
-- Must I eat medicine after astigmatism surgery?
-- Do I have to put eye drops after astigmatism surgery?
-- Are eye drops compulsory after astigmatism surgery?
-- Why are eye drops important after astigmatism surgery?
-- How do eye drops help me after astigmatism surgery?
-- How are eye drops useful after astigmatism surgery?
-- Are eye drops recommended after astigmatism surgery?
-- Why must I use eye drops after astigmatism surgery?
-- How come I need to use eye drops after astigmatism surgery?
+- Do I have to take medicine after astigmatism [surgery](technical_term)?
+- Must I eat medicine after astigmatism [surgery](technical_term)?
+- Do I have to put eye drops after astigmatism [surgery](technical_term)?
+- Are eye drops compulsory after astigmatism [surgery](technical_term)?
+- Why are eye drops important after astigmatism [surgery](technical_term)?
+- How do eye drops help me after astigmatism [surgery](technical_term)?
+- How are eye drops useful after astigmatism [surgery](technical_term)?
+- Are eye drops recommended after astigmatism [surgery](technical_term)?
+- Why must I use eye drops after astigmatism [surgery](technical_term)?
+- How come I need to use eye drops after astigmatism [surgery](technical_term)?
 
 ## intent: astigmatism-postoperative-cornearefractive_24
-- Do I have to come back for follow up after astigmatism surgery?
-- Do I need to come back for checkup after astigmatism surgery?
-- How often do I have to come back after astigmatism surgery?
-- When do I need to return for follow up after astigmatism surgery?
-- Why must I come for follow up after astigmatism surgery?
-- How come I must go for follow up after astigmatism surgery?
-- Why is follow up important after astigmatism surgery?
-- What does the eye doctor do during follow up for astigmatism surgery?
-- What does the eye doctor monitor after astigmatism surgery?
-- What happens in the clinic after astigmatism surgery?
+- Do I have to come back for follow up after astigmatism [surgery](technical_term)?
+- Do I need to come back for checkup after astigmatism [surgery](technical_term)?
+- How often do I have to come back after astigmatism [surgery](technical_term)?
+- When do I need to return for follow up after astigmatism [surgery](technical_term)?
+- Why must I come for follow up after astigmatism [surgery](technical_term)?
+- How come I must go for follow up after astigmatism [surgery](technical_term)?
+- Why is follow up important after astigmatism [surgery](technical_term)?
+- What does the eye doctor do during follow up for astigmatism [surgery](technical_term)?
+- What does the eye doctor monitor after astigmatism [surgery](technical_term)?
+- What happens in the clinic after astigmatism [surgery](technical_term)?
 
 ## intent: conjunctivitis-causes-cornearefractive
 - What is the cause of [conjunctivitis](disease_type)?
@@ -1426,17 +1103,17 @@ Why do we need the [macula](disease_type)?
 - What is the conservative treatment of [conjunctivitis](disease_type)?
 - How can I prevent my [conjunctivitis](disease_type) from spreading to my family
 - I have [conjunctivitis](disease_type), when can I go back to work
-- Can I get rid of [conjunctivitis](disease_type) without medicine or surgery?
+- Can I get rid of [conjunctivitis](disease_type) without medicine or [surgery](technical_term)?
 - How can I stop spreading [conjunctivitis](disease_type) to people?
 - How can I avoid spreading [conjunctivitis](disease_type) to others?
 - I am worried of giving [conjunctivitis](disease_type) to others
 - Is [conjunctivitis](disease_type) contagious?
-- Will [conjunctivitis](disease_type) be cured without medicine or surgery?
-- Will [conjunctivitis](disease_type) go away without medicine or surgery?
+- Will [conjunctivitis](disease_type) be cured without medicine or [surgery](technical_term)?
+- Will [conjunctivitis](disease_type) go away without medicine or [surgery](technical_term)?
 - How can I protect my eyes from [conjunctivitis](disease_type)?
 - When can [conjunctivitis](disease_type) be left alone?
 - When can [conjunctivitis](disease_type) be treated conservatively?
-- When can [conjunctivitis](disease_type) be treated without medicine or surgery?
+- When can [conjunctivitis](disease_type) be treated without medicine or [surgery](technical_term)?
 - Can [conjunctivitis](disease_type) be left alone?
 - Will [conjunctivitis](disease_type) go away on its own?
 - Will [conjunctivitis](disease_type) disappear on its own?
@@ -1466,19 +1143,19 @@ Why do we need the [macula](disease_type)?
 
 ## intent: conjunctivitis-treatment_surgical-cornearefractive
 - What is the surgical treatment of [conjunctivitis](disease_type)?
-- is there a surgery to treat [conjunctivitis](disease_type)
+- is there a [surgery](technical_term) to treat [conjunctivitis](disease_type)
 - do i need to take out my [conjunctivitis](disease_type)
-- Does [conjunctivitis](disease_type) surgery exist?
+- Does [conjunctivitis](disease_type) [surgery](technical_term) exist?
 - Is surgical removal of [conjunctivitis](disease_type) possible?
 - Can you take out my [conjunctivitis](disease_type)?
-- Can I do surgery to treat [conjunctivitis](disease_type)?
+- Can I do [surgery](technical_term) to treat [conjunctivitis](disease_type)?
 - Can you help me remove [conjunctivitis](disease_type)?
 - Do I have to go under the knife for [conjunctivitis](disease_type)?
-- Is there [conjunctivitis](disease_type) surgery?
-- Is there a surgery to remove [conjunctivitis](disease_type)?
+- Is there [conjunctivitis](disease_type) [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove [conjunctivitis](disease_type)?
 - Is there a procedure to remove [conjunctivitis](disease_type)?
 - Can an eye surgeon operate on my [conjunctivitis](disease_type)?
-- Can an eye doctor do surgery for my [conjunctivitis](disease_type)?
+- Can an eye doctor do [surgery](technical_term) for my [conjunctivitis](disease_type)?
 
 ## intent: cornealedema-causes-cornearefractive
 - What is the cause of corneal edema?
@@ -1501,7 +1178,7 @@ Why do we need the [macula](disease_type)?
 - Does dirt or dust cause corneal edema?
 - Does contact lens cause corneal edema?
 - Does eye injury cause corneal edema?
-- Does eye surgery cause corneal edema?
+- Does eye [surgery](technical_term) cause corneal edema?
 - Does glaucoma cause corneal edema?
 - Does myopia cause corneal edema?
 - Does Fuchs' endothelial dystrophy cause corneal edema?
@@ -1513,49 +1190,6 @@ Why do we need the [macula](disease_type)?
 - Is corneal edema congenital?
 - Can corneal edema be passed down to children?
 - Can corneal edema be passed down from parents?
-
-## intent: cornealedema-symptoms_signs-cornearefractive
-- What are the symptoms and signs of corneal edema?
-- what does corneal swelling do
-- What does corneal edema look like?
-- How is corneal edema supposed to look like?
-- How does corneal edema normally look like?
-- How does corneal edema present?
-- How do I know if I have corneal edema?
-- What will I experience if I have corneal edema?
-- What do people with corneal edema experience?
-- How does the doctor know I have corneal edema?
-- How is a diagnosis of corneal edema made?
-- How many eyes does corneal edema affect?
-- Can corneal edema affect both eyes?
-- Is corneal edema bilateral?
-
-## intent: cornealedema-symptoms_signs-cornearefractive_37
-- What are the complications of corneal edema?
-- Can cornea edema cause blindness
-- Can I go blind from corneal swelling
-- what is the prognosis of corneal edema
-- Can corneal edema cause difficulties seeing?
-- Can corneal edema lead to visual problems?
-- Can corneal edema cause problems?
-- Is corneal edema serious?
-- Is corneal edema dangerous?
-- Is corneal edema sight threatening?
-- Will corneal edema cause blindness?
-- Will I become blind because of corneal edema?
-- Can I still see if I have corneal edema?
-- Can corneal edema spoil my vision?
-- Can corneal edema ruin my vision?
-- Can corneal edema cause atigmatism?
-- Can corneal edema cause myopia?
-- Can corneal edema cause corneal ulcer?
-- Can corneal edema cause blisters?
-- Can corneal edema cause bullous keratopathy?
-- Can my cornea perforate because of corneal edema?
-- Can my cornea melt because of corneal edema?
-- What issues can corneal edema result in?
-- Does corneal edema ead to irreversible blindness?
-- Will corneal edema cause scarring?
 
 ## intent: cornealedema-investigations-cornearefractive
 - What are the investigations for corneal edema?
@@ -1595,14 +1229,14 @@ Why do we need the [macula](disease_type)?
 ## intent: cornealedema-treatment_conservative-cornearefractive
 - What is the conservative treatment of corneal edema?
 - I have cornea swelling, can I recover on my own
-- Can I get rid of corneal edema without medicine or surgery?
-- Will corneal edema be cured without medicine or surgery?
-- Will corneal edema go away without medicine or surgery?
+- Can I get rid of corneal edema without medicine or [surgery](technical_term)?
+- Will corneal edema be cured without medicine or [surgery](technical_term)?
+- Will corneal edema go away without medicine or [surgery](technical_term)?
 - How can I protect my eyes from corneal edema?
 - How to reduce risks of corneal edema?
 - When can corneal edema be left alone?
 - When can corneal edema be treated conservatively?
-- When can corneal edema be treated without medicine or surgery?
+- When can corneal edema be treated without medicine or [surgery](technical_term)?
 - Can corneal edema be left alone?
 - Will corneal edema go away on its own?
 - Will corneal edema disappear on its own?
@@ -1629,117 +1263,117 @@ Why do we need the [macula](disease_type)?
 ## intent: cornealedema-treatment_surgical-cornearefractive
 - What is the surgical treatment of corneal edema?
 - Do I need transplant for cornea edema
--  Does corneal edema surgery exist?
+-  Does corneal edema [surgery](technical_term) exist?
 - Is surgical removal of corneal edema possible?
 - Can you take out my corneal edema?
-- Can I do surgery to treat corneal edema?
+- Can I do [surgery](technical_term) to treat corneal edema?
 - Can you help me remove corneal edema?
 - Can you excise my corneal edema?
 - Do I have to go under the knife for corneal edema?
-- Is there corneal edema surgery?
-- Is there a surgery to remove corneal edema?
+- Is there corneal edema [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove corneal edema?
 - Is there a procedure to remove corneal edema?
 - Can an eye surgeon operate on my corneal edema?
-- Can an eye doctor do surgery for my corneal edema?
+- Can an eye doctor do [surgery](technical_term) for my corneal edema?
 - Do I need a new cornea for corneal edema?
 - Do I need a cornea transplant for corneal edema?
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_43
-- What are the indications of corneal edema surgery?
-- When do I need surgery for cornea swelling
+- What are the indications of corneal edema [surgery](technical_term)?
+- When do I need [surgery](technical_term) for cornea swelling
 - is operation needed for corneal edema
 - is op needed for corneal edema
-- Why do I need to do surgery for corneal edema?
-- Why do I need corneal edema surgery?
+- Why do I need to do [surgery](technical_term) for corneal edema?
+- Why do I need corneal edema [surgery](technical_term)?
 - Why do you need to operate on my corneal edema?
-- Why do I need to undergo surgery for corneal edema?
+- Why do I need to undergo [surgery](technical_term) for corneal edema?
 - Why do I need to go under the knife for corneal edema?
-- Must I do corneal edema surgery?
-- Is corneal edema surgery a must?
-- Is corneal edema surgery required?
-- Is surgery compulsory for corneal edema?
-- Is surgery mandatory for corneal edema?
-- How come surgery is needed for corneal edema?
-- Which patients require surgery for corneal edema?
-- Who needs surgery for corneal edema?
-- When is surgery required for corneal edema?
-- When is surgery recommended for corneal edema?
-- What are the instances I need corneal edema surgery?
-- What are the reasons for corneal edema surgery?
-- Can I do surgery if I have blurred vision from corneal edema?
+- Must I do corneal edema [surgery](technical_term)?
+- Is corneal edema [surgery](technical_term) a must?
+- Is corneal edema [surgery](technical_term) required?
+- Is [surgery](technical_term) compulsory for corneal edema?
+- Is [surgery](technical_term) mandatory for corneal edema?
+- How come [surgery](technical_term) is needed for corneal edema?
+- Which patients require [surgery](technical_term) for corneal edema?
+- Who needs [surgery](technical_term) for corneal edema?
+- When is [surgery](technical_term) required for corneal edema?
+- When is [surgery](technical_term) recommended for corneal edema?
+- What are the instances I need corneal edema [surgery](technical_term)?
+- What are the reasons for corneal edema [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have blurred vision from corneal edema?
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_44
-- Is corneal transplant surgery Medisave-claimable?
+- Is corneal transplant [surgery](technical_term) Medisave-claimable?
 - Is cornea transplant covered by medisave
 - How much does corneal transplant cost
 - can sponsor corneal transplant 
 - who pays for my new cornea
-- How can I pay for corneal edema surgery?
-- Is corneal edema surgery subsidized?
-- Who can claim Medisave for corneal edema surgery?
-- Is corneal edema surgery covered under Medisave?
-- Can I pay for corneal edema surgery using Medisave?
-- Can I claim Medisave for corneal edema surgery?
-- Can I take out my Medisave for corneal edema surgery?
-- Can I use Medisave claims for corneal edema surgery?
-- Can I use medical insurance for corneal edema surgery?
-- Who can get subsidies for corneal edema surgery?
-- Can the government sponsor corneal edema surgery?
-- Can the government subsidize corneal edema surgery?
-- Is corneal edema surgery discounted?
-- Is corneal edema surgery covered under insurance?
-- What are the requirements for using Medisave for corneal edema surgery?
-- What is the criteria for using Medisave for corneal edema surgery?
+- How can I pay for corneal edema [surgery](technical_term)?
+- Is corneal edema [surgery](technical_term) subsidized?
+- Who can claim Medisave for corneal edema [surgery](technical_term)?
+- Is corneal edema [surgery](technical_term) covered under Medisave?
+- Can I pay for corneal edema [surgery](technical_term) using Medisave?
+- Can I claim Medisave for corneal edema [surgery](technical_term)?
+- Can I take out my Medisave for corneal edema [surgery](technical_term)?
+- Can I use Medisave claims for corneal edema [surgery](technical_term)?
+- Can I use medical insurance for corneal edema [surgery](technical_term)?
+- Who can get subsidies for corneal edema [surgery](technical_term)?
+- Can the government sponsor corneal edema [surgery](technical_term)?
+- Can the government subsidize corneal edema [surgery](technical_term)?
+- Is corneal edema [surgery](technical_term) discounted?
+- Is corneal edema [surgery](technical_term) covered under insurance?
+- What are the requirements for using Medisave for corneal edema [surgery](technical_term)?
+- What is the criteria for using Medisave for corneal edema [surgery](technical_term)?
 
 ## intent: cornealedema-preoperative-cornearefractive
 - What are the preoperative preparations for corneal transplant?
 - I am going for corneal transplant, what should I do?
-- How should I prepare before corneal transplant surgery?
-- Do I need to prepare anything before corneal transplant surgery?
-- What should I take note of before corneal transplant surgery?
-- Will I sign a consent form before corneal transplant surgery?
-- Is consent taken before corneal transplant surgery?
-- Is informed consent required before corneal transplant surgery?
-- How is consent taken before corneal transplant surgery?
-- Can I wear contact lenses to corneal transplant surgery?
-- Can I wear makeup before corneal transplant surgery?
-- Can I put on mascara before corneal transplant surgery?
-- Can I put on eyeliner before corneal transplant surgery?
-- Can I put on eyeshadow before corneal transplant surgery?
-- Can I put on lipstick before corneal transplant surgery?
-- Can I use face cream before corneal transplant surgery?
-- Can I use perfume before corneal transplant surgery?
-- Should I fast before corneal transplant surgery?
-- Can I eat before corneal transplant surgery?
-- Can I drink before corneal transplant surgery?
-- Can I take water before corneal transplant surgery?
-- Can I have a meal before corneal transplant surgery?
-- Can I have breakfast before corneal transplant surgery?
-- What if I am hungry before corneal transplant surgery?
-- How much fluids can I take before corneal transplant surgery?
-- Will my eye doctor talk to me before corneal transplant surgery?
+- How should I prepare before corneal transplant [surgery](technical_term)?
+- Do I need to prepare anything before corneal transplant [surgery](technical_term)?
+- What should I take note of before corneal transplant [surgery](technical_term)?
+- Will I sign a consent form before corneal transplant [surgery](technical_term)?
+- Is consent taken before corneal transplant [surgery](technical_term)?
+- Is informed consent required before corneal transplant [surgery](technical_term)?
+- How is consent taken before corneal transplant [surgery](technical_term)?
+- Can I wear contact lenses to corneal transplant [surgery](technical_term)?
+- Can I wear makeup before corneal transplant [surgery](technical_term)?
+- Can I put on mascara before corneal transplant [surgery](technical_term)?
+- Can I put on eyeliner before corneal transplant [surgery](technical_term)?
+- Can I put on eyeshadow before corneal transplant [surgery](technical_term)?
+- Can I put on lipstick before corneal transplant [surgery](technical_term)?
+- Can I use face cream before corneal transplant [surgery](technical_term)?
+- Can I use perfume before corneal transplant [surgery](technical_term)?
+- Should I fast before corneal transplant [surgery](technical_term)?
+- Can I eat before corneal transplant [surgery](technical_term)?
+- Can I drink before corneal transplant [surgery](technical_term)?
+- Can I take water before corneal transplant [surgery](technical_term)?
+- Can I have a meal before corneal transplant [surgery](technical_term)?
+- Can I have breakfast before corneal transplant [surgery](technical_term)?
+- What if I am hungry before corneal transplant [surgery](technical_term)?
+- How much fluids can I take before corneal transplant [surgery](technical_term)?
+- Will my eye doctor talk to me before corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-intraoperative-cornearefractive
-- What will happen during corneal transplant surgery?
+- What will happen during corneal transplant [surgery](technical_term)?
 - How is corneal transplant done
 - What is corneal transplant
 - How is corneal transplant done
 - How does corneal transplant work?
-- Will my eye be open during corneal transplant surgery?
-- How will my eye be held open during corneal transplant surgery?
-- What are the steps in corneal transplant surgery?
-- What occurs during corneal transplant surgery?
-- Is my cornea removed in corneal transplant surgery?
-- How much of my cornea is taken out during corneal transplant surgery?
-- What will you do during corneal transplant surgery?
+- Will my eye be open during corneal transplant [surgery](technical_term)?
+- How will my eye be held open during corneal transplant [surgery](technical_term)?
+- What are the steps in corneal transplant [surgery](technical_term)?
+- What occurs during corneal transplant [surgery](technical_term)?
+- Is my cornea removed in corneal transplant [surgery](technical_term)?
+- How much of my cornea is taken out during corneal transplant [surgery](technical_term)?
+- What will you do during corneal transplant [surgery](technical_term)?
 - What is the procedure for corneal transplant like?
 - How will the eye doctor perform corneal transplant?
-- How will the eye doctor do the corneal transplant surgery?
-- Are sutures used in corneal transplant surgery?
-- Are stitches used in corneal transplant surgery?
+- How will the eye doctor do the corneal transplant [surgery](technical_term)?
+- Are sutures used in corneal transplant [surgery](technical_term)?
+- Are stitches used in corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-intraoperative-cornearefractive_47
-- Where does my new cornea for corneal transplant surgery come from?
+- Where does my new cornea for corneal transplant [surgery](technical_term) come from?
 - where do you get my new cornea
 - who can donate cornea to me
 - is my new cornea from someon
@@ -1759,196 +1393,164 @@ Why do we need the [macula](disease_type)?
 - Is my new cornea checked before transplant?
 
 ## intent: cornealedema-intraoperative-cornearefractive_48
-- How long will corneal transplant surgery take?
-- Is cornea transplant a major surgery
-- What is the duration of corneal transplant surgery?
+- How long will corneal transplant [surgery](technical_term) take?
+- Is cornea transplant a major [surgery](technical_term)
+- What is the duration of corneal transplant [surgery](technical_term)?
 - How long is the procedure for corneal transplant?
-- How long does corneal transplant surgery last?
-- What is the duration of corneal transplant surgery?
-- Is corneal transplant a day surgery?
-- Is corneal transplant surgery long?
-- Is corneal transplant surgery short?
+- How long does corneal transplant [surgery](technical_term) last?
+- What is the duration of corneal transplant [surgery](technical_term)?
+- Is corneal transplant a day [surgery](technical_term)?
+- Is corneal transplant [surgery](technical_term) long?
+- Is corneal transplant [surgery](technical_term) short?
 - Is the procedure for corneal transplant a quick one?
-- How many minutes does corneal transplant surgery take?
+- How many minutes does corneal transplant [surgery](technical_term) take?
 
 ## intent: cornealedema-intraoperative-cornearefractive_49
-- Do you have to put me to sleep for corneal transplant surgery?
--  Do I have to undergo general anaesthesia for corneal transplant surgery?
-- Is general anaesthesia required for corneal transplant surgery?
-- Is general anaesthesia compulsory for corneal transplant surgery?
-- Is general anaesthesia recommended for corneal transplant surgery?
-- Can I not do general anesthesia during corneal transplant surgery?
-- I do not want general anaesthesia during corneal transplant surgery
-- Can I choose to be awake during corneal transplant surgery?
-- Can I opt for local anesthesia during corneal transplant surgery?
-- Is there an option for local anaesthesia in corneal transplant surgery?
-- Is local anaesthesia an option during corneal transplant surgery?
-- Will I be sedated during corneal transplant surgery?
-- Is sedation done during corneal transplant surgery?
-- Is corneal transplant surgery an awake surgery?
-- Will I be conscious during corneal transplant surgery?
-- Will I be feeling anything during corneal transplant surgery?
-- Will I be awake during corneal transplant surgery?
-- Will I be asleep during corneal transplant surgery?
+- Do you have to put me to sleep for corneal transplant [surgery](technical_term)?
+-  Do I have to undergo general anaesthesia for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia required for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia compulsory for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia recommended for corneal transplant [surgery](technical_term)?
+- Can I not do general anesthesia during corneal transplant [surgery](technical_term)?
+- I do not want general anaesthesia during corneal transplant [surgery](technical_term)
+- Can I choose to be awake during corneal transplant [surgery](technical_term)?
+- Can I opt for local anesthesia during corneal transplant [surgery](technical_term)?
+- Is there an option for local anaesthesia in corneal transplant [surgery](technical_term)?
+- Is local anaesthesia an option during corneal transplant [surgery](technical_term)?
+- Will I be sedated during corneal transplant [surgery](technical_term)?
+- Is sedation done during corneal transplant [surgery](technical_term)?
+- Is corneal transplant [surgery](technical_term) an awake [surgery](technical_term)?
+- Will I be conscious during corneal transplant [surgery](technical_term)?
+- Will I be feeling anything during corneal transplant [surgery](technical_term)?
+- Will I be awake during corneal transplant [surgery](technical_term)?
+- Will I be asleep during corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-intraoperative-cornearefractive_50
-- Is the corneal transplant surgery painful?
-- Is corneal transplant surgery uncomfortable?
-- Will corneal transplant surgery cause discomfort?
-- Will corneal transplant surgery hurt?
-- Will corneal transplant surgery cause pain?
-- Will corneal transplant surgery make my eyes sore?
-- Will I get pain medicine during corneal transplant surgery?
-- Can I get analgesia during corneal transplant surgery?
-- Can I get pain relief during corneal transplant surgery?
+- Is the corneal transplant [surgery](technical_term) painful?
+- Is corneal transplant [surgery](technical_term) uncomfortable?
+- Will corneal transplant [surgery](technical_term) cause discomfort?
+- Will corneal transplant [surgery](technical_term) hurt?
+- Will corneal transplant [surgery](technical_term) cause pain?
+- Will corneal transplant [surgery](technical_term) make my eyes sore?
+- Will I get pain medicine during corneal transplant [surgery](technical_term)?
+- Can I get analgesia during corneal transplant [surgery](technical_term)?
+- Can I get pain relief during corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-intraoperative-cornearefractive_51
-- I am afraid of the corneal transplant surgery
-- I feel worried about corneal transplant surgery
-- I feel anxious about corneal transplant surgery
-- I feel frightened about corneal transplant surgery
-- I am fearful about corneal transplant surgery
-- I am apprehensive about corneal transplant surgery
-- The corneal transplant surgery makes me feel scared
-- The corneal transplant surgery makes me feel nervous
-- The corneal transplant surgery makes me feel uneasy
-- This is my first corneal transplant surgery
-- Is corneal transplant surgery scary?
-- Is it normal to feel worried about corneal transplant surgery?
-- Can I speak to someone about corneal transplant surgery?
-- I have concerns about corneal transplant surgery
-
-## intent: cornealedema-postoperative-cornearefractive
-- What are the complications of corneal transplant surgery?
-- What is the success rate of corneal transplant
-- is corneal transplant surgery risky
-- What are the side effects of corneal transplant surgery?
-- What problems can corneal transplant surgery cause?
-- What should I take note of after corneal transplant surgery?
-- what should i do if my eye is painful after corneal transplant
-- Will the corneal infection come back?
-- What is the risk of infection recurrence after corneal transplant surgery?
-- Will the corneal infection recur?
-- Will I get an infection from corneal transplant surgery?
-- Will my vision be affected by corneal transplant surgery?
-- Will I go blind from corneal transplant surgery?
-- What is the risk of going blind from corneal transplant surgery?
-- Will corneal transplant surgery spoil my eyes?
-- Will corneal transplant surgery injure my eyes?
-- Will corneal transplant surgery harm my eyes?
-- What is the success rate of corneal transplant surgery?
-- What is the complication rate of corneal transplant surgery?
-- What are the common problems after corneal transplant surgery?
-- Is corneal transplant surgery dangerous?
-- Does corneal transplant surgery cause scarring?
-- Will my corneal graft be rejected?
-- Are supplementary procedures required after corneal transplant surgery?
-- Are additional sutures required after corneal transplant surgery?
-- Is refractive surgery required after corneal transplant surgery?
-- Will my new cornea get infected?
-- Will my corneal transplant be rejected?
-- Will my corneal transplant spoil?
-- Will my new cornea die?
+- I am afraid of the corneal transplant [surgery](technical_term)
+- I feel worried about corneal transplant [surgery](technical_term)
+- I feel anxious about corneal transplant [surgery](technical_term)
+- I feel frightened about corneal transplant [surgery](technical_term)
+- I am fearful about corneal transplant [surgery](technical_term)
+- I am apprehensive about corneal transplant [surgery](technical_term)
+- The corneal transplant [surgery](technical_term) makes me feel scared
+- The corneal transplant [surgery](technical_term) makes me feel nervous
+- The corneal transplant [surgery](technical_term) makes me feel uneasy
+- This is my first corneal transplant [surgery](technical_term)
+- Is corneal transplant [surgery](technical_term) scary?
+- Is it normal to feel worried about corneal transplant [surgery](technical_term)?
+- Can I speak to someone about corneal transplant [surgery](technical_term)?
+- I have concerns about corneal transplant [surgery](technical_term)
 
 ## intent: cornealedema-postoperative-cornearefractive_53
-- What should I take note of after corneal transplant surgery?
+- What should I take note of after corneal transplant [surgery](technical_term)?
 - what should i do if my eye is painful after corneal transplant
-- What should I be careful of after corneal transplant surgery?
-- What should I watch out for after corneal transplant surgery?
-- What should I be careful of after corneal transplant surgery
-- When should I be worried after corneal transplant surgery?
-- What should I take note of after corneal transplant surgery?
+- What should I be careful of after corneal transplant [surgery](technical_term)?
+- What should I watch out for after corneal transplant [surgery](technical_term)?
+- What should I be careful of after corneal transplant [surgery](technical_term)
+- When should I be worried after corneal transplant [surgery](technical_term)?
+- What should I take note of after corneal transplant [surgery](technical_term)?
 - what should i do if my eye is painful after corneal transplant
-- What are the red flags after corneal transplant surgery?
-- What if my eyes are painful after corneal transplant surgery?
-- What if my eyes look strange after corneal transplant surgery?
-- When should I go to the Emergency after corneal transplant surgery?
-- What if m eyes feel strange after corneal transplant surgery?
-- What if I face problems after corneal transplant surgery?
-- Should I see my eye doctor if I have problems after corneal transplant surgery?
+- What are the red flags after corneal transplant [surgery](technical_term)?
+- What if my eyes are painful after corneal transplant [surgery](technical_term)?
+- What if my eyes look strange after corneal transplant [surgery](technical_term)?
+- When should I go to the Emergency after corneal transplant [surgery](technical_term)?
+- What if m eyes feel strange after corneal transplant [surgery](technical_term)?
+- What if I face problems after corneal transplant [surgery](technical_term)?
+- Should I see my eye doctor if I have problems after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-postoperative-cornearefractive_54
-- What happens after corneal transplant surgery?
+- What happens after corneal transplant [surgery](technical_term)?
 - Do I need to stay in hospital after cornea transplant
 - Will I be admitted after transplant
-- What are the plans after corneal transplant surgery?
-- What should I expect following corneal transplant surgery?
-- What normally occurs after corneal transplant surgery?
-- Can I go home immediately after corneal transplant surgery?
-- When can I go home after corneal transplant surgery?
-- Must someone accompany me home after corneal transplant surgery?
-- Do I need someone to bring me home after corneal transplant surgery?
-- Do I need someone to take care of me after corneal transplant surgery?
-- Do I need to stay in hospital after corneal transplant surgery?
-- Do I have to be hospitalised after corneal transplant surgery?
-- When can I get new spectacles after corneal transplant surgery?
+- What are the plans after corneal transplant [surgery](technical_term)?
+- What should I expect following corneal transplant [surgery](technical_term)?
+- What normally occurs after corneal transplant [surgery](technical_term)?
+- Can I go home immediately after corneal transplant [surgery](technical_term)?
+- When can I go home after corneal transplant [surgery](technical_term)?
+- Must someone accompany me home after corneal transplant [surgery](technical_term)?
+- Do I need someone to bring me home after corneal transplant [surgery](technical_term)?
+- Do I need someone to take care of me after corneal transplant [surgery](technical_term)?
+- Do I need to stay in hospital after corneal transplant [surgery](technical_term)?
+- Do I have to be hospitalised after corneal transplant [surgery](technical_term)?
+- When can I get new spectacles after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-postoperative-cornearefractive_55
-- How soon can I go back to work after corneal transplant surgery?
+- How soon can I go back to work after corneal transplant [surgery](technical_term)?
 - How long will I need to recover from cornea transplant
 - I am going for cornea transplant, when can I go back to work
-- When can I return to normal activities after corneal transplant surgery?
-- When can I return to work after corneal transplant surgery?
-- When can I resume school after corneal transplant surgery?
-- Will I wear an eye patch after corneal transplant surgery?
-- What protective measures are done after corneal transplant surgery?
-- How can I protect my eye after corneal transplant surgery?
-- What precautions should I take after corneal transplant surgery?
-- Can I rub my eye after corneal transplant surgery?
-- How are my eyes protected after corneal transplant surgery?
-- Can I exercise after corneal transplant surgery?
-- Can I swim after corneal transplant surgery?
-- Can I do sports after corneal transplant surgery?
-- What activities are allowed after corneal transplant surgery?
-- What activities can I do after corneal transplant surgery?
-- What activities are prohibited after corneal transplant surgery?
-- Are contact sports safe after corneal transplant surgery?
-- Must I wear eye protection after corneal transplant surgery?
-- Are eye shields compulsory after corneal transplant surgery?
-- Is my eye vulnerable after corneal transplant surgery?
+- When can I return to normal activities after corneal transplant [surgery](technical_term)?
+- When can I return to work after corneal transplant [surgery](technical_term)?
+- When can I resume school after corneal transplant [surgery](technical_term)?
+- Will I wear an eye patch after corneal transplant [surgery](technical_term)?
+- What protective measures are done after corneal transplant [surgery](technical_term)?
+- How can I protect my eye after corneal transplant [surgery](technical_term)?
+- What precautions should I take after corneal transplant [surgery](technical_term)?
+- Can I rub my eye after corneal transplant [surgery](technical_term)?
+- How are my eyes protected after corneal transplant [surgery](technical_term)?
+- Can I exercise after corneal transplant [surgery](technical_term)?
+- Can I swim after corneal transplant [surgery](technical_term)?
+- Can I do sports after corneal transplant [surgery](technical_term)?
+- What activities are allowed after corneal transplant [surgery](technical_term)?
+- What activities can I do after corneal transplant [surgery](technical_term)?
+- What activities are prohibited after corneal transplant [surgery](technical_term)?
+- Are contact sports safe after corneal transplant [surgery](technical_term)?
+- Must I wear eye protection after corneal transplant [surgery](technical_term)?
+- Are eye shields compulsory after corneal transplant [surgery](technical_term)?
+- Is my eye vulnerable after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-postoperative-cornearefractive_56
-- Can I see clearly after corneal transplant surgery?
+- Can I see clearly after corneal transplant [surgery](technical_term)?
 - Why is it blur after my cornea transplant
-- How will my eyesight be after corneal transplant surgery?
-- Will my vision recover after corneal transplant surgery?
-- Will I have perfect eyesight after corneal transplant surgery?
-- Will I have residual astigmatism after corneal transplant surgery?
-- Can I see without assistance after corneal transplant surgery?
-- Do I still need spectacles after corneal transplant surgery?
-- Do I still need glasses after corneal transplant surgery?
-- Do I still need contact lens after corneal transplant surgery?
-- Can I see perfectly after corneal transplant surgery?
-- Do I need refractive surgery after corneal transplant surgery?
-- Do I need second surgery after corneal transplant surgery?
-- Do I need another surgery after corneal transplant surgery?
+- How will my eyesight be after corneal transplant [surgery](technical_term)?
+- Will my vision recover after corneal transplant [surgery](technical_term)?
+- Will I have perfect eyesight after corneal transplant [surgery](technical_term)?
+- Will I have residual astigmatism after corneal transplant [surgery](technical_term)?
+- Can I see without assistance after corneal transplant [surgery](technical_term)?
+- Do I still need spectacles after corneal transplant [surgery](technical_term)?
+- Do I still need glasses after corneal transplant [surgery](technical_term)?
+- Do I still need contact lens after corneal transplant [surgery](technical_term)?
+- Can I see perfectly after corneal transplant [surgery](technical_term)?
+- Do I need refractive [surgery](technical_term) after corneal transplant [surgery](technical_term)?
+- Do I need second [surgery](technical_term) after corneal transplant [surgery](technical_term)?
+- Do I need another [surgery](technical_term) after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-postoperative-cornearefractive_57
-- Do I have to take medicine after corneal transplant surgery?
-- Must I eat medicine after corneal transplant surgery?
-- Do I have to put eye drops after corneal transplant surgery?
-- Are eye drops compulsory after corneal transplant surgery?
-- Are eye drops recommended after corneal transplant surgery?
-- Why must I use eye drops after corneal transplant surgery?
-- How do eye drops help after corneal transplant surgery?
-- How are eye drops useful after corneal transplant surgery?
-- How come I need to use eye drops after corneal transplant surgery?
+- Do I have to take medicine after corneal transplant [surgery](technical_term)?
+- Must I eat medicine after corneal transplant [surgery](technical_term)?
+- Do I have to put eye drops after corneal transplant [surgery](technical_term)?
+- Are eye drops compulsory after corneal transplant [surgery](technical_term)?
+- Are eye drops recommended after corneal transplant [surgery](technical_term)?
+- Why must I use eye drops after corneal transplant [surgery](technical_term)?
+- How do eye drops help after corneal transplant [surgery](technical_term)?
+- How are eye drops useful after corneal transplant [surgery](technical_term)?
+- How come I need to use eye drops after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealedema-postoperative-cornearefractive_58
-- Do I have to come back for follow up after corneal transplant surgery?
-- Do I need to come back for check up after corneal transplant surgery?
-- How often do I have to come back after corneal transplant surgery?
-- When do I need to return for follow up after corneal transplant surgery?
-- Why must I come for follow up after corneal transplant surgery?
-- How come I must go for follow up after corneal transplant surgery?
-- Why is follow up important after corneal transplant surgery?
-- What does the eye doctor do during follow up for corneal transplant surgery?
-- What does the eye doctor monitor after corneal transplant surgery?
-- What happens in the clinic after corneal transplant surgery?
-- How does the eye doctor check my healing after corneal transplant surgery?
-- Will my sutures be removed after corneal transplant surgery?
-- Will my sutures  be left inside after corneal transplant surgery?
-- Will the eye doctor take out my sutures after corneal transplant surgery?
+- Do I have to come back for follow up after corneal transplant [surgery](technical_term)?
+- Do I need to come back for check up after corneal transplant [surgery](technical_term)?
+- How often do I have to come back after corneal transplant [surgery](technical_term)?
+- When do I need to return for follow up after corneal transplant [surgery](technical_term)?
+- Why must I come for follow up after corneal transplant [surgery](technical_term)?
+- How come I must go for follow up after corneal transplant [surgery](technical_term)?
+- Why is follow up important after corneal transplant [surgery](technical_term)?
+- What does the eye doctor do during follow up for corneal transplant [surgery](technical_term)?
+- What does the eye doctor monitor after corneal transplant [surgery](technical_term)?
+- What happens in the clinic after corneal transplant [surgery](technical_term)?
+- How does the eye doctor check my healing after corneal transplant [surgery](technical_term)?
+- Will my sutures be removed after corneal transplant [surgery](technical_term)?
+- Will my sutures  be left inside after corneal transplant [surgery](technical_term)?
+- Will the eye doctor take out my sutures after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-causes-cornearefractive
 - What is the cause of corneal infection?
@@ -1973,7 +1575,7 @@ Why do we need the [macula](disease_type)?
 - Does poor contact lens hygiene cause corneal infection?
 - Do dirty contact lenses cause corneal infection?
 - Does corneal edema cause corneal infection?
-- Does previous corneal surgery cause corneal infection?
+- Does previous corneal [surgery](technical_term) cause corneal infection?
 - Is corneal infection contagious?
 - Is corneal infection infectious?
 - Can I get corneal infection from other people?
@@ -1982,55 +1584,6 @@ Why do we need the [macula](disease_type)?
 - Is corneal infection congenital?
 - Can corneal infection be passed down to children?
 - Can corneal infection be passed down from parents?
-
-## intent: cornealinfection-symptoms_signs-cornearefractive
-- What are the symptoms and signs of corneal infection?
-- How does corneal ulcer feel like?
-- I feel sensitive to light, can it be a cornea infection?
-- Why do I have a white spot on my eye and it is painful
-- What does corneal infection look like?
-- How is corneal infection supposed to look like?
-- How does corneal infection normally look like?
-- How does corneal infection present?
-- How do I know if I have corneal infection?
-- What will I experience if I have corneal infection?
-- What do people with corneal infection experience?
-- How does the doctor know I have corneal infection?
-- How is a diagnosis of corneal infection made?
-- How many eyes does corneal infection affect?
-- Can corneal infection affect both eyes?
-- Is corneal infection bilateral?
-
-## intent: cornealinfection-symptoms_signs-cornearefractive_62
-- What are the complications of corneal infection?
-- Can I go blind if I have cornea infection
-- Can I see again if I have corneal infection
-- is corneal ulcer a hole in the eye
-- does corneal ulcer mean my eye has a tear
-- how bad can cornea infection get
-- is cornea infection bad
-- how bad can cornea ulcers get
-- What are the issues associated with corneal infection?
-- What problems can corneal infection lead to?
-- What are the implications of corneal infection?
-- Can corneal infection cause difficulties seeing?
-- Can corneal infection lead to visual problems?
-- Can corneal infection cause problems?
-- Is corneal infection serious?
-- Is corneal infection dangerous?
-- Is corneal infection sight threatening?
-- Will corneal infection cause blindness?
-- Will I become blind because of corneal infection?
-- Can I still see if I have corneal infection?
-- Can corneal infection spoil my vision?
-- Can corneal infection ruin my vision?
-- Can corneal infection cause atigmatism?
-- Can corneal infection cause myopia?
-- Can corneal infection cause corneal ulcer?
-- Can my cornea perforate because of corneal infection?
-- Can corneal infection cause irreversible vision loss?
-- Can my cornea melt because of corneal infection?
-- Will corneal infection cause scarring?
 
 ## intent: cornealinfection-investigations-cornearefractive
 - What are the investigations for corneal infection?
@@ -2073,13 +1626,13 @@ Why do we need the [macula](disease_type)?
 
 ## intent: cornealinfection-treatment_conservative-cornearefractive
 - What is the conservative treatment of corneal infection?
-- Can I get rid of corneal infection without medicine or surgery?
-- Will corneal infection be cured without medicine or surgery?
-- Will corneal infection go away without medicine or surgery?
+- Can I get rid of corneal infection without medicine or [surgery](technical_term)?
+- Will corneal infection be cured without medicine or [surgery](technical_term)?
+- Will corneal infection go away without medicine or [surgery](technical_term)?
 - How can I protect my eyes from corneal infection?
 - When can corneal infection be left alone?
 - When can corneal infection be treated conservatively?
-- When can corneal infection be treated without medicine or surgery?
+- When can corneal infection be treated without medicine or [surgery](technical_term)?
 - Can corneal infection be left alone?
 - Will corneal infection go away on its own?
 - Will corneal infection disappear on its own?
@@ -2115,113 +1668,113 @@ Why do we need the [macula](disease_type)?
 
 ## intent: cornealinfection-treatment_surgical-cornearefractive
 - What is the surgical treatment of corneal infection?
-- Does corneal infection surgery exist?
+- Does corneal infection [surgery](technical_term) exist?
 - Is surgical removal of corneal infection possible?
 - Can you take out my corneal infection?
-- Can I do surgery to treat corneal infection?
+- Can I do [surgery](technical_term) to treat corneal infection?
 - Can you help me remove corneal infection?
 - Can you excise my corneal infection?
 - Do I have to go under the knife for corneal infection?
-- Is there corneal infection surgery?
-- Is there a surgery to remove corneal infection?
+- Is there corneal infection [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove corneal infection?
 - Is there a procedure to remove corneal infection?
 - Can an eye surgeon operate on my corneal infection?
-- Can an eye doctor do surgery for my corneal infection?
+- Can an eye doctor do [surgery](technical_term) for my corneal infection?
 - Do I need a new cornea for corneal infection?
 - Do I need a cornea transplant for corneal infection?
 
 ## intent: cornealinfection-treatment_surgical-cornearefractive_68
-- What are the indications of corneal infection surgery?
+- What are the indications of corneal infection [surgery](technical_term)?
 - do i need a new eye if i have corneal ulcer
-- Why do I need to do surgery for corneal infection?
-- Why do I need corneal infection surgery?
+- Why do I need to do [surgery](technical_term) for corneal infection?
+- Why do I need corneal infection [surgery](technical_term)?
 - Why do you need to operate on my corneal infection?
-- Must I do corneal infection surgery?
-- Is corneal infection surgery a must?
-- Is corneal infection surgery required?
-- Is corneal transplant surgery indicated for corneal infection?
+- Must I do corneal infection [surgery](technical_term)?
+- Is corneal infection [surgery](technical_term) a must?
+- Is corneal infection [surgery](technical_term) required?
+- Is corneal transplant [surgery](technical_term) indicated for corneal infection?
 - When do I need a corneal transplant for corneal infection?
-- Is surgery compulsory for corneal infection?
-- Is surgery mandatory for corneal infection?
-- When is surgery required for corneal infection?
-- When is surgery recommended for corneal infection?
-- What are the instances I need corneal infection surgery?
-- What are the reasons for corneal infection surgery?
-- Can I do surgery if I have blurred vision from corneal infection?
+- Is [surgery](technical_term) compulsory for corneal infection?
+- Is [surgery](technical_term) mandatory for corneal infection?
+- When is [surgery](technical_term) required for corneal infection?
+- When is [surgery](technical_term) recommended for corneal infection?
+- What are the instances I need corneal infection [surgery](technical_term)?
+- What are the reasons for corneal infection [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have blurred vision from corneal infection?
 - When must I go under the knife for corneal infection?
-- Does mild corneal infection require surgery?
-- Does severe corneal infection require surgery?
-- Do I need surgery if my corneal infection is bad?
+- Does mild corneal infection require [surgery](technical_term)?
+- Does severe corneal infection require [surgery](technical_term)?
+- Do I need [surgery](technical_term) if my corneal infection is bad?
 
 ## intent: cornealinfection-treatment_surgical-cornearefractive_69
-- Is corneal transplant surgery Medisave-claimable?
+- Is corneal transplant [surgery](technical_term) Medisave-claimable?
 - Is cornea transplant covered by medisave
 - How much does corneal transplant cost
 - can sponsor corneal transplant 
 - who pays for my new cornea
-- How can I pay for corneal infection surgery?
-- Is corneal infection surgery subsidized?
-- Who can claim Medisave for corneal infection surgery?
-- Is corneal infection surgery covered under Medisave?
-- Can I pay for corneal infection surgery using Medisave?
-- Can I claim Medisave for corneal infection surgery?
-- Can I take out my Medisave for corneal infection surgery?
-- Can I use Medisave claims for corneal infection surgery?
-- Can I use medical insurance for corneal infection surgery?
-- Who can get subsidies for corneal infection surgery?
-- Can the government sponsor corneal infection surgery?
-- Can the government subsidize corneal infection surgery?
-- Is corneal infection surgery discounted?
-- Is corneal infection surgery covered under insurance?
-- What are the requirements for using Medisave for corneal infection surgery?
-- What is the criteria for using Medisave for corneal infection surgery?
+- How can I pay for corneal infection [surgery](technical_term)?
+- Is corneal infection [surgery](technical_term) subsidized?
+- Who can claim Medisave for corneal infection [surgery](technical_term)?
+- Is corneal infection [surgery](technical_term) covered under Medisave?
+- Can I pay for corneal infection [surgery](technical_term) using Medisave?
+- Can I claim Medisave for corneal infection [surgery](technical_term)?
+- Can I take out my Medisave for corneal infection [surgery](technical_term)?
+- Can I use Medisave claims for corneal infection [surgery](technical_term)?
+- Can I use medical insurance for corneal infection [surgery](technical_term)?
+- Who can get subsidies for corneal infection [surgery](technical_term)?
+- Can the government sponsor corneal infection [surgery](technical_term)?
+- Can the government subsidize corneal infection [surgery](technical_term)?
+- Is corneal infection [surgery](technical_term) discounted?
+- Is corneal infection [surgery](technical_term) covered under insurance?
+- What are the requirements for using Medisave for corneal infection [surgery](technical_term)?
+- What is the criteria for using Medisave for corneal infection [surgery](technical_term)?
 
 ## intent: cornealinfection-preoperative-cornearefractive
 - What are the preoperative preparations for corneal transplant?
 - I am going for corneal transplant, what should I do?
-- How should I prepare before corneal transplant surgery?
-- Do I need to prepare anything before corneal transplant surgery?
-- What should I take note of before corneal transplant surgery?
-- Will I sign a consent form before corneal transplant surgery?
-- Is consent taken before corneal transplant surgery?
-- Can I wear contact lenses to corneal transplant surgery?
-- Can I wear makeup before corneal transplant surgery?
-- Can I put on mascara before corneal transplant surgery?
-- Can I put on eyeliner before corneal transplant surgery?
-- Can I put on eyeshadow before corneal transplant surgery?
-- Can I put on lipstick before corneal transplant surgery?
-- Can I use face cream before corneal transplant surgery?
-- Can I use perfume before corneal transplant surgery?
-- Should I fast before corneal transplant surgery?
-- Can I eat before corneal transplant surgery?
-- Can I drink before corneal transplant surgery?
-- Can I have a meal before corneal transplant surgery?
-- Can I have breakfast before corneal transplant surgery?
-- What if I am hungry before corneal transplant surgery?
-- What if I am thirsty before corneal transplant surgery?
-- Can I take water before corneal transplant surgery?
-- How much fluids can I take before corneal transplant surgery?
-- Will my eye doctor talk to me before corneal transplant surgery?
+- How should I prepare before corneal transplant [surgery](technical_term)?
+- Do I need to prepare anything before corneal transplant [surgery](technical_term)?
+- What should I take note of before corneal transplant [surgery](technical_term)?
+- Will I sign a consent form before corneal transplant [surgery](technical_term)?
+- Is consent taken before corneal transplant [surgery](technical_term)?
+- Can I wear contact lenses to corneal transplant [surgery](technical_term)?
+- Can I wear makeup before corneal transplant [surgery](technical_term)?
+- Can I put on mascara before corneal transplant [surgery](technical_term)?
+- Can I put on eyeliner before corneal transplant [surgery](technical_term)?
+- Can I put on eyeshadow before corneal transplant [surgery](technical_term)?
+- Can I put on lipstick before corneal transplant [surgery](technical_term)?
+- Can I use face cream before corneal transplant [surgery](technical_term)?
+- Can I use perfume before corneal transplant [surgery](technical_term)?
+- Should I fast before corneal transplant [surgery](technical_term)?
+- Can I eat before corneal transplant [surgery](technical_term)?
+- Can I drink before corneal transplant [surgery](technical_term)?
+- Can I have a meal before corneal transplant [surgery](technical_term)?
+- Can I have breakfast before corneal transplant [surgery](technical_term)?
+- What if I am hungry before corneal transplant [surgery](technical_term)?
+- What if I am thirsty before corneal transplant [surgery](technical_term)?
+- Can I take water before corneal transplant [surgery](technical_term)?
+- How much fluids can I take before corneal transplant [surgery](technical_term)?
+- Will my eye doctor talk to me before corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-intraoperative-cornearefractive
-- What will happen during corneal transplant surgery?
+- What will happen during corneal transplant [surgery](technical_term)?
 - How is corneal transplant done
 - What is corneal transplant
 - How is corneal transplant done
 - How does corneal transplant work?
-- Will my eye be open during corneal transplant surgery?
-- How will my eye be held open during corneal transplant surgery?
-- What are the steps in corneal transplant surgery?
-- What occurs during corneal transplant surgery?
-- What will you do during corneal transplant surgery?
+- Will my eye be open during corneal transplant [surgery](technical_term)?
+- How will my eye be held open during corneal transplant [surgery](technical_term)?
+- What are the steps in corneal transplant [surgery](technical_term)?
+- What occurs during corneal transplant [surgery](technical_term)?
+- What will you do during corneal transplant [surgery](technical_term)?
 - What is the procedure for corneal transplant excision like?
 - How will the eye doctor perform corneal transplant?
-- How will the eye doctor do the corneal transplant surgery?
-- Are sutures used in corneal transplant surgery?
-- Are stitches used in corneal transplant surgery?
+- How will the eye doctor do the corneal transplant [surgery](technical_term)?
+- Are sutures used in corneal transplant [surgery](technical_term)?
+- Are stitches used in corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-intraoperative-cornearefractive_72
-- Where does my new cornea for corneal transplant surgery come from?
+- Where does my new cornea for corneal transplant [surgery](technical_term) come from?
 - where do you get my new cornea
 - who can donate cornea to me
 - is my new cornea from someon
@@ -2241,200 +1794,154 @@ Why do we need the [macula](disease_type)?
 - Is my new cornea checked before transplant?
 
 ## intent: cornealinfection-intraoperative-cornearefractive_73
-- How long will corneal transplant surgery take?
-- Is cornea transplant a major surgery
-- What is the duration of corneal transplant surgery?
+- How long will corneal transplant [surgery](technical_term) take?
+- Is cornea transplant a major [surgery](technical_term)
+- What is the duration of corneal transplant [surgery](technical_term)?
 - How long is the procedure for corneal transplant?
-- How long does corneal transplant surgery last?
-- What is the duration of corneal transplant surgery?
-- Is corneal transplant a day surgery?
-- Is corneal transplant surgery long?
-- Is corneal transplant surgery short?
+- How long does corneal transplant [surgery](technical_term) last?
+- What is the duration of corneal transplant [surgery](technical_term)?
+- Is corneal transplant a day [surgery](technical_term)?
+- Is corneal transplant [surgery](technical_term) long?
+- Is corneal transplant [surgery](technical_term) short?
 - Is the procedure for corneal transplant a quick one?
-- How many minutes does corneal transplant surgery take?
+- How many minutes does corneal transplant [surgery](technical_term) take?
 
 ## intent: cornealinfection-intraoperative-cornearefractive_74
-- Do you have to put me to sleep for corneal transplant surgery?
-- Do I have to undergo general anaesthesia for corneal transplant surgery?
-- Is general anaesthesia required for corneal transplant surgery?
-- Is general anaesthesia compulsory for corneal transplant surgery?
-- Is general anaesthesia recommended for corneal transplant surgery?
-- Can I not do general anesthesia during corneal transplant surgery?
-- I do not want general anaesthesia during corneal transplant surgery
-- Can I choose to be awake during corneal transplant surgery?
-- Can I opt for local anesthesia during corneal transplant surgery?
-- Is there an option for local anaesthesia in corneal transplant surgery?
-- Is local anaesthesia an option during corneal transplant surgery?
-- Will I be sedated during corneal transplant surgery?
-- Is sedation done during corneal transplant surgery?
-- Is corneal transplant surgery an awake surgery?
-- Will I be asleep during corneal transplant surgery?
-- Will I be awake during corneal transplant surgery?
-- Will I be asleep during corneal transplant surgery?
+- Do you have to put me to sleep for corneal transplant [surgery](technical_term)?
+- Do I have to undergo general anaesthesia for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia required for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia compulsory for corneal transplant [surgery](technical_term)?
+- Is general anaesthesia recommended for corneal transplant [surgery](technical_term)?
+- Can I not do general anesthesia during corneal transplant [surgery](technical_term)?
+- I do not want general anaesthesia during corneal transplant [surgery](technical_term)
+- Can I choose to be awake during corneal transplant [surgery](technical_term)?
+- Can I opt for local anesthesia during corneal transplant [surgery](technical_term)?
+- Is there an option for local anaesthesia in corneal transplant [surgery](technical_term)?
+- Is local anaesthesia an option during corneal transplant [surgery](technical_term)?
+- Will I be sedated during corneal transplant [surgery](technical_term)?
+- Is sedation done during corneal transplant [surgery](technical_term)?
+- Is corneal transplant [surgery](technical_term) an awake [surgery](technical_term)?
+- Will I be asleep during corneal transplant [surgery](technical_term)?
+- Will I be awake during corneal transplant [surgery](technical_term)?
+- Will I be asleep during corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-intraoperative-cornearefractive_75
-- Is the corneal transplant surgery painful?
-- Is corneal transplant surgery uncomfortable?
-- Will corneal transplant surgery cause discomfort?
-- Will corneal transplant surgery hurt?
-- Will corneal transplant surgery cause pain?
-- Will corneal transplant surgery make my eyes sore?
-- Will I get pain medicine during corneal transplant surgery?
-- Can I get analgesia during corneal transplant surgery?
-- Can I get pain relief during corneal transplant surgery?
+- Is the corneal transplant [surgery](technical_term) painful?
+- Is corneal transplant [surgery](technical_term) uncomfortable?
+- Will corneal transplant [surgery](technical_term) cause discomfort?
+- Will corneal transplant [surgery](technical_term) hurt?
+- Will corneal transplant [surgery](technical_term) cause pain?
+- Will corneal transplant [surgery](technical_term) make my eyes sore?
+- Will I get pain medicine during corneal transplant [surgery](technical_term)?
+- Can I get analgesia during corneal transplant [surgery](technical_term)?
+- Can I get pain relief during corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-intraoperative-cornearefractive_76
-- I am afraid of the corneal transplant surgery
-- I feel worried about corneal transplant surgery
-- I feel anxious about corneal transplant surgery
-- I feel frightened about corneal transplant surgery
-- I am fearful about corneal transplant surgery
-- I am apprehensive about corneal transplant surgery
-- The corneal transplant surgery makes me feel scared
-- The corneal transplant surgery makes me feel nervous
-- The corneal transplant surgery makes me feel uneasy
-- This is my first corneal transplant surgery
-- Is corneal transplant surgery scary?
-- I have concerns about corneal transplant surgery
-- Is it normal to feel worried about corneal transplant surgery?
-
-## intent: cornealinfection-postoperative-cornearefractive
-- What are the complications of corneal transplant surgery?
-- What is the success rate of corneal transplant
-- is corneal transplant surgery risky
-- What are the side effects of corneal transplant surgery?
-- What problems can corneal transplant surgery cause?
-- What should I take note of after corneal transplant surgery?
-- what should i do if my eye is painful after corneal transplant
-- Will the corneal infection come back?
-- What is the risk of infection recurrence after corneal transplant surgery?
-- Will the corneal infection recur?
-- Will I get an infection from corneal transplant surgery?
-- Will my vision be affected by corneal transplant surgery?
-- Will I go blind from corneal transplant surgery?
-- What is the risk of going blind from corneal transplant surgery?
-- Will corneal transplant surgery spoil my eyes?
-- Will corneal transplant surgery injure my eyes?
-- Will corneal transplant surgery harm my eyes?
-- Does corneal transplant surgery cause scarring?
-- Will my corneal transplant be rejected?
-- Will my corneal transplant spoil?
-- Will my new cornea die?
+- I am afraid of the corneal transplant [surgery](technical_term)
+- I feel worried about corneal transplant [surgery](technical_term)
+- I feel anxious about corneal transplant [surgery](technical_term)
+- I feel frightened about corneal transplant [surgery](technical_term)
+- I am fearful about corneal transplant [surgery](technical_term)
+- I am apprehensive about corneal transplant [surgery](technical_term)
+- The corneal transplant [surgery](technical_term) makes me feel scared
+- The corneal transplant [surgery](technical_term) makes me feel nervous
+- The corneal transplant [surgery](technical_term) makes me feel uneasy
+- This is my first corneal transplant [surgery](technical_term)
+- Is corneal transplant [surgery](technical_term) scary?
+- I have concerns about corneal transplant [surgery](technical_term)
+- Is it normal to feel worried about corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_78
-- What should I take note of after corneal transplant surgery?
+- What should I take note of after corneal transplant [surgery](technical_term)?
 - what should i do if my eye is painful after corneal transplant
-- What should I be careful of after corneal transplant surgery?
-- What should I watch out for after corneal transplant surgery?
-- What should I be careful of after corneal transplant surgery
-- When should I be worried after corneal transplant surgery?
-- What should I take note of after corneal transplant surgery?
+- What should I be careful of after corneal transplant [surgery](technical_term)?
+- What should I watch out for after corneal transplant [surgery](technical_term)?
+- What should I be careful of after corneal transplant [surgery](technical_term)
+- When should I be worried after corneal transplant [surgery](technical_term)?
+- What should I take note of after corneal transplant [surgery](technical_term)?
 - what should i do if my eye is painful after corneal transplant
-- What are the red flags after corneal transplant surgery?
-- What if my eyes are painful after corneal transplant surgery?
-- What if my eyes look strange after corneal transplant surgery?
-- What if m eyes feel strange after corneal transplant surgery?
-- What if I face problems after corneal transplant surgery?
-- Should I see my eye doctor if I have problems after corneal transplant surgery?
+- What are the red flags after corneal transplant [surgery](technical_term)?
+- What if my eyes are painful after corneal transplant [surgery](technical_term)?
+- What if my eyes look strange after corneal transplant [surgery](technical_term)?
+- What if m eyes feel strange after corneal transplant [surgery](technical_term)?
+- What if I face problems after corneal transplant [surgery](technical_term)?
+- Should I see my eye doctor if I have problems after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_79
-- What happens after corneal transplant surgery?
+- What happens after corneal transplant [surgery](technical_term)?
 - Do I need to stay in hospital after cornea transplant
 - Will I be admitted after transplant
-- What are the plans after corneal transplant surgery?
-- What should I expect following corneal transplant surgery?
-- What normally occurs after corneal transplant surgery?
-- Can I go home immediately after corneal transplant surgery?
-- When can I go home after corneal transplant surgery?
-- Must someone accompany me home after corneal transplant surgery?
-- Do I need someone to bring me home after corneal transplant surgery?
-- Do I need someone to take care of me after corneal transplant surgery?
-- Do I need to stay in hospital after corneal transplant surgery?
-- Do I have to be hospitalised after corneal transplant surgery?
-- When can I get new spectacles after corneal transplant surgery?
+- What are the plans after corneal transplant [surgery](technical_term)?
+- What should I expect following corneal transplant [surgery](technical_term)?
+- What normally occurs after corneal transplant [surgery](technical_term)?
+- Can I go home immediately after corneal transplant [surgery](technical_term)?
+- When can I go home after corneal transplant [surgery](technical_term)?
+- Must someone accompany me home after corneal transplant [surgery](technical_term)?
+- Do I need someone to bring me home after corneal transplant [surgery](technical_term)?
+- Do I need someone to take care of me after corneal transplant [surgery](technical_term)?
+- Do I need to stay in hospital after corneal transplant [surgery](technical_term)?
+- Do I have to be hospitalised after corneal transplant [surgery](technical_term)?
+- When can I get new spectacles after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_80
-- How soon can I go back to work after corneal transplant surgery?
+- How soon can I go back to work after corneal transplant [surgery](technical_term)?
 - How long will I need to recover from cornea transplant
 - I am going for cornea transplant, when can I go back to work
-- When can I return to normal activities after corneal transplant surgery?
-- When can I return to work after corneal transplant surgery?
-- When can I resume school after corneal transplant surgery?
-- Will I wear an eye patch after corneal transplant surgery?
-- What protective measures are done after corneal transplant surgery?
-- How can I protect my eye after corneal transplant surgery?
-- What precautions should I take after corneal transplant surgery?
-- Can I exercise after corneal transplant surgery?
-- Can I swim after corneal transplant surgery?
-- Can I do sports after corneal transplant surgery?
-- Is my eye vulnerable after corneal transplant surgery?
-- Are eye shields compulsory after corneal transplant surgery?
-- Can I rub my eye after corneal transplant surgery?
-- Must I wear eye protection during sports if I had a corneal transplant surgery?
-- Can I touch my eye after corneal transplant surgery?
+- When can I return to normal activities after corneal transplant [surgery](technical_term)?
+- When can I return to work after corneal transplant [surgery](technical_term)?
+- When can I resume school after corneal transplant [surgery](technical_term)?
+- Will I wear an eye patch after corneal transplant [surgery](technical_term)?
+- What protective measures are done after corneal transplant [surgery](technical_term)?
+- How can I protect my eye after corneal transplant [surgery](technical_term)?
+- What precautions should I take after corneal transplant [surgery](technical_term)?
+- Can I exercise after corneal transplant [surgery](technical_term)?
+- Can I swim after corneal transplant [surgery](technical_term)?
+- Can I do sports after corneal transplant [surgery](technical_term)?
+- Is my eye vulnerable after corneal transplant [surgery](technical_term)?
+- Are eye shields compulsory after corneal transplant [surgery](technical_term)?
+- Can I rub my eye after corneal transplant [surgery](technical_term)?
+- Must I wear eye protection during sports if I had a corneal transplant [surgery](technical_term)?
+- Can I touch my eye after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_81
-- Can I see clearly after corneal transplant surgery?
+- Can I see clearly after corneal transplant [surgery](technical_term)?
 - Why is it blur after my cornea transplant
-- How will my eyesight be after corneal transplant surgery?
-- Will my vision recover after corneal transplant surgery?
-- Will I have perfect eyesight after corneal transplant surgery?
-- Do I still need spectacles after corneal transplant surgery?
-- Do I still need contact lens after corneal transplant surgery?
-- Can I see perfectly after corneal transplant surgery?
-- What is the proportion of patients who need refractive surgery after corneal transplant surgery?
-- Will I have residual astigmatism after corneal transplant surgery?
-- Do I need refractive surgery after corneal transplant surgery?
-- Do I need second surgery after corneal transplant surgery?
-- Do I need another surgery after corneal transplant surgery?
+- How will my eyesight be after corneal transplant [surgery](technical_term)?
+- Will my vision recover after corneal transplant [surgery](technical_term)?
+- Will I have perfect eyesight after corneal transplant [surgery](technical_term)?
+- Do I still need spectacles after corneal transplant [surgery](technical_term)?
+- Do I still need contact lens after corneal transplant [surgery](technical_term)?
+- Can I see perfectly after corneal transplant [surgery](technical_term)?
+- What is the proportion of patients who need refractive [surgery](technical_term) after corneal transplant [surgery](technical_term)?
+- Will I have residual astigmatism after corneal transplant [surgery](technical_term)?
+- Do I need refractive [surgery](technical_term) after corneal transplant [surgery](technical_term)?
+- Do I need second [surgery](technical_term) after corneal transplant [surgery](technical_term)?
+- Do I need another [surgery](technical_term) after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_82
-- Do I have to take medicine after corneal transplant surgery?
-- Must I eat medicine after corneal transplant surgery?
-- Do I have to put eye drops after corneal transplant surgery?
-- Are eye drops compulsory after corneal transplant surgery?
-- Are eye drops recommended after corneal transplant surgery?
-- Why must I use eye drops after corneal transplant surgery?
-- How come I need to use eye drops after corneal transplant surgery?
+- Do I have to take medicine after corneal transplant [surgery](technical_term)?
+- Must I eat medicine after corneal transplant [surgery](technical_term)?
+- Do I have to put eye drops after corneal transplant [surgery](technical_term)?
+- Are eye drops compulsory after corneal transplant [surgery](technical_term)?
+- Are eye drops recommended after corneal transplant [surgery](technical_term)?
+- Why must I use eye drops after corneal transplant [surgery](technical_term)?
+- How come I need to use eye drops after corneal transplant [surgery](technical_term)?
 
 ## intent: cornealinfection-postoperative-cornearefractive_83
-- Do I have to come back for follow up after corneal transplant surgery?
-- Do I need to come back for check up after corneal transplant surgery?
-- How often do I have to come back after corneal transplant surgery?
-- When do I need to return for follow up after corneal transplant surgery?
-- Why must I come for follow up after corneal transplant surgery?
-- How come I must go for follow up after corneal transplant surgery?
-- Why is follow up important after corneal transplant surgery?
-- What does the eye doctor do during follow up for corneal transplant surgery?
-- What does the eye doctor monitor after corneal transplant surgery?
-- What happens in the clinic after corneal transplant surgery?
-- How does the eye doctor check my healing after corneal transplant surgery?
-- Will my sutures be removed after corneal transplant surgery?
-- How are my sutures removed after corneal transplant surgery?
-- Will my sutures be left inside after corneal transplant surgery?
-
-## intent: pterygium-condition-cornearefractive
-- What is pterygium?
-- what is that patch of skin growing on my eye
-- there is some weird white skin growing on my eye
-- why is there a white skin on my eye
-- I want to understand more about pterygium
-- I want to find out more about pterygium
-- I am confused about pterygium
-- I do not understand what pterygium is
-- What is the meaning of pterygium?
-- What does pterygium mean?
-- What is this substance growing over my eye?
-- What is this triangle shaped thing on my eye?
-- What is this white thing on my eye?
-- What is this fleshy thing on my eye?
-- What is this growth on my eye?
-- What is this piece of skin on my eye?
-- Why is my conjunctiva coming out?
-- Why is my sclera coming out?
-- Why is my cornea coming out?
-- Is this a tumour on my eye?
-- Do I have cancer on my eye?
+- Do I have to come back for follow up after corneal transplant [surgery](technical_term)?
+- Do I need to come back for check up after corneal transplant [surgery](technical_term)?
+- How often do I have to come back after corneal transplant [surgery](technical_term)?
+- When do I need to return for follow up after corneal transplant [surgery](technical_term)?
+- Why must I come for follow up after corneal transplant [surgery](technical_term)?
+- How come I must go for follow up after corneal transplant [surgery](technical_term)?
+- Why is follow up important after corneal transplant [surgery](technical_term)?
+- What does the eye doctor do during follow up for corneal transplant [surgery](technical_term)?
+- What does the eye doctor monitor after corneal transplant [surgery](technical_term)?
+- What happens in the clinic after corneal transplant [surgery](technical_term)?
+- How does the eye doctor check my healing after corneal transplant [surgery](technical_term)?
+- Will my sutures be removed after corneal transplant [surgery](technical_term)?
+- How are my sutures removed after corneal transplant [surgery](technical_term)?
+- Will my sutures be left inside after corneal transplant [surgery](technical_term)?
 
 ## intent: pterygium-causes-cornearefractive
 - What is the cause of pterygium?
@@ -2468,49 +1975,6 @@ Why do we need the [macula](disease_type)?
 - Is pterygium congenital?
 - Can pterygium be passed down to children?
 - Can pterygium be passed down from parents?
-
-## intent: pterygium-symptoms_signs-cornearefractive
-- What are the symptoms and signs of pterygium?
-- is pterygium painful?
-- does the white flesh cause pain
-- how can i confirm if i have pterygium
-- What does pterygium look like?
-- How is pterygium supposed to look like?
-- How does pterygium normally look like?
-- How does pterygium present?
-- How do I know if I have pterygium?
-- What will I experience if I have pterygium?
-- What do people with pterygium experience?
-- How does the doctor know I have pterygium?
-- How is a diagnosis of pterygium made?
-- How many eyes does pterygium affect?
-- Can pterygium affect both eyes?
-
-## intent: pterygium-symptoms_signs-cornearefractive_87
-- What are the complications of pterygium?
-- can the pterygium grow bigger?
-- can the white flesh grow to cover my eye?
-- what problems can pterygium cause?
-- What happens if pterygium becomes big?
-- How big can pterygium grow?
-- Can pterygium cause difficulties seeing?
-- Can pterygium lead to visual problems?
-- Can pterygium cause problems?
-- Is pterygium serious?
-- Is pterygium sight threatening?
-- Will pterygium cause blindness?
-- Will I become blind because of pterygium?
-- Can I still see if I have pterygium?
-- Can pterygium cause irreversible blindness?
-- Can pterygium cause corneal perforation?
-- Can pterygium cause my cornea to melt?
-- Can pterygium cause halos?
-- Can pterygium spoil my vision?
-- Can pterygium cause squinting?
-- Can pterygium cause double vision?
-- Can pterygium ruin my vision?
-- Can pterygium cause atigmatism?
-- Can pterygium cause myopia?
 
 ## intent: pterygium-investigations-cornearefractive
 - What investigations will be done for pterygium?
@@ -2551,15 +2015,15 @@ Why do we need the [macula](disease_type)?
 - What is the conservative treatment of pterygium?
 - is there [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} to dissolve the white skin on my eye?
 - will wearing sunglasses help if i have pterygium?
-- Can I get rid of pterygium without medicine or surgery?
-- Will pterygium be cured without medicine or surgery?
-- Will pterygium go away without medicine or surgery?
+- Can I get rid of pterygium without medicine or [surgery](technical_term)?
+- Will pterygium be cured without medicine or [surgery](technical_term)?
+- Will pterygium go away without medicine or [surgery](technical_term)?
 - How can I protect my eyes from pterygium?
 - How to reduce UV if I have pterygium?
 - How to reduce sunlight if I have pterygium?
 - When can pterygium be left alone?
 - When can pterygium be treated conservatively?
-- When can pterygium be treated without medicine or surgery?
+- When can pterygium be treated without medicine or [surgery](technical_term)?
 - Can pterygium be left alone?
 - Will pterygium go away on its own?
 - Will pterygium disappear on its own?
@@ -2584,264 +2048,242 @@ Why do we need the [macula](disease_type)?
 
 ## intent: pterygium-treatment_surgical-cornearefractive
 - What is the surgical treatment of pterygium?
-- I heard pterygium surgery can use glue
+- I heard pterygium [surgery](technical_term) can use glue
 - Can I go under the knife for pterygium?
 - Is there a surgical option for pterygium?
-- Does pterygium surgery exist?
+- Does pterygium [surgery](technical_term) exist?
 - Is surgical removal of pterygium possible?
 - Can you take out my pterygium?
-- Can I do surgery to treat pterygium?
+- Can I do [surgery](technical_term) to treat pterygium?
 - Can you help me remove pterygium?
 - Can you excise my pterygium?
 - Do I have to go under the knife for pterygium?
-- Is there pterygium surgery?
-- Is there a surgery to remove pterygium?
+- Is there pterygium [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove pterygium?
 - Is there a procedure to remove pterygium?
 - Can an eye surgeon operate on my pterygium?
-- Can an eye doctor do surgery for my pterygium?
+- Can an eye doctor do [surgery](technical_term) for my pterygium?
 
 ## intent: pterygium-treatment_surgical-cornearefractive_93
-- What are the indications of pterygium surgery?
-- when do i need to go for surgery the skin on my eye
-- Why do I need to do surgery for pterygium?
-- Why do I need pterygium surgery?
+- What are the indications of pterygium [surgery](technical_term)?
+- when do i need to go for [surgery](technical_term) the skin on my eye
+- Why do I need to do [surgery](technical_term) for pterygium?
+- Why do I need pterygium [surgery](technical_term)?
 - Why do you need to operate on my pterygium?
-- Must I do pterygium surgery?
-- Can I do surgery if I have have problems seeing due to pterygium?
-- Can I do surgery if I hate how my pterygium looks?
-- Is pterygium surgery a must?
-- Is pterygium surgery required?
-- Is surgery compulsory for pterygium?
-- Is surgery mandatory for pterygium?
-- When is surgery required for pterygium?
-- When is surgery recommended for pterygium?
-- What are the instances I need pterygium surgery?
-- What are the reasons for pterygium surgery?
-- Can I do surgery if I have blurred vision from pterygium?
-- Can I do surgery if my pterygium looks ugly?
-- Can I do surgery if I do not like how my pterygium looks?
-- Can I do pterygium surgery for cosmetic reasons?
+- Must I do pterygium [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have have problems seeing due to pterygium?
+- Can I do [surgery](technical_term) if I hate how my pterygium looks?
+- Is pterygium [surgery](technical_term) a must?
+- Is pterygium [surgery](technical_term) required?
+- Is [surgery](technical_term) compulsory for pterygium?
+- Is [surgery](technical_term) mandatory for pterygium?
+- When is [surgery](technical_term) required for pterygium?
+- When is [surgery](technical_term) recommended for pterygium?
+- What are the instances I need pterygium [surgery](technical_term)?
+- What are the reasons for pterygium [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have blurred vision from pterygium?
+- Can I do [surgery](technical_term) if my pterygium looks ugly?
+- Can I do [surgery](technical_term) if I do not like how my pterygium looks?
+- Can I do pterygium [surgery](technical_term) for cosmetic reasons?
 
 ## intent: pterygium-treatment_surgical-cornearefractive_94
-- Is pterygium surgery Medisave-claimable?
-- How can I pay for pterygium surgery?
-- Is pterygium surgery subsidized?
-- Who can claim Medisave for pterygium surgery?
-- Is pterygium surgery covered under Medisave?
-- Can I pay for pterygium surgery using Medisave?
-- Can I claim Medisave for pterygium surgery?
-- Can I take out my Medisave for pterygium surgery?
-- Can I use Medisave claims for pterygium surgery?
-- Can I use medical insurance for pterygium surgery?
-- Who can get subsidies for pterygium surgery?
-- Can the government sponsor pterygium surgery?
-- Can the government subsidize pterygium surgery?
-- Is pterygium surgery discounted?
-- Is pterygium surgery covered under insurance?
-- What are the requirements for using Medisave for pterygium surgery?
-- What is the criteria for using Medisave for pterygium surgery?
+- Is pterygium [surgery](technical_term) Medisave-claimable?
+- How can I pay for pterygium [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) subsidized?
+- Who can claim Medisave for pterygium [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) covered under Medisave?
+- Can I pay for pterygium [surgery](technical_term) using Medisave?
+- Can I claim Medisave for pterygium [surgery](technical_term)?
+- Can I take out my Medisave for pterygium [surgery](technical_term)?
+- Can I use Medisave claims for pterygium [surgery](technical_term)?
+- Can I use medical insurance for pterygium [surgery](technical_term)?
+- Who can get subsidies for pterygium [surgery](technical_term)?
+- Can the government sponsor pterygium [surgery](technical_term)?
+- Can the government subsidize pterygium [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) discounted?
+- Is pterygium [surgery](technical_term) covered under insurance?
+- What are the requirements for using Medisave for pterygium [surgery](technical_term)?
+- What is the criteria for using Medisave for pterygium [surgery](technical_term)?
 
 ## intent: pterygium-preoperative-cornearefractive
 - What are the preoperative preparations for pterygium?
-- How should I prepare before pterygium surgery?
-- Do I need to prepare anything before pterygium surgery?
-- What should I take note of before pterygium surgery?
-- Will I sign a consent form before pterygium surgery?
-- Is consent taken before pterygium surgery?
-- Can I wear contact lenses to pterygium surgery?
-- Can I wear makeup before pterygium surgery?
-- Can I put on mascara before pterygium surgery?
-- Can I put on eyeliner before pterygium surgery?
-- Can I put on eyeshadow before pterygium surgery?
-- Can I put on lipstick before pterygium surgery?
-- Can I use face cream before pterygium surgery?
-- Can I use perfume before pterygium surgery?
-- Should I fast before pterygium surgery?
-- Can I eat before pterygium surgery?
-- Can I drink before pterygium surgery?
-- Can I have a meal before pterygium surgery?
-- Can I have breakfast before pterygium surgery?
-- Can I take water before pterygium surgery?
-- What if I am hungry before pterygium surgery?
-- What if I am thirsty before pterygium surgery?
-- How much fluids can I take before pterygium surgery?
-- Will my eye doctor talk to me before pterygium surgery?
+- How should I prepare before pterygium [surgery](technical_term)?
+- Do I need to prepare anything before pterygium [surgery](technical_term)?
+- What should I take note of before pterygium [surgery](technical_term)?
+- Will I sign a consent form before pterygium [surgery](technical_term)?
+- Is consent taken before pterygium [surgery](technical_term)?
+- Can I wear contact lenses to pterygium [surgery](technical_term)?
+- Can I wear makeup before pterygium [surgery](technical_term)?
+- Can I put on mascara before pterygium [surgery](technical_term)?
+- Can I put on eyeliner before pterygium [surgery](technical_term)?
+- Can I put on eyeshadow before pterygium [surgery](technical_term)?
+- Can I put on lipstick before pterygium [surgery](technical_term)?
+- Can I use face cream before pterygium [surgery](technical_term)?
+- Can I use perfume before pterygium [surgery](technical_term)?
+- Should I fast before pterygium [surgery](technical_term)?
+- Can I eat before pterygium [surgery](technical_term)?
+- Can I drink before pterygium [surgery](technical_term)?
+- Can I have a meal before pterygium [surgery](technical_term)?
+- Can I have breakfast before pterygium [surgery](technical_term)?
+- Can I take water before pterygium [surgery](technical_term)?
+- What if I am hungry before pterygium [surgery](technical_term)?
+- What if I am thirsty before pterygium [surgery](technical_term)?
+- How much fluids can I take before pterygium [surgery](technical_term)?
+- Will my eye doctor talk to me before pterygium [surgery](technical_term)?
 
 ## intent: pterygium-intraoperative-cornearefractive
-- What will happen during pterygium surgery?
+- What will happen during pterygium [surgery](technical_term)?
 - how is the skin on the eye removed?
-- how is pterygium surgery done?
-- What will happen in a pterygium surgery?
+- how is pterygium [surgery](technical_term) done?
+- What will happen in a pterygium [surgery](technical_term)?
 - I heard I need a transplant if I remove the skin on my eye
 - Can my pterygium be removed by laser?
-- Will my eye be open during pterygium surgery?
-- How will my eye be held open during pterygium surgery?
-- What are the steps in pterygium surgery?
-- What occurs during pterygium surgery?
-- What will you do during pterygium surgery?
-- Where does the patch of conjunctiva come from during pterygium surgery?
-- Does the patch of conjunctiva come from my own eye during pterygium surgery?
-- Do I have to open my eyes all the time during pterygium surgery?
+- Will my eye be open during pterygium [surgery](technical_term)?
+- How will my eye be held open during pterygium [surgery](technical_term)?
+- What are the steps in pterygium [surgery](technical_term)?
+- What occurs during pterygium [surgery](technical_term)?
+- What will you do during pterygium [surgery](technical_term)?
+- Where does the patch of conjunctiva come from during pterygium [surgery](technical_term)?
+- Does the patch of conjunctiva come from my own eye during pterygium [surgery](technical_term)?
+- Do I have to open my eyes all the time during pterygium [surgery](technical_term)?
 - What is the procedure for pterygium excision like?
 - How will the eye doctor take out my pterygium?
 - How will the eye doctor remove my pterygium?
-- How will the eye doctor do the pterygium surgery?
-- Are sutures used in pterygium surgery?
-- Are stitches used in pterygium surgery?
+- How will the eye doctor do the pterygium [surgery](technical_term)?
+- Are sutures used in pterygium [surgery](technical_term)?
+- Are stitches used in pterygium [surgery](technical_term)?
 
 ## intent: pterygium-intraoperative-cornearefractive_97
-- How long will pterygium surgery take?
-- How long does pterygium surgery take
+- How long will pterygium [surgery](technical_term) take?
+- How long does pterygium [surgery](technical_term) take
 - How long is the procedure to remove my pterygium?
-- How long does pterygium surgery last?
-- What is the duration of pterygium surgery?
-- Is pterygium a day surgery?
-- Is pterygium surgery long?
-- Is pterygium surgery short?
+- How long does pterygium [surgery](technical_term) last?
+- What is the duration of pterygium [surgery](technical_term)?
+- Is pterygium a day [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) long?
+- Is pterygium [surgery](technical_term) short?
 - Is the procedure to remove my pterygium a quick one?
-- How many minutes does pterygium surgery take?
+- How many minutes does pterygium [surgery](technical_term) take?
 
 ## intent: pterygium-intraoperative-cornearefractive_98
-- Do you have to put me to sleep for pterygium surgery?
-- will i receive anaesthesia for pterygium surgery?
-- Do I have to undergo general anaesthesia for pterygium surgery?
-- Is general anaesthesia required for pterygium surgery?
-- Is general anaesthesia compulsory for pterygium surgery?
-- Is general anaesthesia recommended for pterygium surgery?
-- Can I not do general anesthesia during pterygium surgery?
-- I do not want general anaesthesia during pterygium surgery
-- Can I choose to be awake during pterygium surgery?
-- Can I opt for local anesthesia during pterygium surgery?
-- Is there an option for local anaesthesia in pterygium surgery?
-- Is local anaesthesia an option during pterygium surgery?
-- Will I be sedated during pterygium surgery?
-- Is sedation done during pterygium surgery?
-- Is pterygium surgery an awake surgery?
-- Will I be awake during pterygium surgery?
-- Will I be asleep during pterygium surgery?
+- Do you have to put me to sleep for pterygium [surgery](technical_term)?
+- will i receive anaesthesia for pterygium [surgery](technical_term)?
+- Do I have to undergo general anaesthesia for pterygium [surgery](technical_term)?
+- Is general anaesthesia required for pterygium [surgery](technical_term)?
+- Is general anaesthesia compulsory for pterygium [surgery](technical_term)?
+- Is general anaesthesia recommended for pterygium [surgery](technical_term)?
+- Can I not do general anesthesia during pterygium [surgery](technical_term)?
+- I do not want general anaesthesia during pterygium [surgery](technical_term)
+- Can I choose to be awake during pterygium [surgery](technical_term)?
+- Can I opt for local anesthesia during pterygium [surgery](technical_term)?
+- Is there an option for local anaesthesia in pterygium [surgery](technical_term)?
+- Is local anaesthesia an option during pterygium [surgery](technical_term)?
+- Will I be sedated during pterygium [surgery](technical_term)?
+- Is sedation done during pterygium [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) an awake [surgery](technical_term)?
+- Will I be awake during pterygium [surgery](technical_term)?
+- Will I be asleep during pterygium [surgery](technical_term)?
 
 ## intent: pterygium-intraoperative-cornearefractive_99
-- Is the pterygium surgery painful?
-- I want to remove the flesh on my eye, is surgery painful?
-- Is pterygium surgery uncomfortable?
-- Will pterygium surgery cause discomfort?
-- Will pterygium surgery hurt?
-- Will pterygium surgery cause pain?
-- Will pterygium surgery make my eyes sore?
-- Will I get pain medicine during pterygium surgery?
-- Can I get analgesia during pterygium surgery?
-- Can I get pain relief during pterygium surgery?
-- Can I get sedation during pterygium surgery?
-- Can I get anxiety medicine during pterygium surgery?
+- Is the pterygium [surgery](technical_term) painful?
+- I want to remove the flesh on my eye, is [surgery](technical_term) painful?
+- Is pterygium [surgery](technical_term) uncomfortable?
+- Will pterygium [surgery](technical_term) cause discomfort?
+- Will pterygium [surgery](technical_term) hurt?
+- Will pterygium [surgery](technical_term) cause pain?
+- Will pterygium [surgery](technical_term) make my eyes sore?
+- Will I get pain medicine during pterygium [surgery](technical_term)?
+- Can I get analgesia during pterygium [surgery](technical_term)?
+- Can I get pain relief during pterygium [surgery](technical_term)?
+- Can I get sedation during pterygium [surgery](technical_term)?
+- Can I get anxiety medicine during pterygium [surgery](technical_term)?
 
 ## intent: pterygium-intraoperative-cornearefractive_100
-- I am afraid of the pterygium surgery
-- I feel worried about pterygium surgery
-- I feel anxious about pterygium surgery
-- I feel frightened about pterygium surgery
-- I am fearful about pterygium surgery
-- I am apprehensive about pterygium surgery
-- The pterygium surgery makes me feel scared
-- The pterygium surgery makes me feel nervous
-- The pterygium surgery makes me feel uneasy
-- This is my first pterygium surgery
-- Is pterygium surgery scary?
-- Is ir normal to feel worried about pterygium surgery?
-- I want to talk to someone about pterygium surgery
-- I have concerns about pterygium surgery
-
-## intent: pterygium-postoperative-cornearefractive
-- What are the complications of pterygium surgery?
-- Is pterygium surgery risky?
-- After I go for operation to remove the skin on my eye, can it come back?
-- What are the dangers of pterygium surgery
-- What are the side effects of pterygium surgery?
-- What problems can pterygium surgery cause?
-- What should I take note of after pterygium surgery?
-- Will the pterygium come back?
-- What is the risk of recurrence after pterygium surgery?
-- Will the pterygium grow back again?
-- How common are side effects of pterygium surgery?
-- Will the pterygium recur?
-- Will I get an infection from pterygium surgery?
-- Will my vision be affected by pterygium surgery?
-- Will I go blind from pterygium surgery?
-- What is the risk of going blind from pterygium surgery?
-- Will pterygium surgery spoil my eyes?
-- Will pterygium surgery injure my eyes?
-- Will pterygium surgery harm my eyes?
-- Does pterygium surgery cause scarring?
+- I am afraid of the pterygium [surgery](technical_term)
+- I feel worried about pterygium [surgery](technical_term)
+- I feel anxious about pterygium [surgery](technical_term)
+- I feel frightened about pterygium [surgery](technical_term)
+- I am fearful about pterygium [surgery](technical_term)
+- I am apprehensive about pterygium [surgery](technical_term)
+- The pterygium [surgery](technical_term) makes me feel scared
+- The pterygium [surgery](technical_term) makes me feel nervous
+- The pterygium [surgery](technical_term) makes me feel uneasy
+- This is my first pterygium [surgery](technical_term)
+- Is pterygium [surgery](technical_term) scary?
+- Is ir normal to feel worried about pterygium [surgery](technical_term)?
+- I want to talk to someone about pterygium [surgery](technical_term)
+- I have concerns about pterygium [surgery](technical_term)
 
 ## intent: pterygium-postoperative-cornearefractive_102
-- What happens after pterygium surgery?
-- What are the plans after pterygium surgery?
-- What should I expect following pterygium surgery?
-- What normally occurs after pterygium surgery?
-- Can I go home immediately after pterygium surgery?
-- When can I go home after pterygium surgery?
-- Do I need to rest at home after pterygium surgery?
-- Must someone accompany me home after pterygium surgery?
-- Do I need someone to bring me home after pterygium surgery?
-- Do I need someone to take care of me after pterygium surgery?
-- Do I need to stay in hospital after pterygium surgery?
-- Do I have to be hospitalised after pterygium surgery?
+- What happens after pterygium [surgery](technical_term)?
+- What are the plans after pterygium [surgery](technical_term)?
+- What should I expect following pterygium [surgery](technical_term)?
+- What normally occurs after pterygium [surgery](technical_term)?
+- Can I go home immediately after pterygium [surgery](technical_term)?
+- When can I go home after pterygium [surgery](technical_term)?
+- Do I need to rest at home after pterygium [surgery](technical_term)?
+- Must someone accompany me home after pterygium [surgery](technical_term)?
+- Do I need someone to bring me home after pterygium [surgery](technical_term)?
+- Do I need someone to take care of me after pterygium [surgery](technical_term)?
+- Do I need to stay in hospital after pterygium [surgery](technical_term)?
+- Do I have to be hospitalised after pterygium [surgery](technical_term)?
 
 ## intent: pterygium-postoperative-cornearefractive_103
-- How soon can I go back to work after pterygium surgery?
-- How should I take care after my pterygium surgery
-- Can I shower after pterygium surgery?
-- I am going for pterygium surgery, when can I go back to work
-- When can I return to normal activities after pterygium surgery?
-- When can I return to work after pterygium surgery?
-- When can I resume school after pterygium surgery?
-- Will I wear an eye patch after pterygium surgery?
-- What protective measures are done after pterygium surgery?
-- How can I protect my eye after pterygium surgery?
-- What precautions should I take after pterygium surgery?
-- Can I exercise after pterygium surgery?
-- Can I swim after pterygium surgery?
-- How are my eyes protected after pterygium surgery?
-- Can I rub my eye after pterygium surgery?
-- Must I wear eye protection during sports if I had pterygium surgery?
-- Is eye protection compulsory after pterygium surgery?
-- Is my eye vulnerable after pterygium surgery?
+- How soon can I go back to work after pterygium [surgery](technical_term)?
+- How should I take care after my pterygium [surgery](technical_term)
+- Can I shower after pterygium [surgery](technical_term)?
+- I am going for pterygium [surgery](technical_term), when can I go back to work
+- When can I return to normal activities after pterygium [surgery](technical_term)?
+- When can I return to work after pterygium [surgery](technical_term)?
+- When can I resume school after pterygium [surgery](technical_term)?
+- Will I wear an eye patch after pterygium [surgery](technical_term)?
+- What protective measures are done after pterygium [surgery](technical_term)?
+- How can I protect my eye after pterygium [surgery](technical_term)?
+- What precautions should I take after pterygium [surgery](technical_term)?
+- Can I exercise after pterygium [surgery](technical_term)?
+- Can I swim after pterygium [surgery](technical_term)?
+- How are my eyes protected after pterygium [surgery](technical_term)?
+- Can I rub my eye after pterygium [surgery](technical_term)?
+- Must I wear eye protection during sports if I had pterygium [surgery](technical_term)?
+- Is eye protection compulsory after pterygium [surgery](technical_term)?
+- Is my eye vulnerable after pterygium [surgery](technical_term)?
 
 ## intent: pterygium-postoperative-cornearefractive_104
-- Is there anything I need to look out for after pterygium surgery?
-- What should I be careful of after pterygium surgery?
-- What should I watch out for after pterygium surgery?
-- What should I be careful of after pterygium surgery?
-- When should I be worried after pterygium surgery?
-- What should I take note of after pterygium surgery?
-- What are the red flags after pterygium surgery?
-- What if my eyes are painful after pterygium surgery?
-- When should I go to the Emergency after pterygium surgery?
-- What if my eyes look strange after pterygium surgery?
-- What if my eyes feel strange after pterygium surgery?
-- What if I face problems after pterygium surgery?
-- Should I see my eye doctor if I have problems after pterygium surgery?
+- Is there anything I need to look out for after pterygium [surgery](technical_term)?
+- What should I be careful of after pterygium [surgery](technical_term)?
+- What should I watch out for after pterygium [surgery](technical_term)?
+- What should I be careful of after pterygium [surgery](technical_term)?
+- When should I be worried after pterygium [surgery](technical_term)?
+- What should I take note of after pterygium [surgery](technical_term)?
+- What are the red flags after pterygium [surgery](technical_term)?
+- What if my eyes are painful after pterygium [surgery](technical_term)?
+- When should I go to the Emergency after pterygium [surgery](technical_term)?
+- What if my eyes look strange after pterygium [surgery](technical_term)?
+- What if my eyes feel strange after pterygium [surgery](technical_term)?
+- What if I face problems after pterygium [surgery](technical_term)?
+- Should I see my eye doctor if I have problems after pterygium [surgery](technical_term)?
 
 ## intent: pterygium-postoperative-cornearefractive_105
-- Do I have to take medicine after pterygium surgery?
-- Must I eat medicine after pterygium surgery?
-- Do I have to put eye drops after pterygium surgery?
-- Are eye drops compulsory after pterygium surgery?
-- Are eye drops recommended after pterygium surgery?
-- Why must I use eye drops after pterygium surgery?
-- How come I need to use eye drops after pterygium surgery?
+- Do I have to take medicine after pterygium [surgery](technical_term)?
+- Must I eat medicine after pterygium [surgery](technical_term)?
+- Do I have to put eye drops after pterygium [surgery](technical_term)?
+- Are eye drops compulsory after pterygium [surgery](technical_term)?
+- Are eye drops recommended after pterygium [surgery](technical_term)?
+- Why must I use eye drops after pterygium [surgery](technical_term)?
+- How come I need to use eye drops after pterygium [surgery](technical_term)?
 
 ## intent: pterygium-postoperative-cornearefractive_106
-- Do I have to come back for follow up after pterygium surgery?
-- Do I need to come back for check up after pterygium surgery?
-- How often do I have to come back after pterygium surgery?
-- When do I need to return for follow up after pterygium surgery?
-- Why must I come for follow up after pterygium surgery?
-- How come I must go for follow up after pterygium surgery?
-- Why is follow up important after pterygium surgery?
-- What does the eye doctor do during follow up for pterygium surgery?
-- What does the eye doctor monitor after pterygium surgery?
-- What happens in the clinic after pterygium surgery?
-- How does the eye doctor check my healing after pterygium surgery?
+- Do I have to come back for follow up after pterygium [surgery](technical_term)?
+- Do I need to come back for check up after pterygium [surgery](technical_term)?
+- How often do I have to come back after pterygium [surgery](technical_term)?
+- When do I need to return for follow up after pterygium [surgery](technical_term)?
+- Why must I come for follow up after pterygium [surgery](technical_term)?
+- How come I must go for follow up after pterygium [surgery](technical_term)?
+- Why is follow up important after pterygium [surgery](technical_term)?
+- What does the eye doctor do during follow up for pterygium [surgery](technical_term)?
+- What does the eye doctor monitor after pterygium [surgery](technical_term)?
+- What happens in the clinic after pterygium [surgery](technical_term)?
+- How does the eye doctor check my healing after pterygium [surgery](technical_term)?
 
 ## intent: cataract-causes_riskfactors-cornearefractive
 - What are the causes and risk factors of cataracts?
@@ -2876,25 +2318,7 @@ Why do we need the [macula](disease_type)?
 - Do eye infections cause cataract?
 - Is cataract present from birth?
 
-## intent: cataract-symptoms_signs-cornearefractive
-- What are the symptoms of cataracts?
-- Will I go blind from cataract
-- cataract will become blind?
-- Can I become blind from cataract
-- How to know if I have cataract
-- How do patients with cataracts present?
-- How will I know if I have a cataract?
-- Which symptoms are linked to cataracts?
-- What symptoms do patients with cataracts have?
-- Why should I care if I have a cataract?
-- How would I know if I have cataracts?
-- How will cataracts affect me?
-- What does a cataract lead to?
-- What problems does a cataract cause?
-- Do cataracts cause blurred vision?
-- Do cataracts cause halos?
-- Do cataracts cause glares?
-- What will happen if I have a cataract?
+
 
 ## intent: cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
 - How is cataract diagnosed?
@@ -2939,11 +2363,11 @@ Why do we need the [macula](disease_type)?
 - What are the non-medical and non-surgical treatments for cataracts?
 - How can I improve my cataracts without seeing a doctor?
 - Is it possible to treat cataract without seeing a doctor?
-- Any way I can reduce cataracts without medications or surgery?
-- Can cataracts be treated without using medications and surgery?
-- Can I fix cataract without going for surgery?
-- I do not want to take medications or have surgery, what can I do about my cataract?
-- How can I resolve cataracts without medication or surgery?
+- Any way I can reduce cataracts without medications or [surgery](technical_term)?
+- Can cataracts be treated without using medications and [surgery](technical_term)?
+- Can I fix cataract without going for [surgery](technical_term)?
+- I do not want to take medications or have [surgery](technical_term), what can I do about my cataract?
+- How can I resolve cataracts without medication or [surgery](technical_term)?
 - Is there any changes I can make to my life to improve cataracts?
 - What steps can I take to improve cataracts?
 
@@ -2955,7 +2379,7 @@ Why do we need the [macula](disease_type)?
 - What medications can improve cataracts?
 - Are there eye drops for cataracts?
 - Can eye drops be used to treat cataract? 
-- How can I improve my cataract without surgery?
+- How can I improve my cataract without [surgery](technical_term)?
 - Are there eye drops to heal cataract?
 - Is it possible to treat cataracts with eye drops?
 - Is there any medication that can get rid of cataracts?
@@ -2966,43 +2390,28 @@ Why do we need the [macula](disease_type)?
 - Can you take out cataract
 - How does the doctor take out my cataract
 - Can I be asleep during cataract operation
-- Will I be awake during my cataract surgery
-- Do I need to change my lens in future after my cataract surgery
-- Is the lens put in during cataract surgery permanent
-- Does the lens put in during cataract surgery have expiry date
-- How big is the wound in cataract surgery
-- do all cataract need surgery
+- Will I be awake during my cataract [surgery](technical_term)
+- Do I need to change my lens in future after my cataract [surgery](technical_term)
+- Is the lens put in during cataract [surgery](technical_term) permanent
+- Does the lens put in during cataract [surgery](technical_term) have expiry date
+- How big is the wound in cataract [surgery](technical_term)
+- do all cataract need [surgery](technical_term)
 - can cut out cataract
 - how to take out cloudy lens
-- Do I need to change my lens in future after cataract surgery
+- Do I need to change my lens in future after cataract [surgery](technical_term)
 - What are the non-medical treatments for cataract?
 - Do doctors perform surgeries for cataracts?
-- What kind of surgery helps with cataracts?
+- What kind of [surgery](technical_term) helps with cataracts?
 - How can I stop my cataract permanently?
-- I don't want to have surgery, how can I stop cataracts?
+- I don't want to have [surgery](technical_term), how can I stop cataracts?
 - I have very bad cataracts, what can the doctor do to improve it?
 - How can I improve my cataracts if my eye drops donâ€™t work?
 - Is there any procedure the doctor can do to improve my dry eyes?
 - What does cataract Surgery entail?
-- Can I go for surgery for cataracts?
+- Can I go for [surgery](technical_term) for cataracts?
 - Is there a way to surgically treat cataracts?
-- What happens during cataract surgery?
-- What does the eye surgeon do during cataract surgery?
-
-## intent: dryeyes-condition-cornearefractive
-- What is Dry eye syndrome?
-- Why are my eyes dry
-- why my eyes dry
-- Why are my eyes always dry?
-- What happens when my eyes are dry?
-- Is dry eyes a medical problem?
-- Who develops dry eyes?
-- Why do my eyes become dry in the wind or cold air? 
-- What happens when eyes are dry?
-- Who develops dry eyes?
-- How does dry eyes happen?
-- What is dry eyes?
-- Is there a reason my eyes are dry?
+- What happens during cataract [surgery](technical_term)?
+- What does the eye surgeon do during cataract [surgery](technical_term)?
 
 ## intent: dryeyes-causes_riskfactors-cornearefractive
 - What are the causes and risk factors of Dry eye syndrome?
@@ -3023,27 +2432,6 @@ Why do we need the [macula](disease_type)?
 - Am I at risk of dry eyes?
 - Who is at risk of dry eyes?
 - What results in dry eyes?
-
-## intent: dryeyes-symptoms_signs-cornearefractive
-- What are the symptoms of dry eyes?
-- How do I know if I have dry eyes
-- Can dry eyes harm my eyes
-- My eyesight keeps going blur on and off, why
-- I always feel poking pain in my eye
-- Why do I get tearing with dry eyes?
-- Which symptoms are linked to eye dryness?
-- What symptoms do patients with dry eyes have?
-- How would I know if I have dry eye syndrome?
-- How do I know if I have dry eyes?
-- What do patients with dry eyes develop?
-- Which symptoms do patients with dry eyes have?
-- Which symptoms are suggestive of dry eyes?
-- What eye problems are due to dry eyes?
-- What are the symptoms of dry eyes?
-- How do I know if I have dry eyes
-- Can dry eyes harm my eyes
-- My eyesight keeps going blur on and off, why
-- I always feel poking pain in my eye
 
 ## intent: dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive
 - How is Dry Eye Syndrome diagnosed?
@@ -3068,7 +2456,7 @@ Why do we need the [macula](disease_type)?
 - What are the possible ways to improve dry eyes?
 - How will the doctor treat my dry eyes?
 - Can dry eyes be cured?
-- Can I do surgery to stop the dry eyes?
+- Can I do [surgery](technical_term) to stop the dry eyes?
 - Is the doctor able to treat dry eyes?
 - How do I stop my dry eyes?
 - Can dry eyes be treated?
@@ -3087,9 +2475,9 @@ Why do we need the [macula](disease_type)?
 - Is it possible to treat eye dryness without seeing a doctor?
 - What should I do to reduce eye dryness?
 - What can I do to reduce dry eyes?
-- Can I fix dry eyes without going for surgery?
-- I dont want to take medications or have surgery, what can I do about the dry eyes?
-- How can I resolve dry eyes without medication or surgery?
+- Can I fix dry eyes without going for [surgery](technical_term)?
+- I dont want to take medications or have [surgery](technical_term), what can I do about the dry eyes?
+- How can I resolve dry eyes without medication or [surgery](technical_term)?
 - Is there any changes I can make to my life to improve dry eyes?
 - What steps can I take to improve dry eyes?
 
@@ -3104,9 +2492,9 @@ Why do we need the [macula](disease_type)?
 - What medications can improve eye dryness?
 - Are there eye drops for dry eyes?
 - Can eye drops be used to treat dry eye syndrome? 
-- How can I improve my dry eyes without surgery?
-- If I dont want to have surgery, can I still reduce my eye dryness?
-- Is it possible to treat dry eyes without surgery?
+- How can I improve my dry eyes without [surgery](technical_term)?
+- If I dont want to have [surgery](technical_term), can I still reduce my eye dryness?
+- Is it possible to treat dry eyes without [surgery](technical_term)?
 - Is there any medication that can get rid of dry eyes?
 - Can I take medications for dry eyes?
 
@@ -3116,8 +2504,8 @@ Why do we need the [macula](disease_type)?
 ## intent: dryeyes-treatment_surgical-cornearefractive_122
 - What are the non-medical treatments for dry eye syndrome?
 - Do doctors perform surgeries for dry eyes?
-- What kind of surgery helps with eye dryness?
-- Can I go for surgery for dry eyes?
+- What kind of [surgery](technical_term) helps with eye dryness?
+- Can I go for [surgery](technical_term) for dry eyes?
 - Is there a way to surgically treat dry eyes?
 - How can I stop my dry eyes permanently?
 - I dont want to use eye drops, how can I stop dry eyes?
@@ -3139,18 +2527,6 @@ Why do we need the [macula](disease_type)?
 - How can I improve my eye dryness when I am wearing contact lenses?
 - Is there any contact lens that is suitable for patients with dry eyes?
 
-## intent: blepharitis-condition-cornearefractive
-- What is blepharitis?
-- What does oily eyelid mean?
-- Is oily eyelid a disease?
-- Why do I have crusting of the eyelids?
-- Why is it difficult to open my eyes in the morning due to crusts?
-- Is blepharitis a dangerous condition?
-- What do the oily secretions of the eyelid occur?
-- What does blepharitis mean?
-- Is blepharitis an infection?
-- I have blepharitis, what is it?
-
 ## intent: blepharitis-causes_riskfactors-cornearefractive
 - What is the cause of blepharitis?
 - why are my eyelids oily
@@ -3164,20 +2540,6 @@ Why do we need the [macula](disease_type)?
 - When will I get blepharitis?
 - Is blepharitis caused by makeup?
 - Is blepharitis caused by contact lens wear?
-
-## intent: blepharitis-symptoms_signs-cornearefractive
-- What are the symptoms of blepharitis?
-- Does oily eyelids cause discharge
-- What will I feel if I have blepharitis?
-- Can blepharitis cause red eyes?
-- Can the oily secretions irritate my eyes?
-- Is eye dirt a sign of blepharitis?
-- Does blepharitis cause pain?
-- What do I feel if I have very oily eyelids?
-- Can blepharitis cause my vision to be blur?
-- I have dry eyes, is it a sign of blepharitis?
-- Apart from discharges, what else will I feel if I have blepharitis?
-- How does blepharitis look?
 
 ## intent: blepharitis-treatment_general-cornearefractive
 - What can I do to prevent blepharitis?
@@ -3223,7 +2585,7 @@ Why do we need the [macula](disease_type)?
 ## intent: blepharitis-treatment_general-cornearefractive_130
 - How is marginal keratitis treated?
 - Do I need to take antibiotics for marginal keratitis?
-- Do I need surgery for marginal keratitis?
+- Do I need [surgery](technical_term) for marginal keratitis?
 - Can marginal keratitis recover on its own?
 - Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} for marginal keratitis?
 - Can I wear contact lens if I have marginal keratitis?
@@ -3252,23 +2614,6 @@ Why do we need the [macula](disease_type)?
 - What are the causes for cataracts?
 - Am I at risk of developing cataracts?
 - How will I know if I may develop cataracts?
-
-## intent: cataract-symptoms_signs-cornearefractive_133
-- What are the symptoms of cataracts?
-- Will I go blind from cataract
-- cataract will become blind?
-- Can I become blind from cataract
-- How to know if I have cataract
-- How do patients with cataracts present?
-- How will I know if I have a cataract?
-- Which symptoms are due to cataracts?
-- What symptoms do patients with cataracts have?
-- Why should I care if I have a cataract?
-- How would I know if I have cataracts?
-- How will cataracts affect me?
-- What will a cataract lead to?
-- What problems does a cataract cause?
-- What will happen if I have a cataract?
 
 ## intent: cataract-signs_doctorsexaminationfindings_investigations-cornearefractive_134
 - How is cataract diagnosed?
@@ -3307,11 +2652,11 @@ Why do we need the [macula](disease_type)?
 - What are the non-medical and non-surgical treatments for cataracts?
 - How can I improve my cataracts without seeing a doctor?
 - Is it possible to treat cataract without seeing a doctor?
-- Any way I can reduce cataracts without medications or surgery?
-- Can cataracts be treated without using medications and surgery?
-- Can I fix cataract without going for surgery?
-- I dont want to take medications or have surgery, what can I do about my cataract?
-- How can I resolve cataracts without medication or surgery?
+- Any way I can reduce cataracts without medications or [surgery](technical_term)?
+- Can cataracts be treated without using medications and [surgery](technical_term)?
+- Can I fix cataract without going for [surgery](technical_term)?
+- I dont want to take medications or have [surgery](technical_term), what can I do about my cataract?
+- How can I resolve cataracts without medication or [surgery](technical_term)?
 - Is there any changes I can make to my life to improve cataracts?
 - What steps can I take to improve cataracts?
 
@@ -3323,9 +2668,9 @@ Why do we need the [macula](disease_type)?
 - What medications can improve cataracts?
 - Are there eye drops for cataracts?
 - Can eye drops be used to treat cataract? 
-- How can I improve my cataract without surgery?
-- If I do not want to have surgery, can I still reduce my cataract?
-- Is it possible to treat cataracts without surgery?
+- How can I improve my cataract without [surgery](technical_term)?
+- If I do not want to have [surgery](technical_term), can I still reduce my cataract?
+- Is it possible to treat cataracts without [surgery](technical_term)?
 - Is there any medication that can get rid of cataracts?
 - Can I take medications for cataracts?
 
@@ -3334,45 +2679,45 @@ Why do we need the [macula](disease_type)?
 - Can you take out cataract
 - How does the doctor take out my cataract
 - Can I be asleep during cataract operation
-- Will I be awake during my cataract surgery
-- Do I need to change my lens in future after my cataract surgery
-- Is the lens put in during cataract surgery permanent
-- Does the lens put in during cataract surgery have expiry date
-- How big is the wound in cataract surgery
-- do all cataract need surgery
+- Will I be awake during my cataract [surgery](technical_term)
+- Do I need to change my lens in future after my cataract [surgery](technical_term)
+- Is the lens put in during cataract [surgery](technical_term) permanent
+- Does the lens put in during cataract [surgery](technical_term) have expiry date
+- How big is the wound in cataract [surgery](technical_term)
+- do all cataract need [surgery](technical_term)
 - can cut out cataract
 - how to take out cloudy lens
-- Do I need to change my lens in future after cataract surgery
+- Do I need to change my lens in future after cataract [surgery](technical_term)
 - What are the non-medical treatments for cataract?
 - Do doctors perform surgeries for cataracts?
-- What kind of surgery helps with cataracts?
+- What kind of [surgery](technical_term) helps with cataracts?
 - How can I stop my cataract permanently?
 - My cataracts are bothering me, how can I be treated?
 - I have very bad cataracts, what can the doctor do to improve it?
 - How can I improve my cataracts if my eye drops dont work?
 - Is there any procedure the doctor can do to improve my dry eyes?
 - What does cataract Surgery entail?
-- Can I go for surgery for cataracts?
+- Can I go for [surgery](technical_term) for cataracts?
 - Is there a way to surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive
 - Why is my vision poor after cataract operation?
-- Eye blur after caratarct surgery
-- My eyes are painful after cataract surgery
-- Eye painful after cataract surgery
-- I have done cataract surgery, why I still see so blur
+- Eye blur after caratarct [surgery](technical_term)
+- My eyes are painful after cataract [surgery](technical_term)
+- Eye painful after cataract [surgery](technical_term)
+- I have done cataract [surgery](technical_term), why I still see so blur
 - My vision is getting blurrer after cataract operation, issit because cataract is growing back?
 - Wad is PCO
 - Why my vision still so bad after cataract op
 - Why am I seeing blurry after my cataract operation?
 - My cataracts have been operated but my eyesight is still poor, why?
-- My eyesight initially after my surgery was good but it has deteriorated, why?
+- My eyesight initially after my [surgery](technical_term) was good but it has deteriorated, why?
 - My eyesight is worsening after cataract operation, can the cataract grow back?
 - I cannot read well after my cataract operation, why is that so?
 - Why is my eyesight still not good after cataract operation?
 - Why is my eye painful and blurry after cataract operation?
-- My eyesight is still not good after cataract surgery, do I need another operation?
-- Why is my eyesight hazy after cataract surgery?
+- My eyesight is still not good after cataract [surgery](technical_term), do I need another operation?
+- Why is my eyesight hazy after cataract [surgery](technical_term)?
 - My eye is painful and blurry after putting [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, why is that so?
 
 ## intent: cataract-postoperative-cornearefractive_140
@@ -3381,7 +2726,7 @@ Why do we need the [macula](disease_type)?
 - How to polish my lens
 - Is lens polishing risku
 - Is lens polishing risky
-- My lens after cataract surgery is dirty, what can I do?
+- My lens after cataract [surgery](technical_term) is dirty, what can I do?
 - What is YAG capsulotomy?
 - How is YAG capsulotomy performed?
 - How can my lens be polished?
@@ -3393,31 +2738,31 @@ Why do we need the [macula](disease_type)?
 - Is capsular opacification common after cataract operation?
 
 ## intent: cataract-intraoperative-cornearefractive
-- Isn’t cataract surgery done by laser?
+- Isn’t cataract [surgery](technical_term) done by laser?
 - Can cut my cataract
 - I heard there is laser to cure cataract
-- Is the cataract surgery done by laser?
-- Is cataract surgery bladeless
-- What is the method of surgery for cataract?
+- Is the cataract [surgery](technical_term) done by laser?
+- Is cataract [surgery](technical_term) bladeless
+- What is the method of [surgery](technical_term) for cataract?
 - Do doctors perform surgeries for cataracts using laser?
-- What are the steps of surgery for cataracts?
+- What are the steps of [surgery](technical_term) for cataracts?
 - How can doctors remove my cataract?
 - I heard cataract is removed by laser, is it true?
 - I have very bad cataracts, what will the doctor be doing to improve it?
-- Is the newest cataract surgery using laser?
+- Is the newest cataract [surgery](technical_term) using laser?
 - How is cataract Surgery performed?
 - Can doctors use laser to remove cataracts?
 - Is there a way to use lasers to remove cataracts?
 
 ## intent: cataract-preoperative-cornearefractive
 - What is the cost of a cataract operation?
-- cataract surgery expensive
-- Government pay for cataract surgery can
-- How much is cataract surgery
+- cataract [surgery](technical_term) expensive
+- Government pay for cataract [surgery](technical_term) can
+- How much is cataract [surgery](technical_term)
 - Why is multifocal lens so expensive
-- How much does surgery cost for cataract?
-- Is cataract surgery expensive?
-- What is the cost of surgery to remove my cataracts?
+- How much does [surgery](technical_term) cost for cataract?
+- Is cataract [surgery](technical_term) expensive?
+- What is the cost of [surgery](technical_term) to remove my cataracts?
 - How much do I need to pay to remove my cataracts?
 - How expensive is treatment for cataract?
 - Is cataract operation expensive?
@@ -3427,48 +2772,33 @@ Why do we need the [macula](disease_type)?
 - Roughly what is the cost to surgically treat cataracts?
 
 ## intent: cataract-preoperative-cornearefractive_143
-- What are the pre-operative instructions for cataract surgery?
-- What do I need to do before surgery for cataract?
-- Do patients need to prepare for cataract surgery?
-- What kind of preparation is needed before surgery for cataracts?
-- How can I prepare for my cataract surgery?
-- I am going for surgery to remove my cataracts, what do I need to do?
-- I have booked surgery for my cataracts, what should I do before that?
-- How can I get ready to have surgery for my cataract?
+- What are the pre-operative instructions for cataract [surgery](technical_term)?
+- What do I need to do before [surgery](technical_term) for cataract?
+- Do patients need to prepare for cataract [surgery](technical_term)?
+- What kind of preparation is needed before [surgery](technical_term) for cataracts?
+- How can I prepare for my cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, what do I need to do?
+- I have booked [surgery](technical_term) for my cataracts, what should I do before that?
+- How can I get ready to have [surgery](technical_term) for my cataract?
 - Is there any preparation required before the procedure to improve my cataracts?
-- Can I go for surgery for cataracts directly?
+- Can I go for [surgery](technical_term) for cataracts directly?
 - Is there anything that has to be done before I surgically treat cataracts?
-
-## intent: cataract-preoperative-cornearefractive_144
-- What are the risks of cataract surgery?
-- Is cataract operation dangerous
-- What are the dangers of cataract operation
-- What possible risks does surgery for cataract carry?
-- Do patients need to be aware of any risks of cataract surgery?
-- What kind of complications could happen after surgery for cataracts?
-- How can cataract surgery go wrong?
-- I am going for surgery to remove my cataracts, what do I need to know about complications?
-- I have booked surgery for my cataracts, what are the risks of that?
-- How can I find out more about the risks of having surgery for my cataract?
-- Is there any risks I should know about before the procedure to improve my cataracts?
-- Can I go for surgery for cataracts directly?
-- Is there anything that has to be done before I surgically 
 
 ## intent: cataract-intraoperative-cornearefractive_145
 - What are the types of lens implants?
-- Do I need glasses after cataract surgery
+- Do I need glasses after cataract [surgery](technical_term)
 - What is multifocal lens
 - Tell me about multifocal lens
 - What is multifocal
-- does it mean after cataract surgery i don't need to wear glasses anymore?
+- does it mean after cataract [surgery](technical_term) i don't need to wear glasses anymore?
 - what is IOL
-- What implants can I choose from for surgery for cataract?
-- Do patients get to choose their implants for cataract surgery?
-- What kind of implants can I use when I get surgery for cataracts?
-- How can I select the lens implants for cataract surgery?
-- I am going for surgery to remove my cataracts, what implants can I choose?
-- I have booked surgery for my cataracts, what lens implants can I select from?
-- How should I choose a lens for my cataract surgery?
+- What implants can I choose from for [surgery](technical_term) for cataract?
+- Do patients get to choose their implants for cataract [surgery](technical_term)?
+- What kind of implants can I use when I get [surgery](technical_term) for cataracts?
+- How can I select the lens implants for cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, what implants can I choose?
+- I have booked [surgery](technical_term) for my cataracts, what lens implants can I select from?
+- How should I choose a lens for my cataract [surgery](technical_term)?
 - Is there any way to decide what lens implant to use when I remove my cataracts?
 - Can I know what choices are available for types of lens implants when I remove my cataracts?
 - Are there any choices for types of lens implants before I surgically treat cataracts?
@@ -3477,13 +2807,13 @@ Why do we need the [macula](disease_type)?
 - What are the differences between monofocal and multifocal lenses?
 - What is the difference between multi and monofocal
 - Multifocal versus monofocal
-- What implants is better for surgery for cataract?
-- How should patients choose their monofocal or multifocal implants for cataract surgery?
-- What kind of implants should I select when I get surgery for cataracts?
-- How can I know if multifocal lens implants are better for cataract surgery?
-- I am going for surgery to remove my cataracts, are monofocal lenses better?
-- I have booked surgery for my cataracts, would multifocal or monofocal lenses be better?
-- How should I choose between monofocal or multifocal lenses when I have surgery for my cataract?
+- What implants is better for [surgery](technical_term) for cataract?
+- How should patients choose their monofocal or multifocal implants for cataract [surgery](technical_term)?
+- What kind of implants should I select when I get [surgery](technical_term) for cataracts?
+- How can I know if multifocal lens implants are better for cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, are monofocal lenses better?
+- I have booked [surgery](technical_term) for my cataracts, would multifocal or monofocal lenses be better?
+- How should I choose between monofocal or multifocal lenses when I have [surgery](technical_term) for my cataract?
 - Is there any way to know whether a multifocal lens is better when I remove my cataracts?
 - Can I know what you recommend for the monofocal or multifocal lens options when I remove my cataracts?
 - Is there any way to decide between monofocal or multifocal lens implants when I surgically treat cataracts?
@@ -3494,12 +2824,12 @@ Why do we need the [macula](disease_type)?
 - Monofocal or multifocal, which is better
 - I had lasik before, can I choose multifocal lens
 - Is multifocal the best lens available
-- What implant is most suited for me if I go for surgery for cataract?
-- How should I choose between monofocal or multifocal implants for my cataract surgery?
+- What implant is most suited for me if I go for [surgery](technical_term) for cataract?
+- How should I choose between monofocal or multifocal implants for my cataract [surgery](technical_term)?
 - What are the issues of multifocal lenses?
 - If I read a lot, should I choose multifocal or monofocal lenses?
-- I am going for surgery to remove my cataracts, are monofocal lenses better if I don’t mind wearing spectacles?
-- I have booked surgery for my cataracts, which lens will allow me to not wear spectacles anymore?
+- I am going for [surgery](technical_term) to remove my cataracts, are monofocal lenses better if I don’t mind wearing spectacles?
+- I have booked [surgery](technical_term) for my cataracts, which lens will allow me to not wear spectacles anymore?
 - How should I choose between monofocal or multifocal lenses?
 - How do I know whether a multifocal lens would be better for me based on my lifestyle if I am removing my cataracts?
 - What are the downsides/side-effects of multifocal lenses?
@@ -3507,10 +2837,10 @@ Why do we need the [macula](disease_type)?
 
 ## intent: cataract-intraoperative-cornearefractive_148
 - What is toric lens?
-- Can cataract surgery correct my astig
-- Is there any lens that can correct astig during cataract surgery
+- Can cataract [surgery](technical_term) correct my astig
+- Is there any lens that can correct astig during cataract [surgery](technical_term)
 - What does toric lens mean?
-- Can I choose lenses that correct astigmatism as well for my cataract surgery?
+- Can I choose lenses that correct astigmatism as well for my cataract [surgery](technical_term)?
 - Which lenses can correct astigmatism as well for cataract operation?
 - Can there be astigmatic correction in monofocal and multifocal lenses?
 - What is a toric monofocal lens?
@@ -3522,71 +2852,58 @@ Why do we need the [macula](disease_type)?
 
 ## intent: cataract-preoperative-cornearefractive_149
 - If I am feeling unwell just before the date of operation, what should I do?
-- What do I need to do if I am sick before surgery for cataract?
-- Do patients need to be completely well before cataract surgery?
-- What kind of preparation is needed if I am sick the day before surgery for cataracts?
-- How can I have my cataract surgery if I fall sick before that?
-- I am going for surgery to remove my cataracts but I am not feeling well, what do I need to do?
-- I have booked surgery for my cataracts and have fallen ill, what should I do before that?
-- How can I have surgery for my cataract if I have cough or running nose?
+- What do I need to do if I am sick before [surgery](technical_term) for cataract?
+- Do patients need to be completely well before cataract [surgery](technical_term)?
+- What kind of preparation is needed if I am sick the day before [surgery](technical_term) for cataracts?
+- How can I have my cataract [surgery](technical_term) if I fall sick before that?
+- I am going for [surgery](technical_term) to remove my cataracts but I am not feeling well, what do I need to do?
+- I have booked [surgery](technical_term) for my cataracts and have fallen ill, what should I do before that?
+- How can I have [surgery](technical_term) for my cataract if I have cough or running nose?
 - Is there any preparation if I am not feeling well before the procedure to improve my cataracts?
-- Can I go for surgery for cataracts if I have a flu?
+- Can I go for [surgery](technical_term) for cataracts if I have a flu?
 - Is there anything that has to be done if I fall sick before I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_150
-- What happens after my cataract surgery?
-- After cataract surgery, can I see without specs
-- Can I don't wear spectacles after cataract surgery
-- What do I need to do after surgery for cataract?
-- Do patients need to do anything after cataract surgery?
-- What kind of follow-up is needed after surgery for cataracts?
-- How can I improve my condition after my cataract surgery?
-- I am going for surgery to remove my cataracts, what do I need to do after the surgery?
-- I have booked surgery for my cataracts, what can I expect after that?
-- How can I get ready for the post-operative period after I have surgery for my cataract?
+- What happens after my cataract [surgery](technical_term)?
+- After cataract [surgery](technical_term), can I see without specs
+- Can I don't wear spectacles after cataract [surgery](technical_term)
+- What do I need to do after [surgery](technical_term) for cataract?
+- Do patients need to do anything after cataract [surgery](technical_term)?
+- What kind of follow-up is needed after [surgery](technical_term) for cataracts?
+- How can I improve my condition after my cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, what do I need to do after the [surgery](technical_term)?
+- I have booked [surgery](technical_term) for my cataracts, what can I expect after that?
+- How can I get ready for the post-operative period after I have [surgery](technical_term) for my cataract?
 - Is there any treatment required after the procedure to improve my cataracts?
-- Can I be discharged after I go for surgery for cataracts?
+- Can I be discharged after I go for [surgery](technical_term) for cataracts?
 - Is there anything that has to be done after I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_151
-- What eye drops do I need after cataract surgery?
-- What eye drops will I need after surgery for cataract?
-- Do patients need to use eye drops after cataract surgery?
-- What kind of medications are needed after surgery for cataracts?
-- What medications do I need after my cataract surgery?
-- I am going for surgery to remove my cataracts, do I need eye drops after the surgery?
-- I have booked surgery for my cataracts, what medications will I need after that?
-- What eye drops will I be using after I have surgery for my cataract?
+- What eye drops do I need after cataract [surgery](technical_term)?
+- What eye drops will I need after [surgery](technical_term) for cataract?
+- Do patients need to use eye drops after cataract [surgery](technical_term)?
+- What kind of medications are needed after [surgery](technical_term) for cataracts?
+- What medications do I need after my cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, do I need eye drops after the [surgery](technical_term)?
+- I have booked [surgery](technical_term) for my cataracts, what medications will I need after that?
+- What eye drops will I be using after I have [surgery](technical_term) for my cataract?
 - Is there any eye drops required after the procedure to improve my cataracts?
-- Can I stop taking medications or eye drops after I go for surgery for cataracts?
+- Can I stop taking medications or eye drops after I go for [surgery](technical_term) for cataracts?
 - Is there any eye drops needed after I surgically treat cataracts?
 
 ## intent: cataract-postoperative-cornearefractive_152
-- Can a cataract come back after surgery?
-- will i get cataract again after surgery
-- What happens if I get blurring of vision months after surgery for cataract?
-- Do patients develop recurrence of cataract after cataract surgery?
-- What kind of symptoms can one have after surgery for cataracts?
-- Under what circumstances do I need to go for treatment again after my cataract surgery?
-- I am going for surgery to remove my cataracts, can it ever come back after the surgery?
-- I have booked surgery for my cataracts, what are the chances that it recurs after that?
-- What are the chances I need revision surgery after I have surgery for my cataract?
-- Is there any chance repeat surgery may be required after the procedure to improve my cataracts?
-- Can I develop cataract again after I go for surgery for cataracts?
+- Can a cataract come back after [surgery](technical_term)?
+- will i get cataract again after [surgery](technical_term)
+- What happens if I get blurring of vision months after [surgery](technical_term) for cataract?
+- Do patients develop recurrence of cataract after cataract [surgery](technical_term)?
+- What kind of symptoms can one have after [surgery](technical_term) for cataracts?
+- Under what circumstances do I need to go for treatment again after my cataract [surgery](technical_term)?
+- I am going for [surgery](technical_term) to remove my cataracts, can it ever come back after the [surgery](technical_term)?
+- I have booked [surgery](technical_term) for my cataracts, what are the chances that it recurs after that?
+- What are the chances I need revision [surgery](technical_term) after I have [surgery](technical_term) for my cataract?
+- Is there any chance repeat [surgery](technical_term) may be required after the procedure to improve my cataracts?
+- Can I develop cataract again after I go for [surgery](technical_term) for cataracts?
 - Is there any chance a cataract recurs after I surgically treat cataracts?
-
-## intent: myopia-condition-cornearefractive
-- What is myopia?
-- What is the difference between astig and myopia
-- Why can I see near but not far?
-- What is short-sightedness?
-- What is near-sightedness?
-- What is the medical term for short-sightedness?
-- Can children develop myopia?
-- When does myopia develop?
-- When does short-sightedness develop?
-- When does myopia stop progressing?
-- Can myopia increase?
 
 ## intent: myopia-causes_riskfactors-cornearefractive
 - What are the risk factors for myopia?
@@ -3601,22 +2918,6 @@ Why do we need the [macula](disease_type)?
 - Why do some people get myopia and others do not?
 - Does near work lead to myopia?
 - My child’s myopia is increasing rapidly, what is the reason?
-
-## intent: myopia-symptoms_signs-cornearefractive
-- What are the possible complications of myopia?
-- What are long term effects of myopia
-- Should I be worried if my child is short sighted
-- Is myopia a problem?
-- What are the dangers of myopia?
-- Is myopia dangerous?
-- Can myopia cause blindness?
-- Can myopia cause retinal detachment?
-- What are other eye conditions associated with myopia?
-- What must I look out for if I am myopic?
-- What are the issues with myopia?
-- If I have high myopia, am I at risk of retinal detachment?
-- What are the consequences of developing myopia?
-- Should I be worried about developing myopia?
 
 ## intent: myopia-treatment_general-cornearefractive
 - What are the treatment options for myopia?
@@ -3677,19 +2978,6 @@ Why do we need the [macula](disease_type)?
 - My child’s myopia is increasing quickly, what can I do?
 - What are the recommended methods to control myopia?
 - Is atropine available in optical shops?
-
-## intent: myopia-condition-cornearefractive_160
-- What is high myopia and its issues?
-- What is high myopia?
-- My degree is _________, is it considered high?
-- How high is high myopia?
-- Is high myopia a disease?
-- If I/my child have high myopia, what should I be worried about?
-- Will high myopia lead to blindness eventually?
-- What is the criteria for high myopia?
-- I/my child have high myopia, what can potentially happen?
-- What can happen in severe myopia?
-- Does glasses prevent risk/complications in high myopia
 
 ## intent: myopia-condition-cornearefractive_161
 - What is the difference between presbyopia and myopia?
@@ -3857,7 +3145,7 @@ Why do we need the [macula](disease_type)?
 - What are the laser correction services available?
 - What is the difference between lasik and lasek
 - what lasers can i do for myopia
-- what laser surgery can i do for myopia
+- what laser [surgery](technical_term) can i do for myopia
 - What are the laser correction services myopia/astigmatism?
 - What are the different types of lasers for myopia/astigmatism?
 - What if I don’t want to wear glasses for myopia/astigmatism anymore?
@@ -3870,7 +3158,7 @@ Why do we need the [macula](disease_type)?
 - Do lasers work for myopia/astigmatism?
 
 ## intent: lasik_refractivesurgery-preoperative-cornearefractive
-- What happens when I see a doctor for Laser corrective surgery/LASIK/LASIK XtraTM/ReLEx® SMILE?
+- What happens when I see a doctor for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ReLEx® SMILE?
 - What happens when I see a doctor for LASIK/LASIK XtraTM/ ReLEx® SMILE?
 - What will the doctor do when I go for my appointment for LASIK/LASIK XtraTM/ ReLEx® SMILE
 - What should I expect when I see a doctor for LASIK/LASIK XtraTM/ ReLEx® SMILE?
@@ -3883,29 +3171,29 @@ Why do we need the [macula](disease_type)?
 - How can I get tested for LASIK/LASIK XtraTM/ ReLEx® SMILE?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
-- Who is suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Who is suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
 - Am I suitable for lasik
 - when should i do lasik
 - which people can do lasik
 - which people are suitable for lasik
-- Who is suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Who is suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
 - Am I suitable for lasik
 - when should i do lasik
 - which people can do lasik
 - which people are suitable for lasik
-- Who can go for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Can I go for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Am I suitable for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- How do I know if I can go for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- How do I know if Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE is for me?
-- What is the criteria for Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Is Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE applicable for me?
-- Is Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE relevant for me?
-- Is Laser corrective surgery/LASIK/LASIK XtraTM/ ReLEx® SMILE useful for me?
+- Who can go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Can I go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- How do I know if I can go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- How do I know if Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE is for me?
+- What is the criteria for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE applicable for me?
+- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE relevant for me?
+- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE useful for me?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
 - What is LASIK?
-- Is lasik a day surgery
+- Is lasik a day [surgery](technical_term)
 - How long does lasik take?
 - what procedure is lasik
 - What does LASIK stand for?
@@ -3916,7 +3204,7 @@ Why do we need the [macula](disease_type)?
 - What happens in LASIK?
 - How does LASIK work?
 - How can LASIK help my eyes?
-- Is LASIK a surgery?
+- Is LASIK a [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 - What are the advantages of LASIK?
@@ -3935,46 +3223,19 @@ Why do we need the [macula](disease_type)?
 - How is LASIK better?
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive
-- What should I expect post LASIK surgery?
-- How many days of MC will I get for lasik surgery
+- What should I expect post LASIK [surgery](technical_term)?
+- How many days of MC will I get for lasik [surgery](technical_term)
 - What is the postoperative care required for LASIK?
-- What happens after LASIK surgery?
-- What do I need to do after my LASIK surgery?
-- What will I feel after LASIK surgery?
+- What happens after LASIK [surgery](technical_term)?
+- What do I need to do after my LASIK [surgery](technical_term)?
+- What will I feel after LASIK [surgery](technical_term)?
 - What should I look out for after my LASIK Surgery?
-- What do I need to be careful about after my LASIK surgery?
-- What precautions must I take after LASIK surgery?
+- What do I need to be careful about after my LASIK [surgery](technical_term)?
+- What precautions must I take after LASIK [surgery](technical_term)?
 - How long do I need to rest after LASIK?
 - How long will I take to recover after LASIK?
 - How should I care for my eyes after LASIK?
-- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASIK surgery?
-
-## intent: lasik_refractivesurgery-postoperative-cornearefractive_177
-- What may be the side effects that I might face with LASIK?
-- Is lasik safe?
-- Does lasik have any danger
-- My eye feels dry after lasik, is it normal
-- What are the risks of LASIK?
-- What is the disadvantage to LASIK?
-- What after effects are there for LASIK?
-- What bad reaction can there be from LASIK?
-- Will I go blind if the surgery goes wrong? 
-- Is LASIK dangerous?
-- How can LASIK go wrong?
-- Can LASIK be harmful?
-- Can LASIK harm my eyes?
-- How long will the LASIK corrections last? 
-- Can my myopia come back after lasik
-- do i still need surgery after lasik
-- How long will the effects for LASIK last?
-- Can LASIK last forever?
-- Do I need a repeat laser after LASIK?
-- Is LASIK permanent?
-- Is LASIK forever?
-- Will my degree change after LASIK?
-- Will I need LASIK more than once?
-- Will my myopia/astigmatism come back after LASIK?
-- Will I need glasses again after LASIK?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASIK [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_178
 - What is LASIK Xtra TM ?
@@ -3986,7 +3247,7 @@ Why do we need the [macula](disease_type)?
 - What happens during LASIK Xtra TM ?
 - How does LASIK Xtra TM work?
 - How can LASIK Xtra TM help my eyes?
-- Is LASIK Xtra TM a surgery?
+- Is LASIK Xtra TM a [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_179
 - What are the advantages of LASIK Xtra TM ?
@@ -4013,7 +3274,7 @@ Why do we need the [macula](disease_type)?
 - What happens during LASEK?
 - How does LASEK work?
 - How can LASEK help my eyes?
-- Is LASEK a surgery?
+- Is LASEK a [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_181
 - What are the advantages of LASEK?
@@ -4041,18 +3302,18 @@ Why do we need the [macula](disease_type)?
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive_183
 - What is the post operative recovery like for LASEK?
-- What should I expect post LASEK surgery?
+- What should I expect post LASEK [surgery](technical_term)?
 - What is the postoperative care required for LASEK?
-- What happens after LASEK surgery?
-- What do I need to do after my LASEK surgery?
-- What will I feel after LASEK surgery?
+- What happens after LASEK [surgery](technical_term)?
+- What do I need to do after my LASEK [surgery](technical_term)?
+- What will I feel after LASEK [surgery](technical_term)?
 - What should I look out for after my LASEK Surgery?
-- What do I need to be careful about after my LASEK surgery?
-- What precautions must I take after LASEK surgery?
+- What do I need to be careful about after my LASEK [surgery](technical_term)?
+- What precautions must I take after LASEK [surgery](technical_term)?
 - How long do I need to rest after LASEK?
 - How long will I take to recover after LA LASEK SIK?
 - How should I care for my eyes after LASEK?
-- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASEK surgery?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASEK [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_184
 - What is ReLEx® Smile?
@@ -4070,7 +3331,7 @@ Why do we need the [macula](disease_type)?
 - What happens during ReLEx® Smile?
 - How does ReLEx® Smile work?
 - How can ReLEx® Smile help my eyes?
-- Is ReLEx® Smile a surgery?
+- Is ReLEx® Smile a [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_185
 - What are the benefits of ReLEx® Smile treatment over other laser vision correction procedures? 
@@ -4099,21 +3360,7 @@ Why do we need the [macula](disease_type)?
 - Why am I not suitable for LASIK?
 - If my degree is too high for LASIK, what can I do?
 - Are there other laser surgeries apart from LASIK?
-- Can I still go for surgery if I am not suitable for LASIK?
-
-## intent: keratoconus-condition-cornearefractive
-- What is keratoconus?
-- Why do I have keratoconus
-- What does cornea thinning mean
-- Why does keratoconus have high astigmatism?
-- My doctor told me my cornea is cone shaped, what does it mean?
-- What does keratoconus mean?
-- I have high astigmatism in both eyes, do I have keratoconus?
-- I have high astigmatism and deformity of my cornea, what is it?
-- I am diagnosed with keratoconus, what is it?
-- What happens in keratoconus?
-- Is keratoconus an infection?
-- Can keratoconus affect both eyes?
+- Can I still go for [surgery](technical_term) if I am not suitable for LASIK?
 
 ## intent: keratoconus-cause-cornearefractive
 - What is the cause of keratoconus?
@@ -4153,8 +3400,8 @@ Why do we need the [macula](disease_type)?
 - Will all keratoconus patient eventually need transplant
 - How is keratoconus treated?
 - What type of contact lens do I need for keratoconus?
-- I have keratoconus, do I need surgery?
-- When is surgery required in keratoconus?
+- I have keratoconus, do I need [surgery](technical_term)?
+- When is [surgery](technical_term) required in keratoconus?
 - Can keratoconus be treated by medications only?
 - Can keratoconus be treated with glasses?
 - Can keratoconus be cured?
@@ -4184,23 +3431,6 @@ Why do we need the [macula](disease_type)?
 - My eyes feel very dry and uncomfortable after wearing contact lenses, what should I do?
 - I cannot wear my contact lenses for long, what can I do?
 - If I wear my contact lens for many hours, is it bad for my eyes?
-
-## intent: episcleritis_scleritis-condition-cornearefractive
-- What is scleritis/episcleritis?
-- Is episcleritis dangerous
-- Will episcleritis go off on it's own
-- is scleritis and episcleritis the same
-- how is scleritis and episcleritis different
-- What is episcleritis?
-- What is scleritis?
-- What is the difference between episcleritis and scleritis?
-- I have red eyes and my doctor diagnosed me with episcleritis.
-- I have red eyes and I was diagnosed with scleritis.
-- I want to find out more about scleritis.
-- I want to find out more about episcleritis.
-- Is episcleritis and scleritis similar?
-- Explain what is episcleritis.
-- Explain what is scleritis.
 
 ## intent: episcleritis_scleritis-cause-cornearefractive
 - What is the cause of scleritis/episcleritis?
@@ -4380,7 +3610,7 @@ Why do we need the [macula](disease_type)?
 - How can diabetic retinopathy be cured?
 - Is there hope in diabetic retinopathy?
 - What are my options if I have diabetic retinopathy?
-- Must I undergo surgery for diabetic retinopathy?
+- Must I undergo [surgery](technical_term) for diabetic retinopathy?
 
 ## intent: diabeticretinopathy-treatment_laser-retina
 - How is panretinal photocoagulation performed?
@@ -4395,14 +3625,6 @@ Why do we need the [macula](disease_type)?
 - I have diabetes and I need laser, tell me more.
 - Is there any wound for panretinal photocoagulation?
 - When is panretinal laser performed?
-
-## intent: diabeticretinopathy-treatment_laser-retina_11
-- What are the risks of panretinal photocoagulation?
-- What are the side effects of laser for diabetes
-- What are the side effects of panretinal photocoagulation?
-- What are the complications of panretinal photocoagulation?
-- Is panretinal photocoagulation dangerous?
-- Is panretinal photocoagulation safe?
 
 ## intent: diabeticretinopathy-treatment_general-retina_13
 - Can the development of diabetic retinopathy be prevented?
@@ -4489,7 +3711,7 @@ Why do we need the [macula](disease_type)?
 - how to cure retinal detachment
 - what is the bubble in retinal detachment for
 - how to stop retinal detachment
-- can i do surgery for retinal detachment
+- can i do [surgery](technical_term) for retinal detachment
 - are there eye drops for retinal detachment
 - do i have to treat retinal detachment
 - how important is treating retinal detachment
@@ -4497,8 +3719,8 @@ Why do we need the [macula](disease_type)?
 - How to repair retina if I have retinal detachment
 - Is retina detachment operation risky
 - What is the chance of success for retinal detachment operation
-- Can I travel if after retina surgery
-- How long must I put my head down after retina surgery
+- Can I travel if after retina [surgery](technical_term)
+- How long must I put my head down after retina [surgery](technical_term)
 - How can retinal detachment be treated?
 - What are the treatment options for retinal detachment?
 - How do I treat retinal detachment?
@@ -4506,7 +3728,7 @@ Why do we need the [macula](disease_type)?
 - What can I do if the doctors tell me I have retinal detachment?
 - Is treatment for retinal detachment necessary?
 - How can retinal detachment be cured?
-- Is surgery the only option for retinal detachment?
+- Is [surgery](technical_term) the only option for retinal detachment?
 - What happens during retinal detachment repair?
 - What is the success like for retinal detachment repair?
 - How long does the gas bubble take to dissolve?
@@ -4539,21 +3761,6 @@ Why do we need the [macula](disease_type)?
 - I had a knock to my head/eye, will I get a retinal tear?
 - Is retinal tear due to genetic issues?
 
-## intent: retinaltear-condition-retina
-- What is a lattice degeneration?
-- What is a lattice
-- My doctor said I have weak areas in my retina, what does it mean
-- What is lattice degeneration?
-- I have an area of weakness in my retina, what does it mean?
-- Where do lattice degeneration occur?
-- I have lattice degeneration of the retina, what does it mean?
-- What does lattice degeneration result in?
-- Is lattice degeneration dangerous?
-- Why do I have lattice degeneration?
-- Does lattice degeneration cause retinal tears/detachments?
-- Does lattice degeneration need laser?
-- Does lattice degeneration need to be treated?
-
 ## intent: retinaltear-treatment_general-retina
 - How is retinal tear treated?
 - How to repair retinal tear
@@ -4564,7 +3771,7 @@ Why do we need the [macula](disease_type)?
 - Can retinal tear heal on its own?
 - How is retinal tear treated?
 - How to repair retinal tear
-- Do I need surgery for retinal tear?
+- Do I need [surgery](technical_term) for retinal tear?
 - Can a retinal tear stick back on its own?
 - Can I delay treatment for retinal tear?
 - What is the risk if I do not treat my retinal tear?
@@ -4582,49 +3789,19 @@ Why do we need the [macula](disease_type)?
 - Is laser for retinopexy risky?
 - Will my eye be numb for laser retinopexy?
 
-## intent: macularhole-condition-retina
-- What is a macular hole and what are the symptoms?
-- What is Macular hole
-- Why is there a hole in the centre of my eye
-- Can Macular Hole affect my vision
-- What will I see if I have Macular hole
-- What is a macular hole?
-- Why did I get a hole in my macula?
-- What will I see if I have a macular hole?
-- Does macular hole cause poor vision?
-- Is macular hole dangerous?
-- Can macular hole make my vision blur?
-- Is macular hole the cause for my blur vision?
-- Why is there a hole in my macula?
-- Does macular hole cause my vision to be distorted?
-- Tell me more about macular hole.
-
 ## intent: macularhole-treatment_general-retina
 - What is the treatment of full thickness macular hole?
 - What is the treatment for Macular holw
 - How is macular hole treated?
 - What is the treatment of macular hole?
 - When should macular hole be treated?
-- I have a hole in the centre of my retina, do I need surgery?
-- What type of surgery is required for macular hole?
-- Can I travel after my macular hole surgery?
+- I have a hole in the centre of my retina, do I need [surgery](technical_term)?
+- What type of [surgery](technical_term) is required for macular hole?
+- Can I travel after my macular hole [surgery](technical_term)?
 - Can I see after macular hole operation?
 - Is there medicine for macular hole?
 - Does [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} help for macular hole?
-- Do all macular holes need to undergo surgery?
-
-## intent: uveitis-condition-retina
-- What is uveitis?
-- What is inflammation of the middle of the eye
-- What does inflammation of the eye mean?
-- What do you mean by inflammation of the uvea?
-- What is the uvea?
-- What happens when the eye is inflammed?
-- What does uveitis mean?
-- What are the types of uveitis?
-- Are there different types of uveitis?
-- Which part of the eye is involved in uveitis?
-- Is uveitis the same as eye inflammation?
+- Do all macular holes need to undergo [surgery](technical_term)?
 
 ## intent: uveitis-cause-retina
 - What causes uveitis?
@@ -4673,13 +3850,13 @@ Why do we need the [macula](disease_type)?
 - What do I need to do to confirm I have uveitis?
 - Should I see an eye doctor to see if I have uveitis?
 - Can uveitis be confirmed by blood tests?
-- Do I need to do surgery to confirm uveitis?
+- Do I need to do [surgery](technical_term) to confirm uveitis?
 - What should I do to see if I have uveitis?
 
 ## intent: uveitis-treatment_general-retina
 - How is uveitis treated?
 - is uveitis curable
-- must i do surgery for uveitis
+- must i do [surgery](technical_term) for uveitis
 - is an operation needed for uveitis
 - can medicine cure uveitis
 - what is the cure for uveitis
@@ -4740,7 +3917,7 @@ Why do we need the [macula](disease_type)?
 - How long do I need treatment for AMD?
 - How many injections will I need for AMD?
 - What are the different types of medicine/injections for AMD?
-- Can surgery improve my vision if I have AMD?
+- Can [surgery](technical_term) improve my vision if I have AMD?
 - Is anti-VEGF injections the main treatment for AMD?
 - Will my eyesight improve with treatment?
 
@@ -4796,44 +3973,6 @@ Why do we need the [macula](disease_type)?
 - How frequent do I need to receive anti-VEGF?
 - Is anti-VEGF injection an operation?
 
-## intent: amd-treatment_general-retina_39
-- What is the risk of anti-VEGF?
-- What are the risks of anti-VEGF injection?
-- Is anti-VEGF injection painful?
-- Is anti-VEGF injection dangerous?
-- What are the side-effects of anti-VEGF injection?
-- What can go wrong with anti-VEGF injection?
-- Can I go blind from anti-VEGF injection?
-- Are side-effects with anti-VEGF injection common?
-- Is anti-VEGF injection a high risk procedure?
-- Can anti-VEGF injection cause blindness?
-- What do I need to know about anti-VEGF injection?
-
-## intent: amd-treatment_general-retina_40
-- What is the risk of FFA/ICG?
-- What are the risks of FFA/ICG?
-- What will I feel when I go for FFA/ICG?
-- Are there any side effects with FFA/ICG?
-- What are the issues with FFA/ICG?
-- Is there any risk for FFA/ICG?
-- Can FFA/ICG harm the kidneys?
-- How are the dyes in FFA/ICG gotten rid of?
-- How long will the whole FFA/ICG procedure last?
-- What are some of the side effects of FFA/ICG?
-- What are the common risks of FFA/ICG?
-
-## intent: epiretinalmembrane-condition-retina
-- What is an epiretinal membrane (ERM)?
-- What is the membrane on my central retina?
-- What is the thin layer of scar on my macula?
-- Where is the ERM?
-- Is the ERM on the retina?
-- Where does the ERM form?
-- I have an ERM.
-- What does epiretinal membrane mean?
-- Is ERM a scar?
-- Is ERM part of the retina?
-
 ## intent: epiretinalmembrane-cause-retina
 - What are the causes of ERM?
 - What is the cause of ERM?
@@ -4864,25 +4003,13 @@ Why do we need the [macula](disease_type)?
 - Does ERM need treatment?
 - What is the treatment for ERM.
 - Can I leave my ERM alone?
-- Is surgery required for ERM?
+- Is [surgery](technical_term) required for ERM?
 - Can ERM go away on its own?
 - Do [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}/vitamins help for ERM?
-- How is surgery performed for ERM?
+- How is [surgery](technical_term) performed for ERM?
 - Can ERM be treated?
-- Will my vision improve after ERM surgery?
-- Will the distortion of my vision be cured after ERM surgery?
-
-## intent: posteriorvitreousdetachment-condition-retina
-- What is posterior vitreous detachment?
-- Why does the vitreous gel detach from the retina?
-- Is posterior vitreous detachment the same as retinal detachment?
-- Can PVD cause retinal detachment?
-- How does posterior vitreous detachment occur?
-- When does PVD develop?
-- Does everyone get PVD?
-- What happens in PVD?
-- Is PVD a natural thing?
-- Is PVD common?
+- Will my vision improve after ERM [surgery](technical_term)?
+- Will the distortion of my vision be cured after ERM [surgery](technical_term)?
 
 ## intent: retinalveinocclusion-condition-retina
 - What is retinal vein occlusion and its cause?
@@ -4958,7 +4085,7 @@ Why do we need the [macula](disease_type)?
 - Can night blindness be treated?
 - Will taking vitamins work for night blindness?
 - Is there gene treatment/therapy for night blindness?
-- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} or surgery treat night blindness?
+- Can [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} or [surgery](technical_term) treat night blindness?
 - What should I avoid if I have night blindness?
 - How can I confirm if I have night blindness?
 - Is there any treatment for night blindness?
@@ -4966,18 +4093,6 @@ Why do we need the [macula](disease_type)?
 - How can I prevent my child from getting my night blindness gene?
 - Is there any cure for night blindness?
 - What are the tests to confirm if I have night blindness?
-
-## intent: amblyopia-condition-paediatricophthalmology
-- What is amblyopia?
-- What is lazy eyes?
-- When would my child have lazy eyes?
-- Is squint a form of lazy eyes?
-- Is amblyopia and lazy eyes the same?
-- What happens if my child has lazy eyes?
-- At what age can my child get lazy eyes?
-- Can my child develop amblyopia in both eyes?
-- Is amblyopia a brain or eye condition?
-- When is amblyopia permanent?
 
 ## intent: amblyopia-cause-paediatricophthalmology
 - What is the cause of amblyopia?
@@ -5036,21 +4151,6 @@ Why do we need the [macula](disease_type)?
 - How fast can lazy eyes be treated?
 - When is the best time to treat lazy eyes?
 
-## intent: straibismus-condition-paediatricophthalmology
-- What is a squint?
-- Is squint dangerous
-- why my eyes turn in
-- Why my eyes not straight
-- My child’s eye seems to be slanted, what is it?
-- My child seems to be looking elsewhere when I talk to him, what is happening?
-- Why does my child’s eyes move out sometimes?
-- Why does my child’s eyes move in sometimes?
-- When does my child have a squint?
-- What are the different types of squint?
-- Why does my child’s squint appear on and off?
-- Is squint a dangerous eye condition?
-- Is squint an alignment problem of the eye
-
 ## intent: straibismus-cause-paediatricophthalmology
 - What are the causes of squint in children?
 - What is causing my child’s eyes to be slanted?
@@ -5083,37 +4183,24 @@ Why do we need the [macula](disease_type)?
 - How will the doctor treat my child’s squint?
 - How can my child’s squint be treated?
 - How is squint treated in children?
-- Does my child need to undergo surgery for his squint?
+- Does my child need to undergo [surgery](technical_term) for his squint?
 - Can my child’s squint be improved with glasses?
 - Does patching work for childhood squint?
 - Are there eye exercises for childhood squint?
 - Can eye exercises improve my child’s squint control?
-- Does all squint to be treated with surgery?
+- Does all squint to be treated with [surgery](technical_term)?
 
 ## intent: straibismus-treatment_surgical-paediatricophthalmology
-- How is squint surgery performed?
-- Is squint surgery done under general anaesthesia?
+- How is squint [surgery](technical_term) performed?
+- Is squint [surgery](technical_term) done under general anaesthesia?
 - What would the surgeon do during squint operation?
 - How does the surgeon align the eyes during squint operation?
 - Will there be stitches after squint operation?
-- Will squint surgery be done on one or both eyes?
-- What happens if my child goes for squint surgery?
-- I want to know more about squint surgery.
-- Tell me more about squint surgery.
-- What does squint surgery involve?
-
-## intent: straibismus-treatment_surgical-paediatricophthalmology_11
-- What are the risks of squint surgery?
-- Is squint surgery risky?
-- What are the risks of squint surgery?
-- What are the side effects of squint surgery?
-- Can I go blind from squint surgery?
-- Will the squint come back after squint surgery?
-- Is the risk of infection high after squint surgery?
-- What are the risks of general anaesthesia with squint surgery?
-- Can squint surgery fail?
-- Is squint surgery considered high risk?
-- What are the dangers of squint surgery?
+- Will squint [surgery](technical_term) be done on one or both eyes?
+- What happens if my child goes for squint [surgery](technical_term)?
+- I want to know more about squint [surgery](technical_term).
+- Tell me more about squint [surgery](technical_term).
+- What does squint [surgery](technical_term) involve?
 
 ## intent: blinking-cause-paediatricophthalmology
 - Why does my child keep blinking?
@@ -5179,18 +4266,6 @@ Why do we need the [macula](disease_type)?
 - Is it true that persistent rubbing can cause blindness?
 - Can persistent rubbing damage the eye permanently?
 
-## intent: allergicconjunctivitis-cause_condition-paediatricophthalmology
-- What is allergic [conjunctivitis](disease_type)?
-- What causes allergic [conjunctivitis](disease_type)?
-- How does allergic [conjunctivitis](disease_type) look like?
-- What are the symptoms of allergic [conjunctivitis](disease_type)?
-- What triggers allergic [conjunctivitis](disease_type)?
-- Who gets allergic [conjunctivitis](disease_type)?
-- What does allergic [conjunctivitis](disease_type) mean?
-- How do I get allergic [conjunctivitis](disease_type)?
-- How does allergic [conjunctivitis](disease_type) occur?
-- What will I feel if I have allergic [conjunctivitis](disease_type)?
-
 ## intent: allergicconjunctivitis-treatment_general-paediatricophthalmology
 - How is allergic [conjunctivitis](disease_type) treated?
 - How to treat allergy
@@ -5254,8 +4329,8 @@ Why do we need the [macula](disease_type)?
 - How is nasolacrimal duct obstruction treated in a child?
 - What are the possible treatments for tearing in a baby?
 - How can tearing in a baby be treated?
-- Does tearing in a baby need surgery?
-- When does my baby need surgery for tear blockage?
+- Does tearing in a baby need [surgery](technical_term)?
+- When does my baby need [surgery](technical_term) for tear blockage?
 
 ## intent: epiblepharon-condition-paediatricophthalmology
 - What is epiblepharon?
@@ -5274,8 +4349,8 @@ Why do we need the [macula](disease_type)?
 - How is epiblepharon treated?
 - How is in-turned eyelashes in a child treated?
 - When does in-turned eyelashes need treatment?
-- Does epiblepharon need surgery?
-- Is epiblephron treated using surgery?
+- Does epiblepharon need [surgery](technical_term)?
+- Is epiblephron treated using [surgery](technical_term)?
 - What would the Ophthalmologist do for epiblepharon?
 - Is epiblepharon treatable?
 - My child has epiblepharon, what can I do?
@@ -5316,50 +4391,12 @@ Why do we need the [macula](disease_type)?
 - Can chalazion/stye be treated with [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}?
 - Will [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} work for chalazion/stye?
 - Do I need to take oral antibiotics for chalazion/stye?
-- Do I need surgery for chalazion/stye?
-- How is surgery for chalazion/stye done?
-- Is surgery for chalazion/stye painful?
+- Do I need [surgery](technical_term) for chalazion/stye?
+- How is [surgery](technical_term) for chalazion/stye done?
+- Is [surgery](technical_term) for chalazion/stye painful?
 - How can I prevent chalazion/stye from coming back?
 - How fast with medicine work if I have chalazion/stye?
 - Can chalazion/stye come back?
-
-## intent: chalazion_stye-treatment_surgical-paediatricophthalmology
-- What is the risk of incision and drainage of chalazion?
-- Is surgery for chalazion/stye dangerous?
-- What are the risks to do operation for chalazion/stye?
-- Will cutting the chalazion/stye be painful?
-- Will cutting the chalazion/stye leave a scar?
-- Can the chalazion/stye come back after draining it?
-- What are the dangers if the chalazion/stye is drained?
-- What are the issues with surgery for chalazion/stye?
-- What are the side effects of cutting my chalazion/stye?
-- Will surgery for chalazion/stye cause a scar?
-- Can I go blind from operating on my chalazion/stye?
-
-## intent: retinopathyofprematurity-condition-paediatricophthalmology
-- What is retinopathy of prematurity?
-- How do premature babies get retina problems?
-- Why do premature babies get retina problems?
-- How does retinopathy of prematurity develop?
-- What causes retina problems in premature babies?
-- Why did my baby get retinopathy of prematurity?
-- My baby is premature, why did he get eye problems?
-- Is it true that premature babies can get retina problems?
-- What does retinopathy of prematurity mean?
-- What does retinopathy in a premature baby mean?
-
-## intent: retinopathyofprematurity-condition-paediatricophthalmology_30
-- Which babies are at risk of developing retinopathy of prematurity?
-- Do all babies develop retinopathy of prematurity?
-- Which babies will develop retinopathy of prematurity?
-- My baby is born premature, is he at high risk of getting retina problems?
-- When do premature babies get retina problems?
-- What is the risk of premature babies getting retina problems?
-- Are premature babies at high risk of getting retinopathy of prematurity?
-- Which babies are at risk of getting retinopathy of prematurity?
-- If my baby is born very early, is the risk of retina problems high?
-- If my baby’s birth weight is very low, is the risk of retina problems high?
-- What makes premature babies at higher risk for retina problems?
 
 ## intent: retinopathyofprematurity-condition-paediatricophthalmology_31
 - How does retinopathy of prematurity progress?
@@ -5402,7 +4439,7 @@ Why do we need the [macula](disease_type)?
 ## intent: retinopathyofprematurity-treatment_general-paediatricophthalmology
 - What is the treatment of retinopathy of prematurity?
 - How can retinopathy of prematurity be treated?
-- Does my baby need surgery for retinopathy of prematurity?
+- Does my baby need [surgery](technical_term) for retinopathy of prematurity?
 - Are there other options apart from laser to treat retinopathy of prematurity?
 - How is retinopathy of prematurity treated?
 - My doctor suggested a laser for my premature baby, is it right?
@@ -5410,18 +4447,6 @@ Why do we need the [macula](disease_type)?
 - Is there medication that can treat retinopathy of prematurity?
 - Is laser the best treatment for retinopathy of prematurity?
 - Is laser the main treatment for retinopathy of prematurity?
-
-## intent: retinopathyofprematurity-treatment_laser-paediatricophthalmology
-- What are the risks of laser for retinopathy of prematurity?
-- Is laser for premature babies safe?
-- Is it dangerous to perform laser on premature babies?
-- What are the problems with laser for retinopathy of prematurity?
-- What are the long term issues with laser in premature babies?
-- What are the short term issues with laser in premature babies?
-- Can laser treatment fail in premature babies?
-- What are the issues with laser in premature babies?
-- Can laser lead to permanent damage to premature babies?
-- Is laser a risky procedure for premature babies?
 
 ## intent: amblyopia-treatment_general-paediatricophthalmology_36
 - What is patching?
@@ -5449,20 +4474,6 @@ Why do we need the [macula](disease_type)?
 - Can patching fail?
 - At what age can I still patch my child?
 
-## intent: colourblindness-condition-paediatricophthalmology
-- What is colour blindness?
-- Colour blind how
-- I cant see red
-- What is colour deficiency?
-- What are the symptoms of colour blindness?
-- What are the types of colour blindness?
-- Is there a test for colour blindness?
-- What do people who are colour blind see?
-- What can colour blind people see?
-- What colours are affected in colour blindness?
-- What are the degrees of colour blindness?
-- How do I know if I am colour blind?
-
 ## intent: colourblindness-cause-paediatricophthalmology
 - What is the most common cause of colour blindness?
 - What are the causes of colour blindness?
@@ -5479,18 +4490,6 @@ Why do we need the [macula](disease_type)?
 - When is colour blindness dangerous?
 - When should I see a doctor about colour blindness?
 
-## intent: ptosis-condition-oculoplastic
-- What is ptosis?
-- What does ptosis mean?
-- Is ptosis and droopy eyelid the same?
-- Does ptosis mean the eyelid is falling down?
-- What is the layman term for ptosis?
-- Please tell me what is ptosis.
-- I do not understand what ptosis is.
-- Is ptosis an eyelid abnormality?
-- What is droopy eyelid?
-- My eyelid seems to be dropping, is it natural?
-
 ## intent: ptosis-cause-oculoplastic
 - What causes ptosis?
 - What causes my eyelid to droop?
@@ -5498,7 +4497,7 @@ Why do we need the [macula](disease_type)?
 - Is droopy eyelid due to age?
 - Is droopy eyelid due to stroke?
 - My eyelid is dropping, is it due to weakness?
-- Is it possible for eyelid to droop after cataract surgery?
+- Is it possible for eyelid to droop after cataract [surgery](technical_term)?
 - I was hit in the eye, can it cause my eyelid to droop?
 - Does contact lens use cause ptosis?
 - Why is my eyelid drooping?
@@ -5522,52 +4521,28 @@ Why do we need the [macula](disease_type)?
 - What is the treatment of ptosis?
 - How can I treat my droopy eyelids?
 - What can I do to help my droopy eyelids?
-- Is ptosis treated by surgery?
-- Do I need surgery for droopy eyelids?
+- Is ptosis treated by [surgery](technical_term)?
+- Do I need [surgery](technical_term) for droopy eyelids?
 - Are there eye exercises for droopy eyelids?
 - Can droopy eyelids recover?
 - What is the treatment for ptosis?
-- Should I go for ptosis surgery?
+- Should I go for ptosis [surgery](technical_term)?
 - I have droopy eyelids, how can I improve my appearance?
-- Is surgery the main treatment for ptosis?
-
-## intent: ptosis-treatment_surgical-oculoplastic
-- What are the risks of ptosis surgery?
-- Is surgery for my droopy eyelid risky?
-- What are the dangers of ptosis surgery?
-- I want to lift up my eyelids, what are the risks?
-- Are there any side effects from ptosis surgery?
-- What can go wrong with ptosis surgery?
-- Are there any problems with ptosis surgery?
-- Is ptosis surgery high risk?
-- I am on blood thinners, do I need to stop for ptosis surgery?
-- I would like to know the risks of ptosis surgery
+- Is [surgery](technical_term) the main treatment for ptosis?
 
 ## intent: ptosis-treatment_surgical-oculoplastic_6
-- Is ptosis surgery medisave claimable?
-- Can sponsor double eyelid surgery
-- Can I claim medisave for ptosis surgery?
-- Is ptosis surgery subsidised by the government?
-- I am a subsidised patient, can I go for ptosis surgery?
-- When can a subsidised patient undergo ptosis surgery?
-- Which insurance can I claim for ptosis surgery?
-- How much does ptosis surgery cost?
-- Can ptosis surgery be paid using medisave?
-- Can I use medisave for ptosis surgery?
-- What subsidies are available for ptosis surgery?
-- Is ptosis surgery expensive?
-
-## intent: entropion-condition-oculoplastic
-- What is entropion?
-- What does entropion mean?
-- What is in-turning of eyelids called?
-- My eyelids look to be turned inwards, what is it?
-- Is in-turning of my eyelids normal?
-- What is in-turning of the eyelids called?
-- Please explain what entropion is.
-- Tell me more about entropion.
-- What happens in entropion?
-- What do I get with entropion?
+- Is ptosis [surgery](technical_term) medisave claimable?
+- Can sponsor double eyelid [surgery](technical_term)
+- Can I claim medisave for ptosis [surgery](technical_term)?
+- Is ptosis [surgery](technical_term) subsidised by the government?
+- I am a subsidised patient, can I go for ptosis [surgery](technical_term)?
+- When can a subsidised patient undergo ptosis [surgery](technical_term)?
+- Which insurance can I claim for ptosis [surgery](technical_term)?
+- How much does ptosis [surgery](technical_term) cost?
+- Can ptosis [surgery](technical_term) be paid using medisave?
+- Can I use medisave for ptosis [surgery](technical_term)?
+- What subsidies are available for ptosis [surgery](technical_term)?
+- Is ptosis [surgery](technical_term) expensive?
 
 ## intent: entropion-cause-oculoplastic
 - What is the cause of entropion?
@@ -5595,42 +4570,17 @@ Why do we need the [macula](disease_type)?
 - What will I experience if I have in-turned eyelids?
 - Will in-turned eyelids irritate the eye?
 
-## intent: entropion-condition-oculoplastic_10
-- What are the complications of entropion?
-- What problems can in-turned eyelids cause?
-- What are the complications of entropion?
-- What are the issues with in-turned eyelids?
-- Can entropion affect my vision?
-- Can entropion affect my degree?
-- Can in-turned eyelashes cause infection?
-- Can I recover from in-turned eyelids?
-- How severe can in-turned eyelids be?
-- What are the problems with in-turned eyelids?
-- What can happen with in-turned eyelids?
-
 ## intent: entropion-treatment_general-oculoplastic
 - How is entropion treated?
 - What can I do if I have in-turned eyelids?
 - Is [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} sufficient to treat in-turned eyelids?
 - How is in-turned eyelids corrected?
 - What can be done for in-turned eyelids?
-- Is surgery required for in-turned eyelids?
+- Is [surgery](technical_term) required for in-turned eyelids?
 - What will the eye doctor do for entropion?
-- Can surgery be avoided for entropion?
+- Can [surgery](technical_term) be avoided for entropion?
 - Is entropion difficult to treat?
 - How can in-turned eyelids be turned out?
-
-## intent: entropion-treatment_surgical-oculoplastic
-- What are the risks of entropion surgery?
-- Is surgery for my in-turned eyelids risky?
-- What are the dangers of entropion surgery?
-- I want to correct my in-turned eyelids, what are the risks?
-- Are there any side effects from entropion surgery?
-- What can go wrong with entropion surgery?
-- Are there any problems with entropion surgery?
-- Is entropion surgery high risk?
-- I am on blood thinners, do I need to stop for ptosis surgery?
-- I would like to know the risks of ptosis surgery.
 
 ## intent: eyebags-condition-oculoplastic
 - How does ageing affect the eyelids?
@@ -5649,13 +4599,13 @@ Why do we need the [macula](disease_type)?
 ## intent: eyebags-treatment_surgical-oculoplastic
 - What is blepharoplasty?
 - Can cut out eye bag
-- What is eyebag surgery?
+- What is eyebag [surgery](technical_term)?
 - What is blepharoplasty?
 - Can cut out eye bag
-- How does eyebag surgery help me?
+- How does eyebag [surgery](technical_term) help me?
 - Is blepharoplasty referring to upper or lower eyelid?
 - Is blepharoplasty only for eyebags?
-- Is blepharoplasty an aesthetic surgery?
+- Is blepharoplasty an aesthetic [surgery](technical_term)?
 - Does blepharoplasty improve my vision?
 - What does blepharoplasty do?
 - What does blepharoplasty involve?
@@ -5663,29 +4613,16 @@ Why do we need the [macula](disease_type)?
 
 ## intent: eyebags-treatment_surgical-oculoplastic_15
 - How is blepharoplasty performed?
-- How is eyebag surgery performed?
+- How is eyebag [surgery](technical_term) performed?
 - How is blepharoplasty performed?
 - What is done during blepharoplasty?
 - I am advised to go for blepharoplasty, what does it mean?
 - What anaesthesia will I receive for blepharoplasty?
 - What does the surgeon do during blepharoplasty?
-- Is blepharoplasty a small incision surgery?
+- Is blepharoplasty a small incision [surgery](technical_term)?
 - Where will the cuts be made in blepharoplasty?
 - Will there be stitches after blepharoplasty?
 - Where will the scars be after blepharoplasty?
-
-## intent: eyebags-treatment_surgical-oculoplastic_16
-- What are the complications and risks of blepharoplasty?
-- What are the risks of blepharoplasty?
-- What are the dangers of blepharoplasty?
-- Can blepharoplasty cause blindness?
-- Can there be scarring after blepharoplasty?
-- What are the problems with blepharoplasty?
-- I am going for blepharoplasty, what should I be careful of?
-- Can my eyebags come back after blepharoplasty?
-- Is blepharoplasty a dangerous procedure?
-- Is blepharoplasty a major surgery?
-- Are the risks of blepharoplasty permanent?
 
 ## intent: eyebags-postoperative-oculoplastic
 - How is the post-blepharoplasty recovery like?
@@ -5695,7 +4632,7 @@ Why do we need the [macula](disease_type)?
 - How long does it take to recover from blepharoplasty?
 - What do I need to do after blepharoplasty?
 - How do I prevent bleeding after blepharoplasty?
-- What will I feel after blepharoplasty surgery?
+- What will I feel after blepharoplasty [surgery](technical_term)?
 - Can I recover quickly after blepharoplasty?
 - Do the bruises disappear soon after blepharoplasty?
 - What can I do to reduce the bruising after blepharoplasty?
@@ -5743,39 +4680,27 @@ Why do we need the [macula](disease_type)?
 - What are the treatment options for nasolacrimal duct blockage?
 - How is tear duct blockage treated?
 - How can I unblock my tear duct blockage?
-- Does tear duct blockage need surgery?
-- Is surgery the only option for tear duct blockage?
+- Does tear duct blockage need [surgery](technical_term)?
+- Is [surgery](technical_term) the only option for tear duct blockage?
 - Can eye exercises or massage help tear duct blockage?
 - How can I check if I have tear duct blockage?
 - If I have an infection due to tear duct blockage, what is the treatment?
 - Which test will be to confirm that I have tear duct blockage?
-- What is the surgery for tear duct blockage called?
+- What is the [surgery](technical_term) for tear duct blockage called?
 - What will my doctor do to clear my blocked tear duct?
 
-## intent: nasolacrimalductblockage-treatment_surgical-oculoplastic
-- What are the risks of DCR surgery?
-- Is surgery for my blocked tear duct risky?
-- What are the dangers of DCR surgery?
-- Can the tube implant in DCR surgery cause problems?
-- Are there any side effects from tear duct surgery?
-- What can go wrong with DCR surgery?
-- Are there any problems with DCR surgery?
-- Is tear-duct surgery high risk?
-- I am on blood thinners, do I need to stop for tear duct surgery?
-- What are the issues with DCR surgery using a tube?
-
 ## intent: nasolacrimalductblockage-treatment_surgical-oculoplastic_23
-- Why is there a need for silicone tube implant for DCR surgery?
+- Why is there a need for silicone tube implant for DCR [surgery](technical_term)?
 - Why is there a silicone tube in my nose?
 - Why do I need a silicone tube after DCR?
 - When can the silicone tube be removed after DCR?
 - Is my tearing after DCR due to the stent?
-- What is the use of the silicone implant for tear duct surgery?
-- Do all patients going for tear duct surgery need silicone tube implant?
-- Do all doctors use silicone tube implants for DCR surgery?
+- What is the use of the silicone implant for tear duct [surgery](technical_term)?
+- Do all patients going for tear duct [surgery](technical_term) need silicone tube implant?
+- Do all doctors use silicone tube implants for DCR [surgery](technical_term)?
 - When are silicone tubes used for DCR?
 - When can I remove the DCR tubes?
-- How many months will the silicone tubes need to be inside after DCR surgery?
+- How many months will the silicone tubes need to be inside after DCR [surgery](technical_term)?
 
 ## intent: nasolacrimalductblockage-postoperative-oculoplastic
 - What should I do if there is bleeding after DCR?
@@ -5784,14 +4709,11 @@ Why do we need the [macula](disease_type)?
 - Does pressing on the wound stop bleeding after DCR operation?
 - I have bleeding after DCR, I do not know what to do.
 - What should I do if I my nose bleeds after DCR operation?
-- Can hot drinks help to stop bleeding after DCR surgery?
-- Should I take hot or cold drinks after DCR surgery to stop bleeding?
+- Can hot drinks help to stop bleeding after DCR [surgery](technical_term)?
+- Should I take hot or cold drinks after DCR [surgery](technical_term) to stop bleeding?
 - I am having severe bleeding after DCR, should I stop my blood thinners?
 - I have severe bleeding after DCR, should I go to the hospital?
 - I just had DCR operation. There is bleeding from the nose. What should I do?
-
-## intent: thyroideyedisease-condition-oculoplastic
-- What is thyroid eye disease?
 
 ## intent: thyroideyedisease-cause-oculoplastic
 - What causes thyroid eye disease?
@@ -5832,51 +4754,39 @@ Why do we need the [macula](disease_type)?
 - What are the treatments of thyroid eye disease?
 - Can thyroid eye disease be treated by medication?
 - When will I need steroids for thyroid eye disease?
-- I have thyroid eye disease, when is surgery required?
+- I have thyroid eye disease, when is [surgery](technical_term) required?
 - Can thyroid eye disease stabilise without treatment?
 - Why do I have to go for radiation for thyroid eye disease?
 - Are there side effects with steroids for thyroid eye disease?
-- Can I do surgery for my squint if I have thyroid eye disease?
+- Can I do [surgery](technical_term) for my squint if I have thyroid eye disease?
 - I have thyroid eye disease, what should I do?
 - If I stop smoking, will it help my thyroid eye disease?
-
-## intent: dermatochalasis-condition-oculoplastic
-- What is dermatochalasis?
-- There is a fold of skin on my upper eyelid, what is it likely to be?
-- Why is there a fold of skin on my upper eyelid?
-- Is the baggy fold of skin due to old age?
-- Is dermatochalasis due to old age?
-- What is the fold of skin on my upper lid?
-- My upper lid skin is blocking my vision, what is it?
-- Is dermatochalsis redundant skin?
-- Can dermatochalsis get worse and block my vision?
-- Is the excess fold of skin on my eyelids due to stretching?
 
 ## intent: dermatochalasis-treatment_general-oculoplastic
 - What is the treatment for dermatochalasis?
 - How is dermatochalasis treated?
 - What is the treatment for dermatochalsis?
-- I have dermatochalsis, do I need to go for surgery?
+- I have dermatochalsis, do I need to go for [surgery](technical_term)?
 - Do I need to cut my dermatochalsis away?
-- Do I need surgery for dermatochalsis?
+- Do I need [surgery](technical_term) for dermatochalsis?
 - Is dermatochalasis treated by blepharoplasty?
-- Does dermatochalasis need surgery?
-- When should I go for surgery for dermatochalsis?
+- Does dermatochalasis need [surgery](technical_term)?
+- When should I go for [surgery](technical_term) for dermatochalsis?
 - Is treatment for dermatochalasis?
 - How do I get rid of my dermatochalasis?
 
 ## intent: dermatochalasis-treatment_surgical-oculoplastic
 - Is blepharoplasty for dermatochalsis medisave claimable?
-- Can I claim medisave for dermatochalasis surgery?
+- Can I claim medisave for dermatochalasis [surgery](technical_term)?
 - Is blepharoplasty subsidised by the government?
 - I am a subsidised patient, can I go for blepharoplasty?
-- When can a subsidised patient undergo blepharoplasty surgery?
-- Which insurance can I claim for blepharoplasty surgery?
-- How much does blepharoplasty surgery cost?
-- Can dermatochalasis surgery be paid using medisave?
-- Can I use medisave for blepharoplasty surgery?
-- What subsidies are available for blepharoplasty surgery?
-- Is blepharoplasty surgery expensive?
+- When can a subsidised patient undergo blepharoplasty [surgery](technical_term)?
+- Which insurance can I claim for blepharoplasty [surgery](technical_term)?
+- How much does blepharoplasty [surgery](technical_term) cost?
+- Can dermatochalasis [surgery](technical_term) be paid using medisave?
+- Can I use medisave for blepharoplasty [surgery](technical_term)?
+- What subsidies are available for blepharoplasty [surgery](technical_term)?
+- Is blepharoplasty [surgery](technical_term) expensive?
 
 ## intent: bell'spalsy-condition-oculoplastic
 - What are the symptoms and signs of Bell’s palsy?
@@ -5904,24 +4814,11 @@ Why do we need the [macula](disease_type)?
 - What is Bell’s palsy?
 - When I sleep, my eye will remain open, what is the reason?
 
-## intent: lagophthalmos-condition-oculoplastic_34
-- What are the complications of lagophthalmos?
-- What are the issues if I cannot close my eyes?
-- If I cannot close my eyes, will it affect my vision?
-- Can inadequate closure of eyes cause blindness?
-- If I cannot close my eyes, is it serious?
-- Can my eyes get infected if I cannot close my eyes fully?
-- What are the problems if I cannot close my eyes?
-- Will inadequate closure of my eyes cause pain?
-- What are the risks if I cannot close my eyes?
-- What problems will I get if I cannot close my eyes?
-- If I cannot close my eyes, will it affect my vision?
-
 ## intent: lagophthalmos-treatment_general-oculoplastic
 - What is the treatment for lagophthalmos?
 - What is the treatment for insufficient closure of the eyes?
 - If I can’t close my eyes fully, what can I do?
-- Do I need surgery if I cannot close my eyes fully?
+- Do I need [surgery](technical_term) if I cannot close my eyes fully?
 -  Should I put [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} if I cannot close my eyes fully?
 - Should I see a doctor if I cannot shut my eyes?
 - What should I do if I cannot close my eyes?
@@ -6028,7 +4925,7 @@ Why do we need the [macula](disease_type)?
 
 ## intent: blepharospasm_hemifacialspasm-treatment_general-neuroophthalmology
 - What is the treatment for blepharospasm/hemifacial spasm?
-- Do I need surgery for blepharospasm/hemifacial spasm?
+- Do I need [surgery](technical_term) for blepharospasm/hemifacial spasm?
 - Is there [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}/creams to reduce the spasm?
 - Is botox injection effective for blepharospasm/hemifacial spasm?
 - What is the recommended treatment for blepharospasm/hemifacial spasm?
@@ -6089,19 +4986,6 @@ Why do we need the [macula](disease_type)?
 - Will early treatment be helpful for optic neuritis?
 - Do all optic neuritis need treatment?
 
-## intent: multiplesclerosis-condition-neuroophthalmology
-- What is multiple sclerosis and its complications?
-- What is multiple sclerosis?
-- What are the issues with multiple sclerosis?
-- Why is multiple sclerosis so serious?
-- Should I be worried if I am diagnosed with multiple sclerosis?
-- How does multiple sclerosis affect me?
-- What symptoms will I feel if I have multiple sclerosis?
-- How serious are the side effects of multiple sclerosis?
-- Is multiple sclerosis painful?
-- What organ does multiple sclerosis affect?
-- What are symptoms of multiple sclerosis?
-
 ## intent: multiplesclerosis-treatment_general-neuroophthalmology
 - How is multiple sclerosis treated?
 - What is the test to diagnose multiple sclerosis
@@ -6114,18 +4998,6 @@ Why do we need the [macula](disease_type)?
 - What is the main treatment for multiple sclerosis?
 - I have multiple sclerosis, how do I prevent it from coming back?
 - Is there a way to control multiple sclerosis and prevent it from worsening?
-
-## intent: nystagmus-condition-neuroophthalmology
-- What is nystagmus?
-- What does nystagmus mean?
-- What are jerky eye movements called?
-- Are nystagmus only horizontal?
-- Can nystagmus be controlled?
-- Does nystagmus affect vision?
-- I want to know more about nystagmus.
-- Explain about nystagmus.
-- Is nystagmus abnormal?
-- Can nystagmus only affect one eye?
 
 ## intent: nystagmus-symptoms_signs-neuroophthalmology
 - What are the symptoms and signs of nystagmus?
@@ -6162,22 +5034,9 @@ Why do we need the [macula](disease_type)?
 - Can I reduce the amount of shaking of my eyes?
 - What do I need to do if I have nystagmus?
 - What tests do I need to do for nystagmus?
-- Can nystagmus be cured by surgery?
-- When will surgery help for jerky eyes?
+- Can nystagmus be cured by [surgery](technical_term)?
+- When will [surgery](technical_term) help for jerky eyes?
 - Are there medicines that can reduce the effect of my shaky eyes?
-
-## intent: migrainewithaura-condition-neuroophthalmology
-- What is migraine with visual aura?
-- What is visual aura?
-- Does migraine cause visual disturbances?
-- I have visual disturbances before my migraine attack, is that normal?
-- I am seeing zig zag patches in my vision and I get headache after that, what is it?
-- What are the symptoms of migraine with visual aura?
-- I am seeing a bright/flashing patch which is expanding, what is it?
-- How does a migraine visual aura look like?
-- What will I see if I have a visual aura?
-- When does a migraine aura occur?
-- What can I see if I have a migraine attack?
 
 ## intent: migrainewithaura-treatment_general-neuroophthalmology
 - What is the treatment of migraine with aura?
@@ -6191,19 +5050,6 @@ Why do we need the [macula](disease_type)?
 - How can I reduce the aura symptoms of migraine?
 - Should I get a brain scan for my migraine?
 - I am seeing zig zag bright lines, should I go for a brain scan?
-
-## intent: sixthnervepalsy-condition-neuroophthalmology
-- What is 6th nerve palsy?
-- Why do I have double vision side by side?
-- Why do I see double when I look far but I am fine when I am reading?
-- What is 6th nerve palsy?
-- What does the 6th nerve do?
-- I am seeing double vision with the objects side by side, what is happening?
-- Why is my eye turned inwards?
-- I woke up with my eye squinted inwards, what happened?
-- My eye has been drifting inwards gradually, what is the reason?
-- Why do I see double side by side?
-- What is the function of the abducens nerve?
 
 ## intent: sixthnervepalsy-cause-neuroophthalmology
 - What is the cause of cranial 6th nerve palsy?
@@ -6219,27 +5065,15 @@ Why do we need the [macula](disease_type)?
 - How is cranial 6th nerve palsy treated?
 - How is horizontal double vision treated?
 - I have a stroke and horizontal double vision, what can I do?
-- Is surgery helpful for my double vision with images that are side by side?
+- Is [surgery](technical_term) helpful for my double vision with images that are side by side?
 - What tests do I need to do for my 6th nerve weakness?
 - Why is a lumbar puncture needed for 6th nerve weakness?
 - Why do I need to see the ENT if I have horizontal double vision?
 - Are glasses helpful for horizontal double vision?
 - I have double vision with the images side by side, can it resolve on its own?
-- Can surgery cure my double vision which is side by side?
+- Can [surgery](technical_term) cure my double vision which is side by side?
 - Can 6th nerve palsy recover on its own?
 
-## intent: thirdnervepalsy-condition-neuroophthalmology
-- What is 3rd nerve palsy?
-- Why do I have double vision with droopy eyelids?
-- Why do I see double with one image above another?
-- What is 3rd nerve palsy?
-- What does the 3rd nerve do?
-- I am seeing double vision with the image above and beside the real image, what is happening?
-- Why is my eye turned outwards and downwards?
-- I woke up with my eye squinted down and out with droopy eyelid, what happened?
-- My eye has been drifting down and outwards gradually, what is the reason?
-- Why do I see double one above another and side by side?
-- What is the function of the oculomotor nerve?
 
 ## intent: thirdnervepalsy-cause-neuroophthalmology
 - What is the cause of cranial 3rd nerve palsy?
@@ -6255,41 +5089,28 @@ Why do we need the [macula](disease_type)?
 - How is cranial 3rd nerve palsy treated?
 - How is vertical and horizontal double vision treated?
 - I have a stroke and oblique double vision, what can I do?
-- Is surgery helpful for my double vision with images that are up and down and side by side?
+- Is [surgery](technical_term) helpful for my double vision with images that are up and down and side by side?
 - What tests do I need to do for my 3rd nerve weakness?
 - Is a lumbar puncture needed for 3rd nerve weakness?
 - Why do I need to see the neurosurgeon if I have horizontal and vertical double vision?
 - Are glasses helpful for combined horizontal and vertical double vision?
 - I have double vision with the images side by side and up and down, can it resolve on its own?
-- Can surgery cure my double vision which is side by side and up and down?
+- Can [surgery](technical_term) cure my double vision which is side by side and up and down?
 - Can 3rd nerve palsy recover on its own?
 
-## intent: steroid_immunosuppression-treatment_general-miscellaneous
-- What are the risks of steroid and immunosuppression?
-- What are the issues with steroids?
-- What are the risks with immunosuppression?
-- What are the risks of using steroids?
-- Will long term use of steroids cause problems?
-- Does high dose steroids have any risks?
-- I am putting steroid [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}, what are the risks?
-- Can steroids/immunosuppressants damage my liver/kidney?
-- Am I at higher risk of infection with steroids/immunosuppressants?
-- Who will monitor for me if I am on long term steroids/immunosuppressants?
-- What are the dangers with the use of steroid/immunosuppressants ?
-
 ## intent: surgery-treatment_general-miscellaneous
-- What is the waiting time for _____ surgery?
-- How long is the waiting time for cataract surgery
-- How long do I need to wait to go for ___ surgery?
-- What is the waiting time for LASIK surgery?
-- What is the waiting time for cataract surgery?
-- Is the waiting time for surgery at SNEC long?
-- How fast can I get a surgery date for ___?
-- What is the duration that I need to wait for surgery?
+- What is the waiting time for _____ [surgery](technical_term)?
+- How long is the waiting time for cataract [surgery](technical_term)
+- How long do I need to wait to go for ___ [surgery](technical_term)?
+- What is the waiting time for LASIK [surgery](technical_term)?
+- What is the waiting time for cataract [surgery](technical_term)?
+- Is the waiting time for [surgery](technical_term) at SNEC long?
+- How fast can I get a [surgery](technical_term) date for ___?
+- What is the duration that I need to wait for [surgery](technical_term)?
 - What is the waiting time for urgent surgeries?
-- Will my surgery be delayed due to long waiting time?
-- Is the waiting time for surgery at least a few months?
-- How soon can I go for ___ surgery?
+- Will my [surgery](technical_term) be delayed due to long waiting time?
+- Is the waiting time for [surgery](technical_term) at least a few months?
+- How soon can I go for ___ [surgery](technical_term)?
 
 ## intent: appointment-treatment_general-miscellaneous
 - How can I change my appointment?
@@ -6315,7 +5136,7 @@ Why do we need the [macula](disease_type)?
 - How do I go to ___?
 - I need to go to ___, where is it?
 - Is DMC in SNEC?
-- I am coming for surgery, where should I go?
+- I am coming for [surgery](technical_term), where should I go?
 - Which lift lobby can I take to ___?
 - How do I get to ___ from the taxi stand?
 
@@ -6411,8 +5232,8 @@ Why do we need the [macula](disease_type)?
 
 ## intent: preoperative-preoperative-miscellaneous
 - What are the pre-operative instructions?
-- Can I eat before surgery
-- My surgery is in the morning, what should I prepare?
+- Can I eat before [surgery](technical_term)
+- My [surgery](technical_term) is in the morning, what should I prepare?
 - My operation is in the afternoon, when do I have to stop water and food?
 - Can I drink before my operation?
 - Can I take my medications before my operation?
@@ -6424,21 +5245,21 @@ Why do we need the [macula](disease_type)?
 - What do I need to bring on the day of operation?
 
 ## intent: treatment_surgical-treatment_surgical-miscellaneous
-- How can I cancel my surgery?
-- I am not feeling well, how do I cancel my surgery?
-- I need to cancel my surgery.
-- How can I cancel my surgery?
-- I cannot make it for my surgery.
-- I need to postpone my surgery.
-- I will not be coming for surgery.
-- What should I do if I would like to cancel my surgery?
-- Who can I contact to cancel my surgery?
-- Can I cancel my surgery?
-- I need to reschedule my surgery
+- How can I cancel my [surgery](technical_term)?
+- I am not feeling well, how do I cancel my [surgery](technical_term)?
+- I need to cancel my [surgery](technical_term).
+- How can I cancel my [surgery](technical_term)?
+- I cannot make it for my [surgery](technical_term).
+- I need to postpone my [surgery](technical_term).
+- I will not be coming for [surgery](technical_term).
+- What should I do if I would like to cancel my [surgery](technical_term)?
+- Who can I contact to cancel my [surgery](technical_term)?
+- Can I cancel my [surgery](technical_term)?
+- I need to reschedule my [surgery](technical_term)
 
 ## intent: postoperative-postoperative-miscellaneous
 - What should I know after my operation?
-- I just went for cataract surgery and my eye is very painful
+- I just went for cataract [surgery](technical_term) and my eye is very painful
 - What are the instructions after my operation?
 - How do I take care of my eyes after operation?
 - When should I start my [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after operation?
@@ -6638,7 +5459,7 @@ Why do we need the [macula](disease_type)?
 - Are there any [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} that can treat flashes/floaters?
 - Are [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} helpful for flashes/floaters?
 - Can the floaters be removed?
-- Can surgery remove the floaters?
+- Can [surgery](technical_term) remove the floaters?
 - Can the doctor clean up the floaters?
 - How can I prevent more flashes/floaters?
 
@@ -6802,18 +5623,6 @@ Why do we need the [macula](disease_type)?
 - Will the nurses or doctors call me regarding my GLOC Glaucoma observation clinic visit results?
 - Will my GLOC Glaucoma observation clinic clinic visit results be mailed to me?
 
-## intent: roc-condition-miscellaneous
-- What is ROC?
-- What is a retina observation clinic?
-- What does ROC stand for?
-- How often will I be seen at ROC?
-- How long is a ROC visit?
-- Is ROC run by doctors?
-- What is done in ROC?
-- Who will I see in ROC?
-- What tests are done in ROC?
-- What is the difference between ROC and a normal retina clinic?
-
 ## intent: roc-condition-miscellaneous_42
 - Where is ROC clinic?
 - Where is the retina stable eye clinic located?
@@ -6851,18 +5660,6 @@ Why do we need the [macula](disease_type)?
 - Will the nurses or doctors call me regarding my ROC visit results?
 - Will my ROC clinic visit results be mailed to me?
 
-## intent: sidrp-condition-miscellaneous
-- What is SiDRP?
-- What does SiDRP stand for?
-- How often will I be seen at SiDRP?
-- How long is a SiDRP visit?
-- Is SiDRP run by doctors?
-- What is done in SiDRP?
-- Who will I see in SiDRP?
-- What tests are done in SiDRP?
-- What is the difference between SiDRP and a normal retina clinic?
-- Where are my results from SiDRP sent to?
-
 ## intent: sidrp-condition-miscellaneous_46
 - Where is SiDRP performed?
 - Where is the SiDRP located?
@@ -6882,18 +5679,6 @@ Why do we need the [macula](disease_type)?
 - What conditions are monitored by SiDRP?
 - What type of patients are monitored in SiDRP?
 - Why am I discharged to SiDRP?
-
-## intent: cec-condition-miscellaneous
-- What is CEC?
-- What is community eyecare clinic?
-- What does CEC stand for?
-- How often will I be seen at CEC?
-- How long is a CEC visit?
-- Is CEC run by doctors?
-- What is done in CEC?
-- Who will I see in CEC?
-- What tests are done in CEC?
-- What is the difference between CEC and a normal eye clinic?
 
 ## intent: cec-condition-miscellaneous_49
 - Where is CEC clinic?
@@ -6918,18 +5703,6 @@ Why do we need the [macula](disease_type)?
 - What conditions are seen in CEC?
 - What type of patients are seen in CEC?
 - Why is my next appointment at CEC?
-
-## intent: glsc-condition-miscellaneous
-- What is GLSC?
-- What is glaucoma suspect clinic?
-- What does GLSC stand for?
-- How often will I be seen at GLSC?
-- How long is a GLSC visit?
-- Is GLSC run by doctors?
-- What is done in GLSC?
-- Who will I see in GLSC?
-- What tests are done in GLSC?
-- What is the difference between GLSC and a normal eye clinic?
 
 ## intent: glsc-condition-miscellaneous_52
 - What is the criteria for GLSC?
