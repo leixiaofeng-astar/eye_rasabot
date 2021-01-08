@@ -1,3 +1,5 @@
+version: "2.0"
+stories:
 ## happy_path
 * thanks
     - utter_noworries

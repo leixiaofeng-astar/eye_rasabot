@@ -1,3 +1,5 @@
+version: "2.0"
+nlu:
 ## intent:find_medical_symptoms
 - What are the symptoms of [allergic conjunctivitis](disease_type)?
 - What are the symptoms of [glaucoma](disease_type)

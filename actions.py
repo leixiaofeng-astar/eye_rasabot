@@ -1,6 +1,6 @@
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
-
+from rasa_sdk.events import SlotSet
 from typing import Dict, Text, Any, List
 
 import requests
@@ -72,7 +72,7 @@ class ActionDefaultFallback(Action):
            domain: Dict[Text, Any]) -> List:
 
         print("action_default_fallback")
-        dispatcher.utter_message(template="utter_out_of_scope", name=PROJ_NAME)
+        dispatcher.utter_message(template="utter_please_rephrase", name=PROJ_NAME)
         return []
 
 
@@ -110,6 +110,7 @@ class action_find_information(Action):
         # dispatcher.utter_message(query_name)
         if inform_matched:
             find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
             if find_entity_value == 'glaucoma':
                 dispatcher.utter_message(
                     template="utter_glaucoma_define",
@@ -246,6 +247,7 @@ class action_find_symptoms_information(Action):
         # dispatcher.utter_message(query_name)
         if inform_matched:
             find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
             if find_entity_value == 'glaucoma' :
                 dispatcher.utter_message(
                     template="utter_glaucoma_symptoms",

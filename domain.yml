@@ -3042,11 +3042,19 @@ During the video consultation
            College of Medicine Building
            Singapore 169854
            Website: www.moh.gov.sg'
+  utter_please_rephrase:
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+  - text: "Dr.Eye here, I'm sorry, Please help to check your question and enter it again."
+  utter_default:
+  - text: Sorry, I didn't get that. Can you rephrase please?
+
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
 slots:
   location:
+    type: unfeaturized
+  care_disease:
     type: unfeaturized
 
 

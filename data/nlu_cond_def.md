@@ -1,5 +1,8 @@
+version: "2.0"
+nlu:
 ## intent:find_condition_definitions
 - What is [glaucoma](disease_type)
+- what is [glaucoma](disease_type)
 - How does [glaucoma](disease_type) happen
 - What does [glaucoma](disease_type) refer to
 - Is [glaucoma](disease_type) an eye disease

@@ -1,3 +1,4 @@
+version: "2.0"
 nlu:
 - lookup: country
   examples: |
@@ -417,7 +418,16 @@ nlu:
 - do you have something else
 - no this does not work for me
 
-## intent:out_of_scope
+## intent: out_of_scope
+- I want to order food
+- What is 2 + 2?
+- Who's the US President?
+- Who's you?
+- are you stupid?
+- will I kill myself?
+- I want to order food
+- What is 2 + 2?
+- Who's the US President?
 - please help with my ice cream it's dripping
 - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
 - i want a non dripping ice cream
@@ -635,14 +645,6 @@ nlu:
 - [hospital](facility_type)
 - find me a nearby [hospital](facility_type) my zip code is [10119](location)
 - i need a [home health agency](facility_type)
-
-## intent: out_of_scope
-- I want to order food
-- What is 2 + 2?
-- Who's the US President?
-- Who's you?
-- are you stupid?
-- will I kill myself?
 
 ## intent:thanks
 - Thanks

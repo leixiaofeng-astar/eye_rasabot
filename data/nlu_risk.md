@@ -1,3 +1,5 @@
+version: "2.0"
+nlu:
 ## intent:find_medical_risk
 - xxx
 
