@@ -29,7 +29,7 @@ nlu:
 - Is [conjunctivitis](disease_type) contagious?
 - how long does [conjunctivitis](disease_type) last
 - Does [conjunctivitis](disease_type) cause pain
-- Does [conjunctivitis](disease_type) cause dry eyes
+- Does [conjunctivitis](disease_type) cause [dry eyes](symptom_type)
 - My [conjunctivitis](disease_type) is not better after 2 weeks, what should I do
 - How long will I take to recover from [conjunctivitis](disease_type)
 - What happens when I have [conjunctivitis](disease_type)?
@@ -121,23 +121,23 @@ nlu:
 - What will happen if I have a cataract?
 
 ## intent: dryeyes-symptoms_signs-cornearefractive
-- What are the symptoms of dry eyes?
-- How do I know if I have dry eyes
-- Can dry eyes harm my eyes
+- What are the symptoms of [dry eyes](symptom_type)?
+- How do I know if I have [dry eyes](symptom_type)
+- Can [dry eyes](symptom_type) harm my eyes
 - My eyesight keeps going blur on and off, why
 - I always feel poking pain in my eye
-- Why do I get tearing with dry eyes?
+- Why do I get tearing with [dry eyes](symptom_type)?
 - Which symptoms are linked to eye dryness?
-- What symptoms do patients with dry eyes have?
+- What symptoms do patients with [dry eyes](symptom_type) have?
 - How would I know if I have dry eye syndrome?
-- How do I know if I have dry eyes?
-- What do patients with dry eyes develop?
-- Which symptoms do patients with dry eyes have?
-- Which symptoms are suggestive of dry eyes?
-- What eye problems are due to dry eyes?
-- What are the symptoms of dry eyes?
-- How do I know if I have dry eyes
-- Can dry eyes harm my eyes
+- How do I know if I have [dry eyes](symptom_type)?
+- What do patients with [dry eyes](symptom_type) develop?
+- Which symptoms do patients with [dry eyes](symptom_type) have?
+- Which symptoms are suggestive of [dry eyes](symptom_type)?
+- What eye problems are due to [dry eyes](symptom_type)?
+- What are the symptoms of [dry eyes](symptom_type)?
+- How do I know if I have [dry eyes](symptom_type)
+- Can [dry eyes](symptom_type) harm my eyes
 - My eyesight keeps going blur on and off, why
 - I always feel poking pain in my eye
 
@@ -151,7 +151,7 @@ nlu:
 - Does blepharitis cause pain?
 - What do I feel if I have very oily eyelids?
 - Can blepharitis cause my vision to be blur?
-- I have dry eyes, is it a sign of blepharitis?
+- I have [dry eyes](symptom_type), is it a sign of blepharitis?
 - Apart from discharges, what else will I feel if I have blepharitis?
 - How does blepharitis look?
 
@@ -172,3 +172,51 @@ nlu:
 - What problems does a cataract cause?
 - What will happen if I have a cataract?
 
+
+
+## intent:find_disease_causes
+- What is the cause of [astigmatism](disease_type)?
+- can [astigmatism](disease_type) be passed down?
+- can astigmatism get worse?
+- i have [astigmatism](disease_type), will my child get?
+- is my child's [astigmatism](disease_type) inherited from me?
+- Why do I have [astigmatism](disease_type)?
+- What is the reason I have [astigmatism](disease_type)?
+- Why does [astigmatism](disease_type) occur?
+- How come I have [astigmatism](disease_type)?
+- Who gets [astigmatism](disease_type)?
+- Who is more susceptible to [astigmatism](disease_type)?
+- Who is at risk of getting [astigmatism](disease_type)?
+- What are the risk factors of [astigmatism](disease_type)?
+- Does eye rubbing cause [astigmatism](disease_type)?
+- Does dirt or dust cause [astigmatism](disease_type)?
+- Does contact lens cause [astigmatism](disease_type)?
+- Does eye injury cause [astigmatism](disease_type)?
+- Does pre existing eye disease cause [astigmatism](disease_type)?
+- Is [astigmatism](disease_type) infectious?
+- Can I get [astigmatism](disease_type) from other people?
+- Can [astigmatism](disease_type) spread from other people?
+- Is [astigmatism](disease_type) inherited?
+- Is [astigmatism](disease_type) congenital?
+- Is [astigmatism](disease_type) present from birth?
+- Do corneal problems cause [astigmatism](disease_type)?
+- Can [astigmatism](disease_type) be passed down to children?
+- Can [astigmatism](disease_type) be passed down from parents?
+- What are the causes and risk factors of [Dry eye]{"entity":"symptom_type","value":"dry eyes"} syndrome?
+- What causes [dry eyes](symptom_type)
+- does wind cause [dry eyes](symptom_type)
+- Why is my [eyes so dry]{"entity":"symptom_type","value":"dry eyes"}
+- What causes [dry eyes](symptom_type)
+- Does too much screen time cause [dry eyes](symptom_type)?
+- Why is my [eyes getting drier]{"entity":"symptom_type","value":"dry eyes"}
+- Is [dry eyes](symptom_type) common
+- Why do I have [dry eyes](symptom_type)?
+- What makes my [eye dry]{"entity":"symptom_type","value":"dry eyes"}?
+- How do my [eyes become dry]{"entity":"symptom_type","value":"dry eyes"}?
+- What makes me at risk of [Dry eyes]{"entity":"symptom_type","value":"dry eyes"}?
+- How do I know if I may develop [dry eyes](symptom_type)?
+- How do I get [dry eyes](symptom_type)?
+- What is the reason I have [dry eyes](symptom_type)?
+- Am I at risk of [dry eyes](symptom_type)?
+- Who is at risk of [dry eyes](symptom_type)?
+- What results in [dry eyes](symptom_type)?

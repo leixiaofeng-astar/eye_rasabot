@@ -1,6 +1,7 @@
 actions:
 - actions_find_condition_definitions
 - actions_find_medical_symptoms
+- actions_find_disease_causes
 - action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
@@ -438,6 +439,7 @@ forms:
 intents:
 - find_condition_definitions
 - find_medical_symptoms
+- find_disease_causes
 - greet
 - goodbye
 - affirm
@@ -461,7 +463,6 @@ intents:
 - ask_signs_treatment
 - ask_astigmatism_information
 - astigmatism-condition-cornearefractive
-- astigmatism-cause-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive_4
 - astigmatism-investigations-cornearefractive
@@ -572,8 +573,6 @@ intents:
 - cataract-treatment_conservative-cornearefractive
 - cataract-treatment_conservative-cornearefractive_113
 - cataract-treatment_surgical-cornearefractive
-- dryeyes-condition-cornearefractive
-- dryeyes-causes_riskfactors-cornearefractive
 - dryeyes-symptoms_signs-cornearefractive
 - dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive
 - dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive_119
@@ -632,7 +631,6 @@ intents:
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive
 - lasik_refractivesurgery-preoperative-cornearefractive
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
-- lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 - lasik_refractivesurgery-postoperative-cornearefractive
 - lasik_refractivesurgery-postoperative-cornearefractive_177
@@ -3056,6 +3054,10 @@ slots:
     type: unfeaturized
   care_disease:
     type: unfeaturized
+  care_medicine:
+      type: unfeaturized
+  care_keyword:
+      type: unfeaturized
 
 
 

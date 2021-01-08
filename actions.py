@@ -20,9 +20,9 @@ PROJ_NAME = "Dr Eye"
 disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy", "corneal edema", "cataract",\
                        "conjunctivitis", "corneal infection", "amd", "dme", "myopia", "high myopia", "pterygium",\
                        "allergic conjunctivitis", "retinopathy"]
-symptom_entity_list = ["visualfiled-synm", "oval cornea", "vidcon", "dry eyes"]
+symptom_entity_list = ["visualfiled-synm", "oval cornea", "vidcon", "dry eyes", "lasik", "blepharitis"]
 medicine_name_entity_list = ["eyedrop-synm"]
-entity_dict = {"disease_type": disease_entity_list,
+entity_dict = { "disease_type": disease_entity_list,
                  "symptom_type": symptom_entity_list,
                  "medicine_name": medicine_name_entity_list,
                 }
@@ -133,7 +133,7 @@ class action_find_information(Action):
                 )
             elif find_entity_value == "corneal edema":
                 dispatcher.utter_message(
-                    template="utter_ornealedema-condition-cornearefractive",
+                    template="utter_cornealedema-condition-cornearefractive",
                     name=PROJ_NAME
                 )
             elif find_entity_value == "cataract":
@@ -186,11 +186,21 @@ class action_find_information(Action):
                     template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
                     name=PROJ_NAME
                 )
-            # elif find_entity_value == "pterygium":
-            #     dispatcher.utter_message(
-            #         template="utter_pterygium-condition-cornearefractive",
-            #         name=PROJ_NAME
-            #     )
+            elif find_entity_value == "dry eyes":
+                dispatcher.utter_message(
+                    template="utter_dryeyes-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "lasik":
+                dispatcher.utter_message(
+                    template="utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "blepharitis":
+                dispatcher.utter_message(
+                    template="utter_blepharitis-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
             # elif find_entity_value == "pterygium":
             #     dispatcher.utter_message(
             #         template="utter_pterygium-condition-cornearefractive",
@@ -282,6 +292,71 @@ class action_find_symptoms_information(Action):
             )
         return []
 
+class action_find_disease_causes(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_disease_causes"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "dry eyes":
+                dispatcher.utter_message(
+                    template="utter_dryeyes-causes_riskfactors-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-cause-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == 'conjunctivitis':
+            #     dispatcher.utter_message(
+            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            # elif find_entity_value == "allergic conjunctivitis":
+            #     dispatcher.utter_message(
+            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("find_disease_causes: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_disease_causes: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
 
 # class FacilityForm(FormAction):
 #     """Custom form action to fill all slots required to find specific type

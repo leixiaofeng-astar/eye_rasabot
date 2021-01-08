@@ -13,13 +13,25 @@ nlu:
     - videocon
     - Vidcon
 
+- synonym: lasik
+  examples: |
+    - LASIK
+
+- synonym: blepharitis
+  examples: |
+    - oily eyelid
+    - Blepharitis
+      
 - synonym: dry eyes
   examples: |
     - Dry eyes
+    - Dry eye
     - eyes dry
     - dry eye
     - eyes are dry
     - eyes become dry
+    - eyes always dry
+    - eyes so dry
     
 - synonym: premature
   examples: |
@@ -688,34 +700,6 @@ nlu:
 ## regex:location
 - [0-9]{5}
 
-## intent: astigmatism-cause-cornearefractive
-- What is the cause of astigmatism?
-- can astigmatism be passed down?
-- can astigmatism get worse?
-- i have astigmatism, will my child get?
-- is my child's astigmatism inherited from me?
-- Why do I have astigmatism?
-- What is the reason I have astigmatism?
-- Why does astigmatism occur?
-- How come I have astigmatism?
-- Who gets astigmatism?
-- Who is more susceptible to astigmatism?
-- Who is at risk of getting astigmatism?
-- What are the risk factors of astigmatism?
-- Does eye rubbing cause astigmatism?
-- Does dirt or dust cause astigmatism?
-- Does contact lens cause astigmatism?
-- Does eye injury cause astigmatism?
-- Does pre existing eye disease cause astigmatism?
-- Is astigmatism infectious?
-- Can I get astigmatism from other people?
-- Can astigmatism spread from other people?
-- Is astigmatism inherited?
-- Is astigmatism congenital?
-- Is astigmatism present from birth?
-- Do corneal problems cause astigmatism?
-- Can astigmatism be passed down to children?
-- Can astigmatism be passed down from parents?
 
 ## intent: astigmatism-investigations-cornearefractive
 - What are the investigations for astigmatism?
@@ -737,7 +721,7 @@ nlu:
 - Need [surgery](technical_term) for astigmatism?
 - how can i get rid of astigmatism
 - how do i reduce astig
-- can lasik treat astigmatism?
+- can [lasik]{symptom_type) treat astigmatism?
 - my optician says i have astigmatism, what should i do
 - How to treat astigmatism?
 - How to heal astigmatism?
@@ -791,13 +775,13 @@ nlu:
 
 ## intent: astigmatism-treatment_surgical-cornearefractive
 - What is the surgical treatment of astigmatism?
-- can lasik correct astigmatism
+- can [lasik]{symptom_type) correct astigmatism
 - what surgeries can correct astig
-- Can lasik treat astig
+- Can [lasik]{symptom_type) treat astig
 - Do I need laser for astigmatism?
 - Do I need LASEK for astigmatism?
 - Do I need SMILE for astigmatism?
-- Do I need LASIK for astigmatism?
+- Do I need [LASIK]{"entity":"symptom_type","value":"lasik"} for astigmatism?
 - Do I need PRK for astigmatism?
 - Does astigmatism [surgery](technical_term) exist?
 - Is surgical removal of astigmatism possible?
@@ -2408,126 +2392,106 @@ nlu:
 - I don't want to have [surgery](technical_term), how can I stop cataracts?
 - I have very bad cataracts, what can the doctor do to improve it?
 - How can I improve my cataracts if my eye drops donâ€™t work?
-- Is there any procedure the doctor can do to improve my dry eyes?
+- Is there any procedure the doctor can do to improve my [dry eyes](symptom_type)?
 - What does cataract Surgery entail?
 - Can I go for [surgery](technical_term) for cataracts?
 - Is there a way to surgically treat cataracts?
 - What happens during cataract [surgery](technical_term)?
 - What does the eye surgeon do during cataract [surgery](technical_term)?
 
-## intent: dryeyes-causes_riskfactors-cornearefractive
-- What are the causes and risk factors of Dry eye syndrome?
-- What causes dry eyes
-- does wind cause dry eyes
-- Why is my eyes so dry
-- What causes dry eyes
-- Does too much screen time cause dry eyes?
-- Why is my eyes getting drier
-- Is dry eyes common
-- Why do I have dry eyes?
-- What makes my eye dry?
-- How do my eyes become dry?
-- What makes me at risk of Dry eyes?
-- How do I know if I may develop dry eyes?
-- How do I get dry eyes?
-- What is the reason I have dry eyes?
-- Am I at risk of dry eyes?
-- Who is at risk of dry eyes?
-- What results in dry eyes?
-
 ## intent: dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive
 - How is Dry Eye Syndrome diagnosed?
-- how to confirm i have dry eyes
-- How does  the doctor diagnose dry eyes?
-- How does the doctor know whether I have dry eyes?
-- What will the Ophthalmologist do to confirm I have dry eyes?
+- how to confirm i have [dry eyes](symptom_type)
+- How does  the doctor diagnose [dry eyes](symptom_type)?
+- How does the doctor know whether I have [dry eyes](symptom_type)?
+- What will the Ophthalmologist do to confirm I have [dry eyes](symptom_type)?
 - Is there any test for eye dryness?
-- How do I test for dry eyes?
-- How does the Ophthalmologist know if I have dry eyes? 
-- Can the doctor check if I have dry eyes?
-- How can I know for sure if I have dry eyes?
-- What can be done to confirm whether I have dry eyes?
-- Do I really have dry eyes?
+- How do I test for [dry eyes](symptom_type)?
+- How does the Ophthalmologist know if I have [dry eyes](symptom_type)? 
+- Can the doctor check if I have [dry eyes](symptom_type)?
+- How can I know for sure if I have [dry eyes](symptom_type)?
+- What can be done to confirm whether I have [dry eyes](symptom_type)?
+- Do I really have [dry eyes](symptom_type)?
 
 ## intent: dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive_119
 - What is the treatment for Dry eye syndrome?
-- I have very bad dry eyes, what can I do
-- How can I treat dry eyes?
+- I have very bad [dry eyes](symptom_type), what can I do
+- How can I treat [dry eyes](symptom_type)?
 - Is there any way to stop eye dryness?
 - My eyes are always dry, what can I do about it?
-- What are the possible ways to improve dry eyes?
-- How will the doctor treat my dry eyes?
-- Can dry eyes be cured?
-- Can I do [surgery](technical_term) to stop the dry eyes?
-- Is the doctor able to treat dry eyes?
-- How do I stop my dry eyes?
-- Can dry eyes be treated?
+- What are the possible ways to improve [dry eyes](symptom_type)?
+- How will the doctor treat my [dry eyes](symptom_type)?
+- Can [dry eyes](symptom_type) be cured?
+- Can I do [surgery](technical_term) to stop the [dry eyes](symptom_type)?
+- Is the doctor able to treat [dry eyes](symptom_type)?
+- How do I stop my [dry eyes](symptom_type)?
+- Can [dry eyes](symptom_type) be treated?
 
 ## intent: dryeyes-treatment_conservative-cornearefractive
 - What are the lifestyle measures for treating dry eye syndrome?
-- can use phone if dry eyes
-- does blinking more help dry eyes
+- can use phone if [dry eyes](symptom_type)
+- does blinking more help [dry eyes](symptom_type)
 - do i need to reduce computer use if i have dry eye
 - does bright light cause my eyes to be dry
-- Can any food reduce dry eyes
+- Can any food reduce [dry eyes](symptom_type)
 - How to take care if my eyes are dry
-- What should I do if I have dry eyes
+- What should I do if I have [dry eyes](symptom_type)
 - What are the non-medical and non-surgical treatments for dry eye syndrome?
-- How can I improve my dry eyes without seeing a doctor?
+- How can I improve my [dry eyes](symptom_type) without seeing a doctor?
 - Is it possible to treat eye dryness without seeing a doctor?
 - What should I do to reduce eye dryness?
-- What can I do to reduce dry eyes?
-- Can I fix dry eyes without going for [surgery](technical_term)?
-- I dont want to take medications or have [surgery](technical_term), what can I do about the dry eyes?
-- How can I resolve dry eyes without medication or [surgery](technical_term)?
-- Is there any changes I can make to my life to improve dry eyes?
-- What steps can I take to improve dry eyes?
+- What can I do to reduce [dry eyes](symptom_type)?
+- Can I fix [dry eyes](symptom_type) without going for [surgery](technical_term)?
+- I dont want to take medications or have [surgery](technical_term), what can I do about the [dry eyes](symptom_type)?
+- How can I resolve [dry eyes](symptom_type) without medication or [surgery](technical_term)?
+- Is there any changes I can make to my life to improve [dry eyes](symptom_type)?
+- What steps can I take to improve [dry eyes](symptom_type)?
 
 ## intent: dryeyes-treatment_medical-cornearefractive
 - What are the medical treatments for dry eye syndrome?
-- can eye drops cure dry eyes
-- What eye drops are good for dry eyes
+- can eye drops cure [dry eyes](symptom_type)
+- What eye drops are good for [dry eyes](symptom_type)
 - How often should I put tear drops
 - What is the difference between bottle and disposable [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"}
 - What are the non-surgical treatments for dry eye syndrome?
-- Are there medications that are useful for dry eyes?
+- Are there medications that are useful for [dry eyes](symptom_type)?
 - What medications can improve eye dryness?
-- Are there eye drops for dry eyes?
+- Are there eye drops for [dry eyes](symptom_type)?
 - Can eye drops be used to treat dry eye syndrome? 
-- How can I improve my dry eyes without [surgery](technical_term)?
+- How can I improve my [dry eyes](symptom_type) without [surgery](technical_term)?
 - If I dont want to have [surgery](technical_term), can I still reduce my eye dryness?
-- Is it possible to treat dry eyes without [surgery](technical_term)?
-- Is there any medication that can get rid of dry eyes?
-- Can I take medications for dry eyes?
+- Is it possible to treat [dry eyes](symptom_type) without [surgery](technical_term)?
+- Is there any medication that can get rid of [dry eyes](symptom_type)?
+- Can I take medications for [dry eyes](symptom_type)?
 
 ## intent: dryeyes-treatment_surgical-cornearefractive
 - What are the surgical treatments for dry eye syndrome?
 
 ## intent: dryeyes-treatment_surgical-cornearefractive_122
 - What are the non-medical treatments for dry eye syndrome?
-- Do doctors perform surgeries for dry eyes?
+- Do doctors perform surgeries for [dry eyes](symptom_type)?
 - What kind of [surgery](technical_term) helps with eye dryness?
-- Can I go for [surgery](technical_term) for dry eyes?
-- Is there a way to surgically treat dry eyes?
-- How can I stop my dry eyes permanently?
-- I dont want to use eye drops, how can I stop dry eyes?
-- I have very bad dry eyes, what can the doctor do to improve it?
+- Can I go for [surgery](technical_term) for [dry eyes](symptom_type)?
+- Is there a way to surgically treat [dry eyes](symptom_type)?
+- How can I stop my [dry eyes](symptom_type) permanently?
+- I dont want to use eye drops, how can I stop [dry eyes](symptom_type)?
+- I have very bad [dry eyes](symptom_type), what can the doctor do to improve it?
 - How can I improve my eye dryness if my eye drops dont work?
-- Is there any procedure the doctor can do to improve my dry eyes?
+- Is there any procedure the doctor can do to improve my [dry eyes](symptom_type)?
 
 ## intent: dryeyes-dryeyessupport_contactlens-cornearefractive
 - Can dry eye syndrome affect my ability to wear contact lenses?
-- can i use contacts if i have dry eyes
+- can i use contacts if i have [dry eyes](symptom_type)
 - What are the restrictions for contact lens use if I have dry eye syndrome?
-- Do doctors allow patients to wear contact lenses if they have dry eyes?
+- Do doctors allow patients to wear contact lenses if they have [dry eyes](symptom_type)?
 - What kind of contact lenses go well with eye dryness?
-- Can I wear contact lenses if I have dry eyes?
+- Can I wear contact lenses if I have [dry eyes](symptom_type)?
 - Is there a way for patients with contact lenses to use contact lenses?
-- How can I wear contact lenses if I have dry eyes?
-- I don’t want to use spectacles, can I wear contact lenses if I have dry eyes?
-- I have very bad dry eyes, can I still use contact lenses?
+- How can I wear contact lenses if I have [dry eyes](symptom_type)?
+- I don’t want to use spectacles, can I wear contact lenses if I have [dry eyes](symptom_type)?
+- I have very bad [dry eyes](symptom_type), can I still use contact lenses?
 - How can I improve my eye dryness when I am wearing contact lenses?
-- Is there any contact lens that is suitable for patients with dry eyes?
+- Is there any contact lens that is suitable for patients with [dry eyes](symptom_type)?
 
 ## intent: blepharitis-causes_riskfactors-cornearefractive
 - What is the cause of blepharitis?
@@ -2697,7 +2661,7 @@ nlu:
 - My cataracts are bothering me, how can I be treated?
 - I have very bad cataracts, what can the doctor do to improve it?
 - How can I improve my cataracts if my eye drops dont work?
-- Is there any procedure the doctor can do to improve my dry eyes?
+- Is there any procedure the doctor can do to improve my [dry eyes](symptom_type)?
 - What does cataract Surgery entail?
 - Can I go for [surgery](technical_term) for cataracts?
 - Is there a way to surgically treat cataracts?
@@ -2824,7 +2788,7 @@ nlu:
 - Which type of lens is right for me?
 - Are there any issues with multifocal lenses
 - Monofocal or multifocal, which is better
-- I had lasik before, can I choose multifocal lens
+- I had [lasik]{symptom_type) before, can I choose multifocal lens
 - Is multifocal the best lens available
 - What implant is most suited for me if I go for [surgery](technical_term) for cataract?
 - How should I choose between monofocal or multifocal implants for my cataract [surgery](technical_term)?
@@ -2932,12 +2896,12 @@ nlu:
 - Is there a cure for myopia?
 - Can myopia be treated?
 - Can myopia be reversed?
-- Does LASIK cure my myopia?
+- Does [LASIK]{"entity":"symptom_type","value":"lasik"} cure my myopia?
 - How can myopia be corrected?
 - Is myopia reversible?
 - What can be done for my myopia?
 - Apart from glasses, how can myopia be treated?
-- Is LASIK a treatment for myopia?
+- Is [LASIK]{"entity":"symptom_type","value":"lasik"} a treatment for myopia?
 - What can I do if I do not want to wear glasses for my short-sightedness?
 
 ## intent: myopia-treatment_general-cornearefractive_157
@@ -2992,7 +2956,7 @@ nlu:
 - If I am myopic, I will not have presbyopia/lao hua, is that true?
 - Is presbyopia/lao hua and myopia caused by the same issue?
 - Do I need to make separate glasses for presbyopia/lao hua and myopia?
-- Does LASIK treat both myopia and presbyopia/lao hua?
+- Does [LASIK]{"entity":"symptom_type","value":"lasik"} treat both myopia and presbyopia/lao hua?
 - Is the treatment of myopia and presbyopia/lao hua similar?
 
 ## intent: myopia-treatment_general-cornearefractive_162
@@ -3145,7 +3109,7 @@ nlu:
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive
 - What are the laser correction services available?
-- What is the difference between lasik and lasek
+- What is the difference between [lasik]{symptom_type) and lasek
 - what lasers can i do for myopia
 - what laser [surgery](technical_term) can i do for myopia
 - What are the laser correction services myopia/astigmatism?
@@ -3160,84 +3124,69 @@ nlu:
 - Do lasers work for myopia/astigmatism?
 
 ## intent: lasik_refractivesurgery-preoperative-cornearefractive
-- What happens when I see a doctor for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ReLEx® SMILE?
-- What happens when I see a doctor for LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What will the doctor do when I go for my appointment for LASIK/LASIK XtraTM/ ReLEx® SMILE
-- What should I expect when I see a doctor for LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What examinations are there to prepare for LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What happens during clinic before LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What should I do before LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What do I need to do before LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- What does the pre-operative examination for LASIK/LASIK XtraTM/ ReLEx® SMILE include?
-- How can I prepare myself to see the doctor for LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- How can I get tested for LASIK/LASIK XtraTM/ ReLEx® SMILE?
+- What happens when I see a doctor for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ReLEx® SMILE?
+- What happens when I see a doctor for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What will the doctor do when I go for my appointment for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE
+- What should I expect when I see a doctor for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What examinations are there to prepare for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What happens during clinic before [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What should I do before [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What do I need to do before [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- What does the pre-operative examination for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE include?
+- How can I prepare myself to see the doctor for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- How can I get tested for [LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
-- Who is suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Am I suitable for lasik
-- when should i do lasik
-- which people can do lasik
-- which people are suitable for lasik
-- Who is suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Am I suitable for lasik
-- when should i do lasik
-- which people can do lasik
-- which people are suitable for lasik
-- Who can go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Can I go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Am I suitable for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- How do I know if I can go for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- How do I know if Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE is for me?
-- What is the criteria for Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE?
-- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE applicable for me?
-- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE relevant for me?
-- Is Laser corrective [surgery](technical_term)/LASIK/LASIK XtraTM/ ReLEx® SMILE useful for me?
-
-## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-- What is LASIK?
-- Is lasik a day [surgery](technical_term)
-- How long does lasik take?
-- what procedure is lasik
-- What does LASIK stand for?
-- What does LASIK refer to?
-- What is the process of LASIK like?
-- What should I expect when I do LASIK?
-- What happens during LASIK?
-- What happens in LASIK?
-- How does LASIK work?
-- How can LASIK help my eyes?
-- Is LASIK a [surgery](technical_term)?
+- Who is suitable for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for [lasik]{symptom_type)
+- when should i do [lasik]{symptom_type)
+- which people can do [lasik]{symptom_type)
+- which people are suitable for [lasik]{symptom_type)
+- Who is suitable for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for [lasik]{symptom_type)
+- when should i do [lasik]{symptom_type)
+- which people can do [lasik]{symptom_type)
+- which people are suitable for [lasik]{symptom_type)
+- Who can go for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- Can I go for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- Am I suitable for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- How do I know if I can go for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- How do I know if Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE is for me?
+- What is the criteria for Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE?
+- Is Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE applicable for me?
+- Is Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE relevant for me?
+- Is Laser corrective [surgery](technical_term)/[LASIK]{"entity":"symptom_type","value":"lasik"}/LASIK XtraTM/ ReLEx® SMILE useful for me?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
-- What are the advantages of LASIK?
-- What is the success rate of lasik
-- how do i choose between lasik and prk
-- how is lasik better
-- Why do most ppl go for lasik
-- What makes LASIK better?
-- What is good about LASIK?
-- What are the benefits of LASIK?
-- Why is LASIK good?
-- Why should I choose LASIK?
-- Why do people prefer LASIK?
-- Why is LASIK a better choice?
-- How is LASIK superior?
-- How is LASIK better?
+- What are the advantages of [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What is the success rate of [lasik](symptom_type)
+- how do i choose between [lasik]{symptom_type) and prk
+- how is [lasik]{symptom_type) better
+- Why do most ppl go for [lasik]{symptom_type)
+- What makes [LASIK]{"entity":"symptom_type","value":"lasik"} better?
+- What is good about [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What are the benefits of [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Why is [LASIK]{"entity":"symptom_type","value":"lasik"} good?
+- Why should I choose [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Why do people prefer [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Why is [LASIK]{"entity":"symptom_type","value":"lasik"} a better choice?
+- How is [LASIK]{"entity":"symptom_type","value":"lasik"} superior?
+- How is [LASIK]{"entity":"symptom_type","value":"lasik"} better?
 
 ## intent: lasik_refractivesurgery-postoperative-cornearefractive
-- What should I expect post LASIK [surgery](technical_term)?
+- What should I expect post [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
 - How many days of MC will I get for lasik [surgery](technical_term)
-- What is the postoperative care required for LASIK?
-- What happens after LASIK [surgery](technical_term)?
-- What do I need to do after my LASIK [surgery](technical_term)?
-- What will I feel after LASIK [surgery](technical_term)?
-- What should I look out for after my LASIK Surgery?
-- What do I need to be careful about after my LASIK [surgery](technical_term)?
-- What precautions must I take after LASIK [surgery](technical_term)?
-- How long do I need to rest after LASIK?
-- How long will I take to recover after LASIK?
-- How should I care for my eyes after LASIK?
-- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my LASIK [surgery](technical_term)?
+- What is the postoperative care required for [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What happens after [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
+- What do I need to do after my [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
+- What will I feel after [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
+- What should I look out for after my [LASIK]{"entity":"symptom_type","value":"lasik"} Surgery?
+- What do I need to be careful about after my [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
+- What precautions must I take after [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
+- How long do I need to rest after [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- How long will I take to recover after [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- How should I care for my eyes after [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Do I need [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} after my [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_178
 - What is LASIK Xtra TM ?
@@ -3291,7 +3240,7 @@ nlu:
 - How is LASEK better?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_182
-- Are there any disadvantages of LASEK compared to LASIK?
+- Are there any disadvantages of LASEK compared to [LASIK]{"entity":"symptom_type","value":"lasik"}?
 - Are the effects of LASEK the same for others?
 - What are the disadvantages of LASEK?
 - What are the side effects for LASEK?
@@ -3339,7 +3288,7 @@ nlu:
 - What are the benefits of ReLEx® Smile treatment over other laser vision correction procedures? 
 - how come smile is better
 - What so good about relex
-- Is relex better than lasik
+- Is relex better than [lasik]{symptom_type)
 - What are the advantages of ReLEx® Smile?
 - What makes ReLEx® Smile better?
 - What is good about ReLEx® Smile?
@@ -3352,17 +3301,17 @@ nlu:
 - How is ReLEx® Smile better?
 
 ## intent: lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_186
-- What if I am not suitable for LASIK?
-- why are my eyes not suitable for lasik
-- My doctor says I am not suitable for LASIK?
-- What other options do I have apart from LASIK?
-- If my eyes are not suitable for LASIK, what can I do?
-- If LASIK is not an option for me, what else can I do?
-- My cornea is too thin for LASIK, what other surgeries are available?
-- Why am I not suitable for LASIK?
-- If my degree is too high for LASIK, what can I do?
-- Are there other laser surgeries apart from LASIK?
-- Can I still go for [surgery](technical_term) if I am not suitable for LASIK?
+- What if I am not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- why are my eyes not suitable for [lasik]{symptom_type)
+- My doctor says I am not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What other options do I have apart from [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- If my eyes are not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}, what can I do?
+- If [LASIK]{"entity":"symptom_type","value":"lasik"} is not an option for me, what else can I do?
+- My cornea is too thin for [LASIK]{"entity":"symptom_type","value":"lasik"}, what other surgeries are available?
+- Why am I not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- If my degree is too high for [LASIK]{"entity":"symptom_type","value":"lasik"}, what can I do?
+- Are there other laser surgeries apart from [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Can I still go for [surgery](technical_term) if I am not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}?
 
 ## intent: keratoconus-cause-cornearefractive
 - What is the cause of keratoconus?
@@ -5104,7 +5053,7 @@ nlu:
 - What is the waiting time for _____ [surgery](technical_term)?
 - How long is the waiting time for cataract [surgery](technical_term)
 - How long do I need to wait to go for ___ [surgery](technical_term)?
-- What is the waiting time for LASIK [surgery](technical_term)?
+- What is the waiting time for [LASIK]{"entity":"symptom_type","value":"lasik"} [surgery](technical_term)?
 - What is the waiting time for cataract [surgery](technical_term)?
 - Is the waiting time for [surgery](technical_term) at SNEC long?
 - How fast can I get a [surgery](technical_term) date for ___?
@@ -5322,13 +5271,13 @@ nlu:
 
 ## intent: burningsensation-symptoms_signs-miscellaneous
 - Why do I get a burning sensation in my eye?
-- is dry eyes caused by computer
+- is [dry eyes](symptom_type) caused by computer
 - Why do my eyes feel a burning pain?
 - I have a burning sensation in my eyes.
 - My eye feel uncomfortable, why?
 - Why do my eyes feel like they are burning?
 - Why do I feel a stinging sensation in my eyes?
-- Is the burning sensation in my eyes due to dry eyes?
+- Is the burning sensation in my eyes due to [dry eyes](symptom_type)?
 - Will too much computer work lead to a burning sensation in my eyes?
 - My eyes feel like they are burning, what is wrong?
 - I wear contact lenses and my eyes feel like they are burning.
@@ -5494,12 +5443,12 @@ nlu:
 
 ## intent: halos-symptoms_signs-miscellaneous
 - Why do I see halos?
-- Why do I see halos after lasik
+- Why do I see halos after [lasik]{symptom_type)
 - What is the common cause of halos?
 - Is halos something like hallucination?
 - When do people see halos?
 - Does cataract cause halos?
-- Does LASIK/SMILE/LASEK cause halos?
+- Does [LASIK]{"entity":"symptom_type","value":"lasik"}/SMILE/LASEK cause halos?
 - Do multifocal lenses cause halos?
 - What are haloes due to?
 - What is a halo?

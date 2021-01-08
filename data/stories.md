@@ -80,10 +80,6 @@ stories:
 * signs_followup 
     - utter_glaucoma_postopt_eyecare
 
-## story_astigmatism-cause-cornearefractive
-* astigmatism-cause-cornearefractive
-    - utter_astigmatism-cause-cornearefractive
-
 ## story_astigmatism-symptoms_signs-cornearefractive
 * astigmatism-symptoms_signs-cornearefractive
     - utter_astigmatism-symptoms_signs-cornearefractive
@@ -520,14 +516,6 @@ stories:
 * cataract-treatment_surgical-cornearefractive
     - utter_cataract-treatment_surgical-cornearefractive
 
-## story_dryeyes-condition-cornearefractive
-* dryeyes-condition-cornearefractive
-    - utter_dryeyes-condition-cornearefractive
-
-## story_dryeyes-causes_riskfactors-cornearefractive
-* dryeyes-causes_riskfactors-cornearefractive
-    - utter_dryeyes-causes_riskfactors-cornearefractive
-
 ## story_dryeyes-symptoms_signs-cornearefractive
 * dryeyes-symptoms_signs-cornearefractive
     - utter_dryeyes-symptoms_signs-cornearefractive
@@ -755,10 +743,6 @@ stories:
 ## story_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
 * lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
     - utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
-
-## story_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-* lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-    - utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
 
 ## story_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 * lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175

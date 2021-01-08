@@ -29,10 +29,22 @@ pipeline:
 #  epochs: 100
 
 # Configuration for Rasa Core.
+#policies:
+#  - name: KerasPolicy
+#    epochs: 50
+#    max_history: 3
+#  - name: MemoizationPolicy
+#    max_history: 3
+#  - name: FormPolicy
+#  - name: FallbackPolicy
+#    nlu_threshold: 0.2
+#    core_threshold: 0.1
+#    ambiguity_threshold: 0.01
+#    fallback_action_name: action_default_fallback
 policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
-    max_history: 5
+    max_history: 10
     epochs: 100
   - name: MappingPolicy
   - name: FormPolicy

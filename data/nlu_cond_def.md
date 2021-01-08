@@ -201,52 +201,40 @@ nlu:
 - How do I get [allergic conjunctivitis](disease_type)?
 - How does [allergic conjunctivitis](disease_type) occur?
 - What will I feel if I have [allergic conjunctivitis](disease_type)?
+- What is [dry eye]{"entity":"symptom_type","value":"dry eyes"} syndrome?
+- Why are my [eyes dry]{"entity":"symptom_type","value":"dry eyes"}
+- why my [eyes dry]{"entity":"symptom_type","value":"dry eyes"}
+- Why are my [eyes always dry]{"entity":"symptom_type","value":"dry eyes"}?
+- What happens when my [eyes are dry]{"entity":"symptom_type","value":"dry eyes"}?
+- Is [dry eyes](symptom_type) a medical problem?
+- Who develops [dry eyes](symptom_type)?
+- Why do my [eyes become dry]{"entity":"symptom_type","value":"dry eyes"} in the wind or cold air? 
+- What happens when [eyes are dry]{"entity":"symptom_type","value":"dry eyes"}?
+- Who develops [dry eyes](symptom_type)?
+- How does [dry eyes](symptom_type) happen?
+- What is [dry eyes](symptom_type)?
+- Is there a reason my [eyes are dry]{"entity":"symptom_type","value":"dry eyes"}?
+- What is [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- Is [lasik](symptom_type) a day [surgery](technical_term)
+- How long does [lasik](symptom_type) take?
+- what procedure is [lasik](symptom_type)
+- What does [LASIK]{"entity":"symptom_type","value":"lasik"} stand for?
+- What does [LASIK]{"entity":"symptom_type","value":"lasik"} refer to?
+- What is the process of [LASIK]{"entity":"symptom_type","value":"lasik"} like?
+- What should I expect when I do [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What happens during [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- What happens in [LASIK]{"entity":"symptom_type","value":"lasik"}?
+- How does [LASIK]{"entity":"symptom_type","value":"lasik"} work?
+- How can [LASIK]{"entity":"symptom_type","value":"lasik"} help my eyes?
+- Is [LASIK]{"entity":"symptom_type","value":"lasik"} a [surgery](technical_term)?
+- What is [blepharitis](symptom_type)?
+- What does [oily eyelid]{"entity":"symptom_type","value":"blepharitis"} mean?
+- Is [oily eyelid]{"entity":"symptom_type","value":"blepharitis"} a disease?
+- Is [blepharitis](symptom_type) a dangerous condition?
+- What does [blepharitis](symptom_type) mean?
+- Is [blepharitis](symptom_type) an infection?
+- I have [blepharitis](symptom_type), what is it?
 
-## intent: dryeyes-condition-cornearefractive
-- What is Dry eye syndrome?
-- Why are my eyes dry
-- why my eyes dry
-- Why are my eyes always dry?
-- What happens when my eyes are dry?
-- Is dry eyes a medical problem?
-- Who develops dry eyes?
-- Why do my eyes become dry in the wind or cold air? 
-- What happens when eyes are dry?
-- Who develops dry eyes?
-- How does dry eyes happen?
-- What is dry eyes?
-- Is there a reason my eyes are dry?
-
-## intent: blepharitis-condition-cornearefractive
-- What is blepharitis?
-- What does oily eyelid mean?
-- Is oily eyelid a disease?
-- Why do I have crusting of the eyelids?
-- Why is it difficult to open my eyes in the morning due to crusts?
-- Is blepharitis a dangerous condition?
-- What do the oily secretions of the eyelid occur?
-- What does blepharitis mean?
-- Is blepharitis an infection?
-- I have blepharitis, what is it?
-
-
-
-## intent: myopia-condition-cornearefractive_160
-- My degree is _________, is it considered high?
-
-## intent: pterygium-condition-cornearefractive
-- what is that patch of skin growing on my eye
-- there is some weird white skin growing on my eye
-- What is this substance growing over my eye?
-- Why is my conjunctiva coming out?
-- Why is my sclera coming out?
-- Why is my cornea coming out?
-- Is this a tumour on my eye?
-- Do I have cancer on my eye?
-
-## intent: myopia-condition-cornearefractive
-- Why can I see near but not far?
-- I can only see near
 
 ## intent: keratoconus-condition-cornearefractive
 - What is keratoconus?
@@ -585,6 +573,28 @@ nlu:
 - My cornea is abnormally shaped
 - What causes my vision to be distorted?
 
+
+## intent: blepharitis-condition-cornearefractive
+- Why do I have crusting of the eyelids?
+- Why is it difficult to open my eyes in the morning due to crusts?
+- What do the oily secretions of the eyelid occur?
+
+## intent: myopia-condition-cornearefractive_160
+- My degree is _________, is it considered high?
+
+## intent: pterygium-condition-cornearefractive
+- what is that patch of skin growing on my eye
+- there is some weird white skin growing on my eye
+- What is this substance growing over my eye?
+- Why is my conjunctiva coming out?
+- Why is my sclera coming out?
+- Why is my cornea coming out?
+- Is this a tumour on my eye?
+- Do I have cancer on my eye?
+
+## intent: myopia-condition-cornearefractive
+- Why can I see near but not far?
+- I can only see near
 
 ## intent: find-condition-criteria
 - xxx
