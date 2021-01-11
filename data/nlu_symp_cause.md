@@ -1,5 +1,15 @@
 version: "2.0"
 nlu:
+
+
+<!-- 
+intent: ask symptoms of some problem/disease/terminology
+Typical question: What are the symptoms of XXX
+
+replaced intent:
+keratoconus-symptoms_signs-cornearefractive
+cornealedema-symptoms_signs-cornearefractive
+ --> 
 ## intent:find_medical_symptoms
 - What are the symptoms of [allergic conjunctivitis](disease_type)?
 - What are the symptoms of [glaucoma](disease_type)
@@ -48,22 +58,33 @@ nlu:
 - Can [conjunctivitis](disease_type) be passed down to children?
 - Can [conjunctivitis](disease_type) be passed down from parents?
 - Does [conjunctivitis](disease_type) cause flu?
-
-## intent: cornealedema-symptoms_signs-cornearefractive
-- What are the symptoms and signs of corneal edema?
-- what does corneal swelling do
-- What does corneal edema look like?
-- How is corneal edema supposed to look like?
-- How does corneal edema normally look like?
-- How does corneal edema present?
-- How do I know if I have corneal edema?
-- What will I experience if I have corneal edema?
-- What do people with corneal edema experience?
-- How does the doctor know I have corneal edema?
-- How is a diagnosis of corneal edema made?
-- How many eyes does corneal edema affect?
-- Can corneal edema affect both eyes?
-- Is corneal edema bilateral?
+- What are the symptoms and signs of [keratoconus](disease_type)?
+- Can I go blind because of [keratoconus](disease_type)
+- Will my cornea burst if I have [keratoconus](disease_type)
+- What will I see if I have [keratoconus](disease_type)?
+- How can my doctor diagnose [keratoconus](disease_type)?
+- What will I feel if I have [keratoconus](disease_type)?
+- What are the symptoms of [keratoconus](disease_type)?
+- Will I have blurry vision if I have [keratoconus](disease_type)?
+- Does [keratoconus](disease_type) cause double vision?
+- My astigmatism keeps increasing, could it be [keratoconus](disease_type)?
+- Does [keratoconus](disease_type) cause pain and red eyes?
+- Can I see the cone if I have [keratoconus](disease_type)?
+- How does [keratoconus](disease_type) present?
+- What are the symptoms and signs of [corneal edema](disease_type)?
+- what does [corneal swelling]{"entity": "disease_type", "value": "corneal edema"} do
+- What does [corneal edema](disease_type) look like?
+- How is [corneal edema](disease_type) supposed to look like?
+- How does [corneal edema](disease_type) normally look like?
+- How does [corneal edema](disease_type) present?
+- How do I know if I have [corneal edema](disease_type)?
+- What will I experience if I have [corneal edema](disease_type)?
+- What do people with [corneal edema](disease_type) experience?
+- How does the doctor know I have [corneal edema](disease_type)?
+- How is a diagnosis of [corneal edema](disease_type) made?
+- How many eyes does [corneal edema](disease_type) affect?
+- Can [corneal edema](disease_type) affect both eyes?
+- Is [corneal edema](disease_type) bilateral?
 
 ## intent: cornealinfection-symptoms_signs-cornearefractive
 - What are the symptoms and signs of corneal infection?
@@ -173,7 +194,15 @@ nlu:
 - What will happen if I have a cataract?
 
 
+<!-- 
+intent: ask cause of the problem
+Typical question: What is the cause of XXX
 
+replaced intent:
+keratoconus-cause-cornearefractive
+conjunctivitis-causes-cornearefractive
+cornealedema-causes-cornearefractive
+ --> 
 ## intent:find_disease_causes
 - What is the cause of [astigmatism](disease_type)?
 - can [astigmatism](disease_type) be passed down?
@@ -220,3 +249,72 @@ nlu:
 - Am I at risk of [dry eyes](symptom_type)?
 - Who is at risk of [dry eyes](symptom_type)?
 - What results in [dry eyes](symptom_type)?
+- What is the cause of [keratoconus](disease_type)?
+- How did I get [keratoconus](disease_type)
+- Can [keratoconus](disease_type) be passed to my children
+- Does [keratoconus](disease_type) run in the family
+- Will [keratoconus](disease_type) keep deteriorating
+- What causes [keratoconus](disease_type)?
+- What is [keratoconus](disease_type) due to?
+- Is [keratoconus](disease_type) a genetic disease?
+- Is [keratoconus](disease_type) due to contact lens wear?
+- Is [keratoconus](disease_type) caused by an infection?
+- Who gets [keratoconus](disease_type)?
+- Does rubbing cause [keratoconus](disease_type)?
+- Does excessive reading cause [keratoconus](disease_type)?
+- Does excessive screen time cause [keratoconus](disease_type)?
+- What is the reason for [keratoconus](disease_type)?
+- What is the cause of [conjunctivitis](disease_type)?
+- What causes [conjunctivitis](disease_type)
+- How is [conjunctivitis](disease_type) spreaded?
+- If I look at people with [conjunctivitis](disease_type) can I get infected?
+- Is [conjunctivitis](disease_type) caused by virus or bacteria
+- Why do I have [conjunctivitis](disease_type)?
+- Why does [conjunctivitis](disease_type) occur?
+- How come I have [conjunctivitis](disease_type)?
+- What is the etiology of [conjunctivitis](disease_type)?
+- What is [conjunctivitis](disease_type) due to?
+- Is [conjunctivitis](disease_type) caused by blepharitis?
+- Is [conjunctivitis](disease_type) caused by infection?
+- Which patients get [conjunctivitis](disease_type)?
+- What is the reason I have [conjunctivitis](disease_type)?
+- Who gets [conjunctivitis](disease_type)?
+- Who is more susceptible to [conjunctivitis](disease_type)?
+- Who is at risk of getting [conjunctivitis](disease_type)?
+- What are the risk factors of [conjunctivitis](disease_type)?
+- Is [conjunctivitis](disease_type) caused by allergy?
+- What is the cause of [corneal edema](disease_type)?
+- Why is my [cornea swollen]{"entity": "disease_type", "value": "corneal edema"}
+- What causes [cornea to be swollen]{"entity": "disease_type", "value": "corneal edema"}
+- Is [cornea edema]{"entity": "disease_type", "value": "corneal edema"} due to old age
+- does fuchs cause blindnes
+- Why do I have [corneal edema](disease_type)?
+- What is the reason I have [corneal edema](disease_type)?
+- Why does [corneal edema](disease_type) occur?
+- How come I have [corneal edema](disease_type)?
+- Who gets [corneal edema](disease_type)?
+- Who is more susceptible to [corneal edema](disease_type)?
+- Who is at risk of getting [corneal edema](disease_type)?
+- What are the risk factors of [corneal edema](disease_type)?
+- Does water cause [corneal edema](disease_type)?
+- How come [corneal edema](disease_type) occurs?
+- Who is affected by [corneal edema](disease_type)?
+- Does dirt or dust cause [corneal edema](disease_type)?
+- Does contact lens cause [corneal edema](disease_type)?
+- Does eye injury cause [corneal edema](disease_type)?
+- Does eye surgery cause [corneal edema](disease_type)?
+- Does glaucoma cause [corneal edema](disease_type)?
+- Does myopia cause [corneal edema](disease_type)?
+- Does Fuchs' endothelial dystrophy cause [corneal edema](disease_type)?
+- Does [corneal edema](disease_type) cause [corneal edema](disease_type)?
+- Is [corneal edema](disease_type) infectious?
+- Can I get [corneal edema](disease_type) from other people?
+- Can [corneal edema](disease_type) spread from other people?
+- Is [corneal edema](disease_type) inherited?
+- Is [corneal edema](disease_type) congenital?
+- Can [corneal edema](disease_type) be passed down to children?
+- Can [corneal edema](disease_type) be passed down from parents?
+
+## intent: cornealedema-causes-cornearefractive
+- What is fuch cornea disease
+- does fuchs cause blindnes

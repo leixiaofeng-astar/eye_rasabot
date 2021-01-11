@@ -1,5 +1,15 @@
 version: "2.0"
 nlu:
+
+
+<!-- 
+intent: ask definition or concept of some problem/disease/terminology
+Typical question: What is XXX
+
+replaced intent:
+astigmatism-condition-cornearefractive
+...
+ --> 
 ## intent:find_condition_definitions
 - What is [glaucoma](disease_type)
 - what is [glaucoma](disease_type)
@@ -234,21 +244,21 @@ nlu:
 - What does [blepharitis](symptom_type) mean?
 - Is [blepharitis](symptom_type) an infection?
 - I have [blepharitis](symptom_type), what is it?
-
+- What is [keratoconus](disease_type)?
+- Why do I have [keratoconus](disease_type)
+- Why does [keratoconus](disease_type) have high astigmatism?
+- What does [keratoconus](disease_type) mean?
+- I have high astigmatism in both eyes, do I have [keratoconus](disease_type)?
+- I am diagnosed with [keratoconus](disease_type), what is it?
+- What happens in [keratoconus](disease_type)?
+- Is [keratoconus](disease_type) an infection?
+- Can [keratoconus](disease_type) affect both eyes?
 
 ## intent: keratoconus-condition-cornearefractive
-- What is keratoconus?
-- Why do I have keratoconus
 - What does cornea thinning mean
-- Why does keratoconus have high astigmatism?
 - My doctor told me my cornea is cone shaped, what does it mean?
-- What does keratoconus mean?
-- I have high astigmatism in both eyes, do I have keratoconus?
 - I have high astigmatism and deformity of my cornea, what is it?
-- I am diagnosed with keratoconus, what is it?
-- What happens in keratoconus?
-- Is keratoconus an infection?
-- Can keratoconus affect both eyes?
+
 
 ## intent: episcleritis_scleritis-condition-cornearefractive
 - What is scleritis/episcleritis?
@@ -597,7 +607,7 @@ nlu:
 - I can only see near
 
 ## intent: find-condition-criteria
-- xxx
+- TBD
 
 ## intent: find-condition-location
-- xxx
+- TBD

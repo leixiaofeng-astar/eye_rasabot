@@ -2,6 +2,7 @@ actions:
 - actions_find_condition_definitions
 - actions_find_medical_symptoms
 - actions_find_disease_causes
+- actions_find_disease_treatment
 - action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
@@ -440,6 +441,8 @@ intents:
 - find_condition_definitions
 - find_medical_symptoms
 - find_disease_causes
+- find_disease_treatment
+- find_surgical_treatment
 - greet
 - goodbye
 - affirm
@@ -452,24 +455,19 @@ intents:
 - out_of_scope
 - change_appointment
 - risk_inquiry
-- disease_treatment
 - signs_treatment
 - ask_diagnosis
 - glaucoma_lasers_treatment
 - glaucoma_eyedrop_treatment
-- glaucoma_surgical_treatment
 - disease_followup
 - signs_followup
 - ask_signs_treatment
 - ask_astigmatism_information
-- astigmatism-condition-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive_4
 - astigmatism-investigations-cornearefractive
-- astigmatism-treatment_general-cornearefractive
 - astigmatism-treatment_conservative-cornearefractive
 - astigmatism-treatment_medical-cornearefractive
-- astigmatism-treatment_surgical-cornearefractive
 - astigmatism-treatment_surgical-cornearefractive_10
 - astigmatism-treatment_surgical-cornearefractive_11
 - astigmatism-preoperative-cornearefractive
@@ -486,7 +484,6 @@ intents:
 - astigmatism-postoperative-cornearefractive_23
 - astigmatism-postoperative-cornearefractive_24
 - conjunctivitis-condition-cornearefractive
-- conjunctivitis-causes-cornearefractive
 - conjunctivitis-symptoms_signs-cornearefractive_28
 - conjunctivitis-investigations-cornearefractive
 - conjunctivitis-treatment_general-cornearefractive
@@ -495,7 +492,6 @@ intents:
 - conjunctivitis-treatment_surgical-cornearefractive
 - cornealedema-condition-cornearefractive
 - cornealedema-causes-cornearefractive
-- cornealedema-symptoms_signs-cornearefractive
 - cornealedema-symptoms_signs-cornearefractive_37
 - cornealedema-investigations-cornearefractive
 - cornealedema-treatment_general-cornearefractive
@@ -644,9 +640,6 @@ intents:
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_185
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_186
 - keratoconus-condition-cornearefractive
-- keratoconus-cause-cornearefractive
-- keratoconus-symptoms_signs-cornearefractive
-- keratoconus-treatment_general-cornearefractive
 - contactlensoverwear-condition-cornearefractive
 - episcleritis_scleritis-condition-cornearefractive
 - episcleritis_scleritis-cause-cornearefractive

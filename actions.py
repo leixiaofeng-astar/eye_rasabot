@@ -19,12 +19,14 @@ PROJ_NAME = "Dr Eye"
 # TODO -- prepare for mutli-intents combination
 disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy", "corneal edema", "cataract",\
                        "conjunctivitis", "corneal infection", "amd", "dme", "myopia", "high myopia", "pterygium",\
-                       "allergic conjunctivitis", "retinopathy"]
+                       "allergic conjunctivitis", "retinopathy", "keratoconus"]
 symptom_entity_list = ["visualfiled-synm", "oval cornea", "vidcon", "dry eyes", "lasik", "blepharitis"]
 medicine_name_entity_list = ["eyedrop-synm"]
+technical_term_entity_list = ["surgery"]
 entity_dict = { "disease_type": disease_entity_list,
                  "symptom_type": symptom_entity_list,
                  "medicine_name": medicine_name_entity_list,
+                 "technical_term": technical_term_entity_list,
                 }
 
 # Define Levenshtein distance function (from the mentioned link)
@@ -201,16 +203,11 @@ class action_find_information(Action):
                     template="utter_blepharitis-condition-cornearefractive",
                     name=PROJ_NAME
                 )
-            # elif find_entity_value == "pterygium":
-            #     dispatcher.utter_message(
-            #         template="utter_pterygium-condition-cornearefractive",
-            #         name=PROJ_NAME
-            #     )
-            # elif find_entity_value == "pterygium":
-            #     dispatcher.utter_message(
-            #         template="utter_pterygium-condition-cornearefractive",
-            #         name=PROJ_NAME
-            #     )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
             else:
                 print("actions_find_condition_definitions: No matched entity found!!!")
                 dispatcher.utter_message(
@@ -278,6 +275,21 @@ class action_find_symptoms_information(Action):
                     template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
                     name=PROJ_NAME
                 )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_cornealedema-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == "corneal edema":
+            #     dispatcher.utter_message(
+            #         template="utter_cornealedema-causes-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
             else:
                 print("actions_find_medical_symptoms: No matched entity found!!!")
                 dispatcher.utter_message(
@@ -334,16 +346,16 @@ class action_find_disease_causes(Action):
                     template="utter_astigmatism-cause-cornearefractive",
                     name=PROJ_NAME
                 )
-            # elif find_entity_value == 'conjunctivitis':
-            #     dispatcher.utter_message(
-            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
-            #         name=PROJ_NAME
-            #     )
-            # elif find_entity_value == "allergic conjunctivitis":
-            #     dispatcher.utter_message(
-            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
-            #         name=PROJ_NAME
-            #     )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-cause-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_cornealedema-causes-cornearefractive",
+                    name=PROJ_NAME
+                )
             else:
                 print("find_disease_causes: No matched entity found!!!")
                 dispatcher.utter_message(
@@ -357,6 +369,155 @@ class action_find_disease_causes(Action):
                 name=PROJ_NAME
             )
         return []
+
+class action_find_disease_treatment(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_disease_treatment"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "glaucoma":
+                dispatcher.utter_message(
+                    template="utter_glaucoma_treated",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == 'conjunctivitis':
+            #     dispatcher.utter_message(
+            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            # elif find_entity_value == "allergic conjunctivitis":
+            #     dispatcher.utter_message(
+            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("find_disease_treatment: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_disease_treatment: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
+
+
+class action_find_surgical_treatment(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_surgical_treatment"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- consider 2 entities example here
+            for i in range(len(es)):
+                e = es[i]
+                entity_name = e['entity']
+                entity_value = e['value']
+                # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+                print("entity[{}]: {}\nName:{}; Value: {}".format(i, e, e['entity'], e['value']))
+                for eye_entity in entity_dict:
+                    if entity_name == eye_entity:  # the key is entity name defined in entities in domain.yml
+                        print("entity matched: {}".format(entity_name))
+                        # if entity is "surgery", keep searching the next entity
+                        if entity_value == "surgery":
+                            continue
+
+                        inform_matched = True
+                        entity_value_list = entity_dict[eye_entity]
+                        break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "glaucoma":
+                dispatcher.utter_message(
+                    template="utter_glaucoma_surgical_treatment",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-treatment_surgical-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == 'conjunctivitis':
+            #     dispatcher.utter_message(
+            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            # elif find_entity_value == "allergic conjunctivitis":
+            #     dispatcher.utter_message(
+            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("find_surgical_treatment: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_surgical_treatment: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
+
 
 # class FacilityForm(FormAction):
 #     """Custom form action to fill all slots required to find specific type

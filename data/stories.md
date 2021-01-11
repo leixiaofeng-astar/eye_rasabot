@@ -22,6 +22,8 @@ stories:
 * out_of_scope
    - utter_out_of_scope
 * out_of_scope
+   - utter_out_of_scope
+* out_of_scope
    - utter_help_message
     
 ## story_find_condition_definitions
@@ -44,9 +46,9 @@ stories:
 * risk_inquiry 
     - utter_glaucoma_riskfactors
     
-## story_disease_treatment
-* disease_treatment 
-    - utter_glaucoma_treated
+## story_find_disease_treatment
+* find_disease_treatment 
+    - actions_find_disease_treatment
 
 ## story_signs_treatment
 * signs_treatment 
@@ -64,9 +66,9 @@ stories:
 * glaucoma_lasers_treatment 
     - utter_glaucoma_lasers_treatment
     
-## story_glaucoma_surgical_treatment 
-* glaucoma_surgical_treatment  
-    - utter_glaucoma_surgical_treatment
+## story_find_surgical_treatment 
+* find_surgical_treatment  
+    - actions_find_surgical_treatment 
 
 ## story_glaucoma_eyedrop_treatment
 * glaucoma_eyedrop_treatment 
@@ -92,10 +94,6 @@ stories:
 * astigmatism-investigations-cornearefractive
     - utter_astigmatism-investigations-cornearefractive
 
-## story_astigmatism-treatment_general-cornearefractive
-* astigmatism-treatment_general-cornearefractive
-    - utter_astigmatism-treatment_general-cornearefractive
-
 ## story_astigmatism-treatment_conservative-cornearefractive
 * astigmatism-treatment_conservative-cornearefractive
     - utter_astigmatism-treatment_conservative-cornearefractive
@@ -103,10 +101,6 @@ stories:
 ## story_astigmatism-treatment_medical-cornearefractive
 * astigmatism-treatment_medical-cornearefractive
     - utter_astigmatism-treatment_medical-cornearefractive
-
-## story_astigmatism-treatment_surgical-cornearefractive
-* astigmatism-treatment_surgical-cornearefractive
-    - utter_astigmatism-treatment_surgical-cornearefractive
 
 ## story_astigmatism-treatment_surgical-cornearefractive_10
 * astigmatism-treatment_surgical-cornearefractive_10
@@ -172,10 +166,6 @@ stories:
 * conjunctivitis-condition-cornearefractive
     - utter_conjunctivitis-condition-cornearefractive
 
-## story_conjunctivitis-causes-cornearefractive
-* conjunctivitis-causes-cornearefractive
-    - utter_conjunctivitis-causes-cornearefractive
-
 ## story_conjunctivitis-symptoms_signs-cornearefractive_28
 * conjunctivitis-symptoms_signs-cornearefractive_28
     - utter_conjunctivitis-symptoms_signs-cornearefractive_28
@@ -203,10 +193,6 @@ stories:
 ## story_cornealedema-causes-cornearefractive
 * cornealedema-causes-cornearefractive
     - utter_cornealedema-causes-cornearefractive
-
-## story_cornealedema-symptoms_signs-cornearefractive
-* cornealedema-symptoms_signs-cornearefractive
-    - utter_cornealedema-symptoms_signs-cornearefractive
 
 ## story_cornealedema-symptoms_signs-cornearefractive_37
 * cornealedema-symptoms_signs-cornearefractive_37
@@ -795,18 +781,6 @@ stories:
 ## story_keratoconus-condition-cornearefractive
 * keratoconus-condition-cornearefractive
     - utter_keratoconus-condition-cornearefractive
-
-## story_keratoconus-cause-cornearefractive
-* keratoconus-cause-cornearefractive
-    - utter_keratoconus-cause-cornearefractive
-
-## story_keratoconus-symptoms_signs-cornearefractive
-* keratoconus-symptoms_signs-cornearefractive
-    - utter_keratoconus-symptoms_signs-cornearefractive
-
-## story_keratoconus-treatment_general-cornearefractive
-* keratoconus-treatment_general-cornearefractive
-    - utter_keratoconus-treatment_general-cornearefractive
 
 ## story_contactlensoverwear-condition-cornearefractive
 * contactlensoverwear-condition-cornearefractive

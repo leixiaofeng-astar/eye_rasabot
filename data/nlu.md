@@ -7,6 +7,14 @@ nlu:
     - Singalore
     - China
     
+- synonym: corneal edema
+  examples: |
+    - corneal swollen
+    - corneal swelling
+    - cornea edema 
+    - cornea to be swollen
+    - cornea swollen
+    
 - synonym: vidcon
   examples: |
     - video consultation
@@ -354,11 +362,13 @@ nlu:
     - oily eyelids
     - oily lids
 
-- synonym: operation
+- synonym: surgery
   examples: |
     - Operation		
     - Surgery
-    - surgery
+    - operation
+    - operations
+    - surgeries
     - op
 
 - synonym: ok_lens
@@ -511,9 +521,47 @@ nlu:
 - hello robot
 - hi
 
-## intent:inform
-- [Sitka](location)
-- [home health agency](facility_type)
+## intent:thanks
+- Thanks
+- Thank you
+- Thank you so much
+- Thanks bot
+- Thanks for that
+- cheers
+- cheers bro
+- ok thanks!
+- perfect thank you
+- thanks a bunch for everything
+- thanks for the help
+- thanks a lot
+- amazing, thanks
+- cool, thanks
+- cool thank you
+
+## intent:mood_great
+- perfect
+- very good
+- great
+- amazing
+- wonderful
+- I am feeling very good
+- I am great
+- I'm good
+
+## intent:mood_unhappy
+- sad
+- very sad
+- unhappy
+- bad
+- very bad
+- awful
+- terrible
+- not very good
+- extremely sad
+- so sad
+
+## regex:location
+- [0-9]{5}
 
 
 ## intent:change_appointment
@@ -528,7 +576,15 @@ nlu:
 - I did not turn up for my [glaucoma](disease_type) appointment, what can I do
 - How do I change my [glaucoma](disease_type) appointment
 
-## intent:disease_treatment
+
+<!-- 
+intent: if you have one disease, how to treat it
+Typical question: how is xxx treated.
+replaced intents:
+keratoconus-treatment_general-cornearefractive
+astigmatism-treatment_general-cornearefractive
+ --> 
+## intent:find_disease_treatment
 - How is [glaucoma](disease_type) treated
 - How can [glaucoma](disease_type) be treated
 - What are the treatment options for [glaucoma](disease_type)
@@ -540,7 +596,97 @@ nlu:
 - What can I do if I have [glaucoma](disease_type)
 - Is there hope in [glaucoma](disease_type)
 - Will I go blind with [glaucoma](disease_type)
+- What is the treatment for [keratoconus](disease_type) ?
+- When will I need transplant for [keratoconus](disease_type)
+- Will all [keratoconus](disease_type) patient eventually need transplant
+- How is [keratoconus](disease_type) treated?
+- What type of contact lens do I need for [keratoconus](disease_type)?
+- Can [keratoconus](disease_type) be treated by medications only?
+- Can [keratoconus](disease_type) be treated with glasses?
+- Can [keratoconus](disease_type) be cured?
+- I have [keratoconus](disease_type) in one eye, wow do I avoid developing [keratoconus](disease_type) in the other eye?
+- Does laser help in [keratoconus](disease_type)?
+- When is laser required for [keratoconus](disease_type)?
+- What is the treatment for [astigmatism](disease_type)?
+- Need surgery for [astigmatism](disease_type)?
+- how can i get rid of [astigmatism](disease_type)
+- how do i reduce [astig]{"entity": "disease_type", "value": "astigmatism"}
+- can lasik treat [astigmatism](disease_type)?
+- my optician says i have [astigmatism](disease_type), what should i do
+- How to treat [astigmatism](disease_type)?
+- How to heal [astigmatism](disease_type)?
+- How to cure [astigmatism](disease_type)?
+- How to repair [astigmatism](disease_type)?
+- How to make [astigmatism](disease_type) go away?
+- How to make [astigmatism](disease_type) disappear?
+- How to get rid of [astigmatism](disease_type)?
+- How to prevent [astigmatism](disease_type)?
+- How to help my [astigmatism](disease_type)?
+- How is [astigmatism](disease_type) treated?
+- How to stop [astigmatism](disease_type) from coming back?
+- What to do to stop [astigmatism](disease_type)?
+- What are the options for treating [astigmatism](disease_type)?
+- How can I prevent [astigmatism](disease_type)?
 
+
+<!-- 
+intent: ask surgical treatment of some problem/disease/terminology
+Note: different from general treatment as above
+Typical question: What are the surgical options for treating XXX
+replaced intents:
+glaucoma_surgical_treatment 
+astigmatism-treatment_surgical-cornearefractive
+keratoconus-treatment_general-cornearefractive (answer same as general treatment)
+ --> 
+## intent:find_surgical_treatment 
+- I have [keratoconus](disease_type), do I need [surgery](technical_term)?
+- When is [surgery](technical_term) required in [keratoconus](disease_type)?
+- What are the surgical options for treating [glaucoma](disease_type)
+- Will I need [surgery](technical_term) for [glaucoma](disease_type)
+- Can [surgery](technical_term) cure [glaucoma](disease_type)
+- What [surgery](technical_term) for [glaucoma](disease_type)
+- What if I do not want to use [glaucoma](disease_type) eyedrops anymore
+- What kind of [surgery](technical_term) is for [glaucoma](disease_type)
+- Do surgeries work for [glaucoma](disease_type)
+- How can I cure [glaucoma](disease_type)
+- What can doctors do for my [glaucoma](disease_type)
+- My [glaucoma](disease_type) eyedrops are not working, is there still hope
+- What happens in [surgery](technical_term) for [glaucoma](disease_type)
+- Can I go under the knife for [glaucoma](disease_type)
+- When is [surgery](technical_term) recommended for [glaucoma](disease_type)
+- What kind of surgeries can I undergo for [glaucoma](disease_type)
+- When is [surgery](technical_term) indicated for [glaucoma](disease_type)
+- What are the indications of [glaucoma](disease_type) [surgery](technical_term)
+- Can the eye surgeon take out my [glaucoma](disease_type)
+- Are procedures for [glaucoma](disease_type) available
+- Are operations to cure [glaucoma](disease_type) available
+- What is the surgical treatment of [astigmatism](disease_type)?
+- can lasik correct [astigmatism](disease_type)
+- what surgeries can correct [astig]{"entity": "disease_type", "value": "astigmatism"}
+- Can lasik treat [astig]{"entity": "disease_type", "value": "astigmatism"}
+- Do I need laser for [astigmatism](disease_type)?
+- Do I need LASEK for [astigmatism](disease_type)?
+- Do I need SMILE for [astigmatism](disease_type)?
+- Do I need LASIK for [astigmatism](disease_type)?
+- Do I need PRK for [astigmatism](disease_type)?
+- Does [astigmatism](disease_type) [surgery](technical_term) exist?
+- Is surgical removal of [astigmatism](disease_type) possible?
+- Can you take out my [astigmatism](disease_type)?
+- Can I do [surgery](technical_term) to treat [astigmatism](disease_type)?
+- Can you help me remove [astigmatism](disease_type)?
+- Do I have to go under the knife for [astigmatism](disease_type)?
+- Is there [astigmatism](disease_type) [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove [astigmatism](disease_type)?
+- Is there a procedure to remove [astigmatism](disease_type)?
+- Can an eye surgeon operate on my [astigmatism](disease_type)?
+- Can an eye doctor do [surgery](technical_term) for my [astigmatism](disease_type)?
+
+
+
+<!-- 
+intent: how one terminology was tested or investigated
+Typical question: how can xxx be tested.
+ --> 
 ## intent:signs_treatment
 - How can [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} be tested
 - How can [visual field]{"entity": "symptom_type", "value": "visualfiled-synm"} be investigated
@@ -580,26 +726,6 @@ nlu:
 - Can the doctor check if I have [glaucoma](disease_type)
 - What can be done to confirm that I have [glaucoma](disease_type)
 
-## intent:glaucoma_surgical_treatment 
-- What are the surgical options for treating [glaucoma](disease_type)
-- Will I need [surgery](technical_term) for [glaucoma](disease_type)
-- Can [surgery](technical_term) cure [glaucoma](disease_type)
-- What [surgery](technical_term) for [glaucoma](disease_type)
-- What if I do not want to use [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} anymore
-- What kind of [surgery](technical_term) is for [glaucoma](disease_type)
-- Do surgeries work for [glaucoma](disease_type)
-- How can I cure [glaucoma](disease_type)
-- What can doctors do for my [glaucoma](disease_type)
-- My [glaucoma](disease_type) [eyedrops]{"entity": "medicine_name", "value": "eyedrop-synm"} are not working, is there still hope
-- What happens in [surgery](technical_term) for [glaucoma](disease_type)
-- Can I go under the knife for [glaucoma](disease_type)
-- When is [surgery](technical_term) recommended for [glaucoma](disease_type)
-- What kind of surgeries can I undergo for [glaucoma](disease_type)
-- When is [surgery](technical_term) indicated for [glaucoma](disease_type)
-- What are the indications of [glaucoma](disease_type) [surgery](technical_term)
-- Can the eye surgeon take out my [glaucoma](disease_type)
-- Are procedures for [glaucoma](disease_type) available
-- Are operations to cure [glaucoma](disease_type) available
 
 ## intent:glaucoma_lasers_treatment 
 - What kind of laser treatment options are there for [glaucoma](disease_type)
@@ -658,48 +784,6 @@ nlu:
 - find me a nearby [hospital](facility_type) my zip code is [10119](location)
 - i need a [home health agency](facility_type)
 
-## intent:thanks
-- Thanks
-- Thank you
-- Thank you so much
-- Thanks bot
-- Thanks for that
-- cheers
-- cheers bro
-- ok thanks!
-- perfect thank you
-- thanks a bunch for everything
-- thanks for the help
-- thanks a lot
-- amazing, thanks
-- cool, thanks
-- cool thank you
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
-## regex:location
-- [0-9]{5}
-
 
 ## intent: astigmatism-investigations-cornearefractive
 - What are the investigations for astigmatism?
@@ -716,27 +800,6 @@ nlu:
 - Do I need eye imaging for astigmatism?
 - Do I need invasive tests for astigmatism?
 
-## intent: astigmatism-treatment_general-cornearefractive
-- What is the treatment for astigmatism?
-- Need [surgery](technical_term) for astigmatism?
-- how can i get rid of astigmatism
-- how do i reduce astig
-- can [lasik]{symptom_type) treat astigmatism?
-- my optician says i have astigmatism, what should i do
-- How to treat astigmatism?
-- How to heal astigmatism?
-- How to cure astigmatism?
-- How to repair astigmatism?
-- How to make astigmatism go away?
-- How to make astigmatism disappear?
-- How to get rid of astigmatism?
-- How to prevent astigmatism?
-- How to help my astigmatism?
-- How is astigmatism treated?
-- How to stop astigmatism from coming back?
-- What to do to stop astigmatism?
-- What are the options for treating astigmatism?
-- How can I prevent astigmatism?
 
 ## intent: astigmatism-treatment_conservative-cornearefractive
 - What is the conservative treatment for astigmatism?
@@ -773,27 +836,6 @@ nlu:
 - Can I stop astigmatism with medicine?
 - Will astigmatism go away with medicine?
 
-## intent: astigmatism-treatment_surgical-cornearefractive
-- What is the surgical treatment of astigmatism?
-- can [lasik]{symptom_type) correct astigmatism
-- what surgeries can correct astig
-- Can [lasik]{symptom_type) treat astig
-- Do I need laser for astigmatism?
-- Do I need LASEK for astigmatism?
-- Do I need SMILE for astigmatism?
-- Do I need [LASIK]{"entity":"symptom_type","value":"lasik"} for astigmatism?
-- Do I need PRK for astigmatism?
-- Does astigmatism [surgery](technical_term) exist?
-- Is surgical removal of astigmatism possible?
-- Can you take out my astigmatism?
-- Can I do [surgery](technical_term) to treat astigmatism?
-- Can you help me remove astigmatism?
-- Do I have to go under the knife for astigmatism?
-- Is there astigmatism [surgery](technical_term)?
-- Is there a [surgery](technical_term) to remove astigmatism?
-- Is there a procedure to remove astigmatism?
-- Can an eye surgeon operate on my astigmatism?
-- Can an eye doctor do [surgery](technical_term) for my astigmatism?
 
 ## intent: astigmatism-treatment_surgical-cornearefractive_10
 - What are the indications of [surgery](technical_term) for astigmatism?
@@ -1022,26 +1064,6 @@ nlu:
 - What does the eye doctor monitor after astigmatism [surgery](technical_term)?
 - What happens in the clinic after astigmatism [surgery](technical_term)?
 
-## intent: conjunctivitis-causes-cornearefractive
-- What is the cause of [conjunctivitis](disease_type)?
-- What causes [conjunctivitis](disease_type)
-- How is [conjunctivitis](disease_type) spreaded?
-- If I look at people with [conjunctivitis](disease_type) can I get infected?
-- Is [conjunctivitis](disease_type) caused by virus or bacteria
-- Why do I have [conjunctivitis](disease_type)?
-- Why does [conjunctivitis](disease_type) occur?
-- How come I have [conjunctivitis](disease_type)?
-- What is the etiology of [conjunctivitis](disease_type)?
-- What is [conjunctivitis](disease_type) due to?
-- Is [conjunctivitis](disease_type) caused by blepharitis?
-- Is [conjunctivitis](disease_type) caused by infection?
-- Which patients get [conjunctivitis](disease_type)?
-- What is the reason I have [conjunctivitis](disease_type)?
-- Who gets [conjunctivitis](disease_type)?
-- Who is more susceptible to [conjunctivitis](disease_type)?
-- Who is at risk of getting [conjunctivitis](disease_type)?
-- What are the risk factors of [conjunctivitis](disease_type)?
-- Is [conjunctivitis](disease_type) caused by allergy?
 
 ## intent: conjunctivitis-investigations-cornearefractive
 - What investigations will be done for [conjunctivitis](disease_type)?
@@ -1142,40 +1164,6 @@ nlu:
 - Is there a procedure to remove [conjunctivitis](disease_type)?
 - Can an eye surgeon operate on my [conjunctivitis](disease_type)?
 - Can an eye doctor do [surgery](technical_term) for my [conjunctivitis](disease_type)?
-
-## intent: cornealedema-causes-cornearefractive
-- What is the cause of corneal edema?
-- Why is my cornea swollen
-- What causes cornea to be swollen
-- What is fuch cornea disease
-- Is cornea edema due to old age
-- does fuchs cause blindnes
-- Why do I have corneal edema?
-- What is the reason I have corneal edema?
-- Why does corneal edema occur?
-- How come I have corneal edema?
-- Who gets corneal edema?
-- Who is more susceptible to corneal edema?
-- Who is at risk of getting corneal edema?
-- What are the risk factors of corneal edema?
-- Does water cause corneal edema?
-- How come corneal edema occurs?
-- Who is affected by corneal edema?
-- Does dirt or dust cause corneal edema?
-- Does contact lens cause corneal edema?
-- Does eye injury cause corneal edema?
-- Does eye [surgery](technical_term) cause corneal edema?
-- Does glaucoma cause corneal edema?
-- Does myopia cause corneal edema?
-- Does Fuchs' endothelial dystrophy cause corneal edema?
-- Does corneal edema cause corneal edema?
-- Is corneal edema infectious?
-- Can I get corneal edema from other people?
-- Can corneal edema spread from other people?
-- Is corneal edema inherited?
-- Is corneal edema congenital?
-- Can corneal edema be passed down to children?
-- Can corneal edema be passed down from parents?
 
 ## intent: cornealedema-investigations-cornearefractive
 - What are the investigations for corneal edema?
@@ -3313,52 +3301,7 @@ nlu:
 - Are there other laser surgeries apart from [LASIK]{"entity":"symptom_type","value":"lasik"}?
 - Can I still go for [surgery](technical_term) if I am not suitable for [LASIK]{"entity":"symptom_type","value":"lasik"}?
 
-## intent: keratoconus-cause-cornearefractive
-- What is the cause of keratoconus?
-- How did I get keratoconus
-- Can keratoconus be passed to my children
-- Does keratoconus run in the family
-- Will keratoconus keep deteriorating
-- What causes keratoconus?
-- What is keratoconus due to?
-- Is keratoconus a genetic disease?
-- Is keratoconus due to contact lens wear?
-- Is keratoconus caused by an infection?
-- Who gets keratoconus?
-- Does rubbing cause keratoconus?
-- Does excessive reading cause keratoconus?
-- Does excessive screen time cause keratoconus?
-- What is the reason for keratoconus?
 
-## intent: keratoconus-symptoms_signs-cornearefractive
-- What are the symptoms and signs of keratoconus?
-- Can I go blind because of keratoconus
-- Will my cornea burst if I have keratoconus
-- What will I see if I have keratoconus?
-- How can my doctor diagnose keratoconus?
-- What will I feel if I have keratoconus?
-- What are the symptoms of keratoconus?
-- Will I have blurry vision if I have keratoconus?
-- Does keratoconus cause double vision?
-- My astigmatism keeps increasing, could it be keratoconus?
-- Does keratoconus cause pain and red eyes?
-- Can I see the cone if I have keratoconus?
-- How does keratoconus present?
-
-## intent: keratoconus-treatment_general-cornearefractive
-- What is the treatment for keratoconus?
-- When will I need transplant for keratoconus
-- Will all keratoconus patient eventually need transplant
-- How is keratoconus treated?
-- What type of contact lens do I need for keratoconus?
-- I have keratoconus, do I need [surgery](technical_term)?
-- When is [surgery](technical_term) required in keratoconus?
-- Can keratoconus be treated by medications only?
-- Can keratoconus be treated with glasses?
-- Can keratoconus be cured?
-- I have keratoconus in one eye, wow do I avoid developing keratoconus in the other eye?
-- Does laser help in keratoconus?
-- When is laser required for keratoconus?
 
 ## intent: contactlensoverwear-condition-cornearefractive
 - What is contact lens overwear?
