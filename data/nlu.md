@@ -1166,115 +1166,115 @@ Typical question: how can xxx be tested.
 - Can an eye doctor do [surgery](technical_term) for my [conjunctivitis](disease_type)?
 
 ## intent: cornealedema-investigations-cornearefractive
-- What are the investigations for corneal edema?
+- What are the investigations for [corneal edema](disease_type)?
 - How do I check if my cornea is healthy
-- What will the eye doctor do after examining for my corneal edema?
-- Are additional tests required for corneal edema?
-- Are additional tests needed for corneal edema?
-- What tests will I have to go through for corneal edema?
-- Will the eye doctor do more tests for corneal edema?
-- Will the eye doctor take pictures of my eyes for corneal edema?
-- Do I need blood tests for corneal edema?
-- Are invasive tests needed for corneal edema?
-- Do I need eye imaging for corneal edema?
-- Does the eye doctor need to take blood test for corneal edema?
-- Does the eye doctor need to take cornea samples for corneal edema?
+- What will the eye doctor do after examining for my [corneal edema](disease_type)?
+- Are additional tests required for [corneal edema](disease_type)?
+- Are additional tests needed for [corneal edema](disease_type)?
+- What tests will I have to go through for [corneal edema](disease_type)?
+- Will the eye doctor do more tests for [corneal edema](disease_type)?
+- Will the eye doctor take pictures of my eyes for [corneal edema](disease_type)?
+- Do I need blood tests for [corneal edema](disease_type)?
+- Are invasive tests needed for [corneal edema](disease_type)?
+- Do I need eye imaging for [corneal edema](disease_type)?
+- Does the eye doctor need to take blood test for [corneal edema](disease_type)?
+- Does the eye doctor need to take cornea samples for [corneal edema](disease_type)?
 
 ## intent: cornealedema-treatment_general-cornearefractive
-- What is the treatment for corneal edema?
+- What is the treatment for [corneal edema](disease_type)?
 - Can my cornea swelling recover?
 - Can cornea edema be treated?
 - Is there anything i can do to stop my cornea from deteriorating
-- How to treat corneal edema?
-- How to heal corneal edema?
-- How to cure corneal edema?
-- How to repair corneal edema?
-- How to make corneal edema go away?
-- How to make corneal edema disappear?
-- How to get rid of corneal edema?
-- How to prevent corneal edema?
-- How to help my corneal edema?
-- How is corneal edema treated?
-- How to stop corneal edema from coming back?
-- What to do to stop corneal edema?
-- What are the options for treating corneal edema?
-- How can I prevent corneal edema?
+- How to treat [corneal edema](disease_type)?
+- How to heal [corneal edema](disease_type)?
+- How to cure [corneal edema](disease_type)?
+- How to repair [corneal edema](disease_type)?
+- How to make [corneal edema](disease_type) go away?
+- How to make [corneal edema](disease_type) disappear?
+- How to get rid of [corneal edema](disease_type)?
+- How to prevent [corneal edema](disease_type)?
+- How to help my [corneal edema](disease_type)?
+- How is [corneal edema](disease_type) treated?
+- How to stop [corneal edema](disease_type) from coming back?
+- What to do to stop [corneal edema](disease_type)?
+- What are the options for treating [corneal edema](disease_type)?
+- How can I prevent [corneal edema](disease_type)?
 
 ## intent: cornealedema-treatment_conservative-cornearefractive
-- What is the conservative treatment of corneal edema?
+- What is the conservative treatment of [corneal edema](disease_type)?
 - I have cornea swelling, can I recover on my own
-- Can I get rid of corneal edema without medicine or [surgery](technical_term)?
-- Will corneal edema be cured without medicine or [surgery](technical_term)?
-- Will corneal edema go away without medicine or [surgery](technical_term)?
-- How can I protect my eyes from corneal edema?
-- How to reduce risks of corneal edema?
-- When can corneal edema be left alone?
-- When can corneal edema be treated conservatively?
-- When can corneal edema be treated without medicine or [surgery](technical_term)?
-- Can corneal edema be left alone?
-- Will corneal edema go away on its own?
-- Will corneal edema disappear on its own?
-- Will corneal edema get cured on its own?
-- Will corneal edema heal by itself?
+- Can I get rid of [corneal edema](disease_type) without medicine or [surgery](technical_term)?
+- Will [corneal edema](disease_type) be cured without medicine or [surgery](technical_term)?
+- Will [corneal edema](disease_type) go away without medicine or [surgery](technical_term)?
+- How can I protect my eyes from [corneal edema](disease_type)?
+- How to reduce risks of [corneal edema](disease_type)?
+- When can [corneal edema](disease_type) be left alone?
+- When can [corneal edema](disease_type) be treated conservatively?
+- When can [corneal edema](disease_type) be treated without medicine or [surgery](technical_term)?
+- Can [corneal edema](disease_type) be left alone?
+- Will [corneal edema](disease_type) go away on its own?
+- Will [corneal edema](disease_type) disappear on its own?
+- Will [corneal edema](disease_type) get cured on its own?
+- Will [corneal edema](disease_type) heal by itself?
 
 ## intent: cornealedema-treatment_medical-cornearefractive
-- What is the medical treatment of corneal edema?
-- can cure corneal edema with eye drops
-- What is the pharmacological treatment of corneal edema?
-- Can I take medicine to treat corneal edema?
-- Are there pills to treat corneal edema?
-- Are there eye drops to get rid of corneal edema?
-- Will eye drops help cure corneal edema?
-- How do eye drops work in corneal edema?
-- How do eye drops help with corneal edema?
-- What do eye drops do for corneal edema?
-- Can eye drops reduce the growth of corneal edema?
-- Can eye drops stop corneal edema from growing?
-- Can eye drops kill the corneal edema?
-- How is corneal edema treated with medicine?
-- Are antibiotics needed for corneal edema?
+- What is the medical treatment of [corneal edema](disease_type)?
+- can cure [corneal edema](disease_type) with eye drops
+- What is the pharmacological treatment of [corneal edema](disease_type)?
+- Can I take medicine to treat [corneal edema](disease_type)?
+- Are there pills to treat [corneal edema](disease_type)?
+- Are there eye drops to get rid of [corneal edema](disease_type)?
+- Will eye drops help cure [corneal edema](disease_type)?
+- How do eye drops work in [corneal edema](disease_type)?
+- How do eye drops help with [corneal edema](disease_type)?
+- What do eye drops do for [corneal edema](disease_type)?
+- Can eye drops reduce the growth of [corneal edema](disease_type)?
+- Can eye drops stop [corneal edema](disease_type) from growing?
+- Can eye drops kill the [corneal edema](disease_type)?
+- How is [corneal edema](disease_type) treated with medicine?
+- Are antibiotics needed for [corneal edema](disease_type)?
 
 ## intent: cornealedema-treatment_surgical-cornearefractive
-- What is the surgical treatment of corneal edema?
+- What is the surgical treatment of [corneal edema](disease_type)?
 - Do I need transplant for cornea edema
--  Does corneal edema [surgery](technical_term) exist?
-- Is surgical removal of corneal edema possible?
-- Can you take out my corneal edema?
-- Can I do [surgery](technical_term) to treat corneal edema?
-- Can you help me remove corneal edema?
-- Can you excise my corneal edema?
-- Do I have to go under the knife for corneal edema?
-- Is there corneal edema [surgery](technical_term)?
-- Is there a [surgery](technical_term) to remove corneal edema?
-- Is there a procedure to remove corneal edema?
-- Can an eye surgeon operate on my corneal edema?
-- Can an eye doctor do [surgery](technical_term) for my corneal edema?
-- Do I need a new cornea for corneal edema?
-- Do I need a cornea transplant for corneal edema?
+- Does [corneal edema](disease_type) [surgery](technical_term) exist?
+- Is surgical removal of [corneal edema](disease_type) possible?
+- Can you take out my [corneal edema](disease_type)?
+- Can I do [surgery](technical_term) to treat [corneal edema](disease_type)?
+- Can you help me remove [corneal edema](disease_type)?
+- Can you excise my [corneal edema](disease_type)?
+- Do I have to go under the knife for [corneal edema](disease_type)?
+- Is there [corneal edema](disease_type) [surgery](technical_term)?
+- Is there a [surgery](technical_term) to remove [corneal edema](disease_type)?
+- Is there a procedure to remove [corneal edema](disease_type)?
+- Can an eye surgeon operate on my [corneal edema](disease_type)?
+- Can an eye doctor do [surgery](technical_term) for my [corneal edema](disease_type)?
+- Do I need a new cornea for [corneal edema](disease_type)?
+- Do I need a cornea transplant for [corneal edema](disease_type)?
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_43
-- What are the indications of corneal edema [surgery](technical_term)?
+- What are the indications of [corneal edema](disease_type) [surgery](technical_term)?
 - When do I need [surgery](technical_term) for cornea swelling
-- is operation needed for corneal edema
-- is op needed for corneal edema
-- Why do I need to do [surgery](technical_term) for corneal edema?
-- Why do I need corneal edema [surgery](technical_term)?
-- Why do you need to operate on my corneal edema?
-- Why do I need to undergo [surgery](technical_term) for corneal edema?
-- Why do I need to go under the knife for corneal edema?
-- Must I do corneal edema [surgery](technical_term)?
-- Is corneal edema [surgery](technical_term) a must?
-- Is corneal edema [surgery](technical_term) required?
-- Is [surgery](technical_term) compulsory for corneal edema?
-- Is [surgery](technical_term) mandatory for corneal edema?
-- How come [surgery](technical_term) is needed for corneal edema?
-- Which patients require [surgery](technical_term) for corneal edema?
-- Who needs [surgery](technical_term) for corneal edema?
-- When is [surgery](technical_term) required for corneal edema?
-- When is [surgery](technical_term) recommended for corneal edema?
-- What are the instances I need corneal edema [surgery](technical_term)?
-- What are the reasons for corneal edema [surgery](technical_term)?
-- Can I do [surgery](technical_term) if I have blurred vision from corneal edema?
+- is operation needed for [corneal edema](disease_type)
+- is op needed for [corneal edema](disease_type)
+- Why do I need to do [surgery](technical_term) for [corneal edema](disease_type)?
+- Why do I need [corneal edema](disease_type) [surgery](technical_term)?
+- Why do you need to operate on my [corneal edema](disease_type)?
+- Why do I need to undergo [surgery](technical_term) for [corneal edema](disease_type)?
+- Why do I need to go under the knife for [corneal edema](disease_type)?
+- Must I do [corneal edema](disease_type) [surgery](technical_term)?
+- Is [corneal edema](disease_type) [surgery](technical_term) a must?
+- Is [corneal edema](disease_type) [surgery](technical_term) required?
+- Is [surgery](technical_term) compulsory for [corneal edema](disease_type)?
+- Is [surgery](technical_term) mandatory for [corneal edema](disease_type)?
+- How come [surgery](technical_term) is needed for [corneal edema](disease_type)?
+- Which patients require [surgery](technical_term) for [corneal edema](disease_type)?
+- Who needs [surgery](technical_term) for [corneal edema](disease_type)?
+- When is [surgery](technical_term) required for [corneal edema](disease_type)?
+- When is [surgery](technical_term) recommended for [corneal edema](disease_type)?
+- What are the instances I need [corneal edema](disease_type) [surgery](technical_term)?
+- What are the reasons for [corneal edema](disease_type) [surgery](technical_term)?
+- Can I do [surgery](technical_term) if I have blurred vision from [corneal edema](disease_type)?
 
 ## intent: cornealedema-treatment_surgical-cornearefractive_44
 - Is corneal transplant [surgery](technical_term) Medisave-claimable?
@@ -1282,22 +1282,22 @@ Typical question: how can xxx be tested.
 - How much does corneal transplant cost
 - can sponsor corneal transplant 
 - who pays for my new cornea
-- How can I pay for corneal edema [surgery](technical_term)?
-- Is corneal edema [surgery](technical_term) subsidized?
-- Who can claim Medisave for corneal edema [surgery](technical_term)?
-- Is corneal edema [surgery](technical_term) covered under Medisave?
-- Can I pay for corneal edema [surgery](technical_term) using Medisave?
-- Can I claim Medisave for corneal edema [surgery](technical_term)?
-- Can I take out my Medisave for corneal edema [surgery](technical_term)?
-- Can I use Medisave claims for corneal edema [surgery](technical_term)?
-- Can I use medical insurance for corneal edema [surgery](technical_term)?
-- Who can get subsidies for corneal edema [surgery](technical_term)?
-- Can the government sponsor corneal edema [surgery](technical_term)?
-- Can the government subsidize corneal edema [surgery](technical_term)?
-- Is corneal edema [surgery](technical_term) discounted?
-- Is corneal edema [surgery](technical_term) covered under insurance?
-- What are the requirements for using Medisave for corneal edema [surgery](technical_term)?
-- What is the criteria for using Medisave for corneal edema [surgery](technical_term)?
+- How can I pay for [corneal edema](disease_type) [surgery](technical_term)?
+- Is [corneal edema](disease_type) [surgery](technical_term) subsidized?
+- Who can claim Medisave for [corneal edema](disease_type) [surgery](technical_term)?
+- Is [corneal edema](disease_type) [surgery](technical_term) covered under Medisave?
+- Can I pay for [corneal edema](disease_type) [surgery](technical_term) using Medisave?
+- Can I claim Medisave for [corneal edema](disease_type) [surgery](technical_term)?
+- Can I take out my Medisave for [corneal edema](disease_type) [surgery](technical_term)?
+- Can I use Medisave claims for [corneal edema](disease_type) [surgery](technical_term)?
+- Can I use medical insurance for [corneal edema](disease_type) [surgery](technical_term)?
+- Who can get subsidies for [corneal edema](disease_type) [surgery](technical_term)?
+- Can the government sponsor [corneal edema](disease_type) [surgery](technical_term)?
+- Can the government subsidize [corneal edema](disease_type) [surgery](technical_term)?
+- Is [corneal edema](disease_type) [surgery](technical_term) discounted?
+- Is [corneal edema](disease_type) [surgery](technical_term) covered under insurance?
+- What are the requirements for using Medisave for [corneal edema](disease_type) [surgery](technical_term)?
+- What is the criteria for using Medisave for [corneal edema](disease_type) [surgery](technical_term)?
 
 ## intent: cornealedema-preoperative-cornearefractive
 - What are the preoperative preparations for corneal transplant?
@@ -1549,7 +1549,7 @@ Typical question: how can xxx be tested.
 - Does poor contact lens hygiene cause corneal infection?
 - Do dirty contact lenses cause corneal infection?
 - Does corneal edema cause corneal infection?
-- Does previous corneal [surgery](technical_term) cause corneal infection?
+- Does previous corneal surgery cause corneal infection?
 - Is corneal infection contagious?
 - Is corneal infection infectious?
 - Can I get corneal infection from other people?
