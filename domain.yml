@@ -2,7 +2,7 @@ actions:
 - actions_find_condition_definitions
 - actions_find_medical_symptoms
 - actions_find_disease_causes
-- actions_find_disease_treatmen
+- actions_find_disease_treatment
 - actions_find_surgical_treatment
 - action_default_fallback
 - utter_astigmatism_symptoms
