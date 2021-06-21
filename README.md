@@ -85,4 +85,5 @@ Basically it seems that Rasa Telegram connector is not handling the Updates prop
 
 After run "ngrok http 5005", it has 8 hours limitation. Once 8 hours passed, it will show
 "Session Expired Restart ngrok or upgrade: ngrok.com/upgrade" in red font.
-Reason of Session Expires – ngrok limits your sessions to eight hours on the free version. You can pay to get longer sessions.
+Reason of Session Expires – ngrok limits your sessions to eight hours on the free version. You can register yourself and connect your account to ngrok app with command `./ngrok authtoken XXXXXX`
+More info can refer to https://dashboard.ngrok.com/get-started/setup 
