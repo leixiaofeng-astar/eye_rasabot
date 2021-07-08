@@ -1,5 +1,10 @@
 actions:
-- find_information
+- actions_find_condition_definitions
+- actions_find_medical_symptoms
+- actions_find_disease_causes
+- actions_find_disease_treatment
+- actions_find_surgical_treatment
+- action_default_fallback
 - utter_astigmatism_symptoms
 - utter_glaucoma_appointment
 - utter_glaucoma_define
@@ -19,6 +24,7 @@ actions:
 - utter_greet
 - utter_noworries
 - utter_out_of_scope
+- utter_help_message
 - utter_astigmatism-condition-cornearefractive
 - utter_astigmatism-cause-cornearefractive
 - utter_astigmatism-symptoms_signs-cornearefractive
@@ -125,7 +131,6 @@ actions:
 - utter_pterygium-postoperative-cornearefractive_104
 - utter_pterygium-postoperative-cornearefractive_105
 - utter_pterygium-postoperative-cornearefractive_106
-- utter_cataract-pathophysiology-cornearefractive
 - utter_cataract-causes_riskfactors-cornearefractive
 - utter_cataract-symptoms_signs-cornearefractive
 - utter_cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
@@ -428,11 +433,17 @@ entities:
 - facility_type
 - location
 - symptom_type
+- medicine_name
+- technical_term
 - terms
 forms:
 - facility_form
 intents:
-- search_information
+- find_condition_definitions
+- find_medical_symptoms
+- find_disease_causes
+- find_disease_treatment
+- find_surgical_treatment
 - greet
 - goodbye
 - affirm
@@ -445,26 +456,19 @@ intents:
 - out_of_scope
 - change_appointment
 - risk_inquiry
-- disease_treatment
 - signs_treatment
 - ask_diagnosis
 - glaucoma_lasers_treatment
 - glaucoma_eyedrop_treatment
-- glaucoma_surgical_treatment
 - disease_followup
 - signs_followup
-- ask_disease_symptoms
 - ask_signs_treatment
 - ask_astigmatism_information
-- astigmatism-condition-cornearefractive
-- astigmatism-cause-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive
 - astigmatism-symptoms_signs-cornearefractive_4
 - astigmatism-investigations-cornearefractive
-- astigmatism-treatment_general-cornearefractive
 - astigmatism-treatment_conservative-cornearefractive
 - astigmatism-treatment_medical-cornearefractive
-- astigmatism-treatment_surgical-cornearefractive
 - astigmatism-treatment_surgical-cornearefractive_10
 - astigmatism-treatment_surgical-cornearefractive_11
 - astigmatism-preoperative-cornearefractive
@@ -481,8 +485,6 @@ intents:
 - astigmatism-postoperative-cornearefractive_23
 - astigmatism-postoperative-cornearefractive_24
 - conjunctivitis-condition-cornearefractive
-- conjunctivitis-causes-cornearefractive
-- conjunctivitis-symptoms_signs-cornearefractive
 - conjunctivitis-symptoms_signs-cornearefractive_28
 - conjunctivitis-investigations-cornearefractive
 - conjunctivitis-treatment_general-cornearefractive
@@ -491,7 +493,6 @@ intents:
 - conjunctivitis-treatment_surgical-cornearefractive
 - cornealedema-condition-cornearefractive
 - cornealedema-causes-cornearefractive
-- cornealedema-symptoms_signs-cornearefractive
 - cornealedema-symptoms_signs-cornearefractive_37
 - cornealedema-investigations-cornearefractive
 - cornealedema-treatment_general-cornearefractive
@@ -562,7 +563,6 @@ intents:
 - pterygium-postoperative-cornearefractive_104
 - pterygium-postoperative-cornearefractive_105
 - pterygium-postoperative-cornearefractive_106
-- cataract-pathophysiology-cornearefractive
 - cataract-causes_riskfactors-cornearefractive
 - cataract-symptoms_signs-cornearefractive
 - cataract-signs_doctorsexaminationfindings_investigations-cornearefractive
@@ -570,8 +570,6 @@ intents:
 - cataract-treatment_conservative-cornearefractive
 - cataract-treatment_conservative-cornearefractive_113
 - cataract-treatment_surgical-cornearefractive
-- dryeyes-condition-cornearefractive
-- dryeyes-causes_riskfactors-cornearefractive
 - dryeyes-symptoms_signs-cornearefractive
 - dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive
 - dryeyes-signs_doctorsexaminationfindings_investigations-cornearefractive_119
@@ -630,7 +628,6 @@ intents:
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive
 - lasik_refractivesurgery-preoperative-cornearefractive
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
-- lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 - lasik_refractivesurgery-postoperative-cornearefractive
 - lasik_refractivesurgery-postoperative-cornearefractive_177
@@ -644,9 +641,6 @@ intents:
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_185
 - lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_186
 - keratoconus-condition-cornearefractive
-- keratoconus-cause-cornearefractive
-- keratoconus-symptoms_signs-cornearefractive
-- keratoconus-treatment_general-cornearefractive
 - contactlensoverwear-condition-cornearefractive
 - episcleritis_scleritis-condition-cornearefractive
 - episcleritis_scleritis-cause-cornearefractive
@@ -660,10 +654,8 @@ intents:
 - diabeticretinopathy-treatment_general-retina
 - diabeticretinopathy-diagnosis_investigations-retina
 - diabeticretinopathy-treatment_general-retina_8
-- diabeticretinopathy-anatomy-retina
 - diabeticretinopathy-treatment_laser-retina
 - diabeticretinopathy-treatment_laser-retina_11
-- diabeticretinopathy-condition_treatment-retina
 - diabeticretinopathy-treatment_general-retina_13
 - diabeticretinopathy-followup-retina
 - retinaldetachment-pathophysiology_causes_riskfactors-retina
@@ -719,7 +711,6 @@ intents:
 - eyerubbing-cause-paediatricophthalmology
 - eyerubbing-treatment_general-paediatricophthalmology
 - eyerubbing-condition-paediatricophthalmology
-- allergicconjunctivitis-cause_condition-paediatricophthalmology
 - allergicconjunctivitis-treatment_general-paediatricophthalmology
 - abnormalheadposture-condition-paediatricophthalmology
 - tearing-cause_condition-paediatricophthalmology
@@ -857,7 +848,6 @@ intents:
 - glsc-condition-miscellaneous
 - glsc-condition-miscellaneous_52
 - glsc-condition-miscellaneous_53
-- vidcon-condition-miscellaneous
 - vidcon-condition-miscellaneous_55
 - vidcon-condition-miscellaneous_56
 responses:
@@ -1330,9 +1320,6 @@ You will not be able to fly if you have undergone certain surgeries such as corn
 
   utter_pterygium-postoperative-cornearefractive_106:
   - text: "You will need to see the eye doctor to monitor the healing of your eyes. "
-
-  utter_cataract-pathophysiology-cornearefractive:
-  - text: "Cataract is a condition when the natural lens in your eye becomes progressively cloudy."
 
   utter_cataract-causes_riskfactors-cornearefractive:
   - text: "The most common cause of cataract is ageing.
@@ -3040,20 +3027,31 @@ During the video consultation
   utter_out_of_scope:
   - text: 'Please check your question and enter it again.'
   - text: 'Thank you for contacting us! Your question is beyond the range of this bot, could you enter your question again?'
+  utter_help_message:
+  - text: 'General Line: 6325 9220
+           Ministry of Health
+           16 College Road
+           College of Medicine Building
+           Singapore 169854
+           Website: www.moh.gov.sg'
+  utter_please_rephrase:
+  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+  - text: "Dr.Eye here, I'm sorry, Please help to check your question and enter it again."
+  utter_default:
+  - text: Sorry, I didn't get that. Can you rephrase please?
+
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 0
 slots:
-  facility_address:
-    type: unfeaturized
-  facility_id:
-    type: unfeaturized
-  facility_type:
-    type: unfeaturized
   location:
     type: unfeaturized
-  requested_slot:
+  care_disease:
     type: unfeaturized
+  care_medicine:
+      type: unfeaturized
+  care_keyword:
+      type: unfeaturized
 
 
 

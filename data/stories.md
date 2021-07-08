@@ -1,3 +1,5 @@
+version: "2.0"
+stories:
 ## happy_path
 * thanks
     - utter_noworries
@@ -13,24 +15,28 @@
 ## story_out_of_scope
 * out_of_scope
     - utter_out_of_scope
+  
+## story_manual_interrupt  
+* out_of_scope
+   - utter_out_of_scope
+* out_of_scope
+   - utter_out_of_scope
+* out_of_scope
+   - utter_out_of_scope
+* out_of_scope
+   - utter_help_message
     
-## story_diseases_info
-* search_information{"disease_type": "glaucoma"}
-    - find_information
-* search_information{"disease_type": "astigmatism"}
-    - find_information
-* search_information{"symptom_type": "visualfiled-synm"}
-    - find_information
+## story_find_condition_definitions
+* find_condition_definitions
+    - actions_find_condition_definitions
    
 ## story_ask_astigmatism_information
 * ask_astigmatism_information
     - utter_astigmatism_define
-    
-## story_ask_disease_symptoms
-* ask_disease_symptoms{"disease_type": "glaucoma"}
-    - utter_glaucoma_symptoms
-* ask_disease_symptoms{"disease_type": "astigmatism"}
-    - utter_astigmatism_symptoms
+   
+## story_find_medical_symptoms
+* find_medical_symptoms
+    - actions_find_medical_symptoms
     
 ## story_change_appointment
 * change_appointment 
@@ -40,13 +46,17 @@
 * risk_inquiry 
     - utter_glaucoma_riskfactors
     
-## story_disease_treatment
-* disease_treatment 
-    - utter_glaucoma_treated
+## story_find_disease_treatment
+* find_disease_treatment 
+    - actions_find_disease_treatment
 
 ## story_signs_treatment
 * signs_treatment 
     - utter_glaucoma_visualfield_test
+
+## story_glaucoma_eyedrop_stoprisk
+* glaucoma_eyedrop_stoprisk
+    utter_glaucoma_eyedrop_stoprisk
     
 ## story_ask_diagnosis
 * ask_diagnosis 
@@ -56,9 +66,9 @@
 * glaucoma_lasers_treatment 
     - utter_glaucoma_lasers_treatment
     
-## story_glaucoma_surgical_treatment 
-* glaucoma_surgical_treatment  
-    - utter_glaucoma_surgical_treatment
+## story_find_surgical_treatment 
+* find_surgical_treatment  
+    - actions_find_surgical_treatment 
 
 ## story_glaucoma_eyedrop_treatment
 * glaucoma_eyedrop_treatment 
@@ -72,14 +82,6 @@
 * signs_followup 
     - utter_glaucoma_postopt_eyecare
 
-## story_astigmatism-condition-cornearefractive
-* astigmatism-condition-cornearefractive
-    - utter_astigmatism-condition-cornearefractive
-
-## story_astigmatism-cause-cornearefractive
-* astigmatism-cause-cornearefractive
-    - utter_astigmatism-cause-cornearefractive
-
 ## story_astigmatism-symptoms_signs-cornearefractive
 * astigmatism-symptoms_signs-cornearefractive
     - utter_astigmatism-symptoms_signs-cornearefractive
@@ -92,10 +94,6 @@
 * astigmatism-investigations-cornearefractive
     - utter_astigmatism-investigations-cornearefractive
 
-## story_astigmatism-treatment_general-cornearefractive
-* astigmatism-treatment_general-cornearefractive
-    - utter_astigmatism-treatment_general-cornearefractive
-
 ## story_astigmatism-treatment_conservative-cornearefractive
 * astigmatism-treatment_conservative-cornearefractive
     - utter_astigmatism-treatment_conservative-cornearefractive
@@ -103,10 +101,6 @@
 ## story_astigmatism-treatment_medical-cornearefractive
 * astigmatism-treatment_medical-cornearefractive
     - utter_astigmatism-treatment_medical-cornearefractive
-
-## story_astigmatism-treatment_surgical-cornearefractive
-* astigmatism-treatment_surgical-cornearefractive
-    - utter_astigmatism-treatment_surgical-cornearefractive
 
 ## story_astigmatism-treatment_surgical-cornearefractive_10
 * astigmatism-treatment_surgical-cornearefractive_10
@@ -172,14 +166,6 @@
 * conjunctivitis-condition-cornearefractive
     - utter_conjunctivitis-condition-cornearefractive
 
-## story_conjunctivitis-causes-cornearefractive
-* conjunctivitis-causes-cornearefractive
-    - utter_conjunctivitis-causes-cornearefractive
-
-## story_conjunctivitis-symptoms_signs-cornearefractive
-* conjunctivitis-symptoms_signs-cornearefractive
-    - utter_conjunctivitis-symptoms_signs-cornearefractive
-
 ## story_conjunctivitis-symptoms_signs-cornearefractive_28
 * conjunctivitis-symptoms_signs-cornearefractive_28
     - utter_conjunctivitis-symptoms_signs-cornearefractive_28
@@ -204,17 +190,9 @@
 * conjunctivitis-treatment_surgical-cornearefractive
     - utter_conjunctivitis-treatment_surgical-cornearefractive
 
-## story_cornealedema-condition-cornearefractive
-* cornealedema-condition-cornearefractive
-    - utter_cornealedema-condition-cornearefractive
-
 ## story_cornealedema-causes-cornearefractive
 * cornealedema-causes-cornearefractive
     - utter_cornealedema-causes-cornearefractive
-
-## story_cornealedema-symptoms_signs-cornearefractive
-* cornealedema-symptoms_signs-cornearefractive
-    - utter_cornealedema-symptoms_signs-cornearefractive
 
 ## story_cornealedema-symptoms_signs-cornearefractive_37
 * cornealedema-symptoms_signs-cornearefractive_37
@@ -496,10 +474,6 @@
 * pterygium-postoperative-cornearefractive_106
     - utter_pterygium-postoperative-cornearefractive_106
 
-## story_cataract-pathophysiology-cornearefractive
-* cataract-pathophysiology-cornearefractive
-    - utter_cataract-pathophysiology-cornearefractive
-
 ## story_cataract-causes_riskfactors-cornearefractive
 * cataract-causes_riskfactors-cornearefractive
     - utter_cataract-causes_riskfactors-cornearefractive
@@ -527,14 +501,6 @@
 ## story_cataract-treatment_surgical-cornearefractive
 * cataract-treatment_surgical-cornearefractive
     - utter_cataract-treatment_surgical-cornearefractive
-
-## story_dryeyes-condition-cornearefractive
-* dryeyes-condition-cornearefractive
-    - utter_dryeyes-condition-cornearefractive
-
-## story_dryeyes-causes_riskfactors-cornearefractive
-* dryeyes-causes_riskfactors-cornearefractive
-    - utter_dryeyes-causes_riskfactors-cornearefractive
 
 ## story_dryeyes-symptoms_signs-cornearefractive
 * dryeyes-symptoms_signs-cornearefractive
@@ -764,10 +730,6 @@
 * lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
     - utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_173
 
-## story_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-* lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-    - utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174
-
 ## story_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
 * lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
     - utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_175
@@ -819,18 +781,6 @@
 ## story_keratoconus-condition-cornearefractive
 * keratoconus-condition-cornearefractive
     - utter_keratoconus-condition-cornearefractive
-
-## story_keratoconus-cause-cornearefractive
-* keratoconus-cause-cornearefractive
-    - utter_keratoconus-cause-cornearefractive
-
-## story_keratoconus-symptoms_signs-cornearefractive
-* keratoconus-symptoms_signs-cornearefractive
-    - utter_keratoconus-symptoms_signs-cornearefractive
-
-## story_keratoconus-treatment_general-cornearefractive
-* keratoconus-treatment_general-cornearefractive
-    - utter_keratoconus-treatment_general-cornearefractive
 
 ## story_contactlensoverwear-condition-cornearefractive
 * contactlensoverwear-condition-cornearefractive
@@ -884,10 +834,6 @@
 * diabeticretinopathy-treatment_general-retina_8
     - utter_diabeticretinopathy-treatment_general-retina_8
 
-## story_diabeticretinopathy-anatomy-retina
-* diabeticretinopathy-anatomy-retina
-    - utter_diabeticretinopathy-anatomy-retina
-
 ## story_diabeticretinopathy-treatment_laser-retina
 * diabeticretinopathy-treatment_laser-retina
     - utter_diabeticretinopathy-treatment_laser-retina
@@ -895,10 +841,6 @@
 ## story_diabeticretinopathy-treatment_laser-retina_11
 * diabeticretinopathy-treatment_laser-retina_11
     - utter_diabeticretinopathy-treatment_laser-retina_11
-
-## story_diabeticretinopathy-condition_treatment-retina
-* diabeticretinopathy-condition_treatment-retina
-    - utter_diabeticretinopathy-condition_treatment-retina
 
 ## story_diabeticretinopathy-treatment_general-retina_13
 * diabeticretinopathy-treatment_general-retina_13
@@ -1119,10 +1061,6 @@
 ## story_eyerubbing-condition-paediatricophthalmology
 * eyerubbing-condition-paediatricophthalmology
     - utter_eyerubbing-condition-paediatricophthalmology
-
-## story_allergicconjunctivitis-cause_condition-paediatricophthalmology
-* allergicconjunctivitis-cause_condition-paediatricophthalmology
-    - utter_allergicconjunctivitis-cause_condition-paediatricophthalmology
 
 ## story_allergicconjunctivitis-treatment_general-paediatricophthalmology
 * allergicconjunctivitis-treatment_general-paediatricophthalmology
@@ -1671,10 +1609,6 @@
 ## story_glsc-condition-miscellaneous_53
 * glsc-condition-miscellaneous_53
     - utter_glsc-condition-miscellaneous_53
-
-## story_vidcon-condition-miscellaneous
-* vidcon-condition-miscellaneous
-    - utter_vidcon-condition-miscellaneous
 
 ## story_vidcon-condition-miscellaneous_55
 * vidcon-condition-miscellaneous_55

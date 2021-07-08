@@ -1,0 +1,321 @@
+## intent:find_symptoms_complications
+- xxx
+
+## intent: astigmatism-postoperative-cornearefractive
+- What are the complications of astigmatism [surgery](technical_term)?
+- What are the side effects of astigmatism [surgery](technical_term)?
+- What problems can astigmatism [surgery](technical_term) cause?
+- What should I take note of after astigmatism [surgery](technical_term)?
+- Will the corneal infection come back?
+- What is the risk of infection recurrence after astigmatism [surgery](technical_term)?
+- Will the astigmatism recur?
+- Will I get an infection from astigmatism [surgery](technical_term)?
+- Will my vision be affected by astigmatism [surgery](technical_term)?
+- Will I go blind from astigmatism [surgery](technical_term)?
+- What is the risk of going blind from astigmatism [surgery](technical_term)?
+- Will I get halos from astigmatism [surgery](technical_term)?
+- Will I get visual phenomena from astigmatism [surgery](technical_term)?
+- Will astigmatism [surgery](technical_term) spoil my eyes?
+- Will astigmatism [surgery](technical_term) injure my eyes?
+- Will astigmatism [surgery](technical_term) harm my eyes?
+- Does astigmatism [surgery](technical_term) cause scarring?
+- Will I get light sensitivity from astigmatism [surgery](technical_term)?
+- Will I get poor night vision from astigmatism [surgery](technical_term)?
+- Will I get starbursts from astigmatism [surgery](technical_term)?
+
+## intent: cornealedema-postoperative-cornearefractive
+- What are the complications of corneal transplant [surgery](technical_term)?
+- What is the success rate of corneal transplant
+- is corneal transplant [surgery](technical_term) risky
+- What are the side effects of corneal transplant [surgery](technical_term)?
+- What problems can corneal transplant [surgery](technical_term) cause?
+- What should I take note of after corneal transplant [surgery](technical_term)?
+- what should i do if my eye is painful after corneal transplant
+- Will the corneal infection come back?
+- What is the risk of infection recurrence after corneal transplant [surgery](technical_term)?
+- Will the corneal infection recur?
+- Will I get an infection from corneal transplant [surgery](technical_term)?
+- Will my vision be affected by corneal transplant [surgery](technical_term)?
+- Will I go blind from corneal transplant [surgery](technical_term)?
+- What is the risk of going blind from corneal transplant [surgery](technical_term)?
+- Will corneal transplant [surgery](technical_term) spoil my eyes?
+- Will corneal transplant [surgery](technical_term) injure my eyes?
+- Will corneal transplant [surgery](technical_term) harm my eyes?
+- What is the success rate of corneal transplant [surgery](technical_term)?
+- What is the complication rate of corneal transplant [surgery](technical_term)?
+- What are the common problems after corneal transplant [surgery](technical_term)?
+- Is corneal transplant [surgery](technical_term) dangerous?
+- Does corneal transplant [surgery](technical_term) cause scarring?
+- Will my corneal graft be rejected?
+- Are supplementary procedures required after corneal transplant [surgery](technical_term)?
+- Are additional sutures required after corneal transplant [surgery](technical_term)?
+- Is refractive [surgery](technical_term) required after corneal transplant [surgery](technical_term)?
+- Will my new cornea get infected?
+- Will my corneal transplant be rejected?
+- Will my corneal transplant spoil?
+- Will my new cornea die?
+
+## intent: cornealinfection-postoperative-cornearefractive
+- What are the complications of corneal transplant [surgery](technical_term)?
+- What is the success rate of corneal transplant
+- is corneal transplant [surgery](technical_term) risky
+- What are the side effects of corneal transplant [surgery](technical_term)?
+- What problems can corneal transplant [surgery](technical_term) cause?
+- What should I take note of after corneal transplant [surgery](technical_term)?
+- what should i do if my eye is painful after corneal transplant
+- Will the corneal infection come back?
+- What is the risk of infection recurrence after corneal transplant [surgery](technical_term)?
+- Will the corneal infection recur?
+- Will I get an infection from corneal transplant [surgery](technical_term)?
+- Will my vision be affected by corneal transplant [surgery](technical_term)?
+- Will I go blind from corneal transplant [surgery](technical_term)?
+- What is the risk of going blind from corneal transplant [surgery](technical_term)?
+- Will corneal transplant [surgery](technical_term) spoil my eyes?
+- Will corneal transplant [surgery](technical_term) injure my eyes?
+- Will corneal transplant [surgery](technical_term) harm my eyes?
+- Does corneal transplant [surgery](technical_term) cause scarring?
+- Will my corneal transplant be rejected?
+- Will my corneal transplant spoil?
+- Will my new cornea die?
+
+## intent: pterygium-postoperative-cornearefractive
+- What are the complications of pterygium [surgery](technical_term)?
+- Is pterygium [surgery](technical_term) risky?
+- After I go for operation to remove the skin on my eye, can it come back?
+- What are the dangers of pterygium [surgery](technical_term)
+- What are the side effects of pterygium [surgery](technical_term)?
+- What problems can pterygium [surgery](technical_term) cause?
+- What should I take note of after pterygium [surgery](technical_term)?
+- Will the pterygium come back?
+- What is the risk of recurrence after pterygium [surgery](technical_term)?
+- Will the pterygium grow back again?
+- How common are side effects of pterygium [surgery](technical_term)?
+- Will the pterygium recur?
+- Will I get an infection from pterygium [surgery](technical_term)?
+- Will my vision be affected by pterygium [surgery](technical_term)?
+- Will I go blind from pterygium [surgery](technical_term)?
+- What is the risk of going blind from pterygium [surgery](technical_term)?
+- Will pterygium [surgery](technical_term) spoil my eyes?
+- Will pterygium [surgery](technical_term) injure my eyes?
+- Will pterygium [surgery](technical_term) harm my eyes?
+- Does pterygium [surgery](technical_term) cause scarring?
+
+## intent: cataract-preoperative-cornearefractive_144
+- What are the risks of cataract [surgery](technical_term)?
+- Is cataract operation dangerous
+- What are the dangers of cataract operation
+- What possible risks does [surgery](technical_term) for cataract carry?
+- Do patients need to be aware of any risks of cataract [surgery](technical_term)?
+- What kind of complications could happen after [surgery](technical_term) for cataracts?
+- How can cataract [surgery](technical_term) go wrong?
+- I am going for [surgery](technical_term) to remove my cataracts, what do I need to know about complications?
+- I have booked [surgery](technical_term) for my cataracts, what are the risks of that?
+- How can I find out more about the risks of having [surgery](technical_term) for my cataract?
+- Is there any risks I should know about before the procedure to improve my cataracts?
+- Can I go for [surgery](technical_term) for cataracts directly?
+- Is there anything that has to be done before I surgically 
+
+## intent: diabeticretinopathy-treatment_laser-retina_11
+- What are the risks of panretinal photocoagulation?
+- What are the side effects of laser for diabetes
+- What are the side effects of panretinal photocoagulation?
+- What are the complications of panretinal photocoagulation?
+- Is panretinal photocoagulation dangerous?
+- Is panretinal photocoagulation safe?
+
+## intent: entropion-condition-oculoplastic_10
+- What are the complications of entropion?
+- What problems can in-turned eyelids cause?
+- What are the complications of entropion?
+- What are the issues with in-turned eyelids?
+- Can entropion affect my vision?
+- Can entropion affect my degree?
+- Can in-turned eyelashes cause infection?
+- Can I recover from in-turned eyelids?
+- How severe can in-turned eyelids be?
+- What are the problems with in-turned eyelids?
+- What can happen with in-turned eyelids?
+
+## intent: myopia-symptoms_signs-cornearefractive
+- What are the possible complications of myopia?
+- What are long term effects of myopia
+- Should I be worried if my child is short sighted
+- Is myopia a problem?
+- What are the dangers of myopia?
+- Is myopia dangerous?
+- Can myopia cause blindness?
+- Can myopia cause retinal detachment?
+- What are other eye conditions associated with myopia?
+- What must I look out for if I am myopic?
+- What are the issues with myopia?
+- If I have high myopia, am I at risk of retinal detachment?
+- What are the consequences of developing myopia?
+- Should I be worried about developing myopia?
+
+## intent: pterygium-symptoms_signs-cornearefractive_87
+- What are the complications of pterygium?
+- can the pterygium grow bigger?
+- can the white flesh grow to cover my eye?
+- what problems can pterygium cause?
+- What happens if pterygium becomes big?
+- How big can pterygium grow?
+- Can pterygium cause difficulties seeing?
+- Can pterygium lead to visual problems?
+- Can pterygium cause problems?
+- Is pterygium serious?
+- Is pterygium sight threatening?
+- Will pterygium cause blindness?
+- Will I become blind because of pterygium?
+- Can I still see if I have pterygium?
+- Can pterygium cause irreversible blindness?
+- Can pterygium cause corneal perforation?
+- Can pterygium cause my cornea to melt?
+- Can pterygium cause halos?
+- Can pterygium spoil my vision?
+- Can pterygium cause squinting?
+- Can pterygium cause double vision?
+- Can pterygium ruin my vision?
+- Can pterygium cause atigmatism?
+- Can pterygium cause myopia?
+
+## intent: cornealinfection-symptoms_signs-cornearefractive_62
+- What are the complications of corneal infection?
+- Can I go blind if I have cornea infection
+- Can I see again if I have corneal infection
+- is corneal ulcer a hole in the eye
+- does corneal ulcer mean my eye has a tear
+- how bad can cornea infection get
+- is cornea infection bad
+- how bad can cornea ulcers get
+- What are the issues associated with corneal infection?
+- What problems can corneal infection lead to?
+- What are the implications of corneal infection?
+- Can corneal infection cause difficulties seeing?
+- Can corneal infection lead to visual problems?
+- Can corneal infection cause problems?
+- Is corneal infection serious?
+- Is corneal infection dangerous?
+- Is corneal infection sight threatening?
+- Will corneal infection cause blindness?
+- Will I become blind because of corneal infection?
+- Can I still see if I have corneal infection?
+- Can corneal infection spoil my vision?
+- Can corneal infection ruin my vision?
+- Can corneal infection cause atigmatism?
+- Can corneal infection cause myopia?
+- Can corneal infection cause corneal ulcer?
+- Can my cornea perforate because of corneal infection?
+- Can corneal infection cause irreversible vision loss?
+- Can my cornea melt because of corneal infection?
+- Will corneal infection cause scarring?
+
+## intent: cornealedema-symptoms_signs-cornearefractive_37
+- What are the complications of corneal edema?
+- Can cornea edema cause blindness
+- Can I go blind from corneal swelling
+- what is the prognosis of corneal edema
+- Can corneal edema cause difficulties seeing?
+- Can corneal edema lead to visual problems?
+- Can corneal edema cause problems?
+- Is corneal edema serious?
+- Is corneal edema dangerous?
+- Is corneal edema sight threatening?
+- Will corneal edema cause blindness?
+- Will I become blind because of corneal edema?
+- Can I still see if I have corneal edema?
+- Can corneal edema spoil my vision?
+- Can corneal edema ruin my vision?
+- Can corneal edema cause atigmatism?
+- Can corneal edema cause myopia?
+- Can corneal edema cause corneal ulcer?
+- Can corneal edema cause blisters?
+- Can corneal edema cause bullous keratopathy?
+- Can my cornea perforate because of corneal edema?
+- Can my cornea melt because of corneal edema?
+- What issues can corneal edema result in?
+- Does corneal edema ead to irreversible blindness?
+- Will corneal edema cause scarring?
+
+## intent: conjunctivitis-symptoms_signs-cornearefractive_28
+- What are the complications of [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) affect vision?
+- When should I go to Ane if I have [conjunctivitis](disease_type)
+- Should I see a doctor if I have [conjunctivitis](disease_type)
+- I have [conjunctivitis](disease_type) and I can't see well
+- can [conjunctivitis](disease_type) cause blindness
+- Will my [conjunctivitis](disease_type) get worse?
+- Cna [conjunctivitis](disease_type) cause permanent damage
+- Can [conjunctivitis](disease_type) cause permanent damage
+- is [conjunctivitis](disease_type) dangerous 
+-  conjunctiva inflammation bad
+- is [conjunctivitis](disease_type) bad
+- will [conjunctivitis](disease_type) disappear
+- Can [conjunctivitis](disease_type) cause problems?
+- Is [conjunctivitis](disease_type) serious?
+- Will I become blind?
+- Will I be able to see?
+- Can [conjunctivitis](disease_type) cause difficulties seeing?
+- Can [conjunctivitis](disease_type) lead to visual problems?
+- Is [conjunctivitis](disease_type) sight threatening?
+- Will [conjunctivitis](disease_type) cause blindness?
+- Will I become blind because of [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) cause vlurred vision?
+- What issues can [conjunctivitis](disease_type) cause?
+- Can I still see if I have [conjunctivitis](disease_type)?
+- Can [conjunctivitis](disease_type) spoil my vision?
+- Can [conjunctivitis](disease_type) ruin my vision?
+- Can [conjunctivitis](disease_type) cause astigmatism?
+- Can [conjunctivitis](disease_type) cause myopia?
+- Is [conjunctivitis](disease_type) severe?
+- Is [conjunctivitis](disease_type) dangerous?
+
+## intent: astigmatism-symptoms_signs-cornearefractive_4
+- What are the complications of astigmatism?
+- can astigmatism cause lazy eyes
+- What are the side effects of astigmatism?
+- What issues can astigmatism cause?
+- What problems can astigmatism cause?
+- Can astigmatism cause eye strain?
+- Can astigmatism cause headache?
+- Can astigmatism cause blurred vision?
+- Can astigmatism cause squinting?
+- Can astigmatism cause difficulties seeing?
+- Can astigmatism lead to visual problems?
+- Can astigmatism cause problems?
+- Is astigmatism serious?
+- Is astigmatism dangerous?
+- Is astigmatism sight threatening?
+- Will astigmatism cause blindness?
+- Will I become blind because of astigmatism?
+- Can I still see if I have astigmatism?
+- Can astigmatism spoil my vision?
+- Can astigmatism ruin my vision?
+- Can astigmatism cause myopia?
+- Will astigmatism cause lazy eye?
+- Will astigmatism cause amblyopia?
+
+## intent: lagophthalmos-condition-oculoplastic_34
+- What are the complications of lagophthalmos?
+- What are the issues if I cannot close my eyes?
+- If I cannot close my eyes, will it affect my vision?
+- Can inadequate closure of eyes cause blindness?
+- If I cannot close my eyes, is it serious?
+- Can my eyes get infected if I cannot close my eyes fully?
+- What are the problems if I cannot close my eyes?
+- Will inadequate closure of my eyes cause pain?
+- What are the risks if I cannot close my eyes?
+- What problems will I get if I cannot close my eyes?
+- If I cannot close my eyes, will it affect my vision?
+
+## intent: eyebags-treatment_surgical-oculoplastic_16
+- What are the complications and risks of blepharoplasty?
+- What are the risks of blepharoplasty?
+- What are the dangers of blepharoplasty?
+- Can blepharoplasty cause blindness?
+- Can there be scarring after blepharoplasty?
+- What are the problems with blepharoplasty?
+- I am going for blepharoplasty, what should I be careful of?
+- Can my eyebags come back after blepharoplasty?
+- Is blepharoplasty a dangerous procedure?
+- Is blepharoplasty a major [surgery](technical_term)?
+- Are the risks of blepharoplasty permanent?

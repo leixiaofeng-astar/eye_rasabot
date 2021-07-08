@@ -1,6 +1,6 @@
 from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
-
+from rasa_sdk.events import SlotSet
 from typing import Dict, Text, Any, List
 
 import requests
@@ -14,186 +14,77 @@ from rasa_sdk.forms import FormAction
 # xubh-q36u is for hospitals
 # b27b-2uc7 is for nursing homes
 # 9wzi-peqs is for home health agencies
+PROJ_NAME = "Dr Eye"
 
-ENDPOINTS = {
-    "base": "https://data.medicare.gov/resource/{}.json",
-    "xubh-q36u": {
-        "city_query": "?city={}",
-        "zip_code_query": "?zip_code={}",
-        "id_query": "?provider_id={}"
-    },
-    "b27b-2uc7": {
-        "city_query": "?provider_city={}",
-        "zip_code_query": "?provider_zip_code={}",
-        "id_query": "?federal_provider_number={}"
-    },
-    "9wzi-peqs": {
-        "city_query": "?city={}",
-        "zip_code_query": "?zip={}",
-        "id_query": "?provider_number={}"
-    }
-}
+# TODO -- prepare for mutli-intents combination
+disease_entity_list = ["glaucoma", "astigmatism", "macula", "diabetic retinopathy", "corneal edema", "cataract",\
+                       "conjunctivitis", "corneal infection", "amd", "dme", "myopia", "high myopia", "pterygium",\
+                       "allergic conjunctivitis", "retinopathy", "keratoconus"]
+symptom_entity_list = ["visualfiled-synm", "oval cornea", "vidcon", "dry eyes", "lasik", "blepharitis"]
+medicine_name_entity_list = ["eyedrop-synm"]
+technical_term_entity_list = ["surgery"]
+entity_dict = { "disease_type": disease_entity_list,
+                 "symptom_type": symptom_entity_list,
+                 "medicine_name": medicine_name_entity_list,
+                 "technical_term": technical_term_entity_list,
+                }
 
-FACILITY_TYPES = {
-    "hospital":
-        {
-            "name": "hospital",
-            "resource": "xubh-q36u"
-        },
-    "nursing_home":
-        {
-            "name": "nursing home",
-            "resource": "b27b-2uc7"
-        },
-    "home_health":
-        {
-            "name": "home health agency",
-            "resource": "9wzi-peqs"
-        }
-}
+# Define Levenshtein distance function (from the mentioned link)
+def levenshtein(s1, s2):
+    if len(s1) < len(s2):
+        return levenshtein(s2, s1)
 
-DISEASE_TYPES = {
-    "glaucoma":
-        {
-            "name": "glaucoma",
-        },
-    "astigmatism":
-        {
-            "name": "astigmatism",
-        },
-    "diabetic retinopathy":
-        {
-            "name": "diabetic retinopathy",
-        },
-    "visualfiled-synm":
-        {
-            "name": "visualfiled-synm",
-        },
-}
+    if len(s2) == 0:
+        return len(s1)
 
+    previous_row = range(len(s2) + 1)
+    for i, c1 in enumerate(s1):
+        current_row = [i + 1]
+        for j, c2 in enumerate(s2):
+            insertions = previous_row[j + 1] + 1
+            deletions = current_row[j] + 1
+            substitutions = previous_row[j] + (c1 != c2)
+            current_row.append(min(insertions, deletions, substitutions))
+        previous_row = current_row
 
-def _create_path(base: Text, resource: Text,
-                 query: Text, values: Text) -> Text:
-    """Creates a path to find provider using the endpoints."""
+    return previous_row[-1]
 
-    if isinstance(values, list):
-        return (base + query).format(
-            resource, ', '.join('"{0}"'.format(w) for w in values))
-    else:
-        return (base + query).format(resource, values)
+# Define a function that returns the best match
+def get_closest_match(name, names_list):
+    name = str(name).lower()
+    levdist = [levenshtein(name, real_name) for real_name in names_list]
+    for i in range(len(levdist)):
+        best_element = min(levdist)
+        if levdist[i] == best_element:
+            # TODO: need to set a threshold here -- it needs to be at least 3 letter same
+            # min entity length is 2
+            if best_element==0 or best_element <= (len(names_list[i])-2):
+                return names_list[i]
+            else:
+                return "none"
 
-
-def _find_facilities(location: Text, resource: Text) -> List[Dict]:
-    """Returns json of facilities matching the search criteria."""
-
-    if str.isdigit(location):
-        full_path = _create_path(ENDPOINTS["base"], resource,
-                                 ENDPOINTS[resource]["zip_code_query"],
-                                 location)
-    else:
-        full_path = _create_path(ENDPOINTS["base"], resource,
-                                 ENDPOINTS[resource]["city_query"],
-                                 location.upper())
-    #print("Full path:")
-    #print(full_path)
-    results = requests.get(full_path).json()
-    return results
-
-
-def _resolve_name(facility_types, resource) ->Text:
-    for key, value in facility_types.items():
-        if value.get("resource") == resource:
-            return value.get("name")
-    return ""
-
-
-class FindFacilityTypes(Action):
-    """This action class allows to display buttons for each facility type
-    for the user to chose from to fill the facility_type entity slot."""
-
+# xiaofeng add for demo
+class ActionDefaultFallback(Action):
     def name(self) -> Text:
-        """Unique identifier of the action"""
-
-        return "find_facility_types"
+        return "action_default_fallback"
 
     def run(self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List:
+           dispatcher: CollectingDispatcher,
+           tracker: Tracker,
+           domain: Dict[Text, Any]) -> List:
 
-        buttons = []
-        for t in FACILITY_TYPES:
-            facility_type = FACILITY_TYPES[t]
-            payload = "/inform{\"facility_type\": \"" + facility_type.get(
-                "resource") + "\"}"
-
-            buttons.append(
-                {"title": "{}".format(facility_type.get("name").title()),
-                 "payload": payload})
-
-        # TODO: update rasa core version for configurable `button_type`
-        dispatcher.utter_button_template("utter_greet", buttons, tracker)
+        print("action_default_fallback")
+        dispatcher.utter_message(template="utter_please_rephrase", name=PROJ_NAME)
         return []
 
 
-class FindHealthCareAddress(Action):
-    """This action class retrieves the address of the user's
-    healthcare facility choice to display it to the user."""
-
-    def name(self) -> Text:
-        """Unique identifier of the action"""
-
-        return "find_healthcare_address"
-
-    def run(self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict]:
-
-        facility_type = tracker.get_slot("facility_type")
-        healthcare_id = tracker.get_slot("facility_id")
-        full_path = _create_path(ENDPOINTS["base"], facility_type,
-                                 ENDPOINTS[facility_type]["id_query"],
-                                 healthcare_id)
-        results = requests.get(full_path).json()
-        if results:
-            selected = results[0]
-            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                address = "{}, {}, {} {}".format(selected["address"].title(),
-                                                 selected["city"].title(),
-                                                 selected["state"].upper(),
-                                                 selected["zip_code"].title())
-            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                address = "{}, {}, {} {}".format(selected["provider_address"].title(),
-                                                 selected["provider_city"].title(),
-                                                 selected["provider_state"].upper(),
-                                                 selected["provider_zip_code"].title())
-            else:
-                address = "{}, {}, {} {}".format(selected["address"].title(),
-                                                 selected["city"].title(),
-                                                 selected["state"].upper(),
-                                                 selected["zip"].title())
-
-            return [SlotSet("facility_address", address)]
-        else:
-            print("No address found. Most likely this action was executed "
-                  "before the user choose a healthcare facility from the "
-                  "provided list. "
-                  "If this is a common problem in your dialogue flow,"
-                  "using a form instead for this action might be appropriate.")
-
-            return [SlotSet("facility_address", "not found")]
-
-
-# xiaofeng add for demo
-# TODO
 class action_find_information(Action):
     """This action class allows to display buttons for each disease type
     for the user to chose from to fill the disease_type entity slot."""
 
     def name(self) -> Text:
         """Unique identifier of the action"""
-        return "find_information"
+        return "actions_find_condition_definitions"
 
     def run(self,
             dispatcher: CollectingDispatcher,
@@ -201,128 +92,501 @@ class action_find_information(Action):
             domain: Dict[Text, Any]) -> List:
 
         inform_matched = False
-        for t in DISEASE_TYPES:
-            disease_type = DISEASE_TYPES[t]
-            # TODO
-            disease_name = disease_type.get("name")
-            es = tracker.latest_message["entities"]
-            if (es is not None) and (len(es) != 0):
-                e = es[0]
-                query_name = e['value']
-                # note: the key in dict depends on the pipeline in config.yml
-                # "extractor": "DIETClassifier"
-                print("entity: {}\nvalue: {}".format(e, e['value']))
-                # "extractor": "CRFEntityExtractor"
-                # print("entity: {}\nscore: {}" .format(e, e['confidence_entity']))
-            else:
-                print("Warning: entity: is empty")
-
-            # query_name = next(tracker.get_latest_entity_values(entity_name), None)
-            if query_name == disease_name:
-                print("found disease_type: {}" .format(query_name))
-                inform_matched = True
-                break
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
 
         # dispatcher.utter_message(query_name)
         if inform_matched:
-            if query_name == 'glaucoma':
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == 'glaucoma':
                 dispatcher.utter_message(
                     template="utter_glaucoma_define",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
-            elif query_name == 'astigmatism':
+            elif find_entity_value == 'astigmatism' or find_entity_value == "oval cornea":
                 dispatcher.utter_message(
                     template="utter_astigmatism_define",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
-            elif query_name == 'visualfiled-synm':
+            elif find_entity_value == 'visualfiled-synm':
                 dispatcher.utter_message(
                     template="utter_glaucoma_whatis_visualfield",
-                    name="Dr Eye"
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'macula' or find_entity_value == "centre part":
+                dispatcher.utter_message(
+                    template="utter_diabeticretinopathy-anatomy-retina",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_cornealedema-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "cataract":
+                dispatcher.utter_message(
+                    template="utter_cataract-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "conjunctivitis":
+                dispatcher.utter_message(
+                    template="utter_conjunctivitis-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal infection":
+                dispatcher.utter_message(
+                    template="utter_cornealinfection-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "AMD" or find_entity_value == "amd":
+                dispatcher.utter_message(
+                    template="utter_amd-condition-retina",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "DME" or find_entity_value == "dme":
+                dispatcher.utter_message(
+                    template="utter_diabeticretinopathy-condition_treatment-retina",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "vidcon":
+                dispatcher.utter_message(
+                    template="utter_vidcon-condition-miscellaneous",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "myopia":
+                dispatcher.utter_message(
+                    template="utter_myopia-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "high myopia":
+                dispatcher.utter_message(
+                    template="utter_myopia-condition-cornearefractive_160",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "pterygium":
+                dispatcher.utter_message(
+                    template="utter_pterygium-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "allergic conjunctivitis":
+                dispatcher.utter_message(
+                    template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "dry eyes":
+                dispatcher.utter_message(
+                    template="utter_dryeyes-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "lasik":
+                dispatcher.utter_message(
+                    template="utter_lasik_refractivesurgery-treatment_laser_surgery-cornearefractive_174",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "blepharitis":
+                dispatcher.utter_message(
+                    template="utter_blepharitis-condition-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-condition-cornearefractive",
+                    name=PROJ_NAME
                 )
             else:
-                print("No matched entity found!!!")
+                print("actions_find_condition_definitions: No matched entity found!!!")
                 dispatcher.utter_message(
                     template="utter_out_of_scope",
-                    name="Dr Eye"
+                    name=PROJ_NAME
                 )
         else:
-            print("No matched entity found!!!")
+            print("actions_find_condition_definitions: No expected entity found!!!")
             dispatcher.utter_message(
                 template="utter_out_of_scope",
-                name="Dr Eye"
+                name=PROJ_NAME
             )
         return []
 
 
-class FacilityForm(FormAction):
-    """Custom form action to fill all slots required to find specific type
-    of healthcare facilities in a certain city or zip code."""
-
+class action_find_symptoms_information(Action):
     def name(self) -> Text:
-        """Unique identifier of the form"""
+        """Unique identifier of the action"""
+        return "actions_find_medical_symptoms"
 
-        return "facility_form"
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
 
-    @staticmethod
-    def required_slots(tracker: Tracker) -> List[Text]:
-        """A list of required slots that the form has to fill"""
-
-        return ["facility_type", "location"]
-
-    def slot_mappings(self) -> Dict[Text, Any]:
-        return {"facility_type": self.from_entity(entity="facility_type",
-                                                  intent=["inform",
-                                                          "search_provider"]),
-                "location": self.from_entity(entity="location",
-                                             intent=["inform",
-                                                     "search_provider"])}
-
-    def submit(self,
-               dispatcher: CollectingDispatcher,
-               tracker: Tracker,
-               domain: Dict[Text, Any]
-               ) -> List[Dict]:
-        """Once required slots are filled, print buttons for found facilities"""
-
-        location = tracker.get_slot('location')
-        facility_type = tracker.get_slot('facility_type')
-
-        results = _find_facilities(location, facility_type)
-        button_name = _resolve_name(FACILITY_TYPES, facility_type)
-        if len(results) == 0:
-            dispatcher.utter_message(
-                "Sorry, we could not find a {} in {}.".format(button_name,
-                                                              location.title()))
-            return []
-
-        buttons = []
-        # limit number of results to 3 for clear presentation purposes
-        for r in results[:3]:
-            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                facility_id = r.get("provider_id")
-                name = r["hospital_name"]
-            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                facility_id = r["federal_provider_number"]
-                name = r["provider_name"]
-            else:
-                facility_id = r["provider_number"]
-                name = r["provider_name"]
-
-            payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
-            buttons.append(
-                {"title": "{}".format(name.title()), "payload": payload})
-
-        if len(buttons) == 1:
-            message = "Here is a {} near you:".format(button_name)
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
         else:
-            if button_name == "home health agency":
-                button_name = "home health agencie"
-            message = "Here are {} {}s near you:".format(len(buttons),
-                                                         button_name)
+            print("Warning: entity: is empty")
 
-        # TODO: update rasa core version for configurable `button_type`
-        dispatcher.utter_button_message(message, buttons)
-
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == 'glaucoma' :
+                dispatcher.utter_message(
+                    template="utter_glaucoma_symptoms",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'astigmatism' or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism_symptoms",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == 'conjunctivitis':
+                dispatcher.utter_message(
+                    template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "allergic conjunctivitis":
+                dispatcher.utter_message(
+                    template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_cornealedema-symptoms_signs-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == "corneal edema":
+            #     dispatcher.utter_message(
+            #         template="utter_cornealedema-causes-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("actions_find_medical_symptoms: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("actions_find_medical_symptoms: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
         return []
+
+class action_find_disease_causes(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_disease_causes"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "dry eyes":
+                dispatcher.utter_message(
+                    template="utter_dryeyes-causes_riskfactors-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-cause-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-cause-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "corneal edema":
+                dispatcher.utter_message(
+                    template="utter_cornealedema-causes-cornearefractive",
+                    name=PROJ_NAME
+                )
+            else:
+                print("find_disease_causes: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_disease_causes: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
+
+class action_find_disease_treatment(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_disease_treatment"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- change if we have multi entity
+            e = es[0]
+            entity_name = e['entity']
+            entity_value = e['value']
+            # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+            print("entity[0]: {}\nName:{}; Value: {}".format(e, e['entity'], e['value']))
+            for eye_entity in entity_dict:
+                if entity_name == eye_entity:
+                    print("entity matched: {}".format(entity_name))
+                    inform_matched = True
+                    entity_value_list = entity_dict[eye_entity]
+                    break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "glaucoma":
+                dispatcher.utter_message(
+                    template="utter_glaucoma_treated",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == 'conjunctivitis':
+            #     dispatcher.utter_message(
+            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            # elif find_entity_value == "allergic conjunctivitis":
+            #     dispatcher.utter_message(
+            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("find_disease_treatment: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_disease_treatment: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
+
+
+class action_find_surgical_treatment(Action):
+    def name(self) -> Text:
+        """Unique identifier of the action"""
+        return "actions_find_surgical_treatment"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+
+        inform_matched = False
+        es = tracker.latest_message["entities"]
+        if (es is not None) and (len(es) != 0):
+            # TODO -- consider 2 entities example here
+            for i in range(len(es)):
+                e = es[i]
+                entity_name = e['entity']
+                entity_value = e['value']
+                # note: the key in dict depends on the pipeline in config.yml -- "extractor": "DIETClassifier"
+                print("entity[{}]: {}\nName:{}; Value: {}".format(i, e, e['entity'], e['value']))
+                for eye_entity in entity_dict:
+                    if entity_name == eye_entity:  # the key is entity name defined in entities in domain.yml
+                        print("entity matched: {}".format(entity_name))
+                        # if entity is "surgery", keep searching the next entity
+                        if entity_value == "surgery":
+                            continue
+
+                        inform_matched = True
+                        entity_value_list = entity_dict[eye_entity]
+                        break
+        else:
+            print("Warning: entity: is empty")
+
+        # dispatcher.utter_message(query_name)
+        if inform_matched:
+            find_entity_value = get_closest_match(entity_value, entity_value_list)
+            SlotSet("care_disease", find_entity_value)
+            if find_entity_value == "glaucoma":
+                dispatcher.utter_message(
+                    template="utter_glaucoma_surgical_treatment",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "keratoconus":
+                dispatcher.utter_message(
+                    template="utter_keratoconus-treatment_general-cornearefractive",
+                    name=PROJ_NAME
+                )
+            elif find_entity_value == "astigmatism" or find_entity_value == "oval cornea":
+                dispatcher.utter_message(
+                    template="utter_astigmatism-treatment_surgical-cornearefractive",
+                    name=PROJ_NAME
+                )
+            # elif find_entity_value == 'conjunctivitis':
+            #     dispatcher.utter_message(
+            #         template="utter_conjunctivitis-symptoms_signs-cornearefractive",
+            #         name=PROJ_NAME
+            #     )
+            # elif find_entity_value == "allergic conjunctivitis":
+            #     dispatcher.utter_message(
+            #         template="utter_allergicconjunctivitis-cause_condition-paediatricophthalmology",
+            #         name=PROJ_NAME
+            #     )
+            else:
+                print("find_surgical_treatment: No matched entity found!!!")
+                dispatcher.utter_message(
+                    template="utter_out_of_scope",
+                    name=PROJ_NAME
+                )
+        else:
+            print("find_surgical_treatment: No expected entity found!!!")
+            dispatcher.utter_message(
+                template="utter_out_of_scope",
+                name=PROJ_NAME
+            )
+        return []
+
+
+# class FacilityForm(FormAction):
+#     """Custom form action to fill all slots required to find specific type
+#     of healthcare facilities in a certain city or zip code."""
+#
+#     def name(self) -> Text:
+#         """Unique identifier of the form"""
+#
+#         return "facility_form"
+#
+#     @staticmethod
+#     def required_slots(tracker: Tracker) -> List[Text]:
+#         """A list of required slots that the form has to fill"""
+#
+#         return ["facility_type", "location"]
+#
+#     def slot_mappings(self) -> Dict[Text, Any]:
+#         return {"facility_type": self.from_entity(entity="facility_type",
+#                                                   intent=["inform",
+#                                                           "search_provider"]),
+#                 "location": self.from_entity(entity="location",
+#                                              intent=["inform",
+#                                                      "search_provider"])}
+#
+#     def submit(self,
+#                dispatcher: CollectingDispatcher,
+#                tracker: Tracker,
+#                domain: Dict[Text, Any]
+#                ) -> List[Dict]:
+#         """Once required slots are filled, print buttons for found facilities"""
+#
+#         location = tracker.get_slot('location')
+#         facility_type = tracker.get_slot('facility_type')
+#
+#         results = _find_facilities(location, facility_type)
+#         button_name = _resolve_name(FACILITY_TYPES, facility_type)
+#         if len(results) == 0:
+#             dispatcher.utter_message(
+#                 "Sorry, we could not find a {} in {}.".format(button_name,
+#                                                               location.title()))
+#             return []
+#
+#         buttons = []
+#         # limit number of results to 3 for clear presentation purposes
+#         for r in results[:3]:
+#             if facility_type == FACILITY_TYPES["hospital"]["resource"]:
+#                 facility_id = r.get("provider_id")
+#                 name = r["hospital_name"]
+#             elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
+#                 facility_id = r["federal_provider_number"]
+#                 name = r["provider_name"]
+#             else:
+#                 facility_id = r["provider_number"]
+#                 name = r["provider_name"]
+#
+#             payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
+#             buttons.append(
+#                 {"title": "{}".format(name.title()), "payload": payload})
+#
+#         if len(buttons) == 1:
+#             message = "Here is a {} near you:".format(button_name)
+#         else:
+#             if button_name == "home health agency":
+#                 button_name = "home health agencie"
+#             message = "Here are {} {}s near you:".format(len(buttons),
+#                                                          button_name)
+#
+#         # TODO: update rasa core version for configurable `button_type`
+#         dispatcher.utter_button_message(message, buttons)
+#
+#         return []
 

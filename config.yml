@@ -1,32 +1,56 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 language: "en"
-
 pipeline:
-- name: WhitespaceTokenizer
-- name: RegexFeaturizer
-- name: LexicalSyntacticFeaturizer
-- name: CountVectorsFeaturizer
-- name: CountVectorsFeaturizer
-  analyzer: "char_wb"
-  min_ngram: 1
-  max_ngram: 4
+- name: HFTransformersNLP
+  model_weights: "bert-base-multilingual-cased"
+  model_name: "bert"
+- name: LanguageModelTokenizer
+- name: LanguageModelFeaturizer
 - name: DIETClassifier
-  epochs: 100
+  epochs: 200
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
 
+# 1st version pipeline:
+#- name: WhitespaceTokenizer
+#- name: RegexFeaturizer
+#- name: LexicalSyntacticFeaturizer
+#- name: CountVectorsFeaturizer
+#- name: CountVectorsFeaturizer
+#  analyzer: "char_wb"
+#  min_ngram: 1
+#  max_ngram: 4
+#- name: DIETClassifier
+#  epochs: 100
+#- name: EntitySynonymMapper
+#- name: ResponseSelector
+#  epochs: 100
+
 # Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
-# xiaofeng add: the compatibility issue in Rasa 2.0 for policy, change from EmbeddingPolicy to RulePolicy
-# /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/rasa/core/policies/mapping_policy.py:54: FutureWarning: 'MappingPolicy' is deprecated and will be removed in the future. It is recommended to use the 'RulePolicy' instead. (will be removed in 3.0.0)
-  #  docs=DOCS_URL_MIGRATION_GUIDE,
-  #InvalidPolicyConfig: Module for policy 'EmbeddingPolicy' could not be loaded. Please make sure the name is a valid policy.
+#policies:
+#  - name: KerasPolicy
+#    epochs: 50
+#    max_history: 3
+#  - name: MemoizationPolicy
+#    max_history: 3
+#  - name: FormPolicy
+#  - name: FallbackPolicy
+#    nlu_threshold: 0.2
+#    core_threshold: 0.1
+#    ambiguity_threshold: 0.01
+#    fallback_action_name: action_default_fallback
 policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
-    max_history: 5
+    max_history: 10
     epochs: 100
   - name: MappingPolicy
   - name: FormPolicy
+  - name: FallbackPolicy
+    nlu_threshold: 0.2
+    core_threshold: 0.1
+    ambiguity_threshold: 0.01
+    fallback_action_name: action_default_fallback
+
