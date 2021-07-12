@@ -125,7 +125,7 @@ def get_top_3_answer(nlufile, intent_list):
             nlu_ans = nlufile['utter_'+intent][0]
             ans_content = nlu_ans['text']
         else:
-            intent = str('none')
+            ans_content = str('none')
         print(ans_content)
         top_3_answer_list.append(clean_text(ans_content))
     return top_3_answer_list
