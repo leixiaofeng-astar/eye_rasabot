@@ -152,6 +152,7 @@ def clacluateDistance(nlp, txt1, txt2):
 def cal_levenshtein_acc(nlp, chatbot_ans, standard_ans):
     count = 0
     lev_label = []
+    greeting_answer_count = 0
     for i,j in zip(chatbot_ans, standard_ans):
         ret = clacluateDistance(nlp, i,j)
         if ret>0.99:
@@ -159,14 +160,17 @@ def cal_levenshtein_acc(nlp, chatbot_ans, standard_ans):
             lev_label.append('correct')
         else:
             lev_label.append('incorrect')
-            continue
-    return count, lev_label
+        greeting_answer = check_greeting_answer(i)
+        greeting_answer_count += greeting_answer
+    return count, lev_label, greeting_answer_count
 
 
 def cal_top3_levenshtein_acc(nlp, chatbot_ans, standard_ans_list):
     count = 0
     lev_label = []
     all_score = []
+    max_score_id = []
+    greeting_answer_count = 0
     #import pdb;pdb.set_trace()
     for i_list, j in zip(chatbot_ans, standard_ans_list):
         score = []
@@ -176,23 +180,26 @@ def cal_top3_levenshtein_acc(nlp, chatbot_ans, standard_ans_list):
         if max(score) > 0.99:
             count += 1
             lev_label.append('correct')
+            i_list[score.index(max(score))]
         else:
             lev_label.append('incorrect')
+        greeting_answer = check_greeting_answer(i_list[score.index(max(score)])
+        greeting_answer_count += greeting_answer
+        max_score_id.append(score.index(max(score)))
         all_score.append(max(score))
-    return all_score, count, lev_label
+    return all_score, count, lev_label, max_score_id, greeting_answer_count
 
-def check_greeting_answer(answer_list):
+def check_greeting_answer(answer):
+    greeting_answer = 0
     greeting_answer = ["Dr.Eye here, I'm sorry, Please help to check your question and enter it again",
                        "Please check your question and enter it again",
                        "I'm sorry, I didn't quite understand that. Could you rephrase",
                        "Thank you for contacting us! Your question is beyond the range of this bot, could you enter your question again",
                        ]
-    greeting_answer_count = 0
-    for ans in answer_list:
-        if ans in greeting_answer:
-            greeting_answer_count+=1
+    if answer in greeting_answer:
+        greeting_answer=1
     
-    return greeting_answer_count
+    return greeting_answer
 
 
 if __name__ == '__main__':
@@ -227,20 +234,24 @@ if __name__ == '__main__':
     if get_acc == 'top1':
         answer_list = get_answer(question_list)
         clean_answer = [clean_text(i) for i in answer_list]
-        greeting_answer_count = check_greeting_answer(clean_answer)
-        levenshtein_count,lev_label = cal_levenshtein_acc(nlp, clean_answer, clean_expect_answer)
-
+        levenshtein_count,lev_label, greeting_answer_count = cal_levenshtein_acc(nlp, clean_answer, clean_expect_answer)
         result_top1 = {'question': question_list, 'chatbot_answer': clean_answer, 'expect_answer': clean_expect_answer}
         df = pd.DataFrame(result_top1, columns = ['question', 'chatbot_answer', 'expect_answer'])
         df.to_csv('result_top1.csv')
         print('Accuracy of TOP1 test:{} --[{}:{}]'.format(levenshtein_count/len(answer_list), levenshtein_count,
                                                               len(answer_list) - levenshtein_count))
-        print('Accuracy of real answer test:{} --[{}:{}]'.format(levenshtein_count /len(answer_list) - greeting_answer_count,
+        print('Accuracy of real answer test:{} --[{}:{}]'.format(levenshtein_count /(len(answer_list) - greeting_answer_count),
                                                           levenshtein_count,
                                                           len(answer_list) - greeting_answer_count -levenshtein_count))
     if get_acc == 'top3':
         confidences = get_confidence(question_list)
+        confidence_1 = []
+        confidence_2 = []
+        confidence_3 = []
         answer_list = []
+        intent_1 = []
+        intent_2 = []
+        intent_3 = []
         for confidence in confidences:
             print()
             print(confidence)
@@ -248,26 +259,60 @@ if __name__ == '__main__':
             confidence = eval(confidence)
             rank = confidence["intent_ranking"]
             intent_sub_list = []
+            confidence_list = []
             #import pdb;pdb.set_trace()
             if len(rank) >= 3:
                 for r in rank[0:3]:
                     intent = r['name']
                     intent_sub_list.append(intent)
+                    score = r['confidence']
+                    confidence_list.append(score)
             else:
                 for r in rank:
                     intent = r['name']
                     intent_sub_list.append(intent)
+                    score = r['confidence']
+                    confidence_list.append(score)
+
             top_3_answer_list = get_top_3_answer(nlufile, intent_sub_list)
             answer_list.append(top_3_answer_list)
+            intent_1.append(intent_sub_list[0])
+            intent_2.append(intent_sub_list[1])
+            intent_3.append(intent_sub_list[2])
+            confidence_1.append(confidence_list[0])
+            confidence_2.append(confidence_list[1])
+            confidence_3.append(confidence_list[2])
+
         top_1 = [ans[0] for ans in answer_list]
         top_2 = [ans[1] for ans in answer_list]
         top_3 = [ans[2] for ans in answer_list]
         #import pdb;pdb.set_trace()
         print(len(answer_list))
-        score, levenshtein_count, lev_label = cal_top3_levenshtein_acc(nlp, answer_list, clean_expect_answer)
+        score, levenshtein_count, lev_label, max_score_id, greeting_answer_count = cal_top3_levenshtein_acc(nlp, answer_list, clean_expect_answer)
         print('Accuracy of TOP3 test:{} --[{}:{}]'.format(levenshtein_count/len(answer_list),levenshtein_count,len(answer_list) - levenshtein_count))
+        print('Accuracy of real answer test:{} --[{}:{}]'.format(levenshtein_count /(len(answer_list) - greeting_answer_count),
+                                                          levenshtein_count,
+                                                          len(answer_list) - greeting_answer_count -levenshtein_count))
         print(len(question_list), len(score), len(clean_expect_answer)) 
 
-        result_top3 = {'question': question_list, 'score': score, 'top_1_answer': top_1, 'top_2_answer': top_2,'top_3_answer': top_3, 'expect_answer': clean_expect_answer}
-        df = pd.DataFrame(result_top3, columns = ['question', 'score', 'top_1_answer', 'top_2_answer', 'top_3_answer', 'expect_answer'])
+        result_top3 = {'question': question_list,
+                       'score': score,
+                       'max_score_id': max_score_id, 
+                       'top_1_answer': top_1, 'intent_1': intent_1, 'confidence_1': confidence_1, 
+                       'top_2_answer': top_2, 'intent_2': intent_2, 'confidence_2': confidence_2, 
+                       'top_3_answer': top_3, 'intent_3': intent_3, 'confidence_3': confidence_3, 
+                       'expect_answer': clean_expect_answer}
+        df = pd.DataFrame(result_top3, columns = ['question',
+                                                  'score',
+                                                  'max_score_id',
+                                                  'top_1_answer',
+                                                  'intent_1',
+                                                  'confidence_1',
+                                                  'top_2_answer',
+                                                  'intent_2',
+                                                  'confidence_2',
+                                                  'top_3_answer',
+                                                  'intent_3',
+                                                  'confidence_2',
+                                                  'expect_answer'])
         df.to_csv('result_top3.csv')
